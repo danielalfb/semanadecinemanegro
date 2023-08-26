@@ -15,6 +15,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
   useEffect(() => {
     setMounted(true);
+    setTheme(theme === "light" ? "dark" : "dark");
   }, []);
 
   return (
@@ -31,21 +32,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </h1>
 
               <div className="flex items-center">
-                {data.darkMode && (
-                  <Button
-                    onClick={() =>
-                      setTheme(theme === "dark" ? "light" : "dark")
-                    }
-                  >
-                    <img
-                      className="h-6"
-                      src={`/images/${
-                        theme === "dark" ? "moon.svg" : "sun.svg"
-                      }`}
-                    ></img>
-                  </Button>
-                )}
-
+                
                 <Popover.Button>
                   <img
                     className="h-5"
@@ -130,11 +117,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           {name}.
         </h1>
           <div className="flex">
-            <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
-            </Button>            
+        <Button onClick={() => router.push("/mostras")}>mostras</Button>
+        <Button onClick={() => router.push("/atividades-formativas")}>atividades formativas</Button>
+        <Button onClick={() => router.push("/catalogo")}>catalogo</Button>
+        <Button onClick={() => router.push("/creditos")}>créditos</Button>
+        <Button onClick={() => router.push("/anteriores")}>edições anteriores</Button>
+            
           </div>
       
       </div>
