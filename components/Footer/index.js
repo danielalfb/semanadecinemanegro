@@ -1,35 +1,30 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Socials from "../Socials";
 import Link from "next/link";
 import Button from "../Button";
 
+import yourData from "../../data/portfolio.json";
+
+
 const Footer = ({}) => {
   return (
-    <>
-      <div className="mt-5 laptop:mt-40 p-2 laptop:p-0">
-        <div>
-          <h1 className="text-2xl text-bold">Contact.</h1>
-          <div className="mt-10">
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              LET&apos;S WORK
-            </h1>
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              TOGETHER
-            </h1>
-            <Button type="primary">Schedule a call</Button>
-            <div className="mt-10">
-              <Socials />
-            </div>
-          </div>
+    <div className="laptop:p-0">
+      <img alt="logomarcas"src="https://www.semanadecinemanegro.com.br/mostras/img/logomarcas.png" style={{width: '100%', backgroundColor: '#f9f9f9'}} />
+        
+      <div className='flex flex-wrap items-center justify-between p-2 mob:flex-nowrap link' style={{color: '#fff', backgroundColor: '#000'}}>
+        <span>
+          CONTATO IMPRENSA 
+        </span>
+        <div className='flex flex-wrap mob:flex-nowrap link'>
+            {yourData.socials.map((social, index) => (
+              <Button key={index} onClick={() => window.open(social.link)}>
+                {social.title}
+              </Button>
+            ))}
         </div>
       </div>
-      <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
-        Made With ❤ by{" "}
-        <Link href="http://www.chetanverma.com">
-          <a className="underline underline-offset-1">Chetan Verma</a>
-        </Link>
-      </h1>
-    </>
+    </div>
   );
 };
 

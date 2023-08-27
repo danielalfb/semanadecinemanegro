@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
@@ -38,11 +39,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     className="h-5"
                     src={`/images/${
                       !open
-                        ? theme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
-                        : theme === "light"
-                        ? "cancel.svg"
+                        ? "menu-white.svg"                         
                         : "cancel-white.svg"
                     }`}
                   ></img>

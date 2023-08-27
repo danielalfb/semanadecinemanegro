@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply dark:bg-black dark:text-white;
+  @apply bg-white text-black;
       overflow-x: hidden;
 }
 
