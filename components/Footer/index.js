@@ -9,7 +9,7 @@ import yourData from "../../data/portfolio.json";
 
 const Footer = ({}) => {
   return (
-    <div className="laptop:p-0">
+    <div className="relative bottom-0 laptop:p-0">
       <img alt="logomarcas"src="https://www.semanadecinemanegro.com.br/mostras/img/logomarcas.png" style={{width: '100%', backgroundColor: '#f9f9f9'}} />
         
       <div className='flex flex-wrap items-center justify-between p-2 mob:flex-nowrap link' style={{color: '#fff', backgroundColor: '#000'}}>

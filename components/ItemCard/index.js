@@ -6,9 +6,9 @@ export default function ItemCard({ type, name, desciption, url }) {
 
   return (
     <div onClick={() => router.push(`/${url}`)}>
-      <p>{type}</p>
-      <p>{name}</p>
-      <p>{desciption}</p>
+      {type}  
+      {name}  
+      {desciption}  
     </div>
   )
 }
