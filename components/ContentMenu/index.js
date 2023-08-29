@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 import yourData from "../../data/content.json";
-import ItemCard from '../ItemCard';
+import ItemCard from "../ItemCard";
 
 export default function ContentMenu() {
   return (
-    <div className="flex flex-wrap mob:flex-nowrap link">
-      {yourData.resume.map(({ type, name, desciption, url }) => (
-        <ItemCard key={name} type={type} desciption={desciption} url={url}/>
+    <div className='w-full grid grid-cols-2 gap-4 link'>
+      {yourData.resume.map(({ name, description, url }) => (
+        <ItemCard key={name} name={name} description={description} url={url} />
       ))}
     </div>
-  )
+  );
 }

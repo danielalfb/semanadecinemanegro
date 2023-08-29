@@ -1,14 +1,16 @@
-import { useRouter } from 'next/router'
-import React from 'react'
+import { useRouter } from "next/router";
+import React from "react";
 
-export default function ItemCard({ type, name, desciption, url }) {
-    const router = useRouter();
+export default function ItemCard({ type, name, description, url }) {
+  const router = useRouter();
 
   return (
-    <div onClick={() => router.push(`/${url}`)}>
-      {type}  
-      {name}  
-      {desciption}  
+    <div
+      className='w-full flex-col rounded-md border p-6'
+      onClick={() => router.push(`/${url}`)}
+    >
+      <div>{name}</div>
+      <div>{description}</div>
     </div>
-  )
+  );
 }

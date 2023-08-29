@@ -4,13 +4,31 @@
 @tailwind utilities;
 @import "./markdown.css";
 
+:root {
+  --clr-white: #fffdf0;
+  --clr-black: #18191a;
+  --clr-blue-dark: #0a0957;
+  --clr-blue-light: #00ccfc;
+  --clr-blue-default: #0095ec;
+  --clr-light-lightest: #50ddfe;
+  --clr-light-darkest: #001c42;
+  --clr-green-dark: #00392e;
+  --clr-green-light: #6aa924;
+  --clr-yellow-dark: #f29f05;
+  --clr-yellow-light: #f2cb05;
+}
 * {
   font-family: "Hind";
 }
 
 body {
-  @apply bg-white text-black;
-      overflow-x: hidden;
+  overflow-x: hidden;
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+
+.header-links {
+  color: #001c42;
 }
 
 .gradient-circle {

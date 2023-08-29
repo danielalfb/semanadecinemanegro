@@ -1,9 +1,9 @@
 import React from "react";
-import ContentMenu from "../../components/ContentMenu";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import ContentMenu from "../../../components/ContentMenu";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 
-export default function mostras() {
+export default function homenagem() {
   return (
     <div className='h-screen w-full'>
       <Header />
