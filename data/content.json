@@ -1,52 +1,62 @@
 {
-  "resume": [
-    {
-      "type": "mostra",
-      "name": "HOMENAGEM - MARIA JOSÉ NOVAIS OLIVEIRA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
-      "url": "/mostras/homenagem"
-    },
-    {
-      "type": "mostra",
-      "name": "CINE-ESCRITURAS PRETAS",
-      "description": "A mostra Cine-Escrituras Pretas apresenta uma variedade de filmes tanto em termos de forma quanto de narrativa, que atualiza, resgata e subverte alguns campos semânticos. Do mesmo modo, é visível um fio condutor que conecta os filmes selecionados às grandes teses que fundamentam a realidade e possibilidades de devir para a população afro-brasileira e para o próprio campo da linguagem. Podemos destacar a própria história do cinema e televisão brasileiros, perpassando as searas da família e parentesco; da ecologia; dos direitos sexuais e reprodutivos; do dinheiro e das masculinidades; da ancestralidade; do amor e da necropolítica. ",
-      "url": "/mostras/escrituras"
-    },
-    {
-      "type": "mostra",
-      "name": "OS CINEMAS AFRICANOS CONTAM SUAS HISTÓRIAS",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
-      "url": "/mostras/cinemas-africanos"
-    },
-    {
-      "type": "mostra",
-      "name": "DIÁSPORA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
-      "url": "/mostras/diaspora"
-    },
-    {
-      "type": "mostra",
-      "name": "DJIBRIL DIOP MAMBÉTY",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
-      "url": "/mostras/djibril"
-    },
-    {
-      "type": "mostra",
-      "name": "CRYSTAL Z. CAMPBELL",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
-      "url": "/mostras/crystal"
-    },
-    {
-      "type": "mostra",
-      "name": "IBEJIS (INFANTIL)",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
-      "url": "/mostras/ibejis"
-    },
-    {
-      "type": "mostra",
-      "name": "PONTA DE ANZOL",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
-      "url": "/mostras/ponta-de-anzol"
-    }
-  ]
+  "mostras": {
+    "resumo": [
+      {
+        "type": "mostra",
+        "name": "HOMENAGEM - MARIA JOSÉ NOVAIS OLIVEIRA",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "url": "/mostras/homenagem",
+        "color": "var(--clr-blue-dark)"
+      },
+      {
+        "type": "mostra",
+        "name": "CINE-ESCRITURAS PRETAS",
+        "description": "A mostra Cine-Escrituras Pretas apresenta uma variedade de filmes tanto em termos de forma quanto de narrativa, que atualiza, resgata e subverte alguns campos semânticos. Do mesmo modo, é visível um fio condutor que conecta os filmes selecionados às grandes teses que fundamentam a realidade e possibilidades de devir para a população afro-brasileira e para o próprio campo da linguagem. Podemos destacar a própria história do cinema e televisão brasileiros, perpassando as searas da família e parentesco; da ecologia; dos direitos sexuais e reprodutivos; do dinheiro e das masculinidades; da ancestralidade; do amor e da necropolítica. ",
+        "url": "/mostras/escrituras",
+        "color": "var(--clr-blue-light)"
+      },
+      {
+        "type": "mostra",
+        "name": "OS CINEMAS AFRICANOS CONTAM SUAS HISTÓRIAS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "url": "/mostras/cinemas-africanos",
+        "color": "var(--clr-blue-default)"
+      },
+      {
+        "type": "mostra",
+        "name": "DIÁSPORA",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "url": "/mostras/diaspora",
+        "color": "var(--clr-blue-darkest)"
+      },
+      {
+        "type": "mostra",
+        "name": "DJIBRIL DIOP MAMBÉTY",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "url": "/mostras/djibril",
+        "color": "var(--clr-green-dark)"
+      },
+      {
+        "type": "mostra",
+        "name": "CRYSTAL Z. CAMPBELL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "url": "/mostras/crystal",
+        "color": "var(--clr-green-light)"
+      },
+      {
+        "type": "mostra",
+        "name": "IBEJIS (INFANTIL)",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "url": "/mostras/ibejis",
+        "color": "var(--clr-yellow-dark)"
+      },
+      {
+        "type": "mostra",
+        "name": "PONTA DE ANZOL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "url": "/mostras/ponta-de-anzol",
+        "color": "var(--clr-yellow-light)"
+      }
+    ]
+  }
 }

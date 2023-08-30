@@ -1,35 +1,25 @@
-import { useMemo, useRef } from "react";
 import Header from "../components/Header";
-import ServiceCard from "../components/ServiceCard";
-import Socials from "../components/Socials";
-import WorkCard from "../components/WorkCard";
-import { useIsomorphicLayoutEffect } from "../utils";
-import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Button from "../components/Button";
-import Link from "next/link";
-import Cursor from "../components/Cursor";
 
 // Local Data
 import data from "../data/portfolio.json";
 import ReactPlayer from "react-player";
-import ContentMenu from "../components/ContentMenu";
 
 export default function Home() {
   // Ref
-  const textOne = useRef();
-  const textTwo = useRef();
-  const textThree = useRef();
-  const textFour = useRef();
+  // const textOne = useRef();
+  // const textTwo = useRef();
+  // const textThree = useRef();
+  // const textFour = useRef();
 
-  useIsomorphicLayoutEffect(() => {
-    stagger(
-      [textOne.current, textTwo.current, textThree.current, textFour.current],
-      { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
-    );
-  }, []);
+  // useIsomorphicLayoutEffect(() => {
+  //   stagger(
+  //     [textOne.current, textTwo.current, textThree.current, textFour.current],
+  //     { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
+  //     { y: 0, x: 0, transform: "scale(1)" }
+  //   );
+  // }, []);
 
   return (
     <>

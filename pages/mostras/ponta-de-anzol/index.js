@@ -3,7 +3,7 @@ import ContentMenu from "../../../components/ContentMenu";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 
-export default function homenagem() {
+export default function pontaDeAnzol() {
   return (
     <div className='h-screen w-full'>
       <Header />
