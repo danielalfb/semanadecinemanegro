@@ -1,5 +1,4 @@
 import React from "react";
-import data from "../../data/portfolio.json";
 
 const Button = ({ children, type, onClick, classes }) => {
   if (type === "primary") {

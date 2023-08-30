@@ -58,5 +58,12 @@
         "color": "var(--clr-yellow-light)"
       }
     ]
-  }
+  },
+  "socials": [
+    {
+      "id": "1",
+      "title": "instagram",
+      "link": "https://www.instagram.com/semana.cinemanegrobh/"
+    }
+  ]
 }

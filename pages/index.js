@@ -2,8 +2,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
 
-// Local Data
-import data from "../data/portfolio.json";
 import ReactPlayer from "react-player";
 
 export default function Home() {
@@ -24,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{data.name}</title>
+        <title>SCNBH23</title>
       </Head>
 
       <div className='h-screen w-full'>
