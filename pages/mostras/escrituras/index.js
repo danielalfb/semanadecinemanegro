@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import yourData from "../../../data/content.json";
+import Accordion from "../../../components/Accordion";
 
 export default function escrituras() {
   return (
@@ -14,7 +15,7 @@ export default function escrituras() {
           color: "var(--clr-white)",
         }}
       >
-        <p>ok</p>
+        <Accordion />
       </div>
       <Footer />
     </div>

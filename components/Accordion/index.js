@@ -30,14 +30,11 @@ export default function Accordion({ id, title }) {
         onClick={toggle}
         type='button'
       >
-        <p>{props.title}</p>
+        <p>{title}</p>
       </button>
-      <div
-        style={{ display: isShowing ? "block" : "none", padding: "5px" }}
-        dangerouslySetInnerHTML={{
-          __html: props.content,
-        }}
-      />
+      <div style={{ display: isShowing ? "block" : "none", padding: "5px" }}>
+        content
+      </div>
     </div>
   );
 }
