@@ -86,6 +86,7 @@
 
 :root {
   --clr-white: #fffdf0;
+  --clr-gray: #e7e7e7;
   --clr-black: #18191a;
   --clr-blue-dark: #0a0957;
   --clr-blue-light: #00ccfc;
@@ -97,8 +98,8 @@
   --clr-yellow-dark: #f29f05;
   --clr-yellow-light: #f2cb05;
 }
-* {
-  /* font-family: "Open Sans"; */
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -107,11 +108,31 @@ body {
   background-color: var(--clr-white);
 }
 
-h2 {
+h1,
+h2,
+h3 {
   font-family: "Epilogue";
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--clr-blue-dark);
+}
+
+h2 {
   font-size: large;
   font-weight: 700;
-  color: var(--clr-white);
+}
+
+h3 {
+  font-size: medium;
+  font-weight: 600;
+}
+
+.shadow-title {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--clr-blue-dark);
 }
 
 .header-links {

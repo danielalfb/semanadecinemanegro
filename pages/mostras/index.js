@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 
 export default function mostras() {
   return (
-    <div className='h-screen w-full'>
+    <div className='h-screen w-full relative overflow-x-hidden'>
       <Header />
       <div className='mt-36 p-10 w-full laptop:mt-30'>
         <ContentMenu />
