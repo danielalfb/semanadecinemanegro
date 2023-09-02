@@ -39,7 +39,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </div>
             </div>
             <Popover.Panel
-              className={`absolute right-0 z-10 w-11/12 p-4 bg-slate-800 shadow-md rounded-md`}
+              className={`absolute right-0 z-10 w-11/12 p-4 bg-slate-800 text-white shadow-md rounded-md`}
             >
               <Button onClick={() => router.push("/mostras")}>mostras</Button>
               <Button onClick={() => router.push("/atividades-formativas")}>
