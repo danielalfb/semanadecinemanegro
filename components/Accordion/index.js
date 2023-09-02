@@ -23,7 +23,7 @@ export default function Accordion({ title, color, children }) {
           {isShowing ? <CaretUp size={24} /> : <CaretDown size={24} />}
         </span>
       </button>
-      <div className='p-1.5	' style={{ display: isShowing ? "block" : "none" }}>
+      <div className='p-1.5' style={{ display: isShowing ? "block" : "none" }}>
         {children}
       </div>
     </div>

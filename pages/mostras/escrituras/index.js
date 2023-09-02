@@ -25,7 +25,7 @@ export default function escrituras() {
         <h1 className='mb-6'>CINE-ESCRITURAS PRETAS</h1>
         <Accordion
           title='QUANDO O CORPO E A PAISAGEM SE FUNDEM'
-          color='var(--clr-green-dark)'
+          color='var(--clr-blue-dark)'
         >
           <MoviesGroup isBox>
             {QUANDO_O_CORPO.map((movie) => (
@@ -33,14 +33,14 @@ export default function escrituras() {
                 isBox
                 key={movie.title}
                 movie={movie}
-                color='var(--clr-green-dark)'
+                color='var(--clr-blue-dark)'
               />
             ))}
           </MoviesGroup>
         </Accordion>
         <Accordion
           title='NÃO ADIANTA TER RESPOSTA SE VOCÊ NÃO TEM O TEMPO'
-          color='var(--clr-green-dark)'
+          color='var(--clr-blue-dark)'
         >
           <MoviesGroup isBox>
             {NAO_ADIANTA_TER_RESPOSTA.map((movie) => (
@@ -48,14 +48,14 @@ export default function escrituras() {
                 isBox
                 key={movie.title}
                 movie={movie}
-                color='var(--clr-green-dark)'
+                color='var(--clr-blue-dark)'
               />
             ))}
           </MoviesGroup>
         </Accordion>
         <Accordion
           title='O CHÃO, O TETO E SEU CONTORNO'
-          color='var(--clr-green-dark)'
+          color='var(--clr-blue-dark)'
         >
           <MoviesGroup isBox>
             {O_CHAO_O_TETO.map((movie) => (
@@ -63,43 +63,43 @@ export default function escrituras() {
                 isBox
                 key={movie.title}
                 movie={movie}
-                color='var(--clr-green-dark)'
+                color='var(--clr-blue-dark)'
               />
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion title='CHAVÃO ABRE PORTAS' color='var(--clr-green-dark)'>
+        <Accordion title='CHAVÃO ABRE PORTAS' color='var(--clr-blue-dark)'>
           <MoviesGroup isBox>
             {CHAVAO_ABRE_PORTAS.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
                 movie={movie}
-                color='var(--clr-green-dark)'
+                color='var(--clr-blue-dark)'
               />
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion title='RACISMO ÍNTIMOS' color='var(--clr-green-dark)'>
+        <Accordion title='RACISMO ÍNTIMOS' color='var(--clr-blue-dark)'>
           <MoviesGroup isBox>
             {RACISMOS_INTIMOS.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
                 movie={movie}
-                color='var(--clr-green-dark)'
+                color='var(--clr-blue-dark)'
               />
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion title='CAMINHOS QUE TRILHAMOS' color='var(--clr-green-dark)'>
+        <Accordion title='CAMINHOS QUE TRILHAMOS' color='var(--clr-blue-dark)'>
           <MoviesGroup isBox>
             {CAMINHOS_QUE_TRILHAMOS.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
                 movie={movie}
-                color='var(--clr-green-dark)'
+                color='var(--clr-blue-dark)'
               />
             ))}
           </MoviesGroup>

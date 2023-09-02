@@ -14,7 +14,7 @@ export const QUANDO_O_CORPO = [
     elenco principal: Daniel Capinador, Egbome Rosita De Osún, Laymistone "Michael", Orun Santana;
     contato: ficcionalizar@gmail.com
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "MEADA COR KALUNGA",
@@ -32,7 +32,7 @@ export const QUANDO_O_CORPO = [
     empresa produtora: Casa Memória da Mulher Kalunga;
     contato: casamemoriadamulherkalunga@gmail.com
     `,
-    image: "/images/movies/meada_cor_kalunga.jpeg",
+    image: "/images/movies/meada_cor_kalunga.jpg",
   },
   {
     title: "ÚLTIMO DOMINGO",
@@ -51,7 +51,7 @@ export const QUANDO_O_CORPO = [
     empresa produtora: Baraúna;
     contato: brandao.renan@gmail.com
     `,
-    image: "/images/movies/ultimo_domingo.jpeg",
+    image: "/images/movies/ultimo_domingo.jpg",
   },
   {
     title: "DORME PRETINHO",
@@ -71,7 +71,7 @@ export const QUANDO_O_CORPO = [
     empresa produtora: Centro Cultural Estrela de Lia;
     contato: lia.leticia@gmail.com
     `,
-    image: "/images/movies/dorme_pretinho.jpeg",
+    image: "/images/movies/dorme_pretinho.jpg",
   },
   {
     title: "LAMENTO ÀS ÁGUAS",
@@ -88,7 +88,7 @@ export const QUANDO_O_CORPO = [
     empresa produtora: Sujeito Filmes;
     contato: sujeitofilmes@gmail.com
     `,
-    image: "/images/movies/lamento_as_aguas.png",
+    image: "/images/movies/lamento_as_aguas.jpg",
   },
 ];
 
@@ -109,7 +109,7 @@ export const NAO_ADIANTA_TER_RESPOSTA = [
     elenco principal: Raquel Paixão, Leonardo Castro;
     empresa produtora: Reduto Filmes;
     contato: bruno@redutofilmes.com.br`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/manha_de_domingo.jpg",
   },
   {
     title: "CARTAS DE AMOR",
@@ -126,7 +126,7 @@ export const NAO_ADIANTA_TER_RESPOSTA = [
     elenco principal: Tatí, Tays Viana, Maurício Silvia, Luz Ribeiro, Jhonas Araújo e Walter Balthazar;
     empresa produtora: Paideia Filmes;
     contato: anaju.travia@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/cartas_de_amor.jpg",
   },
   {
     title: "ABODÔ",
@@ -145,7 +145,7 @@ export const NAO_ADIANTA_TER_RESPOSTA = [
     elenco principal: Samia Gonçalves, Luciano Pedro Jr;
     empresa produtora: Kizomba / Ventana Filmes e Vilarejo Filmes;
     contato: brunaleite@corujas.rec.br`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/abodo.jpg",
   },
   {
     title: "REMENDO",
@@ -162,7 +162,7 @@ export const NAO_ADIANTA_TER_RESPOSTA = [
     elenco principal: Elídio Netto, Markus Konká, Eliete Miranda | With Royce Luckessy, Léia Rodrigues, Jordan Fernandes, Pedro Henrique Oliveira ;
     empresa produtora: Casa Ghil Produções;
     contato: rogerghil@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/remendo.jpg",
   },
 ];
 
@@ -182,7 +182,7 @@ export const O_CHAO_O_TETO = [
     trilha sonora original: Cláudio Rabeca;
     empresa produtora: 9 Oitavos;
     contato: caio.dornelas.caio@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/pedo_e_inacio.jpg",
   },
   {
     title: "ESCAVAÇÃO",
@@ -199,7 +199,7 @@ export const O_CHAO_O_TETO = [
     som: Marcos Reis;
     elenco principal: Alex Reis;
     contato: oi.alexreis@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/escavacao.jpg",
   },
   {
     title: "CASA DE LUIZA",
@@ -216,7 +216,7 @@ export const O_CHAO_O_TETO = [
     elenco principal: Ronaldo Silva;
     empresa produtora: Leão do Norte Produções Audiovisuais;
     contato: a.rodrigogrillo@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/casa_de_luiza.jpg",
   },
   {
     title: "VIDAS DO ROSÁRIO",
@@ -235,7 +235,7 @@ export const O_CHAO_O_TETO = [
     empresa produtora: Move Cultura e Abdução Filmes;
     contato: marcelo.jfgomes@gmail.com
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/vidas_do_rosario.jpg",
   },
   {
     title: "LEMBRAR QUE A DOR NÃO É O ÚNICO JEITO DE EXISTIR",
@@ -254,7 +254,7 @@ export const O_CHAO_O_TETO = [
     elenco principal: Ozivaldo dos Santos Caridade, Waleff Dias;
     empresa produtora: Organizações Culturais da Amazônia - OCA Produções;
     contato: waleffdiasc@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/lembrar_que_a_dor.jpg",
   },
   {
     title: "KALUNGA DO ROSÁRIO",
@@ -270,7 +270,7 @@ export const O_CHAO_O_TETO = [
     som: Marcão Pesada;
     elenco principal: Capitã Pedrina de Lourdes Santos , Capitã Ester Antonieta Santos , Capitão Antônio Eustáquio Santos, Capitão Washington Luís (Kamugenan);
     contato: washluissantos@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/kalunga_do_rosario.jpg",
   },
 ];
 
@@ -291,7 +291,7 @@ export const CHAVAO_ABRE_PORTAS = [
     empresa produtora: Coletivo As Talavistas;
     contato: princeznhadapaz@gmail.com
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "NA MATA SÓ TEM UM",
@@ -307,7 +307,7 @@ export const CHAVAO_ABRE_PORTAS = [
     som: Ariana Nuala e biarritzzz;
     contato: ariananualaa@gmail.com
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "NOVO AYITY - NOVA TRINDADE",
@@ -326,7 +326,7 @@ export const CHAVAO_ABRE_PORTAS = [
     empresa produtora: Film Ecology;
     contato: marcio@filmecology.com 
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "CAIXA PRETA ",
@@ -343,7 +343,7 @@ export const CHAVAO_ABRE_PORTAS = [
     empresa produtora: QTV Selo;
     contato: marianamansur@gmail.com
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
 ];
 
@@ -365,7 +365,7 @@ export const RACISMOS_INTIMOS = [
     empresa produtora: Siyanda - Cinema Experimental Negro;
     contato: hugoaniculapo@gmail.com
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "ALZIRAS",
@@ -382,7 +382,7 @@ export const RACISMOS_INTIMOS = [
     elenco principal: Regiane Farias, Kairu Zuri Nonato, Mestra Dona Miúda;
     contato: helbertrodrigues01@hotmail.com 
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "DENTE",
@@ -401,7 +401,7 @@ export const RACISMOS_INTIMOS = [
    elenco principal: Gheuza, Caroline Teodósio, Itioko Santiago, Eron Villar, Laís Medeiros;
    contato: ritasales393@gmail.com
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "DESOVA",
@@ -418,7 +418,7 @@ export const RACISMOS_INTIMOS = [
     elenco principal: Ana Cristina dos Santos, Athaylton Jorge Monteiro Belo, Diego de Lima Oliveira, Emanuelly Vitoria de Oliveira, Fábio Alves Araújo, Giovana Gomes Ferreira, Jairo dos Santos Silva, João Freire dos Santos, Joseane Martins Ferreira, José Cláudio Souza Alves, Katia Veronica da Conceição Freire, Luana Ferreira de Oliveira, Lúcia Maria Xavier de Castro, Márcia Cristina França de Albuquerque, Maria Batista da Silva, Maria Isabelly Freire dos Santos, Mayara Cristina dos Santos, Michele de Jesus, Nádia Pereira Figueiredo, Samuel Heitor dos Santos Batista, Selma Ferreira de Oliveira e Suellen Cristina dos Santos Cabral.;
     empresa produtora: Quiprocó Filmes;
     contato:  laisdantasd@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "MERGULHO",
@@ -435,7 +435,7 @@ export const RACISMOS_INTIMOS = [
     elenco principal: Willian Costa, Lena Roque, Nill Marcondes, Ewerton Gonzaga, Cauã Trindade, Marton Olympio;
     empresa produtora: Dedalo Produções e TNM produções;
     contato: martonolympio@gmail.com`,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "COMIGO",
@@ -454,7 +454,7 @@ export const RACISMOS_INTIMOS = [
     empresa produtora: Tramoia Filmes;
     contato: d.luandealmeida@gmail.com 
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
 ];
 
@@ -475,7 +475,7 @@ export const CAMINHOS_QUE_TRILHAMOS = [
     empresa produtora: Preta Portê Filmes;
     contato: festivais@pretaportefilmes.com.br 
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
   {
     title: "RUMO",
@@ -496,6 +496,6 @@ export const CAMINHOS_QUE_TRILHAMOS = [
     coprodução: Vaporosa Cultural e Vertigem Audiovisual;
     contato: rumofilme@gmail.com
     `,
-    image: "/images/movies/senhor_da_terra.jpeg",
+    image: "/images/movies/senhor_da_terra.jpg",
   },
 ];
