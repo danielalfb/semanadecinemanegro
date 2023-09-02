@@ -11,7 +11,7 @@ import {
   O_CHAO_O_TETO,
   QUANDO_O_CORPO,
   RACISMOS_INTIMOS,
-} from "./Helpers/Constants";
+} from "../../../helpers/escrituras";
 import MovieCard from "../../../components/MovieCard";
 import Shape from "../../../components/Shape";
 
