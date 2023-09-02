@@ -31,7 +31,7 @@ export const PONTA_DE_ANZOL = [
         montagem: Higor Gomes;
         som: Cristiano Soares, Daniel Lugão;
         elenco principal: Kauane Tarcila, Juliana Floriano e Emanuele Paixão
-        empresa produtora:  Ponta de Anzol Filmes;
+        empresa produtora: Ponta de Anzol Filmes;
         contato: pontadeanzolfilmes@gmail.com
         `,
         image: "/images/movies/impermeavel.jpg",
@@ -50,7 +50,7 @@ export const PONTA_DE_ANZOL = [
         arte e figurino: Dayane Tropicaos;
         som: Flora Guerra, Pedro Mancini, Maick Hannder, Yara Torres;
         elenco principal: Arthur Diniz, João Victor;
-        empresa produtora:  Ponta de Anzol Filmes;
+        empresa produtora: Ponta de Anzol Filmes;
         contato: pontadeanzolfilmes@gmail.com
         `,
         image: "/images/movies/looping.jpg",
@@ -67,9 +67,9 @@ export const PONTA_DE_ANZOL = [
         fotografia: Higor Gomes;
         montagem: Higor Gomes;
         arte e figurino: Higor Gomes;
-        som:  Higor Gomes;
+        som: Higor Gomes;
         elenco principal: Maria Edna de Paula Gomes, Aline Gomes, Hugo Gomes, Higor Gomes, Geraldo Rocha Gomes, Fernanda Kalil, Rubem Neto;
-        empresa produtora:  Ponta de Anzol Filmes;
+        empresa produtora: Ponta de Anzol Filmes;
         contato: pontadeanzolfilmes@gmail.com
         `,
         image: "/images/movies/forrando.jpg",
@@ -85,7 +85,7 @@ export const PONTA_DE_ANZOL = [
         produção: Bruno Greco, Higor Gomes, Jacson Dias, Maick Hannder;
         fotografia: Higor Gomes;
         montagem: Higor Gomes;
-        som:  Sérgio Salum, Ramon Modenesi, Higor Gomes;
+        som: Sérgio Salum, Ramon Modenesi, Higor Gomes;
         elenco principal: Flávio Reis, Maurício Daniel, Lucas Gabriel, Rafael Souza, Marlon Braga;
         empresa produtora:  Ponta de Anzol Filmes;
         contato: pontadeanzolfilmes@gmail.com
