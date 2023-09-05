@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
 
-export default function Accordion({ title, color, children }) {
+export default function Accordion({ title, description, color, children }) {
   const [isShowing, setIsShowing] = useState(false);
 
   const toggle = () => {
@@ -18,10 +18,11 @@ export default function Accordion({ title, color, children }) {
         onClick={toggle}
         type='button'
       >
-        <span className='w-full flex justify-between' style={{ color: color }}>
+        <span className='w-full flex  justify-between' style={{ color: color }}>
           <h2>{title}</h2>
           {isShowing ? <CaretUp size={24} /> : <CaretDown size={24} />}
         </span>
+          <span>{description}</span>
       </button>
       <div className='p-1.5' style={{ display: isShowing ? "block" : "none" }}>
         {children}

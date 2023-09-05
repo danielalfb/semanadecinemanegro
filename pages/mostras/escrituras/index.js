@@ -1,17 +1,12 @@
+/* eslint-disable react/no-children-prop */
 import React from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import yourData from "../../../data/content.json";
 import Accordion from "../../../components/Accordion";
 import MoviesGroup from "../../../components/MoviesGroup";
-import {
-  CAMINHOS_QUE_TRILHAMOS,
-  CHAVAO_ABRE_PORTAS,
-  NAO_ADIANTA_TER_RESPOSTA,
-  O_CHAO_O_TETO,
-  QUANDO_O_CORPO,
-  RACISMOS_INTIMOS,
-} from "../../../helpers/escrituras";
+import * as M from "../../../helpers/escrituras";
+import * as D from "../../../helpers/descricaoMostra"
 import MovieCard from "../../../components/MovieCard";
 import Shape from "../../../components/Shape";
 
@@ -25,10 +20,11 @@ export default function escrituras() {
         <h1 className='mb-6'>CINE-ESCRITURAS PRETAS</h1>
         <Accordion
           title='QUANDO O CORPO E A PAISAGEM SE FUNDEM'
+          description={D.DESCRIPTION_QUANDO_O_CORPO}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup isBox>
-            {QUANDO_O_CORPO.map((movie) => (
+            {M.QUANDO_O_CORPO.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
@@ -40,10 +36,11 @@ export default function escrituras() {
         </Accordion>
         <Accordion
           title='NÃO ADIANTA TER RESPOSTA SE VOCÊ NÃO TEM O TEMPO'
+          description={D.DESCRIPTION_NAO_ADIANTA_TER_RESPOSTA}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup isBox>
-            {NAO_ADIANTA_TER_RESPOSTA.map((movie) => (
+            {M.NAO_ADIANTA_TER_RESPOSTA.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
@@ -55,10 +52,11 @@ export default function escrituras() {
         </Accordion>
         <Accordion
           title='O CHÃO, O TETO E SEU CONTORNO'
+          description={D.DESCRIPTION_CHAO_TETO_CONTORNO}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup isBox>
-            {O_CHAO_O_TETO.map((movie) => (
+            {M.O_CHAO_O_TETO.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
@@ -68,9 +66,12 @@ export default function escrituras() {
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion title='CHAVÃO ABRE PORTAS' color='var(--clr-blue-dark)'>
+        <Accordion 
+          title='CHAVÃO ABRE PORTAS' 
+          description={D.DESCRIPTION_CHAVAO_ABRE_PORTA}
+          color='var(--clr-blue-dark)'>
           <MoviesGroup isBox>
-            {CHAVAO_ABRE_PORTAS.map((movie) => (
+            {M.CHAVAO_ABRE_PORTAS.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
@@ -80,9 +81,12 @@ export default function escrituras() {
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion title='RACISMO ÍNTIMOS' color='var(--clr-blue-dark)'>
+        <Accordion 
+          title='RACISMO ÍNTIMOS'
+          description={D.DESCRIPTION_RACISMOS_INTIMOS}
+          color='var(--clr-blue-dark)'>
           <MoviesGroup isBox>
-            {RACISMOS_INTIMOS.map((movie) => (
+            {M.RACISMOS_INTIMOS.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
@@ -92,9 +96,12 @@ export default function escrituras() {
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion title='CAMINHOS QUE TRILHAMOS' color='var(--clr-blue-dark)'>
+        <Accordion 
+          title='CAMINHOS QUE TRILHAMOS'
+          description={D.DESCRIPTION_CAMINHOS_QUE_TRILHAMOS} 
+          color='var(--clr-blue-dark)'>
           <MoviesGroup isBox>
-            {CAMINHOS_QUE_TRILHAMOS.map((movie) => (
+            {M.CAMINHOS_QUE_TRILHAMOS.map((movie) => (
               <MovieCard
                 isBox
                 key={movie.title}
