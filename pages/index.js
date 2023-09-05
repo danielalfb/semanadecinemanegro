@@ -31,7 +31,7 @@ export default function Home() {
           className='top-0 w-full bg-top bg-cover'
           style={{
             height: "100vh",
-            backgroundImage: `url('/semana_banner_home.png')`,
+            backgroundImage: `url('/images/semana_banner_home.png')`,
           }}
         />
         <>

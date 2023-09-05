@@ -1,10 +1,10 @@
-export const IEBEJIS = [
-    {
-        title: "DIVINA",
-        titleEng: "DIVINE",
-        subtitle: "MINAS GERAIS, 2023, 20'",
-        description: `Após ficar presa do lado de fora de seu apartamento, Dona Diva, curiosa, tenta explorar um universo tão diferente do seu no apartamento ao lado, durante uma conversa com Emílio, artista drag que se apronta para mais um show na noite Belo Horizontina.`,
-        credits: `
+export const IBEJIS = [
+  {
+    title: "DIVINA",
+    titleEng: "DIVINE",
+    subtitle: "MINAS GERAIS, 2023, 20'",
+    description: `Após ficar presa do lado de fora de seu apartamento, Dona Diva, curiosa, tenta explorar um universo tão diferente do seu no apartamento ao lado, durante uma conversa com Emílio, artista drag que se apronta para mais um show na noite Belo Horizontina.`,
+    credits: `
         direção: Monike Fernandes, Misael Avelino;
         roteiro: Monike Fernandes, Misael Avelino, Samuel Fonseca;
         produção: Carol Sousa, Luisa Rabelo;
@@ -17,14 +17,14 @@ export const IEBEJIS = [
         elenco principal:  Rute Vianna, Nadja Santos;
         contato: misael.e7@gmail.com
         `,
-        image: "/images/movies/padrao.jpg",
-      },
-      {
-        title: "ENTRE MUROS",
-        titleEng: "BETWEEN WALLS",
-        subtitle: "BAHIA, 2021, 15'",
-        description: `Em suas férias escolar, José é levado por sua mãe para ajudar nas tarefas domésticas em um condomínio de luxo. Cercado pelos grandes muros, José quer brincar de bola na parte externa.`,
-        credits: `
+    image: "/images/movies/padrao.jpg",
+  },
+  {
+    title: "ENTRE MUROS",
+    titleEng: "BETWEEN WALLS",
+    subtitle: "BAHIA, 2021, 15'",
+    description: `Em suas férias escolar, José é levado por sua mãe para ajudar nas tarefas domésticas em um condomínio de luxo. Cercado pelos grandes muros, José quer brincar de bola na parte externa.`,
+    credits: `
         direção: Gleison Mota;
         roteiro: Gleison Mota, Tiago Rocha, Vitor Tavares;
         produção: Vinicius Rios, Tiago Rocha;
@@ -36,14 +36,14 @@ export const IEBEJIS = [
         empresa produtora: Satantango Filme, Butikin Filmes, Ticuna Filmes;
         contato: Gleison Mota
         `,
-        image: "/images/movies/padrao.jpg",
-      },
-      {
-        title: "ESPELHO",
-        titleEng: "MIRROR",
-        subtitle: "SERGIPE, 2022, 18",
-        description: `Esperanza vivencia uma profunda confusão interna e psicológica. Na beira do rio segue um caminho para encontrar consigo mesma e sua espiritualidade.`,
-        credits: `
+    image: "/images/movies/padrao.jpg",
+  },
+  {
+    title: "ESPELHO",
+    titleEng: "MIRROR",
+    subtitle: "SERGIPE, 2022, 18",
+    description: `Esperanza vivencia uma profunda confusão interna e psicológica. Na beira do rio segue um caminho para encontrar consigo mesma e sua espiritualidade.`,
+    credits: `
         direção: Luciana Oliveira;
         roteiro: Luciana Oliveira;
         produção: Manoela Veloso Passos, Baruch Blumberg, Gabriela Melo;
@@ -55,14 +55,14 @@ export const IEBEJIS = [
         empresa produtora: Rolimã Filmes;
         contato: rolimãfilmes@gmail.com
         `,
-        image: "/images/movies/padrao.jpg",
-      },
-      {
-        title: "EXPRESSO PARADOR",
-        titleEng: "EXPRESSO PARADOR",
-        subtitle: "RIO DE JANEIRO, 2023, 25'",
-        description: `No Rio de Janeiro, pior sistema de transporte público do mundo, Lidiane Oliveira, uma atriz negra de 30 anos, moradora de Jardim Palmares - periferia do Rio de Janeiro - cruza a cidade dentro do ônibus. Ela precisa fazer um teste para uma novela, um bico de teatro infantil no shopping e ainda estrear seu espetáculo como protagonista no lado oposto da cidade. À medida que a viagem acontece, um encontro inusitado bagunça passado, presente e futuro.`,
-        credits: `
+    image: "/images/movies/padrao.jpg",
+  },
+  {
+    title: "EXPRESSO PARADOR",
+    titleEng: "EXPRESSO PARADOR",
+    subtitle: "RIO DE JANEIRO, 2023, 25'",
+    description: `No Rio de Janeiro, pior sistema de transporte público do mundo, Lidiane Oliveira, uma atriz negra de 30 anos, moradora de Jardim Palmares - periferia do Rio de Janeiro - cruza a cidade dentro do ônibus. Ela precisa fazer um teste para uma novela, um bico de teatro infantil no shopping e ainda estrear seu espetáculo como protagonista no lado oposto da cidade. À medida que a viagem acontece, um encontro inusitado bagunça passado, presente e futuro.`,
+    credits: `
         direção: JV Santos;
         roteiro: Lidiane Oliveira, JV Santos, Phellipe Azevedo;
         produção: Wellington de Oliveira, João Pedro Zabeti, Phellipe Azevedo;
@@ -74,14 +74,14 @@ export const IEBEJIS = [
         empresa produtora: Arame Farpado Filmes + Brabíssima Produções + WDO Produções;
         contato: jvsantosfotografia@gmail.com
         `,
-        image: "/images/movies/padrao.jpg",
-      },
-      {
-        title: "JUSSARA",
-        titleEng: "JUSSARA",
-        subtitle: "BAHIA, 2023, 8'",
-        description: `Jussara é a memória viva da vila onde mora, conhecida como conselheira e contadora de histórias, encanta e envolve a todos em sua volta. Um dia se percebe cansada de carregar tantas histórias e decide viver a sua própria.`,
-        credits: `
+    image: "/images/movies/padrao.jpg",
+  },
+  {
+    title: "JUSSARA",
+    titleEng: "JUSSARA",
+    subtitle: "BAHIA, 2023, 8'",
+    description: `Jussara é a memória viva da vila onde mora, conhecida como conselheira e contadora de histórias, encanta e envolve a todos em sua volta. Um dia se percebe cansada de carregar tantas histórias e decide viver a sua própria.`,
+    credits: `
         direção: Camila Cordeiro Ribeiro;
         roteiro: Camila Cordeiro Ribeiro;
         produção: Juliana Vieira e Jéssica Maeda;
@@ -93,6 +93,6 @@ export const IEBEJIS = [
         empresa produtora: Filmes de Praia;
         contato: cameribeiro@gmail.com
         `,
-        image: "/images/movies/padrao.jpg",
-      },
-]
+    image: "/images/movies/padrao.jpg",
+  },
+];

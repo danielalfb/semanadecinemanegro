@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Popover } from "@headlessui/react";
 import { useRouter } from "next/router";
 import Button from "../Button";
+import Searchbar from "../Searchbar";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
@@ -65,6 +66,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           <img src='/images/logo.png' />
         </div>
         <div className='flex'>
+          <Searchbar />
           <Button onClick={() => router.push("/mostras")}>mostras</Button>
           <Button onClick={() => router.push("/atividades-formativas")}>
             atividades formativas
