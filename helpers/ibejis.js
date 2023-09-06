@@ -1,5 +1,24 @@
 export const IBEJIS = [
   {
+    title: "BIA DESENHA",
+    titleEng: "BIA DRAWS",
+    subtitle: "PERNAMBUCO, 2018, 112' 16 episódios'",
+    description: `Bia, 5 anos, e Raul, 6 anos, são primos. Os dois moram em casas ao redor do mesmo quintal, na periferia de uma grande cidade. Seus encontros depois da escola para brincar e desenhar se transformam sempre em grandes aventuras. A série estimula a comunicação e o afeto em uma família pouco convencional, investigando os temas que passam pela cabeça das crianças enquanto elas se expressam com letras, traços e cores.`,
+    credits: `
+        direção: Neco Tabosa;
+        roteiro:  Kalor Pacheco e Neco Tabosa;
+        produção: Nara Aragão;
+        montagem: Pedro Queiroz;
+        arte e figurino: Raul Souza;
+        som: Nicolau Domingues;
+        trilha sonora: Germano Rabello;
+        elenco principal: Júlia Pacheco, João Pedro Castro, Isaar, Arthur Canavarro;
+        empresa produtora: Carnaval Filmes, REC Produtores;
+        contato: nara@carnavalfilmes.com.br
+        `,
+    image: "/images/movies/bia.jpeg",
+  },
+  {
     title: "DIVINA",
     titleEng: "DIVINE",
     subtitle: "MINAS GERAIS, 2023, 20'",
@@ -14,10 +33,10 @@ export const IBEJIS = [
         som: Yara Tôrres;
         trilha sonora:  Mira Dançarina - Grupo Senta a Pua Gafieira;
         P. I. Tchaikovsky, Kevin MacLeod, André Santaklaus, Felix Mendelssohn, Kevin MacLeod;
-        elenco principal:  Rute Vianna, Nadja Santos;
+        elenco principal: Rute Vianna, Nadja Santos;
         contato: misael.e7@gmail.com
         `,
-    image: "/images/movies/padrao.jpg",
+    image: "/images/movies/divina.jpeg",
   },
   {
     title: "ENTRE MUROS",
@@ -36,7 +55,7 @@ export const IBEJIS = [
         empresa produtora: Satantango Filme, Butikin Filmes, Ticuna Filmes;
         contato: Gleison Mota
         `,
-    image: "/images/movies/padrao.jpg",
+    image: "/images/movies/entremuros.jpeg",
   },
   {
     title: "ESPELHO",
@@ -55,7 +74,7 @@ export const IBEJIS = [
         empresa produtora: Rolimã Filmes;
         contato: rolimãfilmes@gmail.com
         `,
-    image: "/images/movies/padrao.jpg",
+    image: "/images/movies/espelho.jpeg",
   },
   {
     title: "EXPRESSO PARADOR",
@@ -74,7 +93,7 @@ export const IBEJIS = [
         empresa produtora: Arame Farpado Filmes + Brabíssima Produções + WDO Produções;
         contato: jvsantosfotografia@gmail.com
         `,
-    image: "/images/movies/padrao.jpg",
+    image: "/images/movies/expresso.jpeg",
   },
   {
     title: "JUSSARA",
@@ -93,6 +112,6 @@ export const IBEJIS = [
         empresa produtora: Filmes de Praia;
         contato: cameribeiro@gmail.com
         `,
-    image: "/images/movies/padrao.jpg",
+    image: "/images/movies/jussara.jpeg",
   },
 ];
