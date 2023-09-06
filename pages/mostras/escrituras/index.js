@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer";
 import Accordion from "../../../components/Accordion";
 import MoviesGroup from "../../../components/MoviesGroup";
 import * as M from "../../../helpers/escrituras";
-import * as D from "../../../helpers/descricaoMostra"
+import * as D from "../../../helpers/descricaoMostra";
 import MovieCard from "../../../components/MovieCard";
 import Shape from "../../../components/Shape";
 
@@ -22,10 +22,9 @@ export default function escrituras() {
           description={D.DESCRIPTION_QUANDO_O_CORPO}
           color='var(--clr-blue-dark)'
         >
-          <MoviesGroup isBox>
+          <MoviesGroup>
             {M.QUANDO_O_CORPO.map((movie) => (
               <MovieCard
-                isBox
                 key={movie.title}
                 movie={movie}
                 color='var(--clr-blue-dark)'
@@ -38,10 +37,9 @@ export default function escrituras() {
           description={D.DESCRIPTION_NAO_ADIANTA_TER_RESPOSTA}
           color='var(--clr-blue-dark)'
         >
-          <MoviesGroup isBox>
+          <MoviesGroup>
             {M.NAO_ADIANTA_TER_RESPOSTA.map((movie) => (
               <MovieCard
-                isBox
                 key={movie.title}
                 movie={movie}
                 color='var(--clr-blue-dark)'
@@ -54,10 +52,9 @@ export default function escrituras() {
           description={D.DESCRIPTION_CHAO_TETO_CONTORNO}
           color='var(--clr-blue-dark)'
         >
-          <MoviesGroup isBox>
+          <MoviesGroup>
             {M.O_CHAO_O_TETO.map((movie) => (
               <MovieCard
-                isBox
                 key={movie.title}
                 movie={movie}
                 color='var(--clr-blue-dark)'
@@ -65,14 +62,14 @@ export default function escrituras() {
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion 
-          title='CHAVÃO ABRE PORTAS' 
+        <Accordion
+          title='CHAVÃO ABRE PORTAS'
           description={D.DESCRIPTION_CHAVAO_ABRE_PORTA}
-          color='var(--clr-blue-dark)'>
-          <MoviesGroup isBox>
+          color='var(--clr-blue-dark)'
+        >
+          <MoviesGroup>
             {M.CHAVAO_ABRE_PORTAS.map((movie) => (
               <MovieCard
-                isBox
                 key={movie.title}
                 movie={movie}
                 color='var(--clr-blue-dark)'
@@ -80,14 +77,14 @@ export default function escrituras() {
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion 
+        <Accordion
           title='RACISMO ÍNTIMOS'
           description={D.DESCRIPTION_RACISMOS_INTIMOS}
-          color='var(--clr-blue-dark)'>
-          <MoviesGroup isBox>
+          color='var(--clr-blue-dark)'
+        >
+          <MoviesGroup>
             {M.RACISMOS_INTIMOS.map((movie) => (
               <MovieCard
-                isBox
                 key={movie.title}
                 movie={movie}
                 color='var(--clr-blue-dark)'
@@ -95,14 +92,14 @@ export default function escrituras() {
             ))}
           </MoviesGroup>
         </Accordion>
-        <Accordion 
+        <Accordion
           title='CAMINHOS QUE TRILHAMOS'
-          description={D.DESCRIPTION_CAMINHOS_QUE_TRILHAMOS} 
-          color='var(--clr-blue-dark)'>
-          <MoviesGroup isBox>
+          description={D.DESCRIPTION_CAMINHOS_QUE_TRILHAMOS}
+          color='var(--clr-blue-dark)'
+        >
+          <MoviesGroup>
             {M.CAMINHOS_QUE_TRILHAMOS.map((movie) => (
               <MovieCard
-                isBox
                 key={movie.title}
                 movie={movie}
                 color='var(--clr-blue-dark)'

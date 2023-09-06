@@ -56,7 +56,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         )}
       </Popover>
       <div
-        className={`header-links font-medium m-2 hidden flex-row items-start justify-between sticky top-0 z-10 tablet:flex`}
+        className={`header-links font-medium p-2 hidden flex-row items-start justify-between top-0 z-10 tablet:flex`}
       >
         <div
           onClick={() => router.push("/")}
@@ -65,8 +65,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         >
           <img src='/images/logo.png' />
         </div>
-        <div className='flex'>
-          <Searchbar />
+        <div className='flex items-center'>
           <Button onClick={() => router.push("/mostras")}>mostras</Button>
           <Button onClick={() => router.push("/atividades-formativas")}>
             atividades formativas
@@ -76,6 +75,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           <Button onClick={() => router.push("/anteriores")}>
             edições anteriores
           </Button>
+          <Searchbar />
         </div>
       </div>
     </div>

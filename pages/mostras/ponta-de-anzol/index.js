@@ -7,7 +7,6 @@ import MovieCard from "../../../components/MovieCard";
 import MoviesGroup from "../../../components/MoviesGroup";
 import { PONTA_DE_ANZOL } from "../../../helpers/pontaDeAnzol";
 
-
 export default function pontaDeAnzol() {
   return (
     <div className='h-screen w-full relative overflow-x-hidden'>
@@ -15,17 +14,16 @@ export default function pontaDeAnzol() {
       <Shape isYellow />
       <Header />
       <div className='mt-36 p-10 w-full laptop:mt-30'>
-      <h1 className='mb-6'>PONTA DE ANZOL</h1>
-      <MoviesGroup isBox>
-            {PONTA_DE_ANZOL.map((movie) => (
-              <MovieCard
-                isBox
-                key={movie.title}
-                movie={movie}
-                color='var(--clr-blue-dark)'
-              />
-            ))}
-          </MoviesGroup>
+        <h1 className='mb-6'>PONTA DE ANZOL</h1>
+        <MoviesGroup>
+          {PONTA_DE_ANZOL.map((movie) => (
+            <MovieCard
+              key={movie.title}
+              movie={movie}
+              color='var(--clr-blue-dark)'
+            />
+          ))}
+        </MoviesGroup>
       </div>
       <Footer />
     </div>

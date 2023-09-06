@@ -14,16 +14,15 @@ export default function cinemasAfricanos() {
       <Header />
       <div className='mt-36 p-10 w-full laptop:mt-30'>
         <h1 className='mb-6'>OS CINEMAS AFRICANOS CONTAM SUAS HISTÓRIAS</h1>
-          <MoviesGroup isBox>
-            {C.CINEMAS_AFRICANOS.map((movie) => (
-              <MovieCard
-                isBox
-                key={movie.title}
-                movie={movie}
-                color='var(--clr-blue-dark)'
-              />
-            ))}
-          </MoviesGroup>
+        <MoviesGroup>
+          {C.CINEMAS_AFRICANOS.map((movie) => (
+            <MovieCard
+              key={movie.title}
+              movie={movie}
+              color='var(--clr-blue-dark)'
+            />
+          ))}
+        </MoviesGroup>
       </div>
       <Footer />
     </div>

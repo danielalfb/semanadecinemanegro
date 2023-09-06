@@ -14,10 +14,9 @@ export default function ibejis() {
       <Header />
       <div className='mt-36 p-10 w-full laptop:mt-30'>
         <h1 className='mb-6'>IBEJIS (INFANTIL)</h1>
-        <MoviesGroup isBox>
+        <MoviesGroup>
           {IBEJIS.map((movie) => (
             <MovieCard
-              isBox
               key={movie.title}
               movie={movie}
               color='var(--clr-blue-dark)'
