@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 
 import ReactPlayer from "react-player";
+import Link from "next/link";
 
 export default function Home() {
   // Ref
@@ -37,44 +38,39 @@ export default function Home() {
         <>
           {/* SOBRE */}
           <div className='p-10'>
-            <div className='w-1/2	'>
+            <div className='w-full'>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-                ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse
-                faucibus interdum posuere. Augue eget arcu dictum varius duis at
-                consectetur lorem donec. Nam at lectus urna duis convallis
-                convallis tellus id interdum. Lorem ipsum dolor sit amet
-                consectetur adipiscing elit. Scelerisque purus semper eget duis
-                at tellus. Quis enim lobortis scelerisque fermentum dui
-                faucibus. Velit laoreet id donec ultrices tincidunt arcu non
-                sodales neque. Ac auctor augue mauris augue. Vitae et leo duis
-                ut diam. In dictum non consectetur a erat nam at. Risus quis
-                varius quam quisque. Mauris sit amet massa vitae. Elit sed
-                vulputate mi sit amet mauris commodo quis imperdiet. Morbi
-                tristique senectus et netus et malesuada fames ac turpis. Elit
-                ullamcorper dignissim cras tincidunt lobortis feugiat vivamus
-                at. Integer malesuada nunc vel risus commodo viverra maecenas
-                accumsan. Dui vivamus arcu felis bibendum ut tristique.
-                Pellentesque habitant morbi tristique senectus et netus et.
+              A <i>3º Semana de Cinema Negro de Belo Horizonte</i> apresenta, de 09 a 17 de setembro de 2023, 
+              um conjunto composto por 70 filmes de cinematografias africanas, negras brasileiras e da diáspora
+              distribuídas em: <i>Cinemas Africanos contam suas histórias; 50 Anos de Touki Bouki, 
+              Celebrando o Cinema de Djibril Diop Mambéty; Cine-Escrituras Pretas; Cinema Negro e Experimental 
+              com Crystal Z Campbell; Sessão Homenagem Maria José Novais Oliveira; 5 Anos de Ponta de Anzol; e 
+              Ibejis (Infantil)</i>.
               </p>
               <p>
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames. Et netus et malesuada fames ac turpis egestas.
-                In mollis nunc sed id semper. Fringilla urna porttitor rhoncus
-                dolor purus non enim. Accumsan tortor posuere ac ut consequat.
-                Sit amet nisl suscipit adipiscing bibendum est ultricies. Metus
-                vulputate eu scelerisque felis imperdiet proin fermentum. Eget
-                gravida cum sociis natoque penatibus et. Nec feugiat nisl
-                pretium fusce id velit ut tortor pretium. Faucibus turpis in eu
-                mi bibendum neque egestas congue. Egestas sed sed risus pretium
-                quam vulputate. Vitae suscipit tellus mauris a diam maecenas sed
-                enim ut. Enim sed faucibus turpis in eu mi bibendum. In metus
-                vulputate eu scelerisque felis imperdiet proin. Odio ut sem
-                nulla pharetra diam sit amet. In nulla posuere sollicitudin
-                aliquam ultrices sagittis. Varius quam quisque id diam vel.
-                Sagittis orci a scelerisque purus semper eget.
+              O festival acontecerá de forma híbrida, presencialmente e on-line. 
+              As exibições presenciais serão realizadas no Cine Humberto Mauro/Palácio das Artes e no Cine Santa Tereza, 
+              e toda a programação é gratuita. Os filmes da mostra Cine-Escrituras Pretas estarão disponíveis nas salas de 
+              exibição e na plataforma Cine Humberto Mauro Mais (<Link passHref={true} href="https://www.cinehumbertomauromais.com"><a target="_blank" className="text-blue-300">www.cinehumbertomauromais.com</a></Link>). Nesta edição, além das 
+              sessões fílmicas, teremos conversas com convidadas e convidados internacionais, bem como debates com realizadoras 
+              e realizadores da mostra dedicada aos filmes brasileiros – todos os debates acontecerão presencialmente. 
+              Contamos, ainda, com três oficinas: &quot;Sonhando em Palavras&quot;, Escrevendo o Primeiro Longa, ministrada por 
+              Diego Paulino, realizada em parceria com a Rede de Talentos do Projeto Paradiso, através do Paradiso Multiplica 
+              (presencial); Elaboração e Produção de Projetos, ministrada por Fernanda Vidigal (on-line); 
+              Processos de Distribuição do Cinema Independente ministrada por Daniel Queiroz (híbrido).
               </p>
+              <p>
+              As obras do artista plástico Pedro Neves compõem toda identidade visual desta edição do festival. 
+              Em suas obras o artista trabalha com um repertório amplo de narrativas e de imagens que partem das 
+              manifestações culturais e dos saberes afro-brasileiros para dialogar com fontes diversas. 
+              O projeto gráfico é do nosso parceiro Marco Chagas que, a partir do desenho, pesquisa o 
+              cotidiano urbano e suas relações com o pensamento gráfico.
+              <br/>Convidamos a todas, todes e todos a acompanharem a programação.
+              </p>
+            </div>
+            <div className="flex w-full justify-start">
+            <Link passHref={true} href='https://drive.google.com/file/d/16TYH1g7TdIe1C42gw0zg46Onj_kjPqw7/view?usp=sharing'><button target='_blank' className="text-yellow-100 bg-blue-500 w-1/4 h-8 mt-6 rounded-lg uppercase font-semibold">Baixe a programação</button>
+            </Link>
             </div>
           </div>
 
