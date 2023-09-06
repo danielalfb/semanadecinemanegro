@@ -291,7 +291,7 @@ export const QUANDO_O_CORPO = [
       empresa produtora: Coletivo As Talavistas;
       contato: princeznhadapaz@gmail.com
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/queda.jpeg",
     },
     {
       title: "NA MATA SÓ TEM UM",
@@ -307,7 +307,7 @@ export const QUANDO_O_CORPO = [
       som: Ariana Nuala e biarritzzz;
       contato: ariananualaa@gmail.com
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/na_mata_so_tem_um.jpeg",
     },
     {
       title: "NOVO AYITY - NOVA TRINDADE",
@@ -326,7 +326,7 @@ export const QUANDO_O_CORPO = [
       empresa produtora: Film Ecology;
       contato: marcio@filmecology.com 
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/novo_ayity.jpeg",
     },
     {
       title: "CAIXA PRETA ",
@@ -343,7 +343,7 @@ export const QUANDO_O_CORPO = [
       empresa produtora: QTV Selo;
       contato: marianamansur@gmail.com
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/caixa_preta.jpeg",
     },
   ];
   
@@ -365,7 +365,7 @@ export const QUANDO_O_CORPO = [
       empresa produtora: Siyanda - Cinema Experimental Negro;
       contato: hugoaniculapo@gmail.com
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/no_caminho_casa.jpeg",
     },
     {
       title: "ALZIRAS",
@@ -382,7 +382,7 @@ export const QUANDO_O_CORPO = [
       elenco principal: Regiane Farias, Kairu Zuri Nonato, Mestra Dona Miúda;
       contato: helbertrodrigues01@hotmail.com 
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/alziras.jpeg",
     },
     {
       title: "DENTE",
@@ -401,7 +401,7 @@ export const QUANDO_O_CORPO = [
      elenco principal: Gheuza, Caroline Teodósio, Itioko Santiago, Eron Villar, Laís Medeiros;
      contato: ritasales393@gmail.com
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/dente.jpeg",
     },
     {
       title: "DESOVA",
@@ -418,7 +418,7 @@ export const QUANDO_O_CORPO = [
       elenco principal: Ana Cristina dos Santos, Athaylton Jorge Monteiro Belo, Diego de Lima Oliveira, Emanuelly Vitoria de Oliveira, Fábio Alves Araújo, Giovana Gomes Ferreira, Jairo dos Santos Silva, João Freire dos Santos, Joseane Martins Ferreira, José Cláudio Souza Alves, Katia Veronica da Conceição Freire, Luana Ferreira de Oliveira, Lúcia Maria Xavier de Castro, Márcia Cristina França de Albuquerque, Maria Batista da Silva, Maria Isabelly Freire dos Santos, Mayara Cristina dos Santos, Michele de Jesus, Nádia Pereira Figueiredo, Samuel Heitor dos Santos Batista, Selma Ferreira de Oliveira e Suellen Cristina dos Santos Cabral.;
       empresa produtora: Quiprocó Filmes;
       contato:  laisdantasd@gmail.com`,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/desova.jpeg",
     },
     {
       title: "MERGULHO",
@@ -435,7 +435,7 @@ export const QUANDO_O_CORPO = [
       elenco principal: Willian Costa, Lena Roque, Nill Marcondes, Ewerton Gonzaga, Cauã Trindade, Marton Olympio;
       empresa produtora: Dedalo Produções e TNM produções;
       contato: martonolympio@gmail.com`,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/mergulho.jpeg",
     },
     {
       title: "COMIGO",
@@ -454,7 +454,7 @@ export const QUANDO_O_CORPO = [
       empresa produtora: Tramoia Filmes;
       contato: d.luandealmeida@gmail.com 
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/comigo.jpeg",
     },
   ];
   
@@ -475,7 +475,7 @@ export const QUANDO_O_CORPO = [
       empresa produtora: Preta Portê Filmes;
       contato: festivais@pretaportefilmes.com.br 
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/dialogo_ruth_souza.jpeg",
     },
     {
       title: "RUMO",
@@ -496,7 +496,7 @@ export const QUANDO_O_CORPO = [
       coprodução: Vaporosa Cultural e Vertigem Audiovisual;
       contato: rumofilme@gmail.com
       `,
-      image: "/images/movies/senhor_da_terra.jpg",
+      image: "/images/movies/rumo.jpeg",
     },
   ];
   
