@@ -10,7 +10,7 @@ export default function Accordion({ title, description, color, children }) {
 
   return (
     <div
-      className='w-full mb-8 p-4 rounded-sm border border-4'
+      className='w-full mb-8 p-4 rounded-sm border-4'
       style={{ borderColor: isShowing ? "transparent" : color }}
     >
       <button

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Button from "../Button";
 
 import yourData from "../../data/content.json";
+import { InstagramLogo } from "@phosphor-icons/react";
 
 const Footer = ({}) => {
   return (
@@ -30,7 +31,7 @@ const Footer = ({}) => {
         <div className='flex flex-wrap mob:flex-nowrap link'>
           {yourData.socials.map((social, index) => (
             <Button key={index} onClick={() => window.open(social.link)}>
-            {social.title}
+             {social.title ? <InstagramLogo size={40}/> : ''}
             </Button>
           ))}
         </div>
