@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className='absolute w-full top-0'>
-      <Popover className='block items-centertablet:hidden mt-5'>
+      <Popover className='block items-center tablet:hidden mt-5'>
         {({ open }) => (
           <>
             <div className='flex items-top justify-between py-0 pr-8 laptop:p-0'>
@@ -35,7 +35,7 @@ const Header = () => {
             <Popover.Panel
               className={`absolute right-0 z-10 w-11/12 p-4 bg-slate-800 text-white shadow-md rounded-md`}
             >
-              <Searchbar />
+              <Searchbar isMobile />
 
               <Button onClick={() => router.push("/mostras")}>mostras</Button>
               <Button onClick={() => router.push("/atividades-formativas")}>
