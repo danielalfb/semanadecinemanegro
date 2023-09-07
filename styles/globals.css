@@ -141,6 +141,18 @@ h3 {
   color: var(--clr-blue-dark);
 }
 
+input.searchbarInput::placeholder {
+  color: var(--clr-blue-dark) !important;
+}
+
+input.searchbarInput:focus {
+  outline: none;
+}
+
+input.searchbarInput:focus::placeholder {
+  color: transparent !important;
+}
+
 .gradient-circle {
   position: absolute;
   pointer-events: none;

@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { ALL_MOVIES } from "../../helpers/allMovies";
 import MovieCard from "../MovieCard";
+import { MagnifyingGlass } from "@phosphor-icons/react";
 
 function Searchbar() {
   const [input, setInput] = useState("");
@@ -36,23 +37,32 @@ function Searchbar() {
   return (
     <>
       <div
-        className={
+        className={`mr-4${
           input.length >= 3
-            ? "z-20 absolute top-9 left-0 w-full transition-all px-9"
-            : ""
-        }
+            ? " z-20 absolute top-9 left-0 m-0 w-full transition-all px-9"
+            : " w-28 mob:w-full"
+        }`}
       >
-        <input
-          type='text'
-          placeholder='search'
-          value={input}
-          onChange={handleInputChange}
-          className='w-full p-1 m-1 text-sm border-transparent rounded-sm focus:border-transparent border-2	'
-          style={{
-            backgroundColor: "transparent",
-            color: "var(--clr-blue-dark)",
-          }}
-        />
+        <div className={`relative inline-flex items-center w-full`}>
+          <input
+            type='text'
+            placeholder='search'
+            value={input}
+            onChange={handleInputChange}
+            className='searchbarInput w-full h-6 p-2 text-sm border-none rounded-full'
+            style={{
+              backgroundColor: "transparent",
+              color: "var(--clr-blue-dark)",
+              border: "1px solid var(--clr-blue-dark)",
+            }}
+          />
+          <MagnifyingGlass
+            className='absolute right-2'
+            size={16}
+            weight='bold'
+            color='var(--clr-blue-dark)'
+          />
+        </div>
       </div>
       {input.length >= 3 ? (
         <div
@@ -64,7 +74,7 @@ function Searchbar() {
           }}
         >
           <div
-            className={`h-fit grid gap-4 desktop:grid-cols-${columnsNumber} laptop:grid-cols-3 tablet:grid-cols-2 mob:grid-cols-1`}
+            className={`h-fit grid gap-4 desktop:grid-cols-${columnsNumber} laptop:grid-cols-${columnsNumber} tablet:grid-cols-2 mob:grid-cols-1`}
           >
             {searchResults.map((movie) => (
               <MovieCard
