@@ -67,6 +67,26 @@
       }
     ]
   },
+  "atividades": {
+    "resumo": [
+      {
+        "id": "oficinas",
+        "type": "oficinas",
+        "name": "Oficinas",
+        "description": "Buscando continuar a se configurar também como espaço de formação, a Semana contará com três oficinas nesta edição: 'Sonhando em Palavras', Escrevendo o Primeiro Longa, ministrada por Diego Paulino realizada em parceria com a Rede de Talentos do Projeto Paradiso, através do Paradiso Multiplica; Elaboração e Produção de Projetos, ministrada por Fernanda Vidigal; Processos de Distribuição do Cinema Independente ministrada por Daniel Queiroz.",
+        "url": "/atividades-formativas/oficinas",
+        "color": "var(--clr-blue-dark)"
+      },
+      {
+        "id": "debates",
+        "type": "debates",
+        "name": "Debates",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "url": "/atividades-formativas/debates",
+        "color": "var(--clr-yellow-light)"
+      }
+    ]
+  },
   "socials": [
     {
       "id": "1",

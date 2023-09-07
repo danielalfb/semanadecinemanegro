@@ -8,7 +8,7 @@ export default function mostras() {
     <div className='h-screen w-full relative overflow-x-hidden'>
       <Header />
       <div className='mt-36 p-10 w-full laptop:mt-30'>
-        <ContentMenu />
+        <ContentMenu tipo='MOSTRAS'/>
       </div>
       <Footer />
     </div>
