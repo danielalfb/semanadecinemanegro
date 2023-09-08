@@ -10,7 +10,7 @@ export const DJIBRIL = [
             direção: Djibril Diop Mambéty;
             contato: mambety@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/toukibouk.jpeg",
       },
       {
         title: "HIENAS",
@@ -22,7 +22,7 @@ export const DJIBRIL = [
             direção: Djibril Diop Mambéty;
             contato: mambety@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/hienas.jpeg",
       },
       {
         title: "A PEQUENA VENDEDORA DE SOL",
@@ -33,7 +33,7 @@ export const DJIBRIL = [
         credits:`
             direção: Djibril Diop Mambéty;
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/la_petite.jpeg",
       },
       {
         title: "O FRANCO",
@@ -44,7 +44,7 @@ export const DJIBRIL = [
         credits:`
             direção: Djibril Diop Mambéty;
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/le_franc.jpeg",
       },
       {
         title: "VAMOS CONVERSAR, AVÓ",
@@ -59,7 +59,7 @@ export const DJIBRIL = [
             direção: Djibril Diop Mambéty;
             contato: meier@princefilm.ch
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/parlons.jpeg",
       },
       {
         title: "NINKI NANKA, O PRÍNCIPE DE COLOBANE",
@@ -71,6 +71,6 @@ export const DJIBRIL = [
             direção: Laurence Gavron;
             empresa produtora: Eldorado films
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/ninki.jpeg",
       },
 ]

@@ -17,7 +17,7 @@ export const CINEMAS_AFRICANOS = [
             empresa produtora: JPL Productions, L'image d'après;
             contato: irene@urbangroup.biz
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/au_cimetiere.jpeg",
       },
       {
         title: "CAMÉRA D'AFRIQUE",
@@ -28,7 +28,7 @@ export const CINEMAS_AFRICANOS = [
             direção: Férid Boughedir ;
             empresa produtora: Ministère de la Coopération, Ministère des affaires etrangères, Mae, La saptec, Boughedir férid
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/camera.jpeg",
       },
       {
         title: "CEDDO MAKING OF",
@@ -40,7 +40,7 @@ export const CINEMAS_AFRICANOS = [
             direção: Paulin Soumanou Vieyra ;
             contato: psv.films@gmail.com/info@africanfilmny.org
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/ceddo.jpeg",
       },
       {
         title: "GERAÇÃO DE CABEÇA DE COCO",
@@ -59,7 +59,7 @@ export const CINEMAS_AFRICANOS = [
             empresa produtora: Ajímátí Films;
             contato: contact@ajimatifilms.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/coconut.jpeg",
       },
       {
         title: "DEZ MIL ANOS DE CINEMA",
@@ -71,7 +71,7 @@ export const CINEMAS_AFRICANOS = [
             direção: Balufu Bakupa-Kanyinda;
             contato: bakupa.kanyinda@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/dix_mille.jpeg",
       },
       {
         title: "O TÁXI, O CINEMA E EU",
@@ -91,7 +91,7 @@ export const CINEMAS_AFRICANOS = [
             empresa produtora: Generation Films/908 Video, Ds Productions;
             contato: zampest@yahoo.fr
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/le_taxi.jpeg",
       },
       {
         title: "SEMBENE – O FAZER DO CINEMA AFRICANO",
@@ -103,6 +103,6 @@ export const CINEMAS_AFRICANOS = [
             direção: Manthia Diawara, Ngugi Wa Thiong'o;
             contato: maumaus@maumaus.org
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/african_cinema.jpeg",
       },
 ]

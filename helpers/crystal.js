@@ -10,7 +10,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/dark_love.jpeg",
       },
       {
         title: "UMA MEDITAÇÃO SOBRE A NATUREZA NA AUSÊNCIA DE UM ECLIPSE",
@@ -22,7 +22,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/meditation.jpeg",
       },
       {
         title: "MOEDA",
@@ -34,7 +34,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/currency.jpeg",
       },
       {
         title: "VOO",
@@ -46,7 +46,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/flight.jpeg",
       },
       {
         title: "FUTUROS PARA FALHAS",
@@ -58,7 +58,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/futures.jpeg",
       },
       {
         title: "GO-RILLA SIGNIFICA GUERRA",
@@ -70,7 +70,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/gorilla.jpeg",
       },
       {
         title: "A CAMINHO DA LUA, DESCOBRIMOS A TERRA",
@@ -82,7 +82,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/way_moon.jpeg",
       },
       {
         title: "REVOLVER",
@@ -94,7 +94,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/revolver.jpeg",
       },
       {
         title: "VISOR",
@@ -106,7 +106,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/view.jpeg",
       },
       {
         title: "TESTEMUNHA",
@@ -118,7 +118,7 @@ export const CRYSTAL = [
             direção: Crystal Z Campbell;
             contato: crystalzcampbell@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/witness.jpeg",
       },
 ]
 

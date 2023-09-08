@@ -17,7 +17,7 @@ export const CINEMAS_CARIBE = [
             empresa produtora: SaNoSi Productions;
             contato: festivals@sanosi-productions.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/dancing.jpeg",
       },
       {
         title: "MADAME PIPI",
@@ -33,7 +33,7 @@ export const CINEMAS_CARIBE = [
             empresa produtora: IF/Then Shorts;
             contato: rachelle.salnave@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/madame.jpeg",
       },
       {
         title: "AGWE",
@@ -52,7 +52,7 @@ export const CINEMAS_CARIBE = [
             elenco principal: Mackenson Bijou, Jean Ophelson Milhomme, Fabiola Remy, Etienne Saint Fleur;
             contato: suffrensamuel@gmail.com/ kitfilmshaiti@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/agwe.jpeg",
       },
       {
         title: "O REI NÃO É MEU PRIMO",
@@ -73,6 +73,6 @@ export const CINEMAS_CARIBE = [
             empresa produtora: Annabelle Aventurin;
             contato: annabelleaventurin@gmail.com
             `,
-        image: "/images/movies/padrao.jpg",
+        image: "/images/movies/le_roi.jpeg",
       },
 ]
