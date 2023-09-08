@@ -5,7 +5,6 @@ import Footer from "../../../components/Footer";
 import Accordion from "../../../components/Accordion";
 import MoviesGroup from "../../../components/MoviesGroup";
 import * as M from "../../../helpers/escrituras";
-import * as D from "../../../helpers/descricaoMostra";
 import MovieCard from "../../../components/MovieCard";
 import Shape from "../../../components/Shape";
 
@@ -19,7 +18,6 @@ export default function escrituras() {
         <h1 className='mb-6'>CINE-ESCRITURAS PRETAS</h1>
         <Accordion
           title='QUANDO O CORPO E A PAISAGEM SE FUNDEM'
-          description={D.DESCRIPTION_QUANDO_O_CORPO}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup>
@@ -34,7 +32,6 @@ export default function escrituras() {
         </Accordion>
         <Accordion
           title='NÃO ADIANTA TER RESPOSTA SE VOCÊ NÃO TEM O TEMPO'
-          description={D.DESCRIPTION_NAO_ADIANTA_TER_RESPOSTA}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup>
@@ -49,7 +46,6 @@ export default function escrituras() {
         </Accordion>
         <Accordion
           title='O CHÃO, O TETO E SEU CONTORNO'
-          description={D.DESCRIPTION_CHAO_TETO_CONTORNO}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup>
@@ -64,7 +60,6 @@ export default function escrituras() {
         </Accordion>
         <Accordion
           title='CHAVÃO ABRE PORTAS'
-          description={D.DESCRIPTION_CHAVAO_ABRE_PORTA}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup>
@@ -79,7 +74,6 @@ export default function escrituras() {
         </Accordion>
         <Accordion
           title='RACISMO ÍNTIMOS'
-          description={D.DESCRIPTION_RACISMOS_INTIMOS}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup>
@@ -94,7 +88,6 @@ export default function escrituras() {
         </Accordion>
         <Accordion
           title='CAMINHOS QUE TRILHAMOS'
-          description={D.DESCRIPTION_CAMINHOS_QUE_TRILHAMOS}
           color='var(--clr-blue-dark)'
         >
           <MoviesGroup>
