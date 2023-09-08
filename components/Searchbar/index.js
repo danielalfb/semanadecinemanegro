@@ -49,7 +49,7 @@ function Searchbar({ isMobile }) {
         <div className={`relative inline-flex items-center w-full`}>
           <input
             type='text'
-            placeholder='search'
+            placeholder='Pesquisar'
             value={input}
             onChange={handleInputChange}
             className='searchbarInput w-full h-6 p-2 text-sm border-none rounded-full'
