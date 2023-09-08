@@ -26,6 +26,15 @@ export default function creditos() {
                 <span className={`text-xs`}>{item.en}</span>
                 <span className={`text-xs`}>{item.name}</span>
                 <span className={`text-xs`}>{item.additional}</span>
+                {item.subItems
+                  ? item.subItems.map((subItem, index) => (
+                      <>
+                        <span className={`text-sm`}>{subItem.pt}</span>
+                        <span className={`text-xs`}>{subItem.en}</span>
+                        <span className={`text-xs  mb-4`}>{subItem.name}</span>
+                      </>
+                    ))
+                  : null}
               </div>
             </div>
           ))}

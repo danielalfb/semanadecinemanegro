@@ -31,74 +31,77 @@ export const CREDITS = [
   {
     en: "Curators",
     pt: "Curadorias",
-    name: "",
+    subItems: [
+      {
+        en: "Tribute to Maria José Novais Oliveira session",
+        pt: "Tributo à sessão de Maria José Novais Oliveira",
+        name: "Maria José Novais Oliveira",
+      },
+      {
+        en: "Black Film-Writings",
+        pt: "Cine-Escrituras Pretas",
+        name: "Ibejis (Children’s Section)",
+        additional: "Cecília Godoi, Rayanne Layssa",
+      },
+      {
+        en: "African Cinemas Tell Their Stories",
+        pt: "Cinemas Africanos Contam Suas Histórias",
+      },
+      {
+        en: "Black and Experimental Cinema with Crystal Z Campbell",
+        pt: "Cinema Negro e Experimental com Crystal Z Campbell",
+      },
+      {
+        en: "Caribbean Cinemas Today",
+        pt: "Os Cinemas do Caribe Hoje",
+      },
+      {
+        en: "50 Years of Touki Bouki, Celebrating the Cinema of Djibril Diop Mambéty",
+        pt: "50 Anos de Touki Bouki, Celebrando o Cinema de Djibril Diop Mambéty",
+        name: "Janaína Oliveira, Gabriel Martins, Vanessa Santos",
+      },
+    ],
   },
-  {
-    en: "Tribute to Maria José Novais Oliveira session",
-    pt: "Tributo à sessão de Maria José Novais Oliveira",
-    name: "Maria José Novais Oliveira",
-  },
-  {
-    en: "Black Film-Writings",
-    pt: "Cine-Escrituras Pretas",
-    name: "Ibejis (Children’s Section)",
-    additional: "Cecília Godoi, Rayanne Layssa",
-  },
-  {
-    en: "African Cinemas Tell Their Stories",
-    pt: "Cinemas Africanos Contam Suas Histórias",
-    name: "",
-  },
-  {
-    en: "Black and Experimental Cinema with Crystal Z Campbell",
-    pt: "Cinema Negro e Experimental com Crystal Z Campbell",
-    name: "",
-  },
-  {
-    en: "Caribbean Cinemas Today",
-    pt: "Os Cinemas do Caribe Hoje",
-    name: "",
-  },
-  {
-    en: "50 Years of Touki Bouki, Celebrating the Cinema of Djibril Diop Mambéty",
-    pt: "50 Anos de Touki Bouki, Celebrando o Cinema de Djibril Diop Mambéty",
-    name: "Janaína Oliveira, Gabriel Martins, Vanessa Santos",
-  },
+
   {
     en: "Film Copies Producer",
     pt: "Produção de Cópias",
-    name: "",
+    subItems: [
+      {
+        en: "International Sections",
+        pt: "Mostras Internacionais",
+        name: "Matheus Pereira",
+      },
+      {
+        en: "Black Film-Writings",
+        pt: "Cine Escrituras Pretas",
+        name: "Elaine do Carmo",
+      },
+    ],
   },
-  {
-    en: "International Sections",
-    pt: "Mostras Internacionais",
-    name: "Matheus Pereira",
-  },
-  {
-    en: "Black Film-Writings",
-    pt: "Cine Escrituras Pretas",
-    name: "Elaine do Carmo",
-  },
+
   {
     en: "Training Activities",
     pt: "Atividades Formativas",
-    name: "",
+    subItems: [
+      {
+        en: "Workshop: 'Dreaming in Words', Writing the First Feature Film",
+        pt: "Oficina: “Sonhando em Palavras”, Escrevendo o Primeiro Longa",
+        name: "Diego Paulino",
+      },
+      {
+        en: "Workshop: Project Development and Production",
+        pt: "Oficina: Elaboração e Produção de Projetos",
+        name: "Fernanda Vidigal",
+      },
+      {
+        en: "Workshop: Distribution Processes for Independent Cinema",
+        pt: "Oficina: Processos de Distribuição do Cinema Independente",
+        name: "Daniel Queiroz",
+      },
+    ],
   },
-  {
-    en: "Workshop: 'Dreaming in Words', Writing the First Feature Film",
-    pt: "Oficina: “Sonhando em Palavras”, Escrevendo o Primeiro Longa",
-    name: "Diego Paulino",
-  },
-  {
-    en: "Workshop: Project Development and Production",
-    pt: "Oficina: Elaboração e Produção de Projetos",
-    name: "Fernanda Vidigal",
-  },
-  {
-    en: "Workshop: Distribution Processes for Independent Cinema",
-    pt: "Oficina: Processos de Distribuição do Cinema Independente",
-    name: "Daniel Queiroz",
-  },
+
   {
     en: "Arts",
     pt: "Artes",

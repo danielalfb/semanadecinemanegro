@@ -8,7 +8,8 @@ export default function homenagem() {
     <div className='h-screen w-full'>
       <Header />
       <div className='mt-36 p-10 w-full laptop:mt-30'>
-        <p>ok</p>
+        <h1 className='mb-6'>HOMENAGEM - MARIA JOSÉ NOVAIS OLIVEIRA</h1>
+        <h2>EM BREVE</h2>{" "}
       </div>
       <Footer />
     </div>

@@ -10,7 +10,7 @@ export default function ItemCard({ color, name, description, url }) {
       style={{ background: color, color: "var(--clr-white)" }}
       onClick={() => router.push(`/${url}`)}
     >
-      <h2>{name}</h2>
+      <h2 className='uppercase'>{name}</h2>
       <span className='text-sm'>{description}</span>
     </div>
   );
