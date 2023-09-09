@@ -5,7 +5,7 @@
         "id": "homenagem",
         "type": "mostra",
         "name": "HOMENAGEM - MARIA JOSÉ NOVAIS OLIVEIRA",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "description": "",
         "url": "/mostras/homenagem",
         "color": "var(--clr-blue-dark)"
       },
@@ -61,7 +61,7 @@
         "id": "ponta-de-anzol",
         "type": "mostra",
         "name": "5 ANOS DE PONTA DE ANZOL",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "description": "",
         "url": "/mostras/ponta-de-anzol",
         "color": "var(--clr-yellow-light)"
       }
@@ -81,7 +81,7 @@
         "id": "debates",
         "type": "debates",
         "name": "Debates",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Etiam non quam lacus suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis at consectetur lorem donec.",
+        "description": "",
         "url": "/atividades-formativas/debates",
         "color": "var(--clr-yellow-light)"
       }
