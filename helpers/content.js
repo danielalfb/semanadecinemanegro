@@ -98,15 +98,15 @@ A Ponta de Anzol Filmes é destaque nacional com seus curtas-metragens com passa
     //   url: "/atividades-formativas/debates",
     //   color: "var(--clr-yellow-light)",
     // },
-    // {
-    //   id: "politicas",
-    //   type: "politicas",
-    //   name: "Políticas do Olhar",
-    //   description:
-    //     "A 3ª edição da SCNBH, em parceria com o FICINE, realiza em 2023 o Políticas do Olhar – Diálogos sobre Curadoria e Descolonização. O Políticas é uma série de conversas ao vivo com curadores de cinema da África e das diásporas, criada por Janaína Oliveira em 2019. O Políticas do Olhar parte da constatação de que nos últimos anos, os debates sobre curadoria em cinema têm se tornado cada vez mais frequentes nos festivais do Brasil e do mundo. No centro deste movimento está a compreensão de que as curadorias, para além das dimensões artísticas e criativas, são também lugares de exercício de poder, impactando diretamente na formação das plateias e no universo da crítica cinematográfica. Ao conversar com curadores negres, negras e negros da África e da diáspora, sobre suas trajetórias e propostas curatoriais, a série pretende não só expor os meandros diversos imbricados no trabalho de curadoria como também inspirar novas gerações de amantes de cinema que aspiram se dedicar a esta atividade. O Políticas busca destacar iniciativas que apontem para uma cultura fílmica diversa e não-hegemônica que emergem a partir do momento que outras presenças ocupam o lugar de curadoria. Na edição que acontece na Semana, o Políticas conversa com a cineasta e curadora Annabelle Aventurin.",
-    //   url: "/atividades-formativas/debates",
-    //   color: "var(--clr-green-light)",
-    // },
+    {
+      id: "politicas",
+      type: "politicas",
+      name: "Políticas do Olhar",
+      description:
+        "A 3ª edição da SCNBH, em parceria com o FICINE, realiza em 2023 o Políticas do Olhar – Diálogos sobre Curadoria e Descolonização. O Políticas é uma série de conversas ao vivo com curadores de cinema da África e das diásporas, criada por Janaína Oliveira em 2019. O Políticas do Olhar parte da constatação de que nos últimos anos, os debates sobre curadoria em cinema têm se tornado cada vez mais frequentes nos festivais do Brasil e do mundo. No centro deste movimento está a compreensão de que as curadorias, para além das dimensões artísticas e criativas, são também lugares de exercício de poder, impactando diretamente na formação das plateias e no universo da crítica cinematográfica. Ao conversar com curadores negres, negras e negros da África e da diáspora, sobre suas trajetórias e propostas curatoriais, a série pretende não só expor os meandros diversos imbricados no trabalho de curadoria como também inspirar novas gerações de amantes de cinema que aspiram se dedicar a esta atividade. O Políticas busca destacar iniciativas que apontem para uma cultura fílmica diversa e não-hegemônica que emergem a partir do momento que outras presenças ocupam o lugar de curadoria. Na edição que acontece na Semana, o Políticas conversa com a cineasta e curadora Annabelle Aventurin.",
+      url: "/atividades-formativas/politicas",
+      color: "var(--clr-green-light)",
+    },
   ],
   socials: [
     {
