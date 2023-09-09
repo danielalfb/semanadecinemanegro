@@ -11,7 +11,7 @@ export default function atividadesFormativas() {
     <div className='h-screen w-full relative overflow-x-hidden'>
       <Header />
       <div className='mt-36 p-10 w-full laptop:mt-30'>
-      <div className="flex w-full justify-between items-center mb-6">
+      <div className="flex w-full desktop:justify-between desktop:flex-row desktop:items-center mb-6 mob:flex mob:flex-col mob:items-start">
           <h1 className='mb-6'>ATIVIDADES FORMATIVAS</h1>
           <Link
               passHref={true}
