@@ -52,18 +52,22 @@ function Searchbar({ isMobile }) {
             placeholder='Pesquisar'
             value={input}
             onChange={handleInputChange}
-            className='searchbarInput w-full h-6 p-2 text-sm border-none rounded-full'
+            className={`searchbarInput ${
+              isMobile ? "searchbarInputMob" : ""
+            } w-full h-6 p-2 text-sm border-none rounded-full`}
             style={{
               backgroundColor: "transparent",
-              color: "var(--clr-blue-dark)",
-              border: "1px solid var(--clr-blue-dark)",
+              color: !isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)",
+              border: `1px solid ${
+                !isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)"
+              }`,
             }}
           />
           <MagnifyingGlass
             className='absolute right-2'
             size={16}
             weight='bold'
-            color='var(--clr-blue-dark)'
+            color={!isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)"}
           />
         </div>
       </div>

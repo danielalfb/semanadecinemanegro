@@ -148,6 +148,10 @@ input.searchbarInput::placeholder {
   color: var(--clr-blue-dark) !important;
 }
 
+input.searchbarInput.searchbarInputMob::placeholder {
+  color: var(--clr-blue-white) !important;
+}
+
 input.searchbarInput:focus {
   outline: none;
 }
