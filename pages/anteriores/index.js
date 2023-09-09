@@ -3,7 +3,6 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Shape from "../../components/Shape";
 import Link from "next/link";
-import Button from "../../components/Button";
 
 export default function anteriores() {
   return (
@@ -20,12 +19,12 @@ export default function anteriores() {
               passHref={true}
               href='https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing'
             >
-              <button
-                onClick='_blank'
+              <a
+                target='_blank'
                 className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
               >
                 Baixar catálogo
-              </button>
+              </a>
             </Link>
           </div>
           <p className='font-sans'>
@@ -77,12 +76,12 @@ export default function anteriores() {
               passHref={true}
               href='https://drive.google.com/file/d/1huRBFPlwEs68lvV7kPxI_mX0d3deJ4L-/view?usp=sharing'
             >
-              <button
+              <a
                 target='_blank'
-                className='text-blue-500 bg-transparent text-sm p-2 border border-2 rounded-lg uppercase font-bold hover:shadow-sm'
+                className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
               >
                 Baixar catálogo
-              </button>
+              </a>
             </Link>
           </div>
           <p>

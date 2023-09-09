@@ -1,9 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Button from "../Button";
-
-import yourData from "../../data/content.json";
 import { EnvelopeSimple, InstagramLogo, Phone } from "@phosphor-icons/react";
+import { SITE_CONTENT } from "../../helpers/content";
 
 const Footer = () => {
   return (
@@ -39,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='flex flex-wrap mob:flex-nowrap link'>
-          {yourData.socials.map((social, index) => (
+          {SITE_CONTENT.socials.map((social, index) => (
             <Button key={index} onClick={() => window.open(social.link)}>
               {social.title ? <InstagramLogo size={32} /> : ""}
             </Button>

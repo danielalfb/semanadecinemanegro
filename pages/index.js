@@ -49,11 +49,10 @@ export default function Home() {
                 Cine Humberto Mauro Mais (
                 <Link
                   passHref={true}
-                  href='https://www.cinehumbertomauromais.com'
+                  target='_blank'
+                  href='https://www.cinehumbertomauromais.com/#semana-cinema-negro-bh/#semana-cinema-negro-bh/#semana-cinema-negro-bh'
                 >
-                  <a target='_blank' className='text-blue-100'>
-                    www.cinehumbertomauromais.com
-                  </a>
+                  <a className='text-blue-100'>www.cinehumbertomauromais.com</a>
                 </Link>
                 ). Nesta edição, além das sessões fílmicas, teremos conversas
                 com convidadas e convidados internacionais, bem como debates com
@@ -80,16 +79,31 @@ export default function Home() {
                 Convidamos a todas, todes e todos a acompanharem a programação.
               </p>
             </div>
-            <div className='flex w-full justify-between items-center flex-wrap z-10 mob:gap-8'>
-              <Link
-                passHref={true}
-                target='_blank'
-                href='https://drive.google.com/file/d/16TYH1g7TdIe1C42gw0zg46Onj_kjPqw7/view?usp=sharing'
-              >
-                <button className='text-yellow-100 bg-transparent mt-6bg-transparent p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'>
-                  Baixe a programação
-                </button>
-              </Link>
+            <div className='flex w-full justify-between items-center flex-wrap z-10 mob:gap-8 mt-6'>
+              <div className='flex items-center flex-wrap gap-2 z-10'>
+                <Link
+                  passHref={true}
+                  href='https://drive.google.com/file/d/16TYH1g7TdIe1C42gw0zg46Onj_kjPqw7/view?usp=sharing'
+                >
+                  <a
+                    target='_blank'
+                    className='text-yellow-100 bg-transparent mt-6 bg-transparent p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
+                  >
+                    Baixe a programação
+                  </a>
+                </Link>
+                <Link
+                  passHref={true}
+                  href='https://www.cinehumbertomauromais.com/#semana-cinema-negro-bh'
+                >
+                  <a
+                    target='_blank'
+                    className='text-yellow-100 bg-transparent mt-6 bg-transparent p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
+                  >
+                    ASSISTA AOS FILMES
+                  </a>
+                </Link>
+              </div>
               <div className='flex flex-col text-yellow-100 z-10'>
                 <span className='text-7xl font-bold leading-10'>9—17</span>
                 <span className='text-3xl'>SETEMBRO</span>
