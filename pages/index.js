@@ -96,14 +96,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* VINHETA */}
-          {/* <div className='w-full laptop:mt-30 p-2 laptop:p-0'>
+          <div className='w-full laptop:mt-30 p-2 laptop:p-0'>
             <ReactPlayer
-              url='https://www.youtube.com/watch?v=K7xzmkpwNoA'
+              url='https://www.youtube.com/watch?v=dPOWUaENIOY'
               width='100%'
             />
-          </div> */}
+          </div>
         </>
         <Footer />
       </div>

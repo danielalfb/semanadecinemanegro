@@ -22,7 +22,7 @@ export const CINEMAS_CARIBE = [
       {
         title: "MADAME PIPI",
         titleEng: "MADAME PIPI",
-        subtitle: "HAITI/EUA, 2021, 25'",
+        subtitle: "USA/HAITI, 2021, 25'",
         description: `Madame Pipi acompanha a vida de funcionários de banheiro haitianos que trabalham em casas noturnas em Miami. Apesar do aumento do custo de vida e agora da incerteza, em função da COVID-19, em relação à vida noturna, seus ganhos provenientes de gorjetas contribuem para mais de um terço do PIB no Haiti.`,
         descriptionEng: `Madame Pipi follows the lives of Haitian Female bathroom attendants working in the nightclubs in Miami. Relatively invisible, underpaid and under-appreciated, their stories leave behind a journey of triumph as they massage the patron's temperaments for tips. Despite the rising cost of living and now the uncertainty of COVID-19 shutting down nightlife, their remittances given through tips coupled with the larger contribution from the Haitian Diaspora fuels more than one third of the GDP in Haiti.`,
         credits:`

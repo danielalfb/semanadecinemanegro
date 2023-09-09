@@ -42,7 +42,7 @@ const Header = () => {
                 atividades formativas
               </Button>
               {/* <Button onClick={() => router.push("/catalogo")}>catalogo</Button> */}
-              <Button onClick={() => router.push("/creditos")}>créditos</Button>
+              {/* <Button onClick={() => router.push("/creditos")}>créditos</Button> */}
               <Button onClick={() => router.push("/anteriores")}>
                 edições anteriores
               </Button>
@@ -67,7 +67,7 @@ const Header = () => {
             atividades formativas
           </Button>
           {/* <Button onClick={() => router.push("/catalogo")}>catalogo</Button> */}
-          <Button onClick={() => router.push("/creditos")}>créditos</Button>
+          {/* <Button onClick={() => router.push("/creditos")}>créditos</Button> */}
           <Button onClick={() => router.push("/anteriores")}>
             edições anteriores
           </Button>
