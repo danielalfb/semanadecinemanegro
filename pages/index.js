@@ -23,7 +23,7 @@ export default function Home() {
         />
         <>
           <p className='absolute bottom-6 right-0 bg-blue-500 text-white p-2 text-xs'>
-            VOCÊS, por Pedro Neve
+            VOCÊS, por Pedro Neves
           </p>
           {/* SOBRE */}
           <div className='p-10 bg-blue-500 relative'>
