@@ -1,7 +1,16 @@
 import React, { useMemo } from "react";
 
 export default function MovieCard({ movie, color }) {
-  const { title, titleEng, subtitle, subtitle2, description, credits, image, image2 } = movie;
+  const {
+    title,
+    titleEng,
+    subtitle,
+    subtitle2,
+    description,
+    credits,
+    image,
+    image2,
+  } = movie;
 
   const creditsArr = useMemo(() => credits.split(";"), [credits]);
 
@@ -10,15 +19,17 @@ export default function MovieCard({ movie, color }) {
       className='flex flex-col gap-1 rounded-sm border-8'
       style={{ borderColor: color }}
     >
-      <div className={`${image2 ? 'flex' : ''}`}>
-      <div
-        className='w-full bg-center bg-cover'
-        style={{ height: "12rem", backgroundImage: `url('${image}')` }}
-      />
-       <div
-        className='w-full bg-center bg-cover'
-        style={{ height: "12rem", backgroundImage: `url('${image2}')` }}
-      />
+      <div className={`${image2 ? "flex" : ""}`}>
+        <div
+          className='w-full bg-center bg-cover'
+          style={{ height: "12rem", backgroundImage: `url('${image}')` }}
+        />
+        {image2 ? (
+          <div
+            className='w-full bg-center bg-cover'
+            style={{ height: "12rem", backgroundImage: `url('${image2}')` }}
+          />
+        ) : null}
       </div>
       <div className=' flex flex-col p-4'>
         <div className='flex flex-col mb-1'>
