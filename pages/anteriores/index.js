@@ -72,17 +72,23 @@ export default function anteriores() {
         <div className='flex flex-col w-full mb-6 p-4 rounded-sm border-4'>
           <div className='flex w-full justify-between items-center mb-6'>
             <h2>SCNBH&apos;22</h2>
-            <Link
-              passHref={true}
-              href='https://drive.google.com/file/d/1huRBFPlwEs68lvV7kPxI_mX0d3deJ4L-/view?usp=sharing'
+            <a
+              target='_blank'
+              href="/catalogo_2_edicao.pdf"
+              rel="noopener noreferrer"
+              download
+              className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
             >
-              <a
-                target='_blank'
-                className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
-              >
-                Baixar catálogo
-              </a>
-            </Link>
+              Baixar catálogo
+            </a>
+            {/* <Link
+              href='/files/catalogo_2_edicao.pdf'
+              locale={false}
+              rel="noopener noreferrer"
+              target="_blank"
+              download="files/catalogo_2_edicao.pdf"
+            >
+            </Link> */}
           </div>
           <p>
             A 2ª edição da Semana de Cinema Negro de Belo Horizonte aconteceu

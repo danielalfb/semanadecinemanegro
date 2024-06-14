@@ -66,7 +66,7 @@ const Header = () => {
           <Button onClick={() => router.push("/atividades-formativas")}>
             atividades formativas
           </Button>
-          {/* <Button onClick={() => router.push("/catalogo")}>catalogo</Button> */}
+          {/* <Button onClick={() => router.push("/catalogo")}>catálogo</Button> */}
           {/* <Button onClick={() => router.push("/creditos")}>créditos</Button> */}
           <Button onClick={() => router.push("/anteriores")}>
             edições anteriores
