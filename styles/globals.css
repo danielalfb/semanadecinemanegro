@@ -5,84 +5,24 @@
 @import "./markdown.css";
 
 @font-face {
-  font-family: "Epilogue";
+  font-family: "Broke";
   src:
-    url("/Epilogue/Epilogue-Bold.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Bold.woff") format("woff");
+    url("/fonts/BrokeFat-Black.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Epilogue";
+  font-family: "Amiamie";
   src:
-    url("/Epilogue/Epilogue-Light.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-ExtraLight.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-Medium.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-Regular.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Regular.woff") format("woff");
+    url("/fonts/Amiamie-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-SemiBold.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-Thin.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-Italic.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
 
 :root {
   --clr-white: #fffdf0;
@@ -97,7 +37,12 @@
   --clr-green-light: #6aa924;
   --clr-yellow-dark: #f29f05;
   --clr-yellow-light: #f2cb05;
+  --clr-purple-light: #617edd;
+  --clr-off-white: #faf8f0;
+  --clr-off-white-100: #f3ede0;
+  --clr-olive: #bed992;
 }
+
 html {
   overflow-x: hidden;
 }
@@ -130,9 +75,29 @@ h3 {
   font-weight: 600;
 }
 
+.temp-page {
+  padding: 0 50px;
+
+  span {
+    display: flex;
+    width: 100px;
+    font-family: "Broke";
+    font-size: 100px;
+    line-height: initial;
+    color: var(--clr-off-white-100);
+  }
+
+  .more-info {
+    font-family: "Amiamie";
+    font-size: 24px;
+    color: var(--clr-off-white);
+  }
+}
+
 .home-about {
   background-color: var(--clr-green) !important;
 }
+
 .shadow-title {
   color: transparent;
   -webkit-text-stroke: 2px var(--clr-blue-dark);
@@ -169,12 +134,11 @@ input.searchbarInput:focus::placeholder {
   width: 100vw;
   opacity: 0.5;
   filter: blur(40px);
-  background: radial-gradient(
-    circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(248, 107, 223, 1) 0%,
+      rgba(107, 107, 248, 0.8) 100%);
 }
+
 .gradient-circle-bottom {
   position: absolute;
   pointer-events: none;
@@ -184,11 +148,9 @@ input.searchbarInput:focus::placeholder {
   width: 100vw;
   opacity: 0.5;
   filter: blur(40px);
-  background: radial-gradient(
-    circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(248, 107, 223, 1) 0%,
+      rgba(107, 107, 248, 0.8) 100%);
 }
 
 .gradient-shadow:hover::before {

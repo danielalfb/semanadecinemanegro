@@ -25,10 +25,12 @@ module.exports = {
       "green-100": "#6AA924",
       "yellow-500": "#F29F05",
       "yellow-100": "#F2CB05",
+      "purple-500": "#617EDD",
+      "olive-100": "#BED992",
       "slate-800": "rgb(30 41 59)",
     },
     fontFamily: {
-      sans: ["Epilogue, sans-serif"],
+      sans: ["Broke, sans - serif"],
     },
     extend: {
       transitionProperty: {
