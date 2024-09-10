@@ -49,14 +49,15 @@ html {
 
 body {
   overflow-x: hidden;
-  color: var(--clr-black);
-  background-color: var(--clr-white);
+  font-family: "Amiamie";
+
+
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Epilogue";
+  font-family: "Broke";
 }
 
 h1 {
@@ -76,20 +77,16 @@ h3 {
 }
 
 .temp-page {
-  padding: 0 50px;
-
+padding: ;
   span {
     display: flex;
     width: 100px;
     font-family: "Broke";
-    font-size: 100px;
     line-height: initial;
-    color: var(--clr-off-white-100);
   }
 
   .more-info {
     font-family: "Amiamie";
-    font-size: 24px;
     color: var(--clr-off-white);
   }
 }
@@ -104,9 +101,8 @@ h3 {
 }
 
 .header-links {
-  font-family: "Epilogue";
+  font-family: "Amiamie";
   font-size: small;
-  color: var(--clr-blue-dark);
 }
 
 input.searchbarInput::placeholder {
