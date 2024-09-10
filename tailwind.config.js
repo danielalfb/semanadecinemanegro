@@ -38,6 +38,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Broke, sans - serif"],
+      body: ["Amiamie, sans - serif"],
     },
     extend: {
       transitionProperty: {

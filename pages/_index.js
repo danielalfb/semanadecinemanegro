@@ -14,6 +14,9 @@ export default function Home() {
 
       <div className="relative h-screen w-full">
         <Header />
+        <h2 className="absolute top-40 right-9 font-sans text-6xl text-red-600">
+          outubro
+        </h2>
         <div className="w-full px-28 pt-20 bg-pink-100">
           <div
             className="w-full h-screen bg-top bg-cover"
@@ -28,7 +31,7 @@ export default function Home() {
         </p>*/}
         {/* SOBRE */}
         <div className="p-10 bg-pink-100 relative pl-48 pr-0">
-          <div className="relative w-full bg-blue-700 text-white text-md leading-6 z-10 p-10">
+          <div className="relative w-full text-red-600 text-md leading-6 z-10 p-10">
             <p>
               A <i>3º Semana de Cinema Negro de Belo Horizonte</i> apresenta, de
               09 a 17 de setembro de 2023, um conjunto composto por 70 filmes de
