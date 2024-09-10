@@ -19,7 +19,7 @@ const Header = () => {
                 className="link"
                 style={{ maxWidth: "150px" }}
               >
-                <img src="/images/logo_dark.png" />
+                <img src="/images/logo_dark.gif" />
               </h1>
 
               <div className="flex items-center">
@@ -48,9 +48,9 @@ const Header = () => {
         <div
           onClick={() => router.push("/")}
           className="cursor-pointer mob:p-2 laptop:p-0"
-          style={{ maxWidth: "300px" }}
+          style={{ maxWidth: "200px" }}
         >
-          <img src="/images/logo_dark.png" />
+          <img src="/images/logo_dark.gif" />
         </div>
         <div className="flex items-center">
           <Button onClick={() => router.push("/anteriores")}>

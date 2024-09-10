@@ -92,6 +92,8 @@ h3 {
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
   height: 100%;
+  mix-blend-mode: luminosity;
+
 }
 
 .gridItem {
@@ -114,26 +116,36 @@ h3 {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .centeredText {
   font-family: "Broke";
-  color: var(--clr-blue-dark);
   font-size: 15rem;
+  line-height: normal;
   text-align: center;
   pointer-events: auto;
-  margin-top: 95px;
+  mix-blend-mode: lighten;
+}
+.topRightImage {
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: auto;
+  pointer-events: auto;
+  mix-blend-mode: darken;
 }
 
 .bottomLeftImage {
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   left: 20px;
   width: 80px;
   height: auto;
   pointer-events: auto;
+  mix-blend-mode: darken;
 }
 
 .instagramLink {
@@ -162,6 +174,10 @@ h3 {
   .banner {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
+  }
+
+  .centeredText {
+    font-size: 5rem;
   }
 }
 
