@@ -1,37 +1,43 @@
-import Head from "next/head";
-import Link from "next/link";
+import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>SCNBH24</title>
-      </Head>
+  const imagesMap = [
+    'images/semana_banner_home.png',
+    'images/semana_home_bg.png',
+    'images/semana_home_2.png',
+    'images/semana_home_2.png',
+    'images/semana_banner_home.png',
+    'images/semana_home_bg.png',
+  ];
 
-      <div
-        className="relative h-screen w-full bg-top bg-cover flex justify-end items-start p-10"
-        style={{
-          backgroundImage: `url('/images/semana_banner_home.png')`,
-        }}
-      >
-        <div className="temp-page">
-          <span className="text-blue-500 text-8xl">em breve</span>
-          <div className="more-info text-2xl">
-            para mais informações acesse
-            <Link
-              passHref={true}
-              href="https://www.instagram.com/semana.cinemanegrobh?igsh=MWN0d2szN2p4Njdjaw=="
+  return (
+    <div className="container">
+      <div className="bannerContainer">
+        <div className="banner">
+          {imagesMap.map((src, index) => (
+            <div key={index} className="gridItem">
+              <Image layout="fill" src={`/${src}`} alt={`Imagem ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+        <div className="overlay">
+          <h1 className="centeredText">Em breve</h1>
+          <Image layout="fill" src="/images/logo_dark.png" alt="Imagem Inferior" className="bottomLeftImage" />
+          <Link
+            passHref={true}
+            href="https://www.instagram.com/semana.cinemanegrobh?igsh=MWN0d2szN2p4Njdjaw=="
+          >
+            <a
+              target="_blank"
+              className="instagramLink"
             >
-              <a
-                target="_blank"
-                className="text-blue-700 font-bold hover:shadow-sm"
-              >
-                @semana.cinemanegrobh
-              </a>
-            </Link>
-          </div>
+              <Image src="/images/logo_insta.png" width={100} height={100} alt="Instagram" />
+            </a>
+          </Link>
         </div>
       </div>
-    </>
+
+    </div>
   );
 }

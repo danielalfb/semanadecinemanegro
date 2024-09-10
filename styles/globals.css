@@ -41,17 +41,13 @@
   --clr-off-white: #faf8f0;
   --clr-off-white-100: #f3ede0;
   --clr-olive: #bed992;
+  --clr-pink-light: #ff9fad;
+  --clr-blue-dark: #141a23;
 }
 
 html {
   overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
-  font-family: "Amiamie";
-
-
+  background-color: var(--clr-white);
 }
 
 h1,
@@ -76,18 +72,96 @@ h3 {
   font-weight: 600;
 }
 
-.temp-page {
-padding: ;
-  span {
-    display: flex;
-    width: 100px;
-    font-family: "Broke";
-    line-height: initial;
+.container {
+  display: flex;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+
+.bannerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.gridItem {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.gridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  pointer-events: none;
+}
+
+.centeredText {
+  font-family: "Broke";
+  color: var(--clr-blue-dark);
+  font-size: 15rem;
+  text-align: center;
+  pointer-events: auto;
+  margin-top: 95px;
+}
+
+.bottomLeftImage {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 80px;
+  height: auto;
+  pointer-events: auto;
+}
+
+.instagramLink {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  pointer-events: auto;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .bottomLeftImage {
+    width: 80px;
   }
 
-  .more-info {
-    font-family: "Amiamie";
-    color: var(--clr-off-white);
+  .bannerContainer {
+    width: 100%;
+  }
+
+  .banner {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 
