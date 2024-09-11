@@ -19,9 +19,12 @@ export default function Home() {
           {imagesMap.map((src, index) => (
             <div key={index} className="gridItem">
               <Image
-                layout="fill"
                 src={`/${src}`}
                 alt={`Imagem ${index + 1}`}
+                width={500}
+                height={500} 
+                sizes="(max-width: 375px) 100vw, (max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                objectFit="cover"    
               />
             </div>
           ))}
@@ -29,13 +32,15 @@ export default function Home() {
         <div className="absolute w-full top-2 flex justify-center">
           <img
             src="/images/logo_dark.svg"
-            style={{ maxWidth: "300px", mixBlendMode: "sluminosity" }}
+            style={{ maxWidth: "250px", mixBlendMode: "luminosity" }}
           />
         </div>
 
         <div className="overlay">
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '10px'}}>
           <h1 className="centeredText text-pink-100">Em breve</h1>
-
+          <h3 className="legendText text-pink-100">em breve</h3>
+          </div>
           <Link
             passHref={true}
             href="https://www.instagram.com/semana.cinemanegrobh?igsh=MWN0d2szN2p4Njdjaw=="

@@ -93,7 +93,6 @@ h3 {
   width: 100%;
   height: 100%;
   mix-blend-mode: luminosity;
-
 }
 
 .gridItem {
@@ -121,9 +120,13 @@ h3 {
   overflow: hidden;
 }
 
+.legendText {
+  font-size: 5rem;
+  mix-blend-mode: lighten;
+}
 .centeredText {
   font-family: "Broke";
-  font-size: 15rem;
+  font-size: 13rem;
   line-height: normal;
   text-align: center;
   pointer-events: auto;
@@ -155,14 +158,14 @@ h3 {
   pointer-events: auto;
 }
 
-@media (max-width: 1024px) {
+@media ( max-width: 1024px) {
   .banner {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .bottomLeftImage {
     width: 80px;
   }
@@ -171,13 +174,21 @@ h3 {
     width: 100%;
   }
 
-  .banner {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-  }
+    .banner {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+  
 
   .centeredText {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+  .legendText {
+    font-size: 2rem;
+  }
+  .instagramLink {
+    bottom: 0;
+    right: 0;
   }
 }
 
