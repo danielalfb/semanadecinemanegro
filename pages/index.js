@@ -52,7 +52,7 @@ export default function Home() {
             passHref={true}
             href="https://drive.google.com/file/d/1gVpQU_bMbwDi8KRD0-ugJDAZra2QqUuH/view"
           >
-            <a target="_blank" className="scheduleBtn bg-red-500 text-pink-100">
+            <a target="_blank" className="scheduleBtn bg-red-600 text-pink-100">
               acessar programação
             </a>
           </Link>
