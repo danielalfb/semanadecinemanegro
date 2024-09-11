@@ -16,6 +16,7 @@ module.exports = {
       "slate-200": "#f0f0f0",
       white: "#fffdf0",
       black: "#000000",
+      gray: "#3A392A",
       "cream-100": "#FBF8F0",
       "cream-200": "#F6EEDF",
       "peach-400": "#F0B58F",

@@ -158,6 +158,16 @@ h3 {
   pointer-events: auto;
 }
 
+.scheduleBtn {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 80px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: auto;
+  font-family: "Amiamie";
+}
+
 @media ( max-width: 1024px) {
   .banner {
     grid-template-columns: repeat(2, 1fr);
@@ -189,6 +199,9 @@ h3 {
   .instagramLink {
     bottom: 0;
     right: 0;
+  }
+  .scheduleBtn {
+    bottom: 220px;
   }
 }
 
