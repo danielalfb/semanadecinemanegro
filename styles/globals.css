@@ -5,84 +5,24 @@
 @import "./markdown.css";
 
 @font-face {
-  font-family: "Epilogue";
+  font-family: "Broke";
   src:
-    url("/Epilogue/Epilogue-Bold.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Bold.woff") format("woff");
+    url("/fonts/BrokeFat-Black.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Epilogue";
+  font-family: "Amiamie";
   src:
-    url("/Epilogue/Epilogue-Light.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-ExtraLight.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-Medium.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-Regular.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Regular.woff") format("woff");
+    url("/fonts/Amiamie-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-SemiBold.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-Thin.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Epilogue";
-  src:
-    url("/Epilogue/Epilogue-Italic.woff2") format("woff2"),
-    url("/Epilogue/Epilogue-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
 
 :root {
   --clr-white: #fffdf0;
@@ -97,21 +37,23 @@
   --clr-green-light: #6aa924;
   --clr-yellow-dark: #f29f05;
   --clr-yellow-light: #f2cb05;
-}
-html {
-  overflow-x: hidden;
+  --clr-purple-light: #617edd;
+  --clr-off-white: #faf8f0;
+  --clr-off-white-100: #f3ede0;
+  --clr-olive: #bed992;
+  --clr-pink-light: #ff9fad;
+  --clr-blue-dark: #141a23;
 }
 
-body {
+html {
   overflow-x: hidden;
-  color: var(--clr-black);
   background-color: var(--clr-white);
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Epilogue";
+  font-family: "Amiamie";
 }
 
 h1 {
@@ -130,18 +72,138 @@ h3 {
   font-weight: 600;
 }
 
+.container {
+  display: flex;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+
+.bannerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: luminosity;
+}
+
+.gridItem {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.gridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.legendText {
+  font-size: 5rem;
+  mix-blend-mode: lighten;
+}
+.centeredText {
+  font-family: "Broke";
+  font-size: 13rem;
+  line-height: normal;
+  text-align: center;
+  pointer-events: auto;
+  mix-blend-mode: lighten;
+}
+.topRightImage {
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: auto;
+  pointer-events: auto;
+  mix-blend-mode: darken;
+}
+
+.bottomLeftImage {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: auto;
+  pointer-events: auto;
+  mix-blend-mode: darken;
+}
+
+.instagramLink {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  pointer-events: auto;
+}
+
+@media ( max-width: 1024px) {
+  .banner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .bottomLeftImage {
+    width: 80px;
+  }
+
+  .bannerContainer {
+    width: 100%;
+  }
+
+    .banner {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+  
+
+  .centeredText {
+    font-size: 4rem;
+  }
+  .legendText {
+    font-size: 2rem;
+  }
+  .instagramLink {
+    bottom: 0;
+    right: 0;
+  }
+}
+
 .home-about {
   background-color: var(--clr-green) !important;
 }
+
 .shadow-title {
   color: transparent;
   -webkit-text-stroke: 2px var(--clr-blue-dark);
 }
 
 .header-links {
-  font-family: "Epilogue";
+  font-family: "Amiamie";
   font-size: small;
-  color: var(--clr-blue-dark);
 }
 
 input.searchbarInput::placeholder {
@@ -169,12 +231,11 @@ input.searchbarInput:focus::placeholder {
   width: 100vw;
   opacity: 0.5;
   filter: blur(40px);
-  background: radial-gradient(
-    circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(248, 107, 223, 1) 0%,
+      rgba(107, 107, 248, 0.8) 100%);
 }
+
 .gradient-circle-bottom {
   position: absolute;
   pointer-events: none;
@@ -184,11 +245,9 @@ input.searchbarInput:focus::placeholder {
   width: 100vw;
   opacity: 0.5;
   filter: blur(40px);
-  background: radial-gradient(
-    circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(248, 107, 223, 1) 0%,
+      rgba(107, 107, 248, 0.8) 100%);
 }
 
 .gradient-shadow:hover::before {
