@@ -1,16 +1,20 @@
 import React from "react";
-import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Shape from "../../components/Shape";
 import Link from "next/link";
+import { ArrowLeft } from "@phosphor-icons/react";
+import { useRouter } from "next/router";
+
+
 
 export default function anteriores() {
+  const router = useRouter();
   return (
     <div className='h-screen w-full relative overflow-x-hidden bg-blue-800 bg-logo'>
       {/* <Header /> */}
       <div className='mt-36 p-10 w-full laptop:mt-30'>
         <div class="title-container">
-          <div id="title">
+          <div id="title" style={{display: 'flex', alignItems: 'center', gap: '24px'}}>
+              <ArrowLeft size={50} onClick={() => router.push("/")}  style={{cursor: 'pointer'}}/>
               <h1>Edições anteriores</h1>
             </div>
         </div>
