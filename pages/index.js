@@ -5,6 +5,15 @@ import Head from "next/head";
 import ReactPlayer from "react-player";
 import Link from "next/link";
 
+const imagesMap = [
+  "images/semana_banner_home.png",
+  "images/semana_home_bg.png",
+  "images/semana_home_2.png",
+  "images/semana_home_2.png",
+  "images/semana_banner_home.png",
+  "images/semana_home_bg.png",
+];
+
 export default function Home() {
   return (
     <>
@@ -14,20 +23,15 @@ export default function Home() {
 
       <div className="relative h-screen w-full">
         <Header />
-        <div className="w-full px-28 pt-20 bg-pink-100">
-          <div
-            className="w-full h-screen bg-top bg-cover"
-            style={{
-              backgroundImage: `url('/images/semana_home_bg.png')`,
-            }}
-          />
-        </div>
+        <div
+          className="w-full h-screen bg-top bg-cover"
+          style={{
+            backgroundImage: `url('/images/banner_1.svg')`,
+          }}
+        />
 
-        {/*<p className="absolute bottom-6 right-0 bg-blue-500 text-white p-2 text-xs">
-          VOCÊS, por Pedro Neves
-        </p>*/}
         {/* SOBRE */}
-        <div className="p-10 bg-pink-100 relative pl-48 pr-0">
+        {/* <div className="p-10 bg-pink-100 relative pl-48 pr-0">
           <div className="relative w-full bg-blue-700 text-white text-md leading-6 z-10 p-10">
             <p>
               A <i>3º Semana de Cinema Negro de Belo Horizonte</i> apresenta, de
@@ -81,11 +85,15 @@ export default function Home() {
               Convidamos a todas, todes e todos a acompanharem a programação.
             </p>
           </div>
-        </div>
+        </div> */}
+
+        {/* VIDEO */}
         <div className="w-full laptop:mt-30 p-2 laptop:p-0">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=dPOWUaENIOY"
             width="100%"
+            height="100vh"
+            playing
           />
         </div>
         <Footer />

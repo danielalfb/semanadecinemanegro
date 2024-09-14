@@ -6,14 +6,14 @@ import { SITE_CONTENT } from "../../helpers/content";
 
 const Footer = () => {
   return (
-    <div className='relative bottom-0 laptop:p-0'>
+    <div className="relative bottom-0 laptop:p-0">
       <img
-        alt='logomarcas'
-        src='../images/logomarcas.png'
+        alt="logomarcas"
+        src="../images/logomarcas.png"
         style={{ width: "100%", backgroundColor: "#f9f9f9" }}
       />
 
-      <div
+      {/* <div
         className='flex flex-wrap items-center justify-between p-2 mob:flex-nowrap link'
         style={{ color: "#fff", backgroundColor: "var(--clr-black)" }}
       >
@@ -44,7 +44,7 @@ const Footer = () => {
             </Button>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
