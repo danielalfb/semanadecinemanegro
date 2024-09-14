@@ -16,9 +16,11 @@ const Button = ({ children, type, onClick, classes }) => {
     <button
       onClick={onClick}
       type="button"
-      className={`scheduleBtn ${type === "primary" && "text-pink-300"} tablet:p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 hover:scale-105 cursor-pointer active:scale-100  tablet:first:ml-0 ${classes} link`}
+      // className={`scheduleBtn ${type === "primary" && "text-pink-300"} tablet:p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 hover:scale-105 cursor-pointer active:scale-100  tablet:first:ml-0 ${classes} link`}
+      className="w-full content hover:scale-105 cursor-pointer "
     >
-      {children}
+      <h2>{children}</h2>
+      <h2>{children}</h2>
     </button>
   );
 };

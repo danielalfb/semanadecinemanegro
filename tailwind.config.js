@@ -31,7 +31,7 @@ module.exports = {
       "blue-500": "#507FE1",
       "blue-600": "#1E478F",
       "blue-700": "#07141E",
-      "blue-800" : "#141A23",
+      "blue-800": "#141A23",
       "red-500": "#DF2100",
       "red-600": "#B2282A",
       "green-100": "#DCE7DE",
@@ -48,5 +48,6 @@ module.exports = {
       },
     },
   },
+
   plugins: [],
 };
