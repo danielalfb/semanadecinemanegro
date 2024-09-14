@@ -16,7 +16,7 @@ const Button = ({ children, type, onClick, classes }) => {
     <button
       onClick={onClick}
       type="button"
-      className={`scheduleBtn bg-green-100 text-red-600 tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 hover:scale-105 cursor-pointer active:scale-100  tablet:first:ml-0 ${classes} link`}
+      className={`scheduleBtn ${type === "primary" && "text-pink-300"} tablet:p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 hover:scale-105 cursor-pointer active:scale-100  tablet:first:ml-0 ${classes} link`}
     >
       {children}
     </button>

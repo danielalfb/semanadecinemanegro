@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import ReactPlayer from "react-player";
 import Button from "../components/Button";
+import { useRouter } from "next/router";
 
 const imagesMap = [
   "images/semana_banner_home.png",
@@ -14,6 +15,8 @@ const imagesMap = [
 ];
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -29,7 +32,7 @@ export default function Home() {
         >
           <img
             src={"/images/logo_withImage.svg"}
-            style={{ maWwidth: "840px", paddingTop: "96px" }}
+            style={{ maxWidth: "840px", paddingTop: "120px" }}
           />
 
           <div className="w-full flex items-center justify-center gap-5 laptop: flex-wrap">

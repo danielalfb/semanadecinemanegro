@@ -233,14 +233,15 @@ h3 {
 }
 
 .scheduleBtn {
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 5px 10px;
   border-radius: 5px;
   pointer-events: auto;
-  font-family: "Amiamie";
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+  font-family: 'Universal';
+    color: var(--clr-pink-light);
 }
 
 @media ( max-width: 1024px) {
