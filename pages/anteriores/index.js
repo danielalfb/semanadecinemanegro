@@ -6,19 +6,20 @@ import Link from "next/link";
 
 export default function anteriores() {
   return (
-    <div className='h-screen w-full relative overflow-x-hidden'>
-      <Shape isLastSeasonsRight color='var(--clr-yellow-light)' />
-      <Shape isLastSeasons color='var(--clr-blue-lightest)' />
-      <Header />
+    <div className='h-screen w-full relative overflow-x-hidden bg-blue-800 bg-logo'>
+      {/* <Header /> */}
       <div className='mt-36 p-10 w-full laptop:mt-30'>
         <div class="title-container">
           <div id="title">
               <h1>Edições anteriores</h1>
             </div>
         </div>
-        <div className='flex flex-col w-full mb-6 p-4 rounded-sm border-4'>
+        <div className='flex flex-col w-full mb-6 p-4 rounded-sm'>
           <div className='flex w-full justify-between items-center mb-6'>
+            <div className="title-sub">
+              <span>S</span>
             <h2>SCNBH&apos;23</h2>
+            </div>
             <a
               target='_blank'
               href="/catalogo_2_edicao.pdf"
@@ -28,14 +29,6 @@ export default function anteriores() {
             >
               Baixar catálogo
             </a>
-            {/* <Link
-              href='/files/catalogo_2_edicao.pdf'
-              locale={false}
-              rel="noopener noreferrer"
-              target="_blank"
-              download="files/catalogo_2_edicao.pdf"
-            >
-            </Link> */}
           </div>
           <p>
             A 2ª edição da Semana de Cinema Negro de Belo Horizonte aconteceu
@@ -70,9 +63,12 @@ export default function anteriores() {
             disponível para download.
           </p>
         </div>
-        <div className='flex flex-col w-full mb-6 p-4 rounded-sm border-4'>
+        <div className='flex flex-col w-full mb-6 p-4 rounded-sm'>
           <div className='flex w-full justify-between items-center mb-6'>
+          <div className="title-sub">
+              <span>S</span>
             <h2>SCNBH&apos;22</h2>
+            </div>
             <a
               target='_blank'
               href="/catalogo_2_edicao.pdf"
@@ -82,14 +78,6 @@ export default function anteriores() {
             >
               Baixar catálogo
             </a>
-            {/* <Link
-              href='/files/catalogo_2_edicao.pdf'
-              locale={false}
-              rel="noopener noreferrer"
-              target="_blank"
-              download="files/catalogo_2_edicao.pdf"
-            >
-            </Link> */}
           </div>
           <p>
             A 2ª edição da Semana de Cinema Negro de Belo Horizonte aconteceu
@@ -124,9 +112,12 @@ export default function anteriores() {
             disponível para download.
           </p>
         </div>
-        <div className='flex flex-col mb-6 w-full p-4 rounded-sm border-4'>
+        <div className='flex flex-col mb-6 w-full p-4 rounded-sm'>
           <div className='flex w-full justify-between items-center mb-6'>
+          <div className="title-sub">
+              <span>S</span>
             <h2>SCNBH&apos;21</h2>
+            </div>
             <Link
               passHref={true}
               href='https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing'

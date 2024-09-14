@@ -30,6 +30,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Universal";
+  src:
+    url("/fonts/UniversLTStd-XBlack.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 
 :root {
@@ -49,7 +58,7 @@
   --clr-off-white: #faf8f0;
   --clr-off-white-100: #f3ede0;
   --clr-olive: #bed992;
-  --clr-pink-light: #ff9fad;
+  --clr-pink-light: #f3c0e1;
   --clr-blue-dark: #141a23;
 }
 
@@ -65,25 +74,51 @@ h3 {
 }
 .title-container {
   width: 960px;
-  margin: 0 auto;
 
 }
 
-#title {
-  background: url('../public/images/semana_banner_home.png');
+#title, span {
+  background: url('../public/images/semana_home_3.png');
   background-size: cover;
   color: #fff;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
   -webkit-background-clip: text;
   padding: 0;
+  h1 {
+    font-size: 45px;
+    font-family: 'Universal';
+    text-shadow: 0 0 1px rgba(0,0,0,.1);
+    margin: 0;
+    padding: 0;
+  }
+}
+.bg-logo {
+  background-image: url('/images/logo_lighter.png'),url('/images/logo_lighter.png');
+  background-repeat: repeat-x; /* Repetir a imagem no eixo horizontal */
+  background-position: top, bottom; /* Repetir no topo e no fundo */
+  background-size: 200px; /* A imagem será exibida no tamanho original */
 }
 
-h1 {
-  font-size: 60px;
-  font-family: 'Muroslant';
-  text-shadow: 0 0 1px rgba(0,0,0,.1);
-  margin: 0;
-  padding: 0;
+.title-sub {
+  display: flex;
+  align-items: center;
+  span {
+    font-family: 'Universal';
+    font-size: 150px;
+  }
+  h2 {
+    font-family: 'Universal';
+    font-size: 44px;
+    position: relative;
+    top: 20px;
+    right: 34px;
+    color: var(--clr-pink-light);
+  }
+}
+p {
+  font-family: "Amiamie";
 }
 
 h2 {
