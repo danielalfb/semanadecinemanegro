@@ -1,9 +1,8 @@
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
 
 import ReactPlayer from "react-player";
-import Link from "next/link";
+import Button from "../components/Button";
 
 const imagesMap = [
   "images/semana_banner_home.png",
@@ -22,13 +21,32 @@ export default function Home() {
       </Head>
 
       <div className="relative h-screen w-full">
-        <Header />
         <div
-          className="w-full h-screen bg-top bg-cover"
+          className="w-full h-screen bg-top bg-cover flex flex-col gap-10 items-center justify-center"
           style={{
             backgroundImage: `url('/images/banner_1.svg')`,
           }}
-        />
+        >
+          <img
+            src={"/images/logo_withImage.svg"}
+            style={{ maWwidth: "840px", paddingTop: "96px" }}
+          />
+
+          <div className="w-full flex items-center justify-center gap-5 laptop: flex-wrap">
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1gVpQU_bMbwDi8KRD0-ugJDAZra2QqUuH/view"
+                )
+              }
+            >
+              programação
+            </Button>
+            <Button onClick={() => router.push("/anteriores")}>
+              edições anteriores
+            </Button>
+          </div>
+        </div>
 
         {/* SOBRE */}
         {/* <div className="p-10 bg-pink-100 relative pl-48 pr-0">
@@ -93,6 +111,8 @@ export default function Home() {
             url="https://www.youtube.com/watch?v=dPOWUaENIOY"
             width="100%"
             height="100vh"
+            controls
+            muted
             playing
           />
         </div>

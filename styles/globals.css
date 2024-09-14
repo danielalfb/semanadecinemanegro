@@ -23,6 +23,15 @@
 }
 
 @font-face {
+  font-family: "Amiamie";
+  src:
+    url("/fonts/Amiamie-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Muroslant";
   src:
     url("/fonts/Muroslant.otf") format("opentype");
@@ -217,14 +226,21 @@ h3 {
   pointer-events: auto;
 }
 
-.scheduleBtn {
-  font-size: 1rem;
+.scheduleBtnContainer {
   position: absolute;
   bottom: 80px;
+  
+}
+
+.scheduleBtn {
+  font-size: 1rem;
   padding: 5px 10px;
   border-radius: 5px;
   pointer-events: auto;
   font-family: "Amiamie";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 @media ( max-width: 1024px) {
