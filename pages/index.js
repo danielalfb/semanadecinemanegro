@@ -35,7 +35,7 @@ export default function Home() {
             style={{ maxWidth: "840px", paddingTop: "120px" }}
           />
 
-          <div className="w-full flex items-center justify-center">
+          <div className="w-full flex justify-between gap-12 bg-blue-500">
             <Button
               onClick={() =>
                 window.open(

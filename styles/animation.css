@@ -1,13 +1,12 @@
 
 
 
-.content {
+.animatedButton {
 	position: relative;
 }
 
-.content h2 {
+.animatedButton h2 {
     font-size: 3rem;
-	color: #fff;
 	position: absolute;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -15,12 +14,12 @@
 	transform: translate(-50%, -50%);
 }
 
-.content h2:nth-child(1) {
+.animatedButton h2:nth-child(1) {
 	color: transparent;
 	-webkit-text-stroke: 2px var(--clr-pink-light);
 }
 
-.content h2:nth-child(2) {
+.animatedButton h2:nth-child(2) {
 	color: var(--clr-pink-light);
 	animation: animate 4s ease-in-out infinite;
 }
