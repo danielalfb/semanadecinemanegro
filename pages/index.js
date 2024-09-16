@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="relative h-screen w-full">
         <div
-          className="w-full h-screen bg-top bg-cover flex flex-col gap-12 items-center justify-center"
+          className="w-full h-screen bg-top bg-cover flex items-center flex-col justify-center"
           style={{
             backgroundImage: `url('/images/banner_1.svg')`,
           }}
@@ -34,8 +34,7 @@ export default function Home() {
             src={"/images/logo_withImage.svg"}
             style={{ maxWidth: "840px", paddingTop: "120px" }}
           />
-
-          <div className="w-full flex justify-between gap-12 bg-blue-500">
+            <div className="w-full flex justify-center" style={{marginLeft: '300px'}}>
             <Button
               onClick={() =>
                 window.open(

@@ -3,10 +3,11 @@
 
 .animatedButton {
 	position: relative;
+	width: 30%;
 }
 
 .animatedButton h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 	position: absolute;
     text-transform: uppercase;
     letter-spacing: 2px;

@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import Link from "next/link";
 import { ArrowLeft } from "@phosphor-icons/react";
 import { useRouter } from "next/router";
+import  Button  from '../../components/Button'
 
 
 
@@ -24,7 +25,12 @@ export default function anteriores() {
               <span>S</span>
             <h2>SCNBH&apos;23</h2>
             </div>
-            <a
+            <Button
+              onClick={() => document.open('/catalogo_2_edicao.pdf') }
+            >
+              Baixar catálogo
+            </Button>
+            {/* <a
               target='_blank'
               href="/catalogo_2_edicao.pdf"
               rel="noopener noreferrer"
@@ -32,7 +38,7 @@ export default function anteriores() {
               className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
             >
               Baixar catálogo
-            </a>
+            </a> */}
           </div>
           <p>
             A 2ª edição da Semana de Cinema Negro de Belo Horizonte aconteceu
@@ -73,7 +79,12 @@ export default function anteriores() {
               <span>S</span>
             <h2>SCNBH&apos;22</h2>
             </div>
-            <a
+            <Button
+              onClick={() => document.open('/catalogo_2_edicao.pdf') }
+            >
+              Baixar catálogo
+            </Button>
+            {/* <a
               target='_blank'
               href="/catalogo_2_edicao.pdf"
               rel="noopener noreferrer"
@@ -81,7 +92,7 @@ export default function anteriores() {
               className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
             >
               Baixar catálogo
-            </a>
+            </a> */}
           </div>
           <p>
             A 2ª edição da Semana de Cinema Negro de Belo Horizonte aconteceu
@@ -122,7 +133,12 @@ export default function anteriores() {
               <span>S</span>
             <h2>SCNBH&apos;21</h2>
             </div>
-            <Link
+            <Button
+              onClick={() => window.open('https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing') }
+            >
+              Baixar catálogo
+            </Button>
+            {/* <Link
               passHref={true}
               href='https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing'
             >
@@ -132,7 +148,7 @@ export default function anteriores() {
               >
                 Baixar catálogo
               </a>
-            </Link>
+            </Link> */}
           </div>
           <p className='font-sans'>
             A 1º Edição da Semana de Cinema Negro de Belo Horizonte trouxe um
