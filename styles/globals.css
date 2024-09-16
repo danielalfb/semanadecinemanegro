@@ -96,11 +96,9 @@ h3 {
   -webkit-background-clip: text;
   padding: 0;
   h1 {
-    font-size: 45px;
     font-family: 'Universal';
     text-shadow: 0 0 1px rgba(0,0,0,.1);
     margin: 0;
-    padding: 0;
   }
 }
 .bg-logo {
@@ -248,6 +246,9 @@ h3 {
   padding: 54px 150px 0 150px;
   }
 
+  .titleBtnsContainer_prev button .animatedButton {
+    justify-content: end;  }
+  
 @media ( max-width: 1024px) {
   .banner {
     grid-template-columns: repeat(2, 1fr);
@@ -255,9 +256,22 @@ h3 {
   }
   
   .titleBtnsContainer {
-  flex-wrap: wrap;
-  padding: 34px 0 0 0;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
   }
+
+  .titleBtnsContainer_prev {
+    flex-wrap: wrap;
+  }
+
+  .titleBtnsContainer_prev  button {
+   margin-top: -50px;
+  }
+
+  #title h1 {
+    font-size: 1.7rem;
+  }
+
 
 }
 

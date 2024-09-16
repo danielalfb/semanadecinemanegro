@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="relative h-screen w-full">
         <div
-          className="w-full h-screen p-24 bg-top bg-cover flex items-center flex-col justify-center"
+          className="w-full h-screen p-24 bg-top bg-cover flex items-center flex-col justify-center laptop: p-8"
           style={{
             backgroundImage: `url('/images/banner_1.svg')`,
           }}
@@ -108,7 +108,7 @@ export default function Home() {
         </div> */}
 
         {/* VIDEO */}
-        <div className="w-full bg-pink-200 laptop:mt-30 p-12 laptop:p-0">
+        <div className="w-full bg-pink-200 laptop:mt-30">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=dPOWUaENIOY"
             width="100%"

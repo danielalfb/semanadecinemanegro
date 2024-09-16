@@ -23,6 +23,13 @@
 	animation: animate 4s ease-in-out infinite;
 }
 
+@media ( max-width: 1024px) {
+	.animatedButton h2 {
+	  font-size: 1.5rem;
+	}
+  
+  }
+
 @keyframes animate {
 	0%,
 	100% {

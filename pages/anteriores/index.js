@@ -3,31 +3,34 @@ import Footer from "../../components/Footer";
 import Link from "next/link";
 import { ArrowLeft } from "@phosphor-icons/react";
 import { useRouter } from "next/router";
-import  Button  from '../../components/Button'
-
-
+import Button from "../../components/Button";
 
 export default function anteriores() {
   const router = useRouter();
   return (
-    <div className='h-screen w-full relative overflow-x-hidden bg-blue-800 bg-logo'>
+    <div className="h-screen w-full relative overflow-x-hidden bg-blue-800 bg-logo">
       {/* <Header /> */}
-      <div className='mt-36 p-10 w-full laptop:mt-30'>
+      <div className="mt-36 p-10 w-full laptop: mt-10">
         <div class="title-container">
-          <div id="title" style={{display: 'flex', alignItems: 'center', gap: '24px'}}>
-              <ArrowLeft size={50} onClick={() => router.push("/")}  style={{cursor: 'pointer'}}/>
-              <h1>Edições anteriores</h1>
-            </div>
+          <div
+            id="title"
+            style={{ display: "flex", alignItems: "center", gap: "24px" }}
+          >
+            <ArrowLeft
+              size={30}
+              onClick={() => router.push("/")}
+              style={{ cursor: "pointer" }}
+            />
+            <h1 className="w-full text-5xl pt-4">Edições anteriores</h1>
+          </div>
         </div>
-        <div className='flex flex-col w-full mb-6 p-4 rounded-sm'>
-          <div className='flex w-full justify-between items-center mb-6'>
+        <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
+          <div className="titleBtnsContainer_prev flex w-full justify-between items-center mb-6">
             <div className="title-sub">
               <span>S</span>
-            <h2>SCNBH&apos;23</h2>
+              <h2>SCNBH&apos;23</h2>
             </div>
-            <Button
-              onClick={() => document.open('/catalogo_2_edicao.pdf') }
-            >
+            <Button onClick={() => document.open("/catalogo_2_edicao.pdf")}>
               Baixar catálogo
             </Button>
             {/* <a
@@ -58,9 +61,9 @@ export default function anteriores() {
             canal do Youtube da Semana de Cinema Negro (acesse no{" "}
             <Link
               passHref={true}
-              href='https://www.youtube.com/@semanadecinemanegro/streams'
+              href="https://www.youtube.com/@semanadecinemanegro/streams"
             >
-              <a target='_blank' className='text-blue-300 flex-wrap'>
+              <a target="_blank" className="text-blue-300 flex-wrap">
                 Youtube
               </a>
             </Link>
@@ -73,15 +76,13 @@ export default function anteriores() {
             disponível para download.
           </p>
         </div>
-        <div className='flex flex-col w-full mb-6 p-4 rounded-sm'>
-          <div className='flex w-full justify-between items-center mb-6'>
-          <div className="title-sub">
+        <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
+          <div className="titleBtnsContainer_prev flex w-full justify-between items-center mb-6">
+            <div className="title-sub">
               <span>S</span>
-            <h2>SCNBH&apos;22</h2>
+              <h2>SCNBH&apos;22</h2>
             </div>
-            <Button
-              onClick={() => document.open('/catalogo_2_edicao.pdf') }
-            >
+            <Button onClick={() => document.open("/catalogo_2_edicao.pdf")}>
               Baixar catálogo
             </Button>
             {/* <a
@@ -112,9 +113,9 @@ export default function anteriores() {
             canal do Youtube da Semana de Cinema Negro (acesse no{" "}
             <Link
               passHref={true}
-              href='https://www.youtube.com/@semanadecinemanegro/streams'
+              href="https://www.youtube.com/@semanadecinemanegro/streams"
             >
-              <a target='_blank' className='text-blue-300 flex-wrap'>
+              <a target="_blank" className="text-blue-300 flex-wrap">
                 Youtube
               </a>
             </Link>
@@ -127,14 +128,18 @@ export default function anteriores() {
             disponível para download.
           </p>
         </div>
-        <div className='flex flex-col mb-6 w-full p-4 rounded-sm'>
-          <div className='flex w-full justify-between items-center mb-6'>
-          <div className="title-sub">
+        <div className="flex flex-col mb-6 w-full p-4 rounded-sm">
+          <div className="titleBtnsContainer_prev flex w-full justify-between items-center mb-6">
+            <div className="title-sub">
               <span>S</span>
-            <h2>SCNBH&apos;21</h2>
+              <h2>SCNBH&apos;21</h2>
             </div>
             <Button
-              onClick={() => window.open('https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing') }
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing"
+                )
+              }
             >
               Baixar catálogo
             </Button>
@@ -150,7 +155,7 @@ export default function anteriores() {
               </a>
             </Link> */}
           </div>
-          <p className='font-sans'>
+          <p className="font-sans">
             A 1º Edição da Semana de Cinema Negro de Belo Horizonte trouxe um
             olhar de resgate sobre as nossas memórias. Diante do momento de
             crise mundial, fez-se necessário visitar lembranças para despertar o
@@ -169,9 +174,9 @@ export default function anteriores() {
             canal do Youtube da Semana de Cinema Negro (acesse no{" "}
             <Link
               passHref={true}
-              href='https://www.youtube.com/@semanadecinemanegro/streams'
+              href="https://www.youtube.com/@semanadecinemanegro/streams"
             >
-              <a target='_blank' className='text-blue-300'>
+              <a target="_blank" className="text-blue-300">
                 Youtube
               </a>
             </Link>
@@ -181,9 +186,9 @@ export default function anteriores() {
             estavam sendo divulgados ao longo do evento (acesse em{" "}
             <Link
               passHref={true}
-              href='https://www.coletivozanza.com/tag/semana-de-cinema-negro'
+              href="https://www.coletivozanza.com/tag/semana-de-cinema-negro"
             >
-              <a target='_blank' className='text-blue-300'>
+              <a target="_blank" className="text-blue-300">
                 Coletivo Zanza
               </a>
             </Link>
