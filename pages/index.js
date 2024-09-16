@@ -25,16 +25,16 @@ export default function Home() {
 
       <div className="relative h-screen w-full">
         <div
-          className="w-full h-screen bg-top bg-cover flex items-center flex-col justify-center"
+          className="w-full h-screen p-24 bg-top bg-cover flex items-center flex-col justify-center"
           style={{
             backgroundImage: `url('/images/banner_1.svg')`,
           }}
         >
           <img
             src={"/images/logo_withImage.svg"}
-            style={{ maxWidth: "840px", paddingTop: "120px" }}
+            style={{ maxWidth: "840px" }}
           />
-            <div className="w-full flex justify-center" style={{marginLeft: '300px'}}>
+          <div className="titleBtnsContainer w-full flex item-center justify-center">
             <Button
               onClick={() =>
                 window.open(
@@ -108,7 +108,7 @@ export default function Home() {
         </div> */}
 
         {/* VIDEO */}
-        <div className="w-full laptop:mt-30 p-2 laptop:p-0">
+        <div className="w-full bg-pink-200 laptop:mt-30 p-12 laptop:p-0">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=dPOWUaENIOY"
             width="100%"

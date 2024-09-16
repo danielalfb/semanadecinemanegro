@@ -5,11 +5,11 @@ const Button = ({ children, onClick }) => {
     <button
       onClick={onClick}
       type="button"
-      className="animatedButton hover:scale-105 cursor-pointer flex mt-32 mb-32"
+      className="w-full hover:scale-105 cursor-pointer flex mt-12"
     >
-      <div className="w-full flex">
-      <h2>{children}</h2>
-      <h2>{children}</h2>
+      <div className="animatedButton w-full flex items-center justify-center">
+        <h2>{children}</h2>
+        <h2>{children}</h2>
       </div>
     </button>
   );

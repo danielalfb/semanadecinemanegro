@@ -244,11 +244,21 @@ h3 {
     color: var(--clr-pink-light);
 }
 
+.titleBtnsContainer {
+  padding: 54px 150px 0 150px;
+  }
+
 @media ( max-width: 1024px) {
   .banner {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+  
+  .titleBtnsContainer {
+  flex-wrap: wrap;
+  padding: 34px 0 0 0;
+  }
+
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
