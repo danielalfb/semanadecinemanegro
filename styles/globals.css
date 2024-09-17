@@ -56,7 +56,7 @@
   --clr-black: #18191a;
   --clr-blue-dark: #0a0957;
   --clr-blue-light: #00ccfc;
-  --clr-blue-default: #0095ec;
+  --clr-blue-default: #32498c;
   --clr-blue-lightest: #50ddfe;
   --clr-blue-darkest: #001c42;
   --clr-green-dark: #00392e;
@@ -68,6 +68,8 @@
   --clr-off-white-100: #f3ede0;
   --clr-olive: #bed992;
   --clr-pink-light: #f3c0e1;
+  --clr-green-light: #bed992;
+  --clr-red: #bf2604;
   --clr-blue-dark: #141a23;
 }
 
@@ -103,6 +105,12 @@ h3 {
 }
 .bg-logo {
   background-image: url('/images/logo_lighter.png'),url('/images/logo_lighter.png');
+  background-repeat: repeat-x; /* Repetir a imagem no eixo horizontal */
+  background-position: top, bottom; /* Repetir no topo e no fundo */
+  background-size: 200px; /* A imagem será exibida no tamanho original */
+}
+.bg-logo-pink {
+  background-image: url('/images/logo_lighter_pink.png'),url('/images/logo_lighter_pink.png');
   background-repeat: repeat-x; /* Repetir a imagem no eixo horizontal */
   background-position: top, bottom; /* Repetir no topo e no fundo */
   background-size: 200px; /* A imagem será exibida no tamanho original */
@@ -246,8 +254,14 @@ h3 {
   padding: 54px 150px 0 150px;
   }
 
-  .titleBtnsContainer_prev button .animatedButton {
-    justify-content: end;  }
+.titleBtnsContainer_prev button .animatedButton {
+  justify-content: end;  
+}
+
+.textContainer p {
+  /* font-size: 14px ; */
+  margin-bottom: 6px;
+}
   
 @media ( max-width: 1024px) {
   .banner {

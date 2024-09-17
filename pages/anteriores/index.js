@@ -9,7 +9,6 @@ export default function anteriores() {
   const router = useRouter();
   return (
     <div className="h-screen w-full relative overflow-x-hidden bg-blue-800 bg-logo">
-      {/* <Header /> */}
       <div className="mt-36 p-10 w-full laptop: mt-10">
         <div class="title-container">
           <div
