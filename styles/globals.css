@@ -22,6 +22,50 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Amiamie";
+  src:
+    url("/fonts/Amiamie-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muroslant";
+  src:
+    url("/fonts/Muroslant.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Universal";
+  src:
+    url("/fonts/UniversLTStd-XBlack.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--clr-blue-darkest);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 
 :root {
@@ -30,9 +74,9 @@
   --clr-black: #18191a;
   --clr-blue-dark: #0a0957;
   --clr-blue-light: #00ccfc;
-  --clr-blue-default: #0095ec;
+  --clr-blue-default: #32498c;
   --clr-blue-lightest: #50ddfe;
-  --clr-blue-darkest: #001c42;
+  --clr-blue-darkest: #141A23;
   --clr-green-dark: #00392e;
   --clr-green-light: #6aa924;
   --clr-yellow-dark: #f29f05;
@@ -41,7 +85,9 @@
   --clr-off-white: #faf8f0;
   --clr-off-white-100: #f3ede0;
   --clr-olive: #bed992;
-  --clr-pink-light: #ff9fad;
+  --clr-pink-light: #f3c0e1;
+  --clr-green-light: #bed992;
+  --clr-red: #bf2604;
   --clr-blue-dark: #141a23;
 }
 
@@ -55,11 +101,57 @@ h2,
 h3 {
   font-family: "Amiamie";
 }
+.title-container {
+  width: 960px;
 
-h1 {
-  font-size: xx-large;
-  font-weight: 700;
-  color: var(--clr-blue-dark);
+}
+
+#title, span {
+  background: url('../public/images/semana_home_3.jpg');
+  background-size: cover;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  padding: 0;
+  h1 {
+    font-family: 'Universal';
+    text-shadow: 0 0 1px rgba(0,0,0,.1);
+    margin: 0;
+  }
+}
+.bg-logo {
+  background-image: url('/images/logo_lighter.png'),url('/images/logo_lighter.png');
+  background-repeat: repeat-x; /* Repetir a imagem no eixo horizontal */
+  background-position: top, bottom; /* Repetir no topo e no fundo */
+  background-size: 200px; /* A imagem será exibida no tamanho original */
+}
+.bg-logo-pink {
+  background-image: url('/images/logo_lighter_pink.png'),url('/images/logo_lighter_pink.png');
+  background-repeat: repeat-x; /* Repetir a imagem no eixo horizontal */
+  background-position: top, bottom; /* Repetir no topo e no fundo */
+  background-size: 200px; /* A imagem será exibida no tamanho original */
+}
+
+.title-sub {
+  display: flex;
+  align-items: center;
+  span {
+    font-family: 'Universal';
+    font-size: 150px;
+  }
+  h2 {
+    font-family: 'Universal';
+    font-size: 44px;
+    position: relative;
+    top: 20px;
+    right: 34px;
+    color: var(--clr-pink-light);
+  }
+}
+p {
+  font-family: "Amiamie";
 }
 
 h2 {
@@ -158,21 +250,61 @@ h3 {
   pointer-events: auto;
 }
 
-.scheduleBtn {
-  font-size: 1rem;
+.scheduleBtnContainer {
   position: absolute;
   bottom: 80px;
+  
+}
+
+.scheduleBtn {
+  font-size: 2rem;
   padding: 5px 10px;
   border-radius: 5px;
   pointer-events: auto;
-  font-family: "Amiamie";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Universal';
+    color: var(--clr-pink-light);
+}
+/* 
+.titleBtnsContainer {
+ padding: 54px 150px 0 150px; 
+  } */
+
+.titleBtnsContainer_prev button .animatedButton {
+  justify-content: end;  
 }
 
+.textContainer p {
+  /* font-size: 14px ; */
+  margin-bottom: 6px;
+}
+  
 @media ( max-width: 1024px) {
   .banner {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+  
+  .titleBtnsContainer {
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
+  }
+
+  .titleBtnsContainer_prev {
+    flex-wrap: wrap;
+  }
+
+  .titleBtnsContainer_prev  button {
+   margin-top: -50px;
+  }
+
+  #title h1 {
+    font-size: 1.7rem;
+  }
+
+
 }
 
 @media (min-width: 375px) and (max-width: 768px) {

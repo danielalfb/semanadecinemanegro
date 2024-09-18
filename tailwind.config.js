@@ -20,7 +20,7 @@ module.exports = {
       "cream-100": "#FBF8F0",
       "cream-200": "#F6EEDF",
       "peach-400": "#F0B58F",
-      "pink-100": "#FEC0E1",
+      "pink-100": "#f3c0e1",
       "pink-200": "#FFC0E3",
       "pink-300": "#FF9FAF",
       "pink-400": "#FF617E",
@@ -31,11 +31,13 @@ module.exports = {
       "blue-500": "#507FE1",
       "blue-600": "#1E478F",
       "blue-700": "#07141E",
+      "blue-800": "#141A23",
       "red-500": "#DF2100",
       "red-600": "#B2282A",
       "green-100": "#DCE7DE",
       "green-400": "#B3DA8F",
       "green-500": "#46AA30",
+      "red-light": "#c95f63",
     },
     fontFamily: {
       sans: ["Broke, sans - serif"],
@@ -46,5 +48,6 @@ module.exports = {
       },
     },
   },
+
   plugins: [],
 };
