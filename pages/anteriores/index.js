@@ -11,7 +11,6 @@ export default function Anteriores() {
   const router = useRouter();
   return (
     <div className='w-fit'>
-      {/* <Header /> */}
       <div className='bg-logo w-fit bg-blue-800 relative z-1'>
         <div className="title-container">
           <div id="title" onClick={() => router.push("/")}  style={{display: 'flex', alignItems: 'center', gap: '24px', 

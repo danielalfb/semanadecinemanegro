@@ -107,7 +107,7 @@ h3 {
 }
 
 #title, span {
-  background: url('../public/images/semana_home_3.jpg');
+  background: url('/images/semana_home_3.jpg');
   background-size: cover;
   color: #fff;
   -webkit-text-fill-color: transparent;
