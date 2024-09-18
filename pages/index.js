@@ -1,6 +1,5 @@
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Link from "next/link";
 
 import ReactPlayer from "react-player";
 import Button from "../components/Button";

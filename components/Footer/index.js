@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Button from "../Button";
-import { EnvelopeSimple, InstagramLogo, Phone } from "@phosphor-icons/react";
+import { InstagramLogo } from "@phosphor-icons/react";
 import { SITE_CONTENT } from "../../helpers/content";
 
 const Footer = () => {
@@ -37,7 +36,8 @@ const Footer = () => {
             </span>
           </div>
         </div> */}
-        <div className='flex flex-wrap mob:flex-nowrap link'>
+        <div className='flex flex-wrap mob:flex-nowrap link items-center gap-2'>
+          <p>scnegrobh@gmail.com </p>
           {SITE_CONTENT.socials.map((social, index) => (
             <button key={index} onClick={() => window.open(social.link)}>
               {social.title ? <InstagramLogo size={32} /> : ""}

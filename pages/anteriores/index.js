@@ -29,11 +29,11 @@ export default function Anteriores() {
               <span>S</span>
             <h2>SCNBH&apos;23</h2>
             </div>
-            {/* <Button
-              onClick={() => document.open('/catalogo_2_edicao.pdf') }
+            <Button
+              onClick={() => window.open('https://drive.google.com/file/d/1cbld8n2xrQfcr73jDnmRV2Bzia4I2S63/view') }
             >
               Baixar catálogo
-            </Button> */}
+            </Button>
         
           </div>
           <p>
