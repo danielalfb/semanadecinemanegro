@@ -47,7 +47,25 @@
   font-display: swap;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--clr-blue-darkest);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 
 :root {
@@ -58,7 +76,7 @@
   --clr-blue-light: #00ccfc;
   --clr-blue-default: #32498c;
   --clr-blue-lightest: #50ddfe;
-  --clr-blue-darkest: #001c42;
+  --clr-blue-darkest: #141A23;
   --clr-green-dark: #00392e;
   --clr-green-light: #6aa924;
   --clr-yellow-dark: #f29f05;
@@ -249,10 +267,10 @@ h3 {
   font-family: 'Universal';
     color: var(--clr-pink-light);
 }
-
+/* 
 .titleBtnsContainer {
-  padding: 54px 150px 0 150px;
-  }
+ padding: 54px 150px 0 150px; 
+  } */
 
 .titleBtnsContainer_prev button .animatedButton {
   justify-content: end;  

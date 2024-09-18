@@ -13,11 +13,11 @@ const Footer = () => {
         style={{ width: "100%", backgroundColor: "#f9f9f9" }}
       />
 
-      {/* <div
-        className='flex flex-wrap items-center justify-between p-2 mob:flex-nowrap link'
+      <div
+        className='flex flex-wrap items-center justify-end p-2 mob:flex-nowrap link'
         style={{ color: "#fff", backgroundColor: "var(--clr-black)" }}
       >
-        <div className='flex flex-col ml-4'>
+        {/* <div className='flex flex-col ml-4'>
           <span className='text-xs font-light	'>
             Para falar com nossa assessoria de imprensa, entre em contato com:
           </span>
@@ -36,15 +36,15 @@ const Footer = () => {
               +55 (31) 98782-1287
             </span>
           </div>
-        </div>
+        </div> */}
         <div className='flex flex-wrap mob:flex-nowrap link'>
           {SITE_CONTENT.socials.map((social, index) => (
-            <Button key={index} onClick={() => window.open(social.link)}>
+            <button key={index} onClick={() => window.open(social.link)}>
               {social.title ? <InstagramLogo size={32} /> : ""}
-            </Button>
+            </button>
           ))}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

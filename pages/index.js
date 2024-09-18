@@ -44,6 +44,9 @@ export default function Home() {
               <Button onClick={() => router.push("/anteriores")}>
                 edições anteriores
               </Button>
+              <Button onClick={() => window.open(' https://www.ubuplay.com/app/4a-semana-de-cinema-negro-de-belo-horizonte ')}>
+                ubuplay
+              </Button>
             </div>
           </div>
         </div>
@@ -60,7 +63,7 @@ export default function Home() {
           />
 
           {/* SOBRE */}
-          <div className="w-full p-10 bg-pink-100 relative pl-48 pr-0 bg-logo md: pl-0">
+          <div className="w-full p-10 bg-pink-100 relative pr-0 bg-logo md: pl-0">
             <div className="textContainer text-justify text-md w-full text-blue-800 text-md leading-6 z-10 p-10">
               <p>
                 O desafio de dar continuidade a um trabalho maior. É dessa forma
