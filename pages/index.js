@@ -12,7 +12,12 @@ export default function Home() {
     <>
       <Head>
         <title>SCNBH24</title>
-      </Head>
+        <meta name="description" content="A Semana de Cinema Negro destaca a diversidade e a riqueza cultural de cineastas negros. Explore filmes, palestras e debates sobre a representatividade no cinema." />
+        <meta name="keywords" content="cinema negro, diversidade no cinema, representatividade, filmes negros, cineastas negros" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:site_name" content="Semana de cinema negro belo horizonte | 2024" />
+        <meta property="og:locale" content="pt_BR" />
+        </Head>
 
       <div className="relative h-screen w-full">
         <div
