@@ -7,7 +7,7 @@ import  Button  from '../../components/Button'
 
 
 
-export default function anteriores() {
+export default function Anteriores() {
   const router = useRouter();
   return (
     <div className='w-fit'>
