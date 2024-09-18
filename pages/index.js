@@ -27,7 +27,7 @@ export default function Home() {
               src={"/images/logo_withImage.svg"}
               style={{
                 maxWidth: "840px",
-                mixBlendMode: "difference",
+                mixBlendMode: "screen",
                 padding: "10px",
               }}
             />

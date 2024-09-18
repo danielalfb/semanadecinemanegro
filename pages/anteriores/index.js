@@ -14,11 +14,12 @@ export default function anteriores() {
       {/* <Header /> */}
       <div className='bg-logo w-fit bg-blue-800 relative z-1'>
         <div className="title-container">
-          <div id="title" style={{display: 'flex', alignItems: 'center', gap: '24px', 
+          <div id="title" onClick={() => router.push("/")}  style={{display: 'flex', alignItems: 'center', gap: '24px', 
           marginLeft: '15px', position: 'relative',
-          top: '60px', zIndex: '1'
+          top: '60px', zIndex: '1',
+          cursor: 'pointer'
           }}>
-              <ArrowLeft size={24} onClick={() => router.push("/")}  style={{cursor: 'pointer'}}/>
+              <ArrowLeft size={24} />
               <h1>voltar</h1>
             </div>
         </div>

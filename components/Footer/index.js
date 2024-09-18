@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="relative bottom-0 laptop:p-0">
       <img
         alt="logomarcas"
-        src="../images/logomarcas.png"
+        src="../images/logomarcas.jpg"
         style={{ width: "100%", backgroundColor: "#f9f9f9" }}
       />
 
