@@ -7,8 +7,8 @@
 @font-face {
   font-family: "PicNic";
   src:
-    url("/Fonts/PicNic.woff2") format("woff2"),
-    url("/Fonts/PicNic.woff") format("woff");
+    url("/fonts/PicNic.woff2") format("woff2"),
+    url("/fonts/PicNic.woff") format("woff");
     font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 @font-face {
   font-family: "RubikMonoOne";
   src:
-    url("/Fonts/RubikMonoOne-Regular.ttf") format("truetype");
+    url("/fonts/RubikMonoOne-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -27,7 +27,7 @@
 @font-face {
   font-family: "UfesSans";
   src:
-    url("/Fonts/UfesSans-Regular.ttf") format("truetype");
+    url("/fonts/UfesSans-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
