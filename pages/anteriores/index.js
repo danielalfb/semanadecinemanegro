@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
 
-export default function anteriores() {
+export default function Anteriores() {
   const router = useRouter();
   return (
     <>
@@ -15,36 +15,36 @@ export default function anteriores() {
       </Head>
       <div className="w-fit">
         <div
-          className="bg-logo w-fit relative z-1"
+          className="bg-logo w-fit relative z-1 overflow-hidden
+          "
           style={{
             backgroundColor: "var(--color-blue-dark)",
             color: "var(--color-cream)",
           }}
         >
           <img
-            src="/elemento_ondas.png"
-            className="h-auto w-full absolute top-0 left-0"
+            src="/images/elemento_ondas.png"
+            className="h-auto w-full absolute -top-16 left-0"
           />
-          <div className="title-container z-10">
-            <div
-              id="title"
-              onClick={() => router.push("/")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "24px",
-                marginLeft: "15px",
-                position: "relative",
-                top: "100px",
-                zIndex: "1",
-                cursor: "pointer",
-              }}
-            >
-              <ArrowLeftIcon size={24} />
-              <h1>voltar</h1>
+          <div className="overflow-x-hidden relative appearance-none h-3/4 pt-16 pb-40 scroll-smooth w-full txtBlock z-10">
+            <div className="title-container z-10">
+              <Button onClick={() => router.push("/")}>
+                <div
+                  id="title"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "24px",
+                    margin: "-10px 0 40px 15px",
+                    zIndex: "999",
+                    cursor: "pointer",
+                  }}
+                >
+                  <ArrowLeftIcon size={24} />
+                  <h1>voltar</h1>
+                </div>
+              </Button>
             </div>
-          </div>
-          <div className="overflow-x-hidden relative appearance-none h-3/4 py-40 scroll-smooth w-full txtBlock z-10">
             <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
               <div className="flex w-full justify-between items-center mb-6">
                 <div className="title-sub">
@@ -119,6 +119,7 @@ export default function anteriores() {
                 . As conversas com convidadas e convidados estão disponíveis no
                 canal do Youtube da Semana de Cinema Negro (acesse no{" "}
                 <Link
+                  legacyBehavior
                   passHref={true}
                   href="https://www.youtube.com/@semanadecinemanegro/streams"
                 >
@@ -149,7 +150,7 @@ export default function anteriores() {
                 >
                   Baixar catálogo
                 </Button>
-                {/* <Link
+                {/* <Link legacyBehavior
               passHref={true}
               href='https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing'
             >
@@ -179,6 +180,7 @@ export default function anteriores() {
                 . As conversas com convidadas e convidados estão disponíveis no
                 canal do Youtube da Semana de Cinema Negro (acesse no{" "}
                 <Link
+                  legacyBehavior
                   passHref={true}
                   href="https://www.youtube.com/@semanadecinemanegro/streams"
                 >
@@ -192,6 +194,7 @@ export default function anteriores() {
                 filmes que estavam sendo divulgados ao longo do evento (acesse
                 em{" "}
                 <Link
+                  legacyBehavior
                   passHref={true}
                   href="https://www.coletivozanza.com/tag/semana-de-cinema-negro"
                 >
@@ -206,8 +209,8 @@ export default function anteriores() {
             </div>
           </div>
           <img
-            src="images/elemento_ondas.png"
-            className="h-auto w-full absolute bottom-0 left-0"
+            src="/images/elemento_ondas.png"
+            className="h-auto w-full absolute -bottom-20 left-0"
           />
         </div>
       </div>

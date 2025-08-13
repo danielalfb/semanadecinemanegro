@@ -6,10 +6,10 @@ import { SITE_CONTENT } from "../../helpers/content";
 
 const Footer = () => {
   return (
-    <div className='relative bottom-0 laptop:p-0 w-50'>
+    <div className="relative bottom-0 laptop:p-0 w-50">
       <img
-        alt='reguas_logo'
-        src='../images/regua_logos.png'
+        alt="reguas_logo"
+        src="/images/regua_logos.png"
         style={{ width: "100%", backgroundColor: "#f9f9f9" }}
       />
 
