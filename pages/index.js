@@ -47,7 +47,7 @@ export default function Home() {
             style={{ width: "500px", marginTop: "100px" }}
           />
           <div
-            className="text-8xl"
+            className="text-6xl tablet:text-8xl"
             style={{ color: "var(--color-blue-dark)", fontFamily: "PicNic" }}
           >
             Em breve
