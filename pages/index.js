@@ -1,76 +1,64 @@
-import Image from "next/image";
-import Link from "next/link";
-import Header from "../components/Header";
+import Head from "next/head";
+import Footer from "../components/Footer";
+
+import { InstagramLogo, TreasureChest } from "@phosphor-icons/react";
 
 export default function Home() {
-  const imagesMap = [
-    "images/semana_banner_home.png",
-    "images/semana_home_bg.png",
-    "images/semana_home_2.png",
-    "images/semana_home_2.png",
-    "images/semana_banner_home.png",
-    "images/semana_home_bg.png",
-  ];
-
+  //RETURN
   return (
-    <div className="container">
-      <div className="bannerContainer">
-        <div className="banner">
-          {imagesMap.map((src, index) => (
-            <div key={index} className="gridItem">
-              <Image
-                src={`/${src}`}
-                alt={`Imagem ${index + 1}`}
-                width={500}
-                height={500}
-                sizes="(max-width: 375px) 100vw, (max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                objectFit="cover"
-              />
+    <>
+      <Head>
+        <title>SCNBH25</title>
+      </Head>
+      <div
+        className="h-screen w-full flex justify-center items-start"
+        style={{ backgroundColor: "var(--color-blue)" }}
+      >
+        <div className="h-screen w-full absolute bg-[url(/texture.png)] bg-cover bg-center" />
+        <div className="h-screen w-full flex flex-col justify-start items-center z-10 p-8">
+          <div className="w-full flex justify-end items-center gap-4  z-10">
+            <div
+              id="insta"
+              className="flex justify-center items-center gap-2 tempPage_menu_links"
+              onClick={() =>
+                window
+                  .open(
+                    "https://www.instagram.com/semana.cinemanegrobh/",
+                    "_blank"
+                  )
+                  .focus()
+              }
+            >
+              <InstagramLogo size={24} weight="fill" />
+              <span className="text-1xl">Instagram</span>
             </div>
-          ))}
-        </div>
-        <div className="absolute w-full top-2 flex justify-center">
-          <img
-            src="/images/logo_dark.svg"
-            style={{ maxWidth: "250px", mixBlendMode: "luminosity" }}
-          />
-        </div>
-
-        <div className="overlay">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              lineHeight: "10px",
-            }}
-          >
-            <h1 className="centeredText text-pink-100">Em breve</h1>
-            <h3 className="legendText text-pink-100">em breve</h3>
+            <div
+              id="past"
+              className="flex justify-center items-center gap-2 tempPage_menu_links"
+              onClick={() => window.open("/anteriores", "_self").focus()}
+            >
+              <TreasureChest size={24} weight="fill" />
+              <span className="text-1xl">Edições anteriores</span>
+            </div>
           </div>
-          <Link
-            passHref={true}
-            href="https://drive.google.com/file/d/1gVpQU_bMbwDi8KRD0-ugJDAZra2QqUuH/view"
+          <img
+            src="/images/logo.png"
+            className="h-auto"
+            style={{ width: "500px" }}
+          />
+          <div
+            className="text-8xl"
+            style={{ color: "var(--color-blue-dark)", fontFamily: "PicNic" }}
           >
-            <a target="_blank" className="scheduleBtn bg-red-600 text-pink-100">
-              acessar programação
-            </a>
-          </Link>
-          <Link
-            passHref={true}
-            href="https://www.instagram.com/semana.cinemanegrobh?igsh=MWN0d2szN2p4Njdjaw=="
-          >
-            <a target="_blank" className="instagramLink">
-              <Image
-                src="/images/logo_insta.png"
-                width={100}
-                height={100}
-                alt="Instagram"
-              />
-            </a>
-          </Link>
+            Em breve
+          </div>
         </div>
+        <img
+          src="images/elemento_ondas.png"
+          className="h-auto w-full absolute bottom-0 left-0"
+        />
       </div>
-    </div>
-  );
+      <Footer />
+    </>
+  )
 }

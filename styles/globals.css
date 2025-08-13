@@ -21,6 +21,35 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "PicNic";
+  src:
+    url("/Fonts/PicNic.woff2") format("woff2"),
+    url("/Fonts/PicNic.woff") format("woff");
+    font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: "RubikMonoOne";
+  src:
+    url("/Fonts/RubikMonoOne-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UfesSans";
+  src:
+    url("/Fonts/UfesSans-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 
@@ -43,6 +72,18 @@
   --clr-olive: #bed992;
   --clr-pink-light: #ff9fad;
   --clr-blue-dark: #141a23;
+    --color-blue-light: #C6D3DE;
+  --color-blue: #6EA7BD;
+  --color-blue-dark: #224296;
+  --color-lilac: #8F78B0;
+  --color-pink: #CEA1A2;
+  --color-orange: #C17153;
+  --color-olive: #7E8C5E;
+  --color-green: #009268;
+  --color-yellow: #C5B743;
+  --color-lime: #E8ECA8;
+  --color-cream: #E9E2CB;
+  --color-main-txt: #231F20;
 }
 
 html {
@@ -295,3 +336,20 @@ input.searchbarInput:focus::placeholder {
   background: inherit;
   border-radius: inherit;
 }
+
+
+.tempPage_menu_links {
+  color:var(--color-cream)
+
+}
+.tempPage_menu_links:hover {
+  cursor: pointer; 
+}
+#insta.tempPage_menu_links:hover > span, #past.tempPage_menu_links:hover > span  {
+  display: block;
+transition: 0.3s;}
+
+.tempPage_menu_links span {
+  display: none;
+font-family: RubikMonoOne, Arial, Helvetica, sans-serif;
+  }
