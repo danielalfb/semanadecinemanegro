@@ -48,6 +48,37 @@ export default function Anteriores() {
             <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
               <div className="flex w-full justify-between items-center mb-6">
                 <div className="title-sub">
+                  <h2>SCNBH&apos;24</h2>
+                </div>
+                {/* <Button
+                  onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/1cbld8n2xrQfcr73jDnmRV2Bzia4I2S63/view"
+                    )
+                  }
+                >
+                  Baixar catálogo
+                </Button> */}
+              </div>
+              <p>
+                A 4ª edição da Semana de Cinema Negro de Belo Horizonte
+                aconteceu presencialmente pela primeira vez e, por esse motivo,
+                a presença do público foi essencial para a construção do
+                festival. Promovemos um encontro marcado pelo afeto e
+                acolhimento. Apresentamos, 13 a 20 de setembro de 2024, um
+                conjunto composto por 60 filmes de cinematografias africanas,
+                negras brasileiras e da diáspora, distribuído em três mostras,
+                duas homenagens e uma Sessão Especial:{" "}
+                <i>
+                  Especial Pioneiros do Cinemas Africanos;
+                  Cine-Escrituras Pretas;  Sessão Homenagem Maria José Novais
+                  Oliveira e Ibejis (Infantil)
+                </i>
+              </p>
+            </div>
+            <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
+              <div className="flex w-full justify-between items-center mb-6">
+                <div className="title-sub">
                   <h2>SCNBH&apos;23</h2>
                 </div>
                 <Button
