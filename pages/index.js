@@ -44,11 +44,11 @@ export default function Home() {
           <div className="flex justify-center items-center flex-col ">
           <img
             src="/images/logo.png"
-            className="h-auto"
+            className="h-auto tablet:mt-32 mob:mt-32"
             style={{ width: "500px"}}
           />
            <div
-            className="text-3xl m-6 "
+            className="text-3xl tablet:text-lg mob:text-lg mb-6 mt-6"
             style={{ color: "var(--color-blue-dark)", fontFamily: "RubikMonoOne" }}
           >
             16 - 24 Outubro 2025
