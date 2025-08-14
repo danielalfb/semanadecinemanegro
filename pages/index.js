@@ -41,11 +41,19 @@ export default function Home() {
               <span className="text-1xl">Edições anteriores</span>
             </div>
           </div>
+          <div className="flex justify-center items-center flex-col ">
           <img
             src="/images/logo.png"
             className="h-auto"
-            style={{ width: "500px", marginTop: "100px" }}
+            style={{ width: "500px"}}
           />
+           <div
+            className="text-3xl m-6 "
+            style={{ color: "var(--color-blue-dark)", fontFamily: "RubikMonoOne" }}
+          >
+            16 - 24 Outubro 2025
+          </div>
+          </div>
           <div
             className="text-6xl tablet:text-8xl"
             style={{ color: "var(--color-blue-dark)", fontFamily: "PicNic" }}
