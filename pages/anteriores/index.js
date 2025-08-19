@@ -149,14 +149,8 @@ export default function Anteriores() {
                 </i>
                 . As conversas com convidadas e convidados estão disponíveis no
                 canal do Youtube da Semana de Cinema Negro (acesse no{" "}
-                <Link
-                  legacyBehavior
-                  passHref={true}
-                  href="https://www.youtube.com/@semanadecinemanegro/streams"
-                >
-                  <a target="_blank" className="text-blue-300 flex-wrap">
-                    Youtube
-                  </a>
+                <Link href="https://www.youtube.com/@semanadecinemanegro/streams">
+                  Youtube
                 </Link>
                 .) Concebemos um catálogo com textos que refletem sobre a mostra{" "}
                 <i>Por Outros Cinemas Africanos</i>. Além disso, trouxemos duas
@@ -211,13 +205,9 @@ export default function Anteriores() {
                 . As conversas com convidadas e convidados estão disponíveis no
                 canal do Youtube da Semana de Cinema Negro (acesse no{" "}
                 <Link
-                  legacyBehavior
-                  passHref={true}
                   href="https://www.youtube.com/@semanadecinemanegro/streams"
-                >
-                  <a target="_blank" className="text-blue-300">
-                    Youtube
-                  </a>
+                >                    Youtube
+
                 </Link>
                 .) Durante o festival, o Coletivo Zanza realizou a cobertura
                 crítica. Os integrantes Diego Silva Souza, Gabriel Araújo,
@@ -225,15 +215,11 @@ export default function Anteriores() {
                 filmes que estavam sendo divulgados ao longo do evento (acesse
                 em{" "}
                 <Link
-                  legacyBehavior
-                  passHref={true}
                   href="https://www.coletivozanza.com/tag/semana-de-cinema-negro"
                 >
-                  <a target="_blank" className="text-blue-300">
-                    Coletivo Zanza
-                  </a>
+                  Coletivo Zanza
                 </Link>
-                .). Em nosso catálogo, que já está disponível para download, é
+                .) Em nosso catálogo, que já está disponível para download, é
                 possível conferir toda a programação, as sinopses dos filmes
                 exibidos, assim como os textos publicados sobre essa edição.
               </p>

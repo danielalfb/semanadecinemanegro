@@ -14,15 +14,9 @@ export default function atividadesFormativas() {
       <div className="flex w-full desktop:justify-between desktop:flex-row desktop:items-center mb-6 mob:flex mob:flex-col mob:items-start">
           <h1 className='mb-6'>ATIVIDADES FORMATIVAS</h1>
           <Link
-              passHref={true}
               href='https://docs.google.com/forms/d/e/1FAIpQLScd4FaMwjqZXBcHcTQgGaj6Yw0xNBlCdPgSmKqSnUOu0xZM2Q/viewform'
             >
-              <a
-                target='_blank'
-                className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-md uppercase font-bold hover:shadow-sm'
-              >
-                Inscreva-se
-              </a>
+              Inscreva-se
             </Link>
       </div>  
         <ContentMenu tipo='ATIVIDADES' />

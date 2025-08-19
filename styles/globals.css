@@ -33,6 +33,12 @@
   font-display: swap;
 }
 
+button, input {
+  font-family: "RubikMonoOne";
+  color: white;
+  font-size: 12px !important;
+}
+
 :root {
   --color-blue-light: #C6D3DE;
   --color-blue: #6EA7BD;

@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { ALL_MOVIES } from "../../helpers/allMovies";
 import MovieCard from "../MovieCard";
-import { MagnifyingGlass } from "@phosphor-icons/react";
 import { createPortal } from "react-dom";
 
 function Searchbar({ isMobile }) {
@@ -46,28 +45,22 @@ function Searchbar({ isMobile }) {
             : " w-28"
         }`}
       >
-        <div className={`relative inline-flex items-center w-full`}>
+        <div className={`relative inline-flex items-center right-28`}>
           <input
+          id="search"
             type='text'
             placeholder='Pesquisar'
             value={input}
             onChange={handleInputChange}
             className={`searchbarInput ${
               isMobile ? "searchbarInputMob" : ""
-            } w-full h-6 p-2 text-sm border-none rounded-full`}
+            }h-6 p-2 text-sm`}
             style={{
-              backgroundColor: "transparent",
-              color: !isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)",
-              border: `1px solid ${
-                !isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)"
-              }`,
+              backgroundColor: "white",
+              color: "white",
+              borderRadius:"none",
+              
             }}
-          />
-          <MagnifyingGlass
-            className='absolute right-2'
-            size={16}
-            weight='bold'
-            color={!isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)"}
           />
         </div>
       </div>

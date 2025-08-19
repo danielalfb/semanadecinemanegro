@@ -1,72 +1,94 @@
-import Head from "next/head";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
-import { InstagramLogoIcon, TreasureChestIcon } from "@phosphor-icons/react";
+import ReactPlayer from "react-player";
+import Link from "next/link";
 
 export default function Home() {
-  //RETURN
   return (
     <>
       <Head>
         <title>SCNBH25</title>
       </Head>
-      <div
-        className="h-screen w-full flex justify-center items-start"
-        style={{ backgroundColor: "var(--color-blue)" }}
-      >
-        <div className="h-screen w-full absolute bg-[url(/images/texture.png)] bg-cover bg-center" />
-        <div className="h-screen w-full flex flex-col justify-start items-center z-10 p-8">
-          <div className="w-full flex justify-end items-center gap-4  z-10">
-            <div
-              id="insta"
-              className="flex justify-center items-center gap-2 tempPage_menu_links"
-              onClick={() =>
-                window
-                  .open(
-                    "https://www.instagram.com/semana.cinemanegrobh/",
-                    "_blank"
-                  )
-                  .focus()
-              }
-            >
-              <InstagramLogoIcon size={24} weight="fill" />
-              <span className="text-1xl">Instagram</span>
-            </div>
-            <div
-              id="past"
-              className="flex justify-center items-center gap-2 tempPage_menu_links"
-              onClick={() => window.open("/anteriores", "_self").focus()}
-            >
-              <TreasureChestIcon size={24} weight="fill" />
-              <span className="text-1xl">Edições anteriores</span>
-            </div>
-          </div>
-          <div className="flex justify-center items-center flex-col ">
-          <img
-            src="/images/logo.png"
-            className="h-auto tablet:mt-32 mob:mt-32"
-            style={{ width: "500px"}}
-          />
-           <div
-            className="text-3xl tablet:text-lg mob:text-lg mb-6 mt-6"
-            style={{ color: "var(--color-blue-dark)", fontFamily: "RubikMonoOne" }}
-          >
-            16 - 24 Outubro 2025
-          </div>
-          </div>
+
+      <div className="relative h-screen w-full">
+        <Header />
+        <div className="w-full  pt-20 bg-green-100">
           <div
-            className="text-6xl tablet:text-8xl"
-            style={{ color: "var(--color-blue-dark)", fontFamily: "PicNic" }}
-          >
-            Em breve
+            className="w-full h-screen bg-top bg-cover mt-7"
+            style={{
+              backgroundImage: `url('/images/semana_banner_25_2.png')`,
+            }}
+          />
+        </div>
+
+        {/*<p className="absolute bottom-6 right-0 bg-blue-500 text-white p-2 text-xs">
+          VOCÊS, por Pedro Neves
+        </p>*/}
+        {/* SOBRE */}
+        <div className="p-10 bg-pink-100 relative pl-48 pr-0">
+          <div className="relative w-full bg-blue-700 text-white text-md leading-6 z-10 p-10">
+            <p>
+              A <i>3º Semana de Cinema Negro de Belo Horizonte</i> apresenta, de
+              09 a 17 de setembro de 2023, um conjunto composto por 70 filmes de
+              cinematografias africanas, negras brasileiras e da diáspora
+              distribuídas em:{" "}
+              <i>
+                Cinemas Africanos contam suas histórias; 50 Anos de Touki Bouki,
+                Celebrando o Cinema de Djibril Diop Mambéty; Cine-Escrituras
+                Pretas; Cinema Negro e Experimental com Crystal Z Campbell;
+                Sessão Homenagem Maria José Novais Oliveira; 5 Anos de Ponta de
+                Anzol; e Ibejis (Infantil)
+              </i>
+              .
+            </p>
+            <p>
+              O festival acontecerá de forma híbrida, presencialmente e on-line.
+              As exibições presenciais serão realizadas no Cine Humberto
+              Mauro/Palácio das Artes e no Cine Santa Tereza, e toda a
+              programação é gratuita. Os filmes da mostra Cine-Escrituras Pretas
+              estarão disponíveis nas salas de exibição e na plataforma Cine
+              Humberto Mauro Mais (
+              <Link
+                target="_blank"
+                href="https://www.cinehumbertomauromais.com/#semana-cinema-negro-bh/#semana-cinema-negro-bh/#semana-cinema-negro-bh"
+              >
+                www.cinehumbertomauromais.com
+              </Link>
+              ). Nesta edição, além das sessões fílmicas, teremos conversas com
+              convidadas e convidados internacionais, bem como debates com
+              realizadoras e realizadores da mostra dedicada aos filmes
+              brasileiros – todos os debates acontecerão presencialmente.
+              Contamos, ainda, com três oficinas: &quot;Sonhando em
+              Palavras&quot;, Escrevendo o Primeiro Longa, ministrada por Diego
+              Paulino, realizada em parceria com a Rede de Talentos do Projeto
+              Paradiso, através do Paradiso Multiplica (presencial); Elaboração
+              e Produção de Projetos, ministrada por Fernanda Vidigal (on-line);
+              Processos de Distribuição do Cinema Independente ministrada por
+              Daniel Queiroz (híbrido).
+            </p>
+            <p>
+              As obras do artista plástico Pedro Neves compõem toda identidade
+              visual desta edição do festival. Em suas obras o artista trabalha
+              com um repertório amplo de narrativas e de imagens que partem das
+              manifestações culturais e dos saberes afro-brasileiros para
+              dialogar com fontes diversas. O projeto gráfico é do nosso
+              parceiro Marco Chagas que, a partir do desenho, pesquisa o
+              cotidiano urbano e suas relações com o pensamento gráfico.
+              <br />
+              Convidamos a todas, todes e todos a acompanharem a programação.
+            </p>
           </div>
         </div>
-        <img
-          src="/images/elemento_ondas.png"
-          className="h-auto w-full absolute bottom-0 left-0"
-        />
+        <div className="w-full laptop:mt-30 p-2 laptop:p-0">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=dPOWUaENIOY"
+            width="100%"
+          />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

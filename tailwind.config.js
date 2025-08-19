@@ -1,3 +1,15 @@
+// #224296
+// #C6D3DE
+// #6EA7BD
+// #CEA1A2
+// #C17153
+// #7E8C5E
+// #009268
+// #C5B743
+// #E8ECA8
+// #E9E2CB
+// #231F20
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -30,10 +42,11 @@ module.exports = {
       "pink-800": "#880E2B",
       "blue-500": "#507FE1",
       "blue-600": "#1E478F",
+      "blue-400": "#224296",
       "blue-700": "#07141E",
       "red-500": "#DF2100",
       "red-600": "#B2282A",
-      "green-100": "#DCE7DE",
+      "green-100": "#009268",
       "green-400": "#B3DA8F",
       "green-500": "#46AA30",
     },
