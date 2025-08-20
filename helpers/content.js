@@ -3,7 +3,7 @@ export const SITE_CONTENT = {
     {
       id: "abertura",
       type: "mostra",
-      title: "",
+      title: "Sessão de Abertura",
       shortTitle: "A-BER-TU-RA",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/mostras/abertura",

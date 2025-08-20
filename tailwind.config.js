@@ -22,7 +22,7 @@ module.exports = {
       tablet: "768px",
       laptop: "1024px",
       desktop: "1280px",
-      laptopl: "1440px",
+      laptop: "1440px",
     },
     colors: {
       "blue-100": "#C5D3DE ",

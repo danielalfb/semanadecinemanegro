@@ -8,9 +8,8 @@ export default function ItemCard({ color, name, description, url }) {
 
   return (
     <div
-      className={`flex flex-col gap-4 p-6 cursor-pointer rounded-xs hover:scale-90 transform-gpu duration-75 w-[200px] mob:w-full`}
+      className={`flex flex-col gap-4 p-6 cursor-pointer rounded-md w-full min-w-[250px] hover:scale-90 transform-gpu duration-75 w-[200px] desktop:w-[250px]`}
       style={{
-        width: "200px",
         background: `var(--color-${color})`,
         color: "var(--color-cream)",
       }}
