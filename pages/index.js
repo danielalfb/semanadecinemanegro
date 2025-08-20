@@ -15,21 +15,23 @@ export default function Home() {
       <div className="relative min-h-screen w-full">
         <Header />
         {/* Banner com opacidade */}
-        <div className="w-full pt-20 bg-green-100">
+        <div className="w-full tablet:pt-28 mob:pt-16">
           <div
-            className="w-full h-screen bg-top bg-cover mt-7 relative"
+            className="w-full relative"
             style={{
               backgroundImage: `url('/images/semana_banner_25_3.png')`,
+              backgroundSize: "cover",
+              backgroundPosition: "top",
             }}
           >
             <div className="absolute inset-0 bg-black opacity-80" style={{ zIndex: 1 }} />
-            <div className="flex flex-col items-start px-10" style={{ position: "relative", zIndex: 2 }}>
-              <div className="p-6 max-w-2xl">
-                <h2 className="text-2xl font-bold mb-2 text-left text-white">
+            <div className="relative z-10 flex flex-col items-start px-2 tablet:px-10 py-8 max-w-full tablet:max-w-4xl mx-auto">
+              <div className="p-2 tablet:p-6 w-full">
+                <h2 className="text-xl tablet:text-3xl font-bold mb-2 text-left text-white">
                   5º Semana de Cinema Negro de Belo Horizonte
                 </h2>
-                <p className="text-md mb-4 text-left text-white">
-                  A <i>3º Semana de Cinema Negro de Belo Horizonte</i> apresenta, de
+                <p className="text-sm tablet:text-lg mb-4 text-left text-white leading-relaxed tablet:leading-loose">
+                  A <i>5º Semana de Cinema Negro de Belo Horizonte</i> apresenta, de
                   16 a 24 de setembro de 2025, um conjunto composto por 70 filmes de
                   cinematografias africanas, negras brasileiras e da diáspora
                   distribuídas em:{" "}
@@ -49,7 +51,7 @@ export default function Home() {
                   <Link
                     target="_blank"
                     href="https://www.cinehumbertomauromais.com/#semana-cinema-negro-bh/#semana-cinema-negro-bh/#semana-cinema-negro-bh"
-                    className="underline text-blue-200"
+                    className="underline text-blue-700"
                   >
                     www.cinehumbertomauromais.com
                   </Link>
@@ -65,7 +67,7 @@ export default function Home() {
                   Processos de Distribuição do Cinema Independente ministrada por
                   Daniel Queiroz (híbrido).
                 </p>
-                <div className="flex gap-4">
+                <div className="flex flex-col tablet:flex-row gap-2 tablet:gap-4 mb-8">
                   <button
                     className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition border border-white"
                     onClick={() => console.log('click')}
@@ -89,11 +91,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full laptop:mt-30 p-2 laptop:p-0 mt-2">
+        {/* Player responsivo */}
+        <div className="w-full  mx-auto">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=dPOWUaENIOY"
             width="100%"
-            height="500px"
+            height="320px"
           />
         </div>
         <Footer />

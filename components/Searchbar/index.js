@@ -45,21 +45,18 @@ function Searchbar({ isMobile }) {
             : " w-28"
         }`}
       >
-        <div className={`relative inline-flex items-center right-28`}>
+        <div className={`relative inline-flex items-center ${isMobile ? "w-full" : "tablet:right-28"}`}>
           <input
-          id="search"
+            id="search"
             type='text'
             placeholder='Pesquisar'
             value={input}
             onChange={handleInputChange}
-            className={`searchbarInput ${
-              isMobile ? "searchbarInputMob" : ""
-            }h-6 p-2 text-sm`}
+            className={`searchbarInput ${isMobile ? "searchbarInputMob w-full" : ""} h-6 p-2 text-sm`}
             style={{
               backgroundColor: "white",
               color: "white",
               borderRadius:"none",
-              
             }}
           />
         </div>
