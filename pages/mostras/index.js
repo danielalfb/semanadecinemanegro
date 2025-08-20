@@ -6,10 +6,10 @@ import PageBanner from "../../components/PageBanner";
 
 export default function mostras() {
   return (
-    <div className="h-screen w-full relative overflow-x-hidden">
+    <div className="h-screen w-full  overflow-x-hidden bg-white">
       <Header />
-      <div className="mt-36 w-full">
-        <PageBanner title="Mostras" bg={"/images/semana_banner_25_1.png"} />
+      <div className="w-full" style={{ marginTop: "120px " }}>
+        <PageBanner title="Mostras" bg={"images/semana_banner_25_1.png"} />
         <ContentMenu tipo="mostras" />
       </div>
       <Footer />
