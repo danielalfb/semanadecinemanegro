@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import ItemCard from "../ItemCard";
 import { SITE_CONTENT } from "../../helpers/content";
-import { ArrowLeftIcon, ArrowRightIcon } from "@phosphor-icons/react";
+import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
 
 const ContentMenu = ({ tipo }) => {
   const scrollRef = useRef(null);
@@ -22,7 +22,7 @@ const ContentMenu = ({ tipo }) => {
         onClick={() => scroll("left")}
         className="absolute left-2 top-1/2 -translate-y-1/2 z-10 rounded-full bg-brown shadow p-2 hover:bg-gray-100"
       >
-        <ArrowLeftIcon className="h-5 w-5" />
+        <CaretLeftIcon className="h-5 w-5" />
       </button>
 
       {/* Right Button */}
@@ -30,7 +30,7 @@ const ContentMenu = ({ tipo }) => {
         onClick={() => scroll("right")}
         className="absolute right-2 top-1/2 -translate-y-1/2 z-10 rounded-full bg-brown shadow p-2 hover:bg-gray-100"
       >
-        <ArrowRightIcon className="h-5 w-5" />
+        <CaretRightIcon className="h-5 w-5" />
       </button>
 
       {/* Scrollable track */}
