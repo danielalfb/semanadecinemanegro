@@ -20,6 +20,7 @@ export default function ItemCard({ color, name, description, url }) {
         <div className="flex-col gap-2">
           {splitTitle.map((silable) => (
             <h2
+              key={silable}
               style={{
                 color: "var(--color-cream)",
               }}
