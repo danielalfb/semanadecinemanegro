@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <div className='absolute w-full top-0'>
-      <div className="bg-green-400 flex justify-between px-2 w-full h-10 items-center">
+      <div className="bg-brown-100 flex justify-between px-2 w-full h-10 items-center">
         <h3>Festival de Cinema Intercâmbio Cultural Brasil-África </h3>
         <div className="flex">
         <Searchbar />

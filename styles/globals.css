@@ -52,8 +52,7 @@ button, input {
   --color-lime: #E8ECA8;
   --color-cream: #E9E2CB;
   --color-main-txt: #231F20;
-  
-
+  --color-main-txt-light: #fff;
 }
 * {
   /* font-family: "Open Sans"; */
@@ -73,6 +72,14 @@ h2 {
   color: var(--color-pink);
   font-size: 2rem;
   font-weight: 700;
+}
+
+h3 {
+  color: var(--color-main-txt-light);
+}
+
+svg {
+  fill: var(--color-main-txt-light)
 }
 
 .header-links {

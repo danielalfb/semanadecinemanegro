@@ -49,6 +49,7 @@ module.exports = {
       "green-100": "#009268",
       "green-400": "#B3DA8F",
       "green-500": "#46AA30",
+      "brown-100": "#231F20",
     },
     fontFamily: {
       sans: ["Broke, sans - serif"],
