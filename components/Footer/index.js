@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
 import Button from "../Button";
 import { EnvelopeSimple, InstagramLogo, Phone, FacebookLogo, YoutubeLogo, TwitterLogo } from "@phosphor-icons/react";
 import { SITE_CONTENT } from "../../helpers/content";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -38,24 +38,24 @@ const Footer = () => {
         </div>
         <div className="absolute left-[40%] top-6 bottom-6 w-px bg-white/30" />
         <div className="flex flex-col items-start pl-4">
-          <a
+          <Link
             href="/mostras"
             className="text-xs mb-1 hover:underline"
           >
             mostras
-          </a>
-          <a
+          </Link>
+          <Link
             href="/atividades-formativas"
             className="text-xs mb-1 hover:underline"
           >
             atividades formativas
-          </a>
-          <a
+          </Link>
+          <Link
             href="/anteriores"
             className="text-xs mb-1 hover:underline"
           >
             edições anteriores
-          </a>
+          </Link>
         </div>
         <div className="absolute left-[60%] top-6 bottom-6 w-px bg-white/30" />
         <div className="flex flex-col items-start pl-4">
