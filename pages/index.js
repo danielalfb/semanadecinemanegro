@@ -26,11 +26,11 @@ export default function Home() {
             <div className="flex flex-col items-start px-10" style={{ position: "relative", zIndex: 2 }}>
               <div className="p-6 max-w-2xl">
                 <h2 className="text-2xl font-bold mb-2 text-left text-white">
-                  3º Semana de Cinema Negro de Belo Horizonte
+                  5º Semana de Cinema Negro de Belo Horizonte
                 </h2>
                 <p className="text-md mb-4 text-left text-white">
                   A <i>3º Semana de Cinema Negro de Belo Horizonte</i> apresenta, de
-                  09 a 17 de setembro de 2023, um conjunto composto por 70 filmes de
+                  16 a 24 de setembro de 2025, um conjunto composto por 70 filmes de
                   cinematografias africanas, negras brasileiras e da diáspora
                   distribuídas em:{" "}
                   <i>
