@@ -9,36 +9,17 @@ const OPTIONS = {
 
 const ContentMenu = ({ tipo }) => {
   return (
-    <>
-      {tipo === OPTIONS.MOSTRAS && (
-        <div className='w-full gap-2 link grid desktop:grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-2 mob:grid-cols-1'>
-          {SITE_CONTENT.mostras.map(({ name, description, url, color }) => (
-            <ItemCard
-              key={name}
-              name={name}
-              description={description}
-              url={url}
-              color={color}
-            />
-          ))}
-        </div>
-      )}
-      {tipo === OPTIONS.ATIVIDADES && (
-        <div
-          className={`w-full gap-2 link grid desktop:grid-cols-${SITE_CONTENT.atividades.length} laptop:grid-cols-${SITE_CONTENT.atividades.length} tablet:grid-cols-2 mob:grid-cols-1`}
-        >
-          {SITE_CONTENT.atividades.map(({ name, description, url, color }) => (
-            <ItemCard
-              key={name}
-              name={name}
-              description={description}
-              url={url}
-              color={color}
-            />
-          ))}
-        </div>
-      )}
-    </>
+    <div className="w-full gap-2 link flex flex-wrap p-10">
+      {SITE_CONTENT[tipo].map(({ id, shortTitle, description, url, color }) => (
+        <ItemCard
+          key={id}
+          name={shortTitle}
+          description={description}
+          url={url}
+          color={color}
+        />
+      ))}
+    </div>
   );
 };
 

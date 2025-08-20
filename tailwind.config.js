@@ -36,7 +36,8 @@ module.exports = {
       mustard: "#C5B743",
       lime: "#E8EDA8",
       white: "#EAE3CC",
-      black: "#231F20",
+      brown: "#231F20",
+      black: "#0E0C0C",
     },
     fontFamily: {
       sans: ["Broke, sans - serif"],

@@ -40,12 +40,12 @@ button, input {
 }
 
 :root {
-  --color-blue-light: #C6D3DE;
-  --color-blue: #6EA7BD;
-  --color-blue-dark: #224296;
+  --color-blue-100: #C6D3DE;
+  --color-blue-200: #6EA7BD;
+  --color-blue-300: #224296;
   --color-lilac: #8F78B0;
   --color-pink: #CEA1A2;
-  --color-orange: #C17153;
+  --color-earth: #C17153;
   --color-olive: #7E8C5E;
   --color-green: #009268;
   --color-yellow: #C5B743;

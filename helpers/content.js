@@ -1,82 +1,67 @@
 export const SITE_CONTENT = {
   mostras: [
     {
+      id: "abertura",
+      type: "mostra",
+      title: "",
+      shortTitle: "A-BER-TU-RA",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
+      url: "/mostras/abertura",
+      color: "green",
+    },
+    {
       id: "homenagem",
       type: "mostra",
-      name: "HOMENAGEM - MARIA JOSÉ NOVAIS OLIVEIRA",
-      description: `A voz de Maria José Novais Oliveira ecoava dizendo: “É muito mágico essa história de cinema”.
-      A abertura da 3ª Semana de Cinema Negro conta com a sessão Homenagem Maria José Novais Oliveira. Exibiremos o filme Nossa mãe era atriz de André Novais Oliveira e Renato Novais.  Desde   a primeira edição saudamos nossa grande atriz, Dona Zezé (in memoriam), como era carinhosamente chamada no meio cinematográfico. No conjunto de filmes reunidos na altura, foi apresentado o  teaser do curta a ser exibido nesta edição. Nossa sessão homenagem é novamente para saudar aquela que lhe empresta seu nome, com a exibição do filme finalizado.
-      `,
+      title: "",
+      shortTitle: "HO-ME-NA-GEM",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/mostras/homenagem",
-      color: "var(--clr-blue-dark)",
+      color: "earth",
     },
     {
-      id: "escrituras",
+      id: "brasileira",
       type: "mostra",
-      name: "CINE-ESCRITURAS PRETAS",
-      description:
-        'A mostra Cine-Escrituras Pretas apresenta uma variedade de filmes que atualizam, resgatam e subvertem alguns campos semânticos, tanto na forma, quanto no conteúdo narrativo.  É visível um fio condutor que conecta os filmes selecionados às grandes teses que fundamentam a realidade e possibilidades de devir para a população afro-brasileira e para o próprio campo da linguagem. Podemos destacar a própria história do cinema e televisão brasileiras, perpassando as searas da família e parentesco; da ecologia; dos direitos sexuais e reprodutivos; do dinheiro e das masculinidades; da ancestralidade; do amor e da necropolítica. A mostra, sob curadoria de Cecilia Godoi e Rayanne Layssa, composta por 27 filmes da produção recente, entre curtas e longas, está dividida em seis eixos norteadores: Quando o Corpo e a Paisagem se Fundem; Não Adianta ter Resposta se Você não tem o Tempo; O Chão, o Teto e seu Contorno; "Chavão Abre Porta Grande"; Racismos Íntimos: As Parábolas, a Carestia e o Perdão em Nossos Lares; Caminhos que Trilhamos.',
-      url: "/mostras/escrituras",
-      color: "var(--clr-blue-light)",
+      title: "",
+      shortTitle: "BRA-SI-LEI-RA",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
+      url: "/mostras/brasileira",
+      color: "blue-300",
     },
     {
-      id: "cinemas-africanos",
+      id: "internacional",
       type: "mostra",
-      name: "OS CINEMAS AFRICANOS CONTAM SUAS HISTÓRIAS",
-      description:
-        "Consolidando um caminho trilhado desde a primeira edição que se dedica a exibir filmes do continente africano, o programa Cinemas Africanos contam suas histórias e traz obras que contam as trajetórias da produção de filmes no continente. Seja através de seus bastidores, como no making of do filme icônico Ceddo (1977), do cineasta Ousmane Sembène, feito por Paulin Vieyra – outro pioneiro do cinema do Senegal – ou nos documentários de Ferihd Boughedir (Camera d’Afrique), de Manthia Diawara Ngugi Wã Thiongo (Making of African Cinema) e de Balufu Bacupa Kanynda (Dez Mil Anos de Cinema). Exibiremos as produções contemporâneas de Thierno Souleymane Diallo (O Cemitério do Cinema); Coconut Head Generation de Alain Alain Kassanda; Por fim, o filme Le taxi, le cinema et moi de Zampaligre Salam que relembra a vida de Ousmane Sembène, diretor autodidata burquinense, famoso em seu país e na cena internacional.",
-      url: "/mostras/cinemas-africanos",
-      color: "var(--clr-blue-default)",
+      title: "",
+      shortTitle: "IN-TER-NA-CIO-NAL",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
+      url: "/mostras/internacional",
+      color: "lilac",
     },
     {
-      id: "cinemas-caribe",
+      id: "quilombola",
       type: "mostra",
-      name: "OS CINEMAS DO CARIBE HOJE",
-      description:
-        "Atravessando o Atlântico, o programa Os Cinemas do Caribe Hoje traz o segundo longa-metragem do cineasta e curador martinicano Wally Fall (Dancing the Stumble). A obra é uma reflexão profunda e delicada sobre as questões de saúde mental na Martinica. O Programa é composto por  mais três curtas-metragens: Le Roi n'est pas mon cousin é o filme de estreia da cineasta franco-guadalupense Annabelle Aventurin; o filme Agwe do diretor haitiano Samuel Frantz Suffren, vencedor do Prêmio Paul Robeson para os filmes da diáspora no FESPACO de 2023;  Madame Pipi, de Rachelle Salnave, acompanha mulheres haitianas que são atendentes em banheiros de casas noturnas em Miami.",
-      url: "/mostras/cinemas-caribe",
-      color: "var(--clr-blue-darkest)",
+      title: "",
+      shortTitle: "QUI-LOM-BO-LA",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
+      url: "/mostras/quilombola",
+      color: "blue-200",
     },
     {
-      id: "djibril",
+      id: "infantil",
       type: "mostra",
-      name: "50 ANOS DE TOUKI BOUKI, CELEBRANDO O CINEMA DE DJIBRIL DIOP MAMBÉTY",
-      description:
-        "A África ainda se faz presente no programa 50 anos de Touki Bouki, celebrando o cinema de Djibril Diop Mambéty. No cinquentenário desse clássico do diretor senegalês, a curadoria internacional propõe uma retrospectiva parcial com alguns de seus filmes. Ao todo serão exibidos seis obras, incluindo dois filmes que compõem a trilogia inacabada História de Gente Comum: A Pequena Vendedora de Sol e O Franco. Além disso, o programa apresenta a versão restaurada do estonteante e irreverente filme Hienas e o sensível making of que Mambéty fez de Yabaa - filme de seu amigo estimado Idrissa Ouedraogo em 1989. Encerrando essa homenagem a Mambéty, será exibido documentário inédito no Brasil O Príncipe de Colobane, de Laurence Gavron.",
-      url: "/mostras/djibril",
-      color: "var(--clr-green-dark)",
+      title: "",
+      shortTitle: "IN-FAN-TIL",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
+      url: "/mostras/infantil",
+      color: "olive",
     },
     {
-      id: "crystal",
+      id: "especial",
       type: "mostra",
-      name: "CINEMA NEGRO E EXPERIMENTAL COM CRYSTAL Z CAMPBELL",
-      description:
-        "A Semana de Cinema Negro de Belo Horizonte abraça a iniciativa da curadora Janaína Oliveira que há alguns anos circula no Brasil filmes negros experimentais. O Programa Cinema Negro e Experimental faz uma retrospectiva completa e inédita no país da cineasta estadunidense Crystal Z Campbell. Campbell é um dos principais nomes da vanguarda do cinema nos EUA, e estará em Belo Horizonte para conversar com o público mineiro sobre seu trabalho.",
-      url: "/mostras/crystal",
-      color: "var(--clr-green-light)",
-    },
-    {
-      id: "ibejis",
-      type: "mostra",
-      name: "IBEJIS (INFANTIL)",
-      description:
-        "Para o público infantil, a 3ª edição da Semana de Cinema Negro de Belo Horizonte traz  5 filmes e a série Bia Desenha com 13 episódios. O festival entende a importância da formação de público desde a infância.",
-      url: "/mostras/ibejis",
-      color: "var(--clr-yellow-dark)",
-    },
-    {
-      id: "ponta-de-anzol",
-      type: "mostra",
-      name: "5 ANOS DE PONTA DE ANZOL",
-      description: `Na filmografia da Ponta, arte e trabalho se confluem, e o movimento atrelado às produções 
-transformam o microcosmo que as rodeia num espaço onde a esperança e a impetuosidade podem delinear mundos mais justos.
-Ponta de Anzol Filmes é uma produtora sediada em Belo Horizonte. Composta por Bruno Greco (Belo Horizonte), Higor Gomes (Sabará), Jacson Dias (Santa Luzia) e Maick Hannder (Betim).
-
-A Ponta de Anzol Filmes é destaque nacional com seus curtas-metragens com passagem por mais de 100 festivais nacionais e internacionais, e comemora conosco seus 5 anos de trajetória.
-
-`,
-      url: "/mostras/ponta-de-anzol",
-      color: "var(--clr-yellow-light)",
+      title: "",
+      shortTitle: "ES-PE-CI-AL",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
+      url: "/mostras/especial",
+      color: "pink",
     },
   ],
   atividades: [

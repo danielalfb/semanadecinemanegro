@@ -1,17 +1,45 @@
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useMemo } from "react";
 
 export default function ItemCard({ color, name, description, url }) {
   const router = useRouter();
 
+  const splitTitle = useMemo(() => name.split("-") ?? null, []);
+
   return (
     <div
-      className='w-full flex flex-col gap-4 p-6 cursor-pointer hover:scale-90 transform-gpu duration-75'
-      style={{ background: color, color: "var(--clr-white)" }}
+      className={`flex flex-col gap-4 p-6 cursor-pointer rounded-xs hover:scale-90 transform-gpu duration-75`}
+      style={{
+        width: "200px",
+        background: `var(--color-${color})`,
+        color: "var(--color-cream)",
+      }}
       onClick={() => router.push(`/${url}`)}
     >
-      <h2 className='uppercase'>{name}</h2>
-      <span className='text-sm'>{description}</span>
+      {splitTitle ? (
+        <div className="flex-col gap-2">
+          {splitTitle.map((silable) => (
+            <h2
+              style={{
+                color: "var(--color-cream)",
+              }}
+              className="uppercase break-all"
+            >
+              {silable}
+            </h2>
+          ))}
+        </div>
+      ) : (
+        <h2
+          style={{
+            color: "var(--color-cream)",
+          }}
+          className="uppercase break-all"
+        >
+          {name}
+        </h2>
+      )}
+      <span className="text-sm">{description}</span>
     </div>
   );
 }
