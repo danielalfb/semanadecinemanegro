@@ -12,7 +12,7 @@ export const SITE_CONTENT = {
     {
       id: "homenagem",
       type: "mostra",
-      title: "",
+      title: "Homenagem",
       shortTitle: "HO-ME-NA-GEM",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/mostras/homenagem",
@@ -21,7 +21,7 @@ export const SITE_CONTENT = {
     {
       id: "brasileira",
       type: "mostra",
-      title: "",
+      title: "Brasileira",
       shortTitle: "BRA-SI-LEI-RA",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/mostras/brasileira",
@@ -30,7 +30,7 @@ export const SITE_CONTENT = {
     {
       id: "internacional",
       type: "mostra",
-      title: "",
+      title: "Internacional",
       shortTitle: "IN-TER-NA-CIO-NAL",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/mostras/internacional",
@@ -39,7 +39,7 @@ export const SITE_CONTENT = {
     {
       id: "quilombola",
       type: "mostra",
-      title: "",
+      title: "Quilombola",
       shortTitle: "QUI-LOM-BO-LA",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/mostras/quilombola",
@@ -48,7 +48,7 @@ export const SITE_CONTENT = {
     {
       id: "infantil",
       type: "mostra",
-      title: "",
+      title: "Infantil",
       shortTitle: "IN-FAN-TIL",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/mostras/infantil",
@@ -57,7 +57,7 @@ export const SITE_CONTENT = {
     {
       id: "especial",
       type: "mostra",
-      title: "",
+      title: "Especial",
       shortTitle: "ES-PE-CI-AL",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/mostras/especial",
@@ -66,11 +66,11 @@ export const SITE_CONTENT = {
   ],
   atividades: [
     {
-      id: "oficinas",
-      type: "oficinas",
-      name: "Oficinas",
-      description:
-        "Buscando continuar a se configurar também como espaço de formação, a Semana contará com três oficinas nesta edição: 'Sonhando em Palavras', Escrevendo o Primeiro Longa, ministrada por Diego Paulino realizada em parceria com a Rede de Talentos do Projeto Paradiso, através do Paradiso Multiplica; Elaboração e Produção de Projetos, ministrada por Fernanda Vidigal; Processos de Distribuição do Cinema Independente ministrada por Daniel Queiroz.",
+      id: "cursos",
+      type: "cursos",
+      title: "Cursos",
+      shortTitle: "CUR-SOS",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/atividades-formativas/oficinas",
       color: "var(--clr-blue-default)",
     },
@@ -84,11 +84,11 @@ export const SITE_CONTENT = {
     //   color: "var(--clr-yellow-light)",
     // },
     {
-      id: "politicas",
-      type: "politicas",
-      name: "Políticas do Olhar",
-      description:
-        "A 3ª edição da SCNBH, em parceria com o FICINE, realiza em 2023 o Políticas do Olhar – Diálogos sobre Curadoria e Descolonização. O Políticas é uma série de conversas ao vivo com curadores de cinema da África e das diásporas, criada por Janaína Oliveira em 2019. O Políticas do Olhar parte da constatação de que nos últimos anos, os debates sobre curadoria em cinema têm se tornado cada vez mais frequentes nos festivais do Brasil e do mundo. No centro deste movimento está a compreensão de que as curadorias, para além das dimensões artísticas e criativas, são também lugares de exercício de poder, impactando diretamente na formação das plateias e no universo da crítica cinematográfica. Ao conversar com curadores negres, negras e negros da África e da diáspora, sobre suas trajetórias e propostas curatoriais, a série pretende não só expor os meandros diversos imbricados no trabalho de curadoria como também inspirar novas gerações de amantes de cinema que aspiram se dedicar a esta atividade. O Políticas busca destacar iniciativas que apontem para uma cultura fílmica diversa e não-hegemônica que emergem a partir do momento que outras presenças ocupam o lugar de curadoria. Na edição que acontece na Semana, o Políticas conversa com a cineasta e curadora Annabelle Aventurin.",
+      id: "mesas",
+      type: "mesas",
+      title: "Mesas",
+      shortTitle: "ME-SAS",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
       url: "/atividades-formativas/politicas",
       color: "var(--clr-green-light)",
     },

@@ -10,7 +10,7 @@ export default function mostras() {
       <Header />
       <div className="w-full mt-[62px] desktop:mt-[120px]">
         <PageBanner title="Mostras" bg={"images/semana_banner_25_1.png"} />
-        <ContentMenu tipo="mostras" />
+        <ContentMenu tipo="mostras" isCarousel />
       </div>
       <Footer />
     </div>

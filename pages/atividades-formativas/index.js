@@ -3,23 +3,17 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ContentMenu from "../../components/ContentMenu";
 import Link from "next/link";
+import PageBanner from "../../components/PageBanner";
 
 
 
 export default function atividadesFormativas() {
   return (
-    <div className='h-screen w-full relative overflow-x-hidden'>
+     <div className="h-screen w-full relative bg-green">
       <Header />
-      <div className='mt-36 p-10 w-full laptop:mt-30'>
-      <div className="flex w-full desktop:justify-between desktop:flex-row desktop:items-center mb-6 mob:flex mob:flex-col mob:items-start">
-          <h1 className='mb-6'>ATIVIDADES FORMATIVAS</h1>
-          <Link
-              href='https://docs.google.com/forms/d/e/1FAIpQLScd4FaMwjqZXBcHcTQgGaj6Yw0xNBlCdPgSmKqSnUOu0xZM2Q/viewform'
-            >
-              Inscreva-se
-            </Link>
-      </div>  
-        <ContentMenu tipo='ATIVIDADES' />
+      <div className="w-full mt-[62px] desktop:mt-[120px]">
+        <PageBanner title="Atividades" bg={"images/semana_banner_25_2.png"} />
+        <ContentMenu tipo="atividades" />
       </div>
       <Footer />
     </div>

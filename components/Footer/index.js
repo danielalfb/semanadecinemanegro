@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[var(--clr-black)] text-white pt-2">
+    <footer className="w-full bg-brown text-white">
       <div className="w-full bg-[#f9f9f9]">
         <img
           alt="reguas_logo"
-          src="/images/regua_logos.png"
+          src="/images/regua_logos_2.png"
           style={{ width: "100%" }}
         />
       </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {mostra.name}
+                {mostra.title}
               </a>
             ))}
           </div>
@@ -106,7 +106,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {mostra.name}
+              {mostra.title}
             </a>
           ))}
         </div>

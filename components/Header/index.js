@@ -82,11 +82,11 @@ const Header = () => {
       <Popover className="block items-center tablet:hidden tablet:mt-2">
         {({ open }) => (
           <>
-            <div className="flex items-top bg-black justify-between py-0 pr-4">
+            <div className="flex items-top bg-black justify-between py-2 pr-4">
               <h1
                 onClick={() => router.push("/")}
                 className="link"
-                style={{ maxWidth: "120px" }}
+                style={{ maxWidth: "130px", marginLeft: "10px" }}
               >
                 <img src="/images/logo.png" className="w-16" />
               </h1>
@@ -94,13 +94,13 @@ const Header = () => {
                 <Popover.Button>
                   <img
                     className="h-6"
-                    src={`/images/${!open ? "menu.svg" : "cancel.svg"}`}
+                    src={`/images/${!open ? "menu-white.svg" : "cancel-white.svg"}`}
                   />
                 </Popover.Button>
               </div>
             </div>
             <Popover.Panel
-              className={`absolute right-0 top-20 z-10 w-full p-4 bg-black-100 text-white shadow-md`}
+              className={`absolute right-0 z-10 top-19 w-full p-4 bg-brown text-white shadow-md`}
             >
               <div className="mb-4 w-full">
                 <Searchbar isMobile />

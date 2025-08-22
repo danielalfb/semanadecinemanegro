@@ -1,32 +1,18 @@
-import React from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
-import Shape from "../../../components/Shape";
-import * as O from "../../../helpers/oficinas";
-import MovieCard from "../../../components/MovieCard";
-import MoviesGroup from "../../../components/MoviesGroup";
+import PageBanner from "../../../components/PageBanner";
+
 
 
 
 export default function oficinas() {
   return (
-    <div className='h-screen w-full relative overflow-x-hidden'>
-      <Shape />
-      <Shape isYellow />
-      <Header />
-      <div className='mt-36 p-10 w-full laptop:mt-30'>
-        <h1 className='mb-6'>OFICINAS</h1>
-        <MoviesGroup>
-          {O.OFICINAS.map((movie) => (
-            <MovieCard
-              key={movie.title}
-              movie={movie}
-              color='var(--clr-blue-dark)'
-            />
-          ))}
-        </MoviesGroup>
-      </div>
-      <Footer />
-    </div>
-  );
+   <div className="h-screen w-full relative bg-brown">
+          <Header />
+          <div className="w-full mt-[62px] desktop:mt-[120px]">
+            <PageBanner title="Cursos" color={"var(--color-green)"} />
+          </div>
+          <Footer />
+        </div>
+      );
 }

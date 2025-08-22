@@ -3,7 +3,7 @@ import ItemCard from "../ItemCard";
 import { SITE_CONTENT } from "../../helpers/content";
 import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
 
-const ContentMenu = ({ tipo }) => {
+const ContentMenu = ({ tipo, isCarousel }) => {
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
@@ -17,21 +17,22 @@ const ContentMenu = ({ tipo }) => {
 
   return (
     <div className="relative w-full overflow-x-hidden pr-10">
-      {/* Left Button */}
+     {isCarousel && (
+      <>
       <button
         onClick={() => scroll("left")}
         className="absolute left-2 top-1/2 -translate-y-1/2 z-10 rounded-full bg-brown shadow p-2 hover:bg-gray-100"
       >
         <CaretLeftIcon className="h-5 w-5" />
       </button>
-
-      {/* Right Button */}
       <button
         onClick={() => scroll("right")}
         className="absolute right-2 top-1/2 -translate-y-1/2 z-10 rounded-full bg-brown shadow p-2 hover:bg-gray-100"
       >
         <CaretRightIcon className="h-5 w-5" />
       </button>
+      </>
+    )}
 
       {/* Scrollable track */}
       <div
