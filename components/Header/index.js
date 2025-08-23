@@ -36,7 +36,7 @@ const Header = () => {
                   .focus()
               }
             >
-              <InstagramLogoIcon size={24} weight="fill" />
+              <InstagramLogoIcon size={24} color="#fff" weight="fill" />
             </div>
             <div
               id="face"
@@ -50,7 +50,7 @@ const Header = () => {
                   .focus()
               }
             >
-              <FacebookLogo size={24} weight="fill" />
+              <FacebookLogo size={24} color="#fff" weight="fill" />
             </div>
             <div
               id="youtube"
@@ -64,7 +64,7 @@ const Header = () => {
                   .focus()
               }
             >
-              <YoutubeLogo size={24} weight="fill" />
+              <YoutubeLogo size={24} color="#fff" weight="fill" />
             </div>
             <div
               id="twitter"
@@ -73,7 +73,7 @@ const Header = () => {
                 window.open("https://x.com/scnegrobh", "_blank").focus()
               }
             >
-              <TwitterLogo size={24} weight="fill" />
+              <TwitterLogo size={24} color="#fff" weight="fill" />
             </div>
           </div>
         </div>

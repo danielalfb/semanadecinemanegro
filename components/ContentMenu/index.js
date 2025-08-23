@@ -17,22 +17,22 @@ const ContentMenu = ({ tipo, isCarousel }) => {
 
   return (
     <div className="relative w-full overflow-x-hidden pr-10">
-     {isCarousel && (
-      <>
-      <button
-        onClick={() => scroll("left")}
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 rounded-full bg-brown shadow p-2 hover:bg-gray-100"
-      >
-        <CaretLeftIcon className="h-5 w-5" />
-      </button>
-      <button
-        onClick={() => scroll("right")}
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 rounded-full bg-brown shadow p-2 hover:bg-gray-100"
-      >
-        <CaretRightIcon className="h-5 w-5" />
-      </button>
-      </>
-    )}
+      {isCarousel && (
+        <>
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 rounded-full p-2"
+          >
+            <CaretLeftIcon size={24} color="#231F20" weight="bold" />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 rounded-full p-2 "
+          >
+            <CaretRightIcon size={24} color="#231F20" weight="bold" />
+          </button>
+        </>
+      )}
 
       {/* Scrollable track */}
       <div
@@ -51,20 +51,6 @@ const ContentMenu = ({ tipo, isCarousel }) => {
           )
         )}
       </div>
-    </div>
-  );
-
-  return (
-    <div className="w-full gap-2 link flex flex-wrap p-10">
-      {SITE_CONTENT[tipo].map(({ id, shortTitle, description, url, color }) => (
-        <ItemCard
-          key={id}
-          name={shortTitle}
-          description={description}
-          url={url}
-          color={color}
-        />
-      ))}
     </div>
   );
 };

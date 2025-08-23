@@ -78,9 +78,7 @@ h3 {
   color: var(--color-main-txt-light);
 }
 
-svg {
-  fill: var(--color-main-txt-light)
-}
+
 
 .header-links {
   font-family: "PicNic";

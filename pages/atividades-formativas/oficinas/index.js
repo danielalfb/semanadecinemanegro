@@ -2,17 +2,14 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import PageBanner from "../../../components/PageBanner";
 
-
-
-
 export default function oficinas() {
   return (
-   <div className="h-screen w-full relative bg-brown">
-          <Header />
-          <div className="w-full mt-[62px] desktop:mt-[120px]">
-            <PageBanner title="Cursos" color={"var(--color-green)"} />
-          </div>
-          <Footer />
-        </div>
-      );
+    <div className="h-screen w-full relative bg-brown">
+      <Header />
+      <div className="w-full mt-[62px] desktop:mt-[120px] tablet-[120px] ">
+        <PageBanner title="Cursos" color={"var(--color-green)"} />
+      </div>
+      <Footer />
+    </div>
+  );
 }
