@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CaretDown, CaretUp } from "@phosphor-icons/react";
+import { CaretDownIcon, CaretUpIcon } from "@phosphor-icons/react";
 
 export default function Accordion({ title, color, children }) {
   const [isShowing, setIsShowing] = useState(false);
@@ -10,20 +10,30 @@ export default function Accordion({ title, color, children }) {
 
   return (
     <div
-      className='w-full mb-8 p-4 rounded-sm border-4'
-      style={{ borderColor: isShowing ? "transparent" : color }}
+      className="w-full mb-8 p-4 rounded-sm border-4"
+      style={{
+        backgroundColor: isShowing ? "transparent" : "#fffdf7",
+        borderColor: isShowing ? "transparent" : color,
+      }}
     >
       <button
-        className='w-full relative text-left p-1 cursor-pointer'
+        className="w-full relative text-left p-1 cursor-pointer"
         onClick={toggle}
-        type='button'
+        type="button"
       >
-        <span className='w-full flex  justify-between' style={{ color: color }}>
-          <h2>{title}</h2>
-          {isShowing ? <CaretUp size={24} /> : <CaretDown size={24} />}
+        <span
+          className="w-full flex items-center justify-between"
+          style={{ color: `${color} !important` }}
+        >
+          <h2 style={{ color: `${color} !important` }}>{title}</h2>
+          {isShowing ? (
+            <CaretUpIcon size={24} weight="bold" />
+          ) : (
+            <CaretDownIcon size={24} weight="bold" />
+          )}
         </span>
       </button>
-      <div className='p-1.5' style={{ display: isShowing ? "block" : "none" }}>
+      <div className="p-1.5" style={{ display: isShowing ? "block" : "none" }}>
         {children}
       </div>
     </div>
