@@ -41,22 +41,24 @@ function Searchbar({ isMobile }) {
           input.length >= 3
             ? " z-20 absolute top-9 left-0 m-0 w-full transition-all px-9"
             : isMobile
-            ? " w-full"
-            : " w-28"
+              ? " w-full"
+              : " w-28"
         }`}
       >
-        <div className={`relative inline-flex items-center ${isMobile ? "w-full" : "tablet:right-28"}`}>
+        <div
+          className={`relative inline-flex items-center ${isMobile ? "w-full" : "tablet:right-28"}`}
+        >
           <input
             id="search"
-            type='text'
-            placeholder='Pesquisar'
+            type="text"
+            placeholder="Pesquisar"
             value={input}
             onChange={handleInputChange}
             className={`searchbarInput ${isMobile ? "searchbarInputMob w-full" : ""} h-6 p-2 text-sm`}
             style={{
               backgroundColor: "white",
               color: "white",
-              borderRadius:"none",
+              borderRadius: "none",
             }}
           />
         </div>
@@ -69,7 +71,7 @@ function Searchbar({ isMobile }) {
     if (input.length >= 3) {
       return (
         <div
-          className='absolute top-0 left-0 w-full p-9 pt-20'
+          className="absolute top-0 left-0 w-full p-9 pt-20"
           style={{
             backgroundColor: "var(--clr-white)",
             zIndex: 11,
@@ -84,7 +86,7 @@ function Searchbar({ isMobile }) {
               <MovieCard
                 key={movie.title}
                 movie={movie}
-                color='var(--clr-yellow-dark)'
+                color="var(--clr-yellow-dark)"
               />
             ))}
           </div>

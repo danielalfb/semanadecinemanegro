@@ -1,12 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 import Button from "../Button";
-import { EnvelopeSimple, InstagramLogo, Phone, FacebookLogo, YoutubeLogo, TwitterLogo } from "@phosphor-icons/react";
+import {
+  EnvelopeSimple,
+  InstagramLogo,
+  Phone,
+  FacebookLogo,
+  YoutubeLogo,
+  TwitterLogo,
+} from "@phosphor-icons/react";
 import { SITE_CONTENT } from "../../helpers/content";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-brown text-white">
+    <footer className="w-full relative bg-brown text-white z-10">
       <div className="w-full bg-[#f9f9f9]">
         <img
           alt="reguas_logo"
@@ -22,7 +29,7 @@ const Footer = () => {
               alt="logo"
               src="/images/logo.png"
               className="w-24 sm:w-32 mb-2"
-              style={{width: "150px"}}
+              style={{ width: "150px" }}
             />
           </div>
           <div className="block w-full h-px bg-white/30 my-2" />
@@ -41,10 +48,7 @@ const Footer = () => {
           </div>
           <div className="block w-full h-px bg-white/30 my-2" />
           <div className="flex flex-col items-start pl-0 sm:pl-4">
-            <Link
-              href="/mostras"
-              className="text-xs mb-1 hover:underline"
-            >
+            <Link href="/mostras" className="text-xs mb-1 hover:underline">
               mostras
             </Link>
             <Link
@@ -53,34 +57,56 @@ const Footer = () => {
             >
               atividades formativas
             </Link>
-            <Link
-              href="/anteriores"
-              className="text-xs mb-1 hover:underline"
-            >
+            <Link href="/anteriores" className="text-xs mb-1 hover:underline">
               edições anteriores
             </Link>
           </div>
           <div className="block w-full h-px bg-white/30 my-2" />
           <div className="flex flex-col items-start pl-0 sm:pl-4">
-            <span className="text-xs mb-1">Semana de Cinema Negro de Belo Horizonte</span>
+            <span className="text-xs mb-1">
+              Semana de Cinema Negro de Belo Horizonte
+            </span>
             <span className="flex items-center gap-1 text-xs mb-1">
-              <EnvelopeSimple size={12} color='#fffdf0' weight='light' />
+              <EnvelopeSimple size={12} color="#fffdf0" weight="light" />
               scnegrobh@gmail.com
             </span>
           </div>
           <div className="block w-full h-px bg-white/30 my-2" />
           <div className="flex flex-col items-start pl-0 sm:pl-4">
             <div className="flex gap-2">
-              <Button onClick={() => window.open("https://www.instagram.com/semana.cinemanegrobh/", "_blank")}>
+              <Button
+                onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/semana.cinemanegrobh/",
+                    "_blank"
+                  )
+                }
+              >
                 <InstagramLogo size={24} />
               </Button>
-              <Button onClick={() => window.open("https://www.facebook.com/semana.cinemanegrobh/", "_blank")}>
+              <Button
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/semana.cinemanegrobh/",
+                    "_blank"
+                  )
+                }
+              >
                 <FacebookLogo size={24} />
               </Button>
-              <Button onClick={() => window.open("https://www.youtube.com/channel/UCWEYVmhTOymK86IAzCmC70g", "_blank")}>
+              <Button
+                onClick={() =>
+                  window.open(
+                    "https://www.youtube.com/channel/UCWEYVmhTOymK86IAzCmC70g",
+                    "_blank"
+                  )
+                }
+              >
                 <YoutubeLogo size={24} />
               </Button>
-              <Button onClick={() => window.open("https://x.com/scnegrobh", "_blank")}>
+              <Button
+                onClick={() => window.open("https://x.com/scnegrobh", "_blank")}
+              >
                 <TwitterLogo size={24} />
               </Button>
             </div>
@@ -94,7 +120,7 @@ const Footer = () => {
             alt="logo"
             src="/images/logo.png"
             className="w-24 mb-2"
-            style={{width: "150px"}}
+            style={{ width: "150px" }}
           />
         </div>
         <div className="flex flex-col items-start pl-4">
@@ -112,10 +138,7 @@ const Footer = () => {
         </div>
         <div className="absolute left-[40%] top-6 bottom-6 w-px bg-white/30" />
         <div className="flex flex-col items-start pl-4">
-          <Link
-            href="/mostras"
-            className="text-xs mb-1 hover:underline"
-          >
+          <Link href="/mostras" className="text-xs mb-1 hover:underline">
             mostras
           </Link>
           <Link
@@ -124,34 +147,56 @@ const Footer = () => {
           >
             atividades formativas
           </Link>
-          <Link
-            href="/anteriores"
-            className="text-xs mb-1 hover:underline"
-          >
+          <Link href="/anteriores" className="text-xs mb-1 hover:underline">
             edições anteriores
           </Link>
         </div>
         <div className="absolute left-[60%] top-6 bottom-6 w-px bg-white/30" />
         <div className="flex flex-col items-start pl-4">
-          <span className="text-xs mb-1">Semana de Cinema Negro de Belo Horizonte</span>
+          <span className="text-xs mb-1">
+            Semana de Cinema Negro de Belo Horizonte
+          </span>
           <span className="flex items-center gap-1 text-xs mb-1">
-            <EnvelopeSimple size={12} color='#fffdf0' weight='light' />
+            <EnvelopeSimple size={12} color="#fffdf0" weight="light" />
             scnegrobh@gmail.com
           </span>
         </div>
         <div className="absolute left-[80%] top-6 bottom-6 w-px bg-white/30" />
         <div className="flex flex-col items-start pl-4">
           <div className="flex">
-            <Button onClick={() => window.open("https://www.instagram.com/semana.cinemanegrobh/", "_blank")}>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/semana.cinemanegrobh/",
+                  "_blank"
+                )
+              }
+            >
               <InstagramLogo size={24} />
             </Button>
-            <Button onClick={() => window.open("https://www.facebook.com/semana.cinemanegrobh/", "_blank")}>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/semana.cinemanegrobh/",
+                  "_blank"
+                )
+              }
+            >
               <FacebookLogo size={24} />
             </Button>
-            <Button onClick={() => window.open("https://www.youtube.com/channel/UCWEYVmhTOymK86IAzCmC70g", "_blank")}>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://www.youtube.com/channel/UCWEYVmhTOymK86IAzCmC70g",
+                  "_blank"
+                )
+              }
+            >
               <YoutubeLogo size={24} />
             </Button>
-            <Button onClick={() => window.open("https://x.com/scnegrobh", "_blank")}>
+            <Button
+              onClick={() => window.open("https://x.com/scnegrobh", "_blank")}
+            >
               <TwitterLogo size={24} />
             </Button>
           </div>
