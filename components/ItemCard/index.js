@@ -13,7 +13,7 @@ export default function ItemCard({ color, name, description, url }) {
         background: color,
         color: "var(--color-cream)",
       }}
-      onClick={() => router.push(`/${url}`)}
+      onClick={() => router.push(`${url}`)}
     >
       {splitTitle ? (
         <div className="flex-col gap-2">
