@@ -16,15 +16,15 @@ export default function MovieCard({ movie, color, single }) {
 
   return (
     <div
-      className="flex flex-row items-stretch gap-1 rounded-md border-4"
+      className="flex flex-col items-stretch gap-1 rounded-md border-4 desktop:flex-row laptop:flex-row"
       style={{
         borderColor: single ? "transparent" : color,
         backgroundColor: single ? "var(--color-cream)" : "#fffdf7",
       }}
     >
-      <div className="w-[50%]">
+      <div className="w-full desktop:w-[50%] laptop:w-[50%]">
         <div
-          className="w-full h-full bg-center bg-cover"
+          className="w-full h-[300px] bg-center bg-cover desktop:h-full laptop:h-full"
           style={{
             backgroundImage: `url('${image}')`,
             borderRadius: single ? "6px" : null,
@@ -32,7 +32,7 @@ export default function MovieCard({ movie, color, single }) {
         />
         {image2 ? (
           <div
-            className="w-full h-full bg-center bg-cover"
+            className="w-full h-[300px] bg-center bg-cover desktop:h-full laptop:h-full"
             style={{
               backgroundImage: `url('${image2}')`,
               borderRadius: single ? "6px" : null,
