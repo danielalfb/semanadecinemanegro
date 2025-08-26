@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-export default function MovieCard({ movie, color }) {
+export default function MovieCard({ movie, color, single }) {
   const {
     title,
     titleEng,
@@ -16,25 +16,41 @@ export default function MovieCard({ movie, color }) {
 
   return (
     <div
-      className="flex flex-row items-stretch gap-1 rounded-md border-4 bg-[#fffdf7]"
-      style={{ borderColor: color }}
+      className="flex flex-row items-stretch gap-1 rounded-md border-4"
+      style={{
+        borderColor: single ? "transparent" : color,
+        backgroundColor: single ? "var(--color-cream)" : "#fffdf7",
+      }}
     >
       <div className="w-[50%]">
         <div
           className="w-full h-full bg-center bg-cover"
-          style={{ backgroundImage: `url('${image}')` }}
+          style={{
+            backgroundImage: `url('${image}')`,
+            borderRadius: single ? "6px" : null,
+          }}
         />
         {image2 ? (
           <div
             className="w-full h-full bg-center bg-cover"
-            style={{ backgroundImage: `url('${image2}')` }}
+            style={{
+              backgroundImage: `url('${image2}')`,
+              borderRadius: single ? "6px" : null,
+            }}
           />
         ) : null}
       </div>
 
-      <div className="flex flex-col p-4 flex-1">
+      <div
+        className="flex flex-col p-4 flex-1"
+        style={{
+          backgroundColor: single ? color : "inherit",
+          color: single ? "var(--color-cream)" : null,
+          borderRadius: single ? "6px" : null,
+        }}
+      >
         <div className="flex flex-col mb-1">
-          <h3 style={{ color: color }}>{title}</h3>
+          <h3 style={{ color: single ? "inherit" : color }}>{title}</h3>
           <span className="text-sm">{titleEng}</span>
         </div>
         <span className="text-xs">{subtitle}</span>

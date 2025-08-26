@@ -6,9 +6,9 @@ import PageDescription from '../../../components/PageDescription';
 import PageElement from '../../../components/PageElement';
 import MovieCard from '../../../components/MovieCard';
 import { SITE_CONTENT } from '../../../helpers/content';
-import { ABERTURA } from '../../../helpers/abertura';
+import { QUILOMBOLA } from '../../../helpers/quilombola';
 
-export default function abertura() {
+export default function quilombola() {
     return (
         <div className="h-screen w-full relative overflow-x-hidden bg-white">
           <Header />
@@ -17,10 +17,10 @@ export default function abertura() {
               element={<img src="/images/elemento_concha2.png" style={{ height: "250px", width: "auto"}}/>} 
               position={{ right: "-10px", top: "55px", transform: "rotate(-7deg)"}}  
             />
-            <PageBanner title={SITE_CONTENT.mostras[0].title} color={SITE_CONTENT.mostras[0].color} />
-              <PageDescription text={SITE_CONTENT.mostras[0].longDescription} color={SITE_CONTENT.mostras[0].color} />
+            <PageBanner title={SITE_CONTENT.mostras[4].title} color={SITE_CONTENT.mostras[4].color} />
+              <PageDescription text={SITE_CONTENT.mostras[4].longDescription} color={SITE_CONTENT.mostras[4].color} />
             <div className='p-10 pt-0'>
-            <MovieCard movie={ABERTURA[0]} color={SITE_CONTENT.mostras[0].color} single />
+            <MovieCard movie={QUILOMBOLA[0]} color={SITE_CONTENT.mostras[4].color} single />
             </div>
           </div>
           <Footer />

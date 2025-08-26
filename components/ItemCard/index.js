@@ -10,7 +10,7 @@ export default function ItemCard({ color, name, description, url }) {
     <div
       className={`flex flex-col gap-4 p-6 cursor-pointer rounded-md w-full min-w-[250px] hover:scale-90 transform-gpu duration-75 w-[200px] desktop:w-[250px]`}
       style={{
-        background: `var(--color-${color})`,
+        background: color,
         color: "var(--color-cream)",
       }}
       onClick={() => router.push(`/${url}`)}

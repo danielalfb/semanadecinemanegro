@@ -4,7 +4,7 @@ import PageBanner from "../../../components/PageBanner";
 import PageElement from "../../../components/PageElement";
 import PageDescription from "../../../components/PageDescription";
 import { SITE_CONTENT } from "../../../helpers/content";
-import { CINEMAS_AFRICANOS } from "../../../helpers/cinemasAfricanos";
+import { BRASILEIRA } from "../../../helpers/brasileira";
 import MovieCard from "../../../components/MovieCard";
 import Accordion from "../../../components/Accordion";
 
@@ -24,24 +24,30 @@ export default function brasileira() {
         />
         <PageBanner
           title={SITE_CONTENT.mostras[2].title}
-          color={"var(--color-blue-300)"}
+          color={SITE_CONTENT.mostras[2].color}
         />
         <PageDescription
           text={SITE_CONTENT.mostras[2].longDescription}
-          color={"var(--color-blue-300)"}
+          color={SITE_CONTENT.mostras[2].color}
         />
         <div className="p-10 pt-0">
-          <Accordion title={"Lorem ipsum"} color={"var(--color-blue-300)"}>
-            <div className="flex flex-col gap-4">
-              {CINEMAS_AFRICANOS.map((movie) => (
-                <MovieCard
-                  key={movie.title}
-                  movie={movie}
-                  color={"var(--color-blue-300)"}
-                />
-              ))}
-            </div>
-          </Accordion>
+          {BRASILEIRA.map((session) => (
+            <Accordion
+              title={session.title}
+              color={SITE_CONTENT.mostras[2].color}
+              key={session.id}
+            >
+              <div className="flex flex-col gap-4">
+                {session.movies.map((movie) => (
+                  <MovieCard
+                    key={movie.title}
+                    movie={movie}
+                    color={SITE_CONTENT.mostras[2].color}
+                  />
+                ))}
+              </div>
+            </Accordion>
+          ))}
         </div>
       </div>
       <Footer />

@@ -14,7 +14,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="w-full relative bg-brown text-white z-10">
-      <div className="w-full bg-[#f9f9f9]">
+      <div className="w-full bg-[#f5f1e4]">
         <img
           alt="reguas_logo"
           src="/images/regua_logos_2.png"
