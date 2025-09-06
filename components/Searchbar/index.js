@@ -54,10 +54,10 @@ function Searchbar({ isMobile }) {
             placeholder="Pesquisar"
             value={input}
             onChange={handleInputChange}
-            className={`searchbarInput ${isMobile ? "searchbarInputMob w-full" : ""} h-6 p-2 text-sm`}
+            className={`searchbarInput rounded-sm ${isMobile ? "searchbarInputMob w-full" : ""} h-6 p-2 text-sm`}
             style={{
-              backgroundColor: "white",
-              color: "white",
+              backgroundColor: "var(--color-main-txt)",
+              color: "var(--color-cream)",
               borderRadius: "none",
             }}
           />

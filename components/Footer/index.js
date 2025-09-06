@@ -14,6 +14,14 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="w-full relative bg-brown text-white z-10">
+      {/*<div className="absolute bottom-0 left-0 w-[200%] h-32 animate-wave">
+        <div
+          className="absolute top-0 left-0 w-full h-full bg-repeat-x bg-bottom"
+          style={{
+            backgroundColor: "url(images/regua_logos_2.png)",
+          }}
+        />
+        </div>*/}
       <div className="w-full bg-[#f5f1e4]">
         <img
           alt="reguas_logo"

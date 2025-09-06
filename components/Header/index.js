@@ -17,10 +17,7 @@ const Header = () => {
 
   return (
     <div className="fixed w-full top-0 z-[100]">
-      <div className="bg-black flex flex-col tablet:flex-row justify-between px-2 w-full h-auto tablet:h-12 items-center">
-        <h3 className="text-xs tablet:text-base text-center tablet:text-left py-2 tablet:py-0 font-semibold">
-          Festival de Cinema Intercâmbio Cultural Brasil-África
-        </h3>
+      <div className="bg-black flex flex-col tablet:flex-row justify-end between px-2 w-full h-auto tablet:h-12 items-center">
         <div className="hidden tablet:flex items-center gap-2">
           <Searchbar />
           <div className="flex gap-2">
