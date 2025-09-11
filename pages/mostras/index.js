@@ -8,8 +8,12 @@ export default function mostras() {
   return (
     <div className="h-screen w-full relative overflow-x-hidden bg-white">
       <Header />
-      <div className="w-full mt-[62px] desktop:mt-[120px] tablet-[120px] ">
-        <PageBanner title="Mostras" bg={"images/semana_banner_25_1.png"} />
+      <div className="w-full mt-[46px] desktop:mt-[120px] tablet:mt-[120px] ">
+        <PageBanner
+          title="Mostras"
+          color={"var(--color-sand"}
+          textColor={"var(--color-main-txt)"}
+        />
         <ContentMenu tipo="mostras" isCarousel />
       </div>
       <Footer />

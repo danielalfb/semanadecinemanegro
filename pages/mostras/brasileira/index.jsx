@@ -12,7 +12,7 @@ export default function brasileira() {
   return (
     <div className="h-screen w-full relative overflow-x-hidden bg-white">
       <Header />
-      <div className="w-full mt-[62px] desktop:mt-[120px] tablet-[120px] ">
+      <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] ">
         <PageElement
           element={
             <img
