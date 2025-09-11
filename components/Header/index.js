@@ -102,6 +102,7 @@ const Header = () => {
               <div className="mb-4 w-full">
                 <Searchbar isMobile />
               </div>
+              <Button onClick={() => router.push("/")}>início</Button>
               <Button onClick={() => router.push("/mostras")}>mostras</Button>
               <Button onClick={() => router.push("/atividades-formativas")}>
                 atividades formativas
@@ -125,6 +126,7 @@ const Header = () => {
           <img src="/images/logo.png" className="w-20 tablet:w-28" />
         </div>
         <div className="flex items-center gap-4">
+          <Button onClick={() => router.push("/")}>início</Button>
           <Button onClick={() => router.push("/mostras")}>mostras</Button>
           <Button onClick={() => router.push("/atividades-formativas")}>
             atividades formativas

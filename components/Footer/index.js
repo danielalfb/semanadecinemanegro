@@ -1,28 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import Button from "../Button";
 import {
-  EnvelopeSimple,
-  InstagramLogo,
-  Phone,
-  FacebookLogo,
-  YoutubeLogo,
-  TwitterLogo,
+  EnvelopeSimpleIcon,
+  InstagramLogoIcon,
+  FacebookLogoIcon,
+  YoutubeLogoIcon,
+  TwitterLogoIcon,
 } from "@phosphor-icons/react";
 import { SITE_CONTENT } from "../../helpers/content";
 import Link from "next/link";
+import Wave from "../Wave";
 
 const Footer = () => {
   return (
     <footer className="w-full relative bg-brown text-white z-10">
-      {/*<div className="absolute bottom-0 left-0 w-[200%] h-32 animate-wave">
-        <div
-          className="absolute top-0 left-0 w-full h-full bg-repeat-x bg-bottom"
-          style={{
-            backgroundColor: "url(images/regua_logos_2.png)",
-          }}
-        />
-        </div>*/}
-      <div className="w-full bg-[#f5f1e4]">
+      <Wave />
+      <div className="w-full bg-blue-100">
         <img
           alt="reguas_logo"
           src="/images/regua_logos_2.png"
@@ -75,7 +68,7 @@ const Footer = () => {
               Semana de Cinema Negro de Belo Horizonte
             </span>
             <span className="flex items-center gap-1 text-xs mb-1">
-              <EnvelopeSimple size={12} color="#fffdf0" weight="light" />
+              <EnvelopeSimpleIcon size={12} color="#fffdf0" weight="light" />
               scnegrobh@gmail.com
             </span>
           </div>
@@ -90,7 +83,7 @@ const Footer = () => {
                   )
                 }
               >
-                <InstagramLogo size={24} />
+                <InstagramLogoIcon size={24} />
               </Button>
               <Button
                 onClick={() =>
@@ -100,7 +93,7 @@ const Footer = () => {
                   )
                 }
               >
-                <FacebookLogo size={24} />
+                <FacebookLogoIcon size={24} />
               </Button>
               <Button
                 onClick={() =>
@@ -110,12 +103,12 @@ const Footer = () => {
                   )
                 }
               >
-                <YoutubeLogo size={24} />
+                <YoutubeLogoIcon size={24} />
               </Button>
               <Button
                 onClick={() => window.open("https://x.com/scnegrobh", "_blank")}
               >
-                <TwitterLogo size={24} />
+                <TwitterLogoIcon size={24} />
               </Button>
             </div>
           </div>
@@ -165,7 +158,7 @@ const Footer = () => {
             Semana de Cinema Negro de Belo Horizonte
           </span>
           <span className="flex items-center gap-1 text-xs mb-1">
-            <EnvelopeSimple size={12} color="#fffdf0" weight="light" />
+            <EnvelopeSimpleIcon size={12} color="#fffdf0" weight="light" />
             scnegrobh@gmail.com
           </span>
         </div>
@@ -180,7 +173,7 @@ const Footer = () => {
                 )
               }
             >
-              <InstagramLogo size={24} />
+              <InstagramLogoIcon size={24} />
             </Button>
             <Button
               onClick={() =>
@@ -190,7 +183,7 @@ const Footer = () => {
                 )
               }
             >
-              <FacebookLogo size={24} />
+              <FacebookLogoIcon size={24} />
             </Button>
             <Button
               onClick={() =>
@@ -200,12 +193,12 @@ const Footer = () => {
                 )
               }
             >
-              <YoutubeLogo size={24} />
+              <YoutubeLogoIcon size={24} />
             </Button>
             <Button
               onClick={() => window.open("https://x.com/scnegrobh", "_blank")}
             >
-              <TwitterLogo size={24} />
+              <TwitterLogoIcon size={24} />
             </Button>
           </div>
         </div>

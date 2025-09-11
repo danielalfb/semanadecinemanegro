@@ -19,20 +19,19 @@ export default function Home() {
           <div
             className="w-full relative"
             style={{
-              backgroundSize: "cover",
-              backgroundPosition: "top",
+              backgroundColor: "var(--color-cream)",
             }}
           >
             <div
-              className="absolute inset-0 bg-green opacity-80"
+              className="absolute inset-0 bg-white opacity-80"
               style={{ zIndex: 1 }}
             />
             <div className="relative z-10 flex flex-col items-start px-2 tablet:px-10 py-8 max-w-full tablet:max-w-4xl mx-auto">
               <div className="p-2 tablet:p-6 w-full">
-                <h2 className="text-md tablet:text-xl font-bold mb-2 text-left text-white">
+                <h2 className="text-md tablet:text-xl font-bold mb-2 text-left text-brown">
                   5º Semana de Cinema Negro de Belo Horizonte
                 </h2>
-                <p className="text-sm tablet:text-md mb-4 text-left text-white leading-relaxed tablet:leading-loose">
+                <p className="text-sm tablet:text-md mb-4 text-left text-brown leading-relaxed tablet:leading-loose">
                   A <i>5º Semana de Cinema Negro de Belo Horizonte</i>{" "}
                   apresenta, de 16 a 24 de setembro de 2025, um conjunto
                   composto por 70 filmes de cinematografias africanas, negras
@@ -94,13 +93,13 @@ export default function Home() {
           </div>
         </div>
         {/* Player responsivo */}
-        <div className="w-full  mx-auto">
+        {/* <div className="w-full  mx-auto">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=dPOWUaENIOY"
             width="100%"
             height="320px"
           />
-        </div>
+                  </div> */}
         <Footer />
       </div>
     </>

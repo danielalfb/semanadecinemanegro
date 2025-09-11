@@ -35,25 +35,23 @@ module.exports = {
       green: "#009269",
       mustard: "#C5B743",
       lime: "#E8EDA8",
-      white: "#EAE3CC",
+      white: "#E9E2CB",
       brown: "#231F20",
       black: "#0E0C0C",
+      sand: "#e0d0a1",
     },
     fontFamily: {
       sans: ["Broke, sans - serif"],
     },
     extend: {
-      transitionProperty: {
-        height: "height",
-      },
       keyframes: {
-        wave: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-50%)" },
+        "scroll-x": {
+          "0%": { backgroundPosition: "0 0" },
+          "100%": { backgroundPosition: "1000px 0" }, // ajusta 1000px ao tamanho do teu SVG
         },
       },
       animation: {
-        wave: "wave 8s linear infinite",
+        "scroll-x": "scroll-x 30s linear infinite",
       },
     },
   },
