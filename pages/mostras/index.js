@@ -11,7 +11,7 @@ export default function mostras() {
       <div className="w-full mt-[46px] desktop:mt-[120px] tablet:mt-[120px] ">
         <PageBanner
           title="Mostras"
-          color={"var(--color-sand"}
+          color={"var(--color-sand)"}
           textColor={"var(--color-main-txt)"}
         />
         <ContentMenu tipo="mostras" isCarousel />

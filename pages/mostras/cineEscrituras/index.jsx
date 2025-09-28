@@ -4,24 +4,15 @@ import PageBanner from "../../../components/PageBanner";
 import PageElement from "../../../components/PageElement";
 import PageDescription from "../../../components/PageDescription";
 import { SITE_CONTENT } from "../../../helpers/content";
-import { BRASILEIRA } from "../../../helpers/brasileira";
+import { CINEESCRITURAS } from "../../../helpers/cineEscrituras";
 import MovieCard from "../../../components/MovieCard";
 import Accordion from "../../../components/Accordion";
 
-export default function brasileira() {
+export default function cineEscrituras() {
   return (
     <div className="h-screen w-full relative overflow-x-hidden bg-white">
       <Header />
       <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] ">
-        <PageElement
-          element={
-            <img
-              src="/images/elemento_ondas.png"
-              style={{ height: "220px", width: "auto" }}
-            />
-          }
-          position={{ right: "-250px", top: "50px" }}
-        />
         <PageBanner
           title={SITE_CONTENT.mostras[2].title}
           color={SITE_CONTENT.mostras[2].color}
@@ -31,7 +22,7 @@ export default function brasileira() {
           color={SITE_CONTENT.mostras[2].color}
         />
         <div className="p-10 pt-0">
-          {BRASILEIRA.map((session) => (
+          {CINEESCRITURAS.map((session) => (
             <Accordion
               title={session.title}
               color={SITE_CONTENT.mostras[2].color}

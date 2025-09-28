@@ -13,15 +13,6 @@ export default function brasileira() {
     <div className="h-screen w-full relative overflow-x-hidden bg-white">
       <Header />
       <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] ">
-        <PageElement
-          element={
-            <img
-              src="/images/elemento_azul.png"
-              style={{ height: "250px", width: "auto" }}
-            />
-          }
-          position={{ right: "0", top: "120px" }}
-        />
         <PageBanner
           title={SITE_CONTENT.mostras[3].title}
           color={SITE_CONTENT.mostras[3].color}
