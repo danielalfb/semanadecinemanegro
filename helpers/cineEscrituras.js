@@ -209,34 +209,43 @@ export const CINEESCRITURAS = [
     movies: [
       {
         title: "MAR DE DENTRO",
-        titleEng: "AU CIMETIÈRE DE LA PELLICULE",
-        subtitle: "FRANÇA/SENEGAL/GUINÉ/ARÁBIA SAUDITA, 2023, 93'",
-        description: ``,
-        descriptionEng: `Diallo sets out with his camera in search of the birth of filmmaking in Guinea. Charming and determined, he traces his country's film heritage and history and reveals the importance of film archives.`,
+        titleEng: "MAR DE DENTRO",
+        subtitle: "PERNAMBUCO, 2024, 8'",
+        description: `Um retrato da incansável insubmissão de Preto Sérgio e sua busca pela revelação da história não contada, desamarrando os nós a partir dos bons ventos que o levam ao mar de fora e ao mar de dentro.`,
+        descriptionEng: ``,
         credits: `
-            direção: Thierno Souleymane Diallo;
-            produção: Maud Martin, Jean-Pierre Lagrange, Marie-Louise Sarr, Alpha Amadou Diouldé Diallo;
-            fotografia: Leïla Chaïbi, Thierno Souleymane Diallo ;
-            montagem: Aurélie Jourdan, Marianne Haroche;
-            arte e figurino: Thierno Souleymane Diallo;
-            som: Brice Kartmann, Ophélie Boully, Jean-Marie Salque;
-            trilha sonora original: Dom Peter;
-            elenco principal: s/n;
-            empresa produtora: JPL Productions, L'image d'après;
+            direção: Lia Letícia;
+            roteiro: Lia Letícia;
+            produção: L'Oro Produções, Daniela Azevedo;
+            fotografia: Adalberto Oliveira;
+            montagem: Letícia Barros;
+            som: Priscila Nascimento;
+            trilha sonora original: Edgar;
+            empresa produtora: Dona Ledy Produções Artísticas, Vilarejo Filmes;
             contato: irene@urbangroup.biz
             `,
-        image: "/images/movies/default.png",
+        image: "/images/movies/MAR_DE_DENTRO.jpg",
       },
       {
         title: "VOZ ZOV VZO",
-        titleEng: "CAMÉRA D'AFRIQUE",
-        subtitle: "TUNÍSIA, 1983, 95'",
-        description: ``,
+        titleEng: "VOZ ZOV VZO",
+        subtitle: "RIO DE JANEIRO, 2025, 51'",
+        description: `Numa noite de quarta-feira, no ano de 1975, Jade aquece a voz em um estúdio de som. Não esperava, porém, ser interrompida pela chegada inesperada de uma velha amiga, que, por meio de uma carta, traz de volta a irmã de Jade. Os silêncios que acontecem em seguida ecoam pelo espaço, e Jade se encontra com eles, e com eles conversa. Voz Zov Vzo é uma alegoria musical acerca dos silenciamentos na ditadura militar e das vozes que deixam de ser ouvidas.`,
         credits: `
-            direção: Férid Boughedir ;
-            empresa produtora: Ministère de la Coopération, Ministère des affaires etrangères, Mae, La saptec, Boughedir férid
+            direção: Yhuri Cruz;
+            roteiro: Yhuri Cruz;
+            produção: Yhuri Cruz, Pê Moreira;
+            fotografia: Clara Cavour;
+            montagem: Edson Lemos edt, Luisa Darks;
+            arte: Alex Reis e Yhuri Cruz;
+            figurino: Julliana Araújo ;
+            som: Estevão Casé;
+            trilha sonora original: C-Afro Brasil, Yhuri Cruz;
+            elenco principal: Jade Maria Zimbra, Caju Bezerra, Almeida da Silva, Pedro Bento, Alex Reis, Dani Câmara;
+            empresa produtora: Por Extenso Produções;
+            contato: porextensoproducoes@gmail.com
             `,
-        image: "/images/movies/default.png",
+        image: "/images/movies/VOZ_ZOV_VZO.jpg",
       },
     ],
   },
@@ -246,45 +255,67 @@ export const CINEESCRITURAS = [
     movies: [
       {
         title: "TIGREZZA",
-        titleEng: "AU CIMETIÈRE DE LA PELLICULE",
-        subtitle: "FRANÇA/SENEGAL/GUINÉ/ARÁBIA SAUDITA, 2023, 93'",
-        description: ``,
-        descriptionEng: `Diallo sets out with his camera in search of the birth of filmmaking in Guinea. Charming and determined, he traces his country's film heritage and history and reveals the importance of film archives.`,
+        titleEng: "TIGREZZA",
+        subtitle: "BAHIA, 2025, 35'",
+        description: `Ao mesmo tempo em que tenta fazer Darnley se reconectar consigo mesmo e ser mais livre, Tigrezza procura um boy em aplicativos de relacionamento, disposta a negociar a própria liberdade.`,
+        descriptionEng: ``,
         credits: `
-            direção: Thierno Souleymane Diallo;
-            produção: Maud Martin, Jean-Pierre Lagrange, Marie-Louise Sarr, Alpha Amadou Diouldé Diallo;
-            fotografia: Leïla Chaïbi, Thierno Souleymane Diallo ;
-            montagem: Aurélie Jourdan, Marianne Haroche;
-            arte e figurino: Thierno Souleymane Diallo;
-            som: Brice Kartmann, Ophélie Boully, Jean-Marie Salque;
-            trilha sonora original: Dom Peter;
-            elenco principal: s/n;
-            empresa produtora: JPL Productions, L'image d'après;
-            contato: irene@urbangroup.biz
-            `,
-        image: "/images/movies/default.png",
+          direção: Vinícius Eliziário;
+          roteiro: Vinícius Eliziário;
+          produção: Icaro Piton;
+          fotografia: Wendel Assis;
+          montagem: Rafael Fernando Oliveira, Vinícius Eliziário;
+          arte: Vinicius Consi;
+          figurino: Lattyna;
+          som: Marise Urbano, Gabriel Muniz;
+          trilha sonora original: MAPA;
+          elenco principal: Paulilo, Vittor Adel;
+          empresa produtora: Boca de Filmes;
+          contato: contato.bocadefilmes@gmail.com;
+        `,
+        image: "/images/movies/TIGREZZA.jpg",
       },
       {
         title: "O CADERNO DE AVENCA",
-        titleEng: "CAMÉRA D'AFRIQUE",
-        subtitle: "TUNÍSIA, 1983, 95'",
-        description: ``,
-        credits: `
-            direção: Férid Boughedir ;
-            empresa produtora: Ministère de la Coopération, Ministère des affaires etrangères, Mae, La saptec, Boughedir férid
-            `,
-        image: "/images/movies/default.png",
+        titleEng: "O CADERNO DE AVENCA",
+        subtitle: "MINAS GERAIS, 2024, 20'",
+        description: `Avenca é uma jovem atriz que vem enfrentando dificuldades nos trabalhos com o teatro. Em meio às adversidades, sua mãe lhe entrega um caderno verde que estava perdido em um guarda-roupa, entre coisas antigas da filha, inspirando Avenca a dar um novo rumo para a própria vida e ir atrás do sonho de trabalhar com cinema.`,
+        credits: `            
+          direção: Aisha Brunno;
+          roteiro: Aisha Brunno, Bramma Bremmer;
+          produção: Aisha Brunno, Bramma Bremmer, Simone Abreu;
+          fotografia: Wend Fernandes;
+          montagem: Aisha Brunno, Bramma Bremmer, Higor Gomes;
+          arte: Breno Oliveira;
+          figurino: Will Soares;
+          som: Fabricio Shuch;
+          trilha sonora original: Black Josie;
+          elenco principal: Aisha Brunno, Gui Ventura, Anair Patrícia (Naná), Laura Matias Pinheiro, Carlandréia Ribeiro;
+          empresa produtora: Anõmala Estudia;
+          contato: ocadernodeavenca@gmail.com
+         `,
+        image: "/images/movies/O_CADERNO_DE_AVENCA.png",
       },
        {
         title: "BÁRBARA",
-        titleEng: "CAMÉRA D'AFRIQUE",
-        subtitle: "TUNÍSIA, 1983, 95'",
-        description: ``,
+        titleEng: "BÁRBARA",
+        subtitle: "PARÁ, 2024, 18'",
+        description: `Bárbara vive o fim do luto da morte do marido quando decide que, depois de ter passado tantos anos priorizando a maternidade e servindo ao papel de esposa, é hora de iniciar um novo ciclo. Assim, aos 60 anos e em busca de descobrir sua própria identidade como mulher, ela entra no mundo dos aplicativos de namoro e se vê diante de um campo de novas possibilidades e desafios inesperados.`,
         credits: `
-            direção: Férid Boughedir ;
-            empresa produtora: Ministère de la Coopération, Ministère des affaires etrangères, Mae, La saptec, Boughedir férid
-            `,
-        image: "/images/movies/default.png",
+          direção: Joyce Cursino;
+          roteiro: Flávia Ribeiro;
+          produção: Joyce Cursino;
+          fotografia: Saturação;
+          montagem: Saturação;
+          arte: Bia Sena;
+          figurino: Nanan Falcão;
+          som: Renata Beckman;
+          trilha sonora original: Angela Maria - Cinderela. Dona Onete - Poder de Sedução. Zé Diogo - Me chama de preto.;
+          elenco principal: Natal Silva, Edvaldo Azul, Lúcia Corrêa, Pelé do Manifesto, Zé Diogo, Gabriel Becker, Charles Santana, Isma Rodrigues, Loreta Carvalho, Tio Black, Edenilza Borges, Ana Carolina Tourão, Helena Ressoal;
+          empresa produtora: Negritar Filmes e Produções;
+          contato: negritarcomunicacao@gmail.com;
+        `,
+        image: "/images/movies/BARBARA.png",
       },
     ],
   },
@@ -294,56 +325,84 @@ export const CINEESCRITURAS = [
     movies: [
       {
         title: "VBP (VACAS BRANCAS PREGUIÇOSAS)",
-        titleEng: "AU CIMETIÈRE DE LA PELLICULE",
-        subtitle: "FRANÇA/SENEGAL/GUINÉ/ARÁBIA SAUDITA, 2023, 93'",
-        description: ``,
-        descriptionEng: `Diallo sets out with his camera in search of the birth of filmmaking in Guinea. Charming and determined, he traces his country's film heritage and history and reveals the importance of film archives.`,
+        titleEng: "",
+        subtitle: "SÃO PAULO, 2024, 19'",
+        description: `Após chamar uma colega de classe de “vaca branca preguiçosa”, uma jovem estudante negra entra em uma saga virtual para se livrar do cancelamento.`,
         credits: `
-            direção: Thierno Souleymane Diallo;
-            produção: Maud Martin, Jean-Pierre Lagrange, Marie-Louise Sarr, Alpha Amadou Diouldé Diallo;
-            fotografia: Leïla Chaïbi, Thierno Souleymane Diallo ;
-            montagem: Aurélie Jourdan, Marianne Haroche;
-            arte e figurino: Thierno Souleymane Diallo;
-            som: Brice Kartmann, Ophélie Boully, Jean-Marie Salque;
-            trilha sonora original: Dom Peter;
-            elenco principal: s/n;
-            empresa produtora: JPL Productions, L'image d'après;
-            contato: irene@urbangroup.biz
-            `,
-        image: "/images/movies/default.png",
+          direção: Asaph Luccas;
+          roteiro: Asaph Luccas;
+          produção: Carol Santos, Leo Domingos;
+          fotografia: Tatiane Ursulino;
+          montagem: Guilherme Candido;
+          arte: Gabriel Soares;
+          figurino: Oliv Barros;
+          som: Ayo Lima;
+          trilha sonora original: Enzo dicarlo;
+          elenco principal: Mavi Lucena, Gabriela Lang, Gabrelú, Inara dos Santos;
+          empresa produtora: Coletivo Gleba do Pêssego;
+          contato: coletivoglebadopessego@gmail.com
+        `,
+        image: "/images/movies/VBP.jpg",
       },
       {
         title: "QUEIMANDO POR DENTRO",
-        titleEng: "CAMÉRA D'AFRIQUE",
-        subtitle: "TUNÍSIA, 1983, 95'",
-        description: ``,
+        titleEng: "QUEIMANDO POR DENTRO",
+        subtitle: "PERNAMBUCO, 2024, 16'",
+        description: `Tendo nascido em uma família evangélica neopentecostal, Samuel cresceu no coração de uma religião que ganhou grande influência no Brasil com o passar dos anos. Com isso, porém, à medida que começa a explorar a própria sexualidade e abraçar sua identidade queer, o jovem tem o mundo abalado por seu pai quando, de forma abrupta, ele o proíbe de dançar na igreja. Um ponto de virada em sua vida se torna iminente.`,
         credits: `
-            direção: Férid Boughedir ;
-            empresa produtora: Ministère de la Coopération, Ministère des affaires etrangères, Mae, La saptec, Boughedir férid
-            `,
-        image: "/images/movies/default.png",
+          direção: Matheus Farias, Enock Carvalho;
+          roteiro: Matheus Farias, Enock Carvalho;
+          produção: Matheus Farias, Enock Carvalho;
+          fotografia: Gustavo Pessoa;
+          montagem: Matheus Farias;
+          arte: Joana Claude;
+          figurino: Libra Lima;
+          som: Edson Secco;
+          elenco principal: Pedro Lucas;
+          empresa produtora: Gatopardo Filmes;
+          contato: info@gatopardofilmes.com
+        `,
+        image: "/images/movies/QUEIMANDO_POR_DENTRO.jpg",
       },
        {
         title: "MÃE DE OURO",
-        titleEng: "CAMÉRA D'AFRIQUE",
-        subtitle: "TUNÍSIA, 1983, 95'",
-        description: ``,
+        titleEng: "MÃE DE OURO",
+        subtitle: "MINAS GERAIS, 2024, 14'",
+        description: `Numa noite sem lua, Tiana se vê em um beco sem saída, lutando para entender a morte de sua irmã.`,
         credits: `
-            direção: Férid Boughedir ;
-            empresa produtora: Ministère de la Coopération, Ministère des affaires etrangères, Mae, La saptec, Boughedir férid
-            `,
-        image: "/images/movies/default.png",
+          direção: Maick Hannder;
+          roteiro: Maick Hannder;
+          produção: Bruno Greco, Jacson Dias;
+          fotografia: Fernanda de Sena;
+          montagem: Maick Hannder;
+          arte: Breno Henrique;
+          figurino: Matheus Antunes;
+          som: Ramon Modenesi;
+          elenco principal: Carlandréia Ribeiro, Otávio Augusto de Moura Assis, Edu Costa, Clarice Prates, Flavi Lopes;
+          empresa produtora: Ponta de Anzol Filmes;
+          contato: producao@pontadeanzol.com.br
+        `,
+        image: "/images/movies/MAE_DE_OURO.jpg",
       },
        {
         title: "E SEU CORPO É BELO",
-        titleEng: "CAMÉRA D'AFRIQUE",
-        subtitle: "TUNÍSIA, 1983, 95'",
-        description: ``,
+        titleEng: "E SEU CORPO É BELO",
+        subtitle: "RIO DE JANEIRO, 2024, 23'",
+        description: `Numa noite de soul, Carlos e Tony sangram suas mágoas… Na década de 1970, em meio às festas Black do subúrbio carioca, Carlos reencontra seu ex-namorado Tony acompanhado de outra pessoa, reacendendo mágoas embaladas pelo soul. E SEU CORPO É BELO é um misto de terror, romance e musical.`, 
         credits: `
-            direção: Férid Boughedir ;
-            empresa produtora: Ministère de la Coopération, Ministère des affaires etrangères, Mae, La saptec, Boughedir férid
-            `,
-        image: "/images/movies/default.png",
+          direção: Yuri Costa;
+          roteiro: Yuri Costa;
+          produção: Gabo M. Barros, Yuri Costa, Janyne Sousa, Luciana Druzina, Daniela Israel;
+          fotografia: Max Chagas;
+          montagem: Vinicius Silva;
+          arte: Caroline Meirelles;
+          figurino: Fernanda Cunha, Lydiane Carney;
+          som: Kiko Ferraz e Ricardo Costa;
+          elenco principal: João Pedro Oliveira, Paulo Guidelly, Dandara Lorena;
+          empresa produtora: Barca Aberta Produções, Vértebra Artes, Druzina Content, Bactéria Filmes, KF Studios;
+          contato: costayuriyc@gmail.com;
+        `,
+        image: "/images/movies/E_SEU_CORPO_E_BELO.png",
       },
     ],
   },
