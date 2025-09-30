@@ -5,29 +5,27 @@ import { ArrowLeftIcon } from "@phosphor-icons/react";
 import { useRouter } from "next/router";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
+import Wave from "../../components/Wave";
+import Header from "../../components/Header";
 
 export default function Anteriores() {
   const router = useRouter();
   return (
     <>
+      <Header />
       <Head>
         <title>SCNBH25</title>
       </Head>
       <div className="w-fit">
         <div
-          className="bg-logo w-fit relative z-1 overflow-hidden
-          "
+          className="bg-logo w-fit relative z-1 overflow-hidden"
           style={{
-            backgroundColor: "var(--color-blue-dark)",
-            color: "var(--color-cream)",
+            backgroundColor: "var(--color-cream)",
+            color: "var(--color-blue-dark)",
           }}
         >
-          <img
-            src="/images/elemento_ondas.png"
-            className="h-auto w-full absolute -top-16 left-0"
-          />
-          <div className="overflow-x-hidden relative appearance-none h-3/4 pt-16 pb-40 scroll-smooth w-full txtBlock z-10">
-            <div className="title-container z-10">
+          <div className="overflow-x-hidden relative appearance-none h-3/4 pt-40 pb-40 scroll-smooth w-full txtBlock z-10 past-pages">
+            {/* <div className="title-container z-10">
               <Button onClick={() => router.push("/")}>
                 <div
                   id="title"
@@ -44,7 +42,7 @@ export default function Anteriores() {
                   <h1>voltar</h1>
                 </div>
               </Button>
-            </div>
+            </div> */}
             <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
               <div className="flex w-full justify-between items-center mb-6">
                 <div className="title-sub">
@@ -225,10 +223,7 @@ export default function Anteriores() {
               </p>
             </div>
           </div>
-          <img
-            src="/images/elemento_ondas.png"
-            className="h-auto w-full absolute -bottom-20 left-0"
-          />
+           <Wave />
         </div>
       </div>
       <Footer />
