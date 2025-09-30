@@ -10,7 +10,11 @@ export default function atividadesFormativas() {
     <div className="h-screen w-full relative bg-white">
       <Header />
       <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] bg-white">
-        <PageBanner title="Atividades" color="var(--color-green)"  />
+        <PageBanner 
+          title="Atividades" 
+          color={"var(--color-sand)"}
+          textColor={"var(--color-main-txt)"}  
+        />
         <ContentMenu tipo="atividades" />
       </div>
       <Footer />

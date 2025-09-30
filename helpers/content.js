@@ -23,7 +23,7 @@ export const SITE_CONTENT = {
     {
       id: "cineEscrituras",
       type: "mostra",
-      title: "Cine Escrituras Pretas",
+      title: "Cine-Escrituras Pretas",
       shortTitle: "CINE-ESCRITURAS PRETAS",
       description: `Esta mostra celebra o cinema negro, reunindo filmes que abordam identidade, ancestralidade e resistência. O público é convidado a refletir sobre questões sociais e históricas, com destaque para produções independentes e inovadoras. O evento oferece debates, oficinas e homenagens, ampliando o protagonismo de artistas negros no audiovisual. O objetivo é inspirar novas gerações, fortalecer redes de colaboração e celebrar conquistas, reafirmando o compromisso com a pluralidade e a inclusão.`,
       longDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,

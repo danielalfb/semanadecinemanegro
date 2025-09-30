@@ -22,6 +22,7 @@ export default function ItemCard({ color, name, description, url }) {
               key={silable}
               style={{
                 color: "var(--color-cream)",
+                fontSize: "1.75rem",
               }}
               className="uppercase break-all"
             >
