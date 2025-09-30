@@ -14,7 +14,7 @@ import Wave from "../Wave";
 const Footer = () => {
   return (
     <footer className="w-full relative bg-brown text-white z-10">
-      <Wave />
+      <Wave color="var(--color-cream)" />
       <div className="w-full bg-blue-100">
         <img
           alt="reguas_logo"

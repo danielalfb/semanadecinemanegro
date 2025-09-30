@@ -223,7 +223,7 @@ export default function Anteriores() {
               </p>
             </div>
           </div>
-           <Wave />
+           <Wave color="var(--color-cream)" />
         </div>
       </div>
       <Footer />

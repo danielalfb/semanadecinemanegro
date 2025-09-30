@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Wave() {
+export default function Wave({ color }) {
   return (
 	<div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
     <svg
@@ -11,7 +11,7 @@ export default function Wave() {
     >
       <path
         d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z"
-        fill="var(--color-cream)"
+        fill={color}
       >
         <animate
           attributeName="d"
