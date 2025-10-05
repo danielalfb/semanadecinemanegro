@@ -55,11 +55,14 @@ export default function MovieCard({ movie, color, single }) {
         </div>
         <span className="text-xs">{subtitle}</span>
         <span className="mb-4 text-xs">{subtitle2}</span>
-        {creditsArr.map((str, index) => (
-          <span className="text-xs" key={index}>
-            {str}
-          </span>
-        ))}
+        {creditsArr.map((str, index) => {
+          const [before, after] = str.split(":");
+          return after && (
+            <span className="text-xs" key={index}>
+              <strong>{before}:</strong>{after}
+            </span>
+          )
+        })}
         <span className="mt-4 text-xs">{description}</span>
         <button
           className="bg-black text-white px-4 py-2 mt-4 rounded hover:bg-gray-800 transition border border-white"
