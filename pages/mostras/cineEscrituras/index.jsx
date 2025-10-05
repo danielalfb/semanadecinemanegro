@@ -12,10 +12,11 @@ export default function cineEscrituras() {
   return (
     <div className="h-screen w-full relative overflow-x-hidden bg-white">
       <Header />
-      <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] ">
+      <div className="w-full mt-[46px] desktop:mt-[117px] tablet-[117px] ">
         <PageBanner
           title={SITE_CONTENT.mostras[2].title}
-          color={SITE_CONTENT.mostras[2].color}
+          waveColor={SITE_CONTENT.mostras[2].color}
+          textColor={"var(--color-main-txt)"} 
         />
         <PageDescription
           text={SITE_CONTENT.mostras[2].longDescription}

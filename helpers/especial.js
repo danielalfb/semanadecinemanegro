@@ -1,19 +1,34 @@
 export const ESPECIAL = [
   {
-    title: "Lorem ipsum dolor sit amet",
-    titleEng: "Lorem ipsum dolor sit ame",
-    subtitle: "PERNAMBUCO, 2022, 13'",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. `,
+    title: "A peleja bumba meu boi contra o vampiro do meio-dia",
+    titleEng: "",
+    subtitle: "PERNAMBUCO, 1986, 30'",
+    description: `Produzido no início dos anos 1980 em Caruaru, no agreste pernambucano, A peleja bumba meu boi contra o vampiro do meio-dia é um filme-vídeo histórico e heróico sobre a peleja da cultura popular. De forma poética e metafórica, a narrativa traz a cultura popular do bumba meu boi em um duelo contra os poderes político e econômico.`,
     credits: `
-            direção: Lorem ipsum;
-            roteiro: Lorem ipsum;
-            produção: Lorem ipsum;
-            fotografia: Lorem ipsum;
-            montagem: Lorem ipsum;
-            som: Lorem ipsum;
-            elenco principal:Lorem ipsum;
-            contato: Lorem ipsum
+            direção: Luiz “Lula” Lourenço, Pedro Aarão;
+            produção: Pedro Aarão, Luiz “Lula” Lourenço, Guiga Melo, Germano Coelho;
+            fotografia: Luiz “Lula” Lourenço;
+            montagem: Luiz “Lula” Lourenço e Douglas Almeida;
+            arte: Marcos Bezarra;
+            figurino: Nildo Garbo;
+            som: Janaína Rosthy, Luiz “Lula” Lourenço, André Rosas, Valério Lima;
+            trilha sonora original: Jadilson Lourenço;
+            elenco principal: Guisa Melo – Vampiro. Nildo Garbo, Hilda Felipe, Célia Rejane, Iran Barreto, Ceba Cordeiro, Carlos Sá, Deterano Junior, França Deteranno, Geraldo Zeferino, Prego Sá, Wellington Branco, Geraldo Viana, Tereza Cristina, Ziza Torres, Solange Araújo, Wilson Anastácio.
+            contato: felipekbazzi@gmail.com
             `,
-    image: "/images/semana_banner_25_3.png",
+    image: "/images/movies/A_PELEJA_BUMBA_MEU_BOI_CONTRA_O_VAMPIRO_DO_MEIO_DIA.jpg",
   },
+  {
+    title: "O olho na rua, ouvido na cozinha",
+    titleEng: "",
+    subtitle: "PERNAMBUCO, 1979, 17'",
+    description: `Adaptação livre do conto homônimo de Hermilo Borba Filho.`,
+    credits: `
+            direção: Luiz “Lula” Lourenço;
+            realização: Joelia Santos, Lula Lourenço, Maria Helena Rabadan, Flora Lamour, Fernanda Cursino;
+            programaçao visual: Zé, Lena;
+            contato: felipekbazzi@gmail.com
+            `,
+    image: "/images/movies/O_OLHO_NA_RUA_OUVIDO_NA_COZINHA.jpg",
+},
 ];

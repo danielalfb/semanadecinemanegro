@@ -13,15 +13,25 @@ export default function especial() {
         <div className="h-screen w-full relative overflow-x-hidden bg-white">
           <Header />
           <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] ">
-            <PageElement 
-              element={<img src="/images/elemento_concha2.png" style={{ height: "250px", width: "auto"}}/>} 
-              position={{ right: "-10px", top: "55px", transform: "rotate(-7deg)"}}  
-            />
-            <PageBanner title={SITE_CONTENT.mostras[6].title} color={SITE_CONTENT.mostras[6].color} />
+              <PageBanner title="Sessão Especial: Vampiros à luz do meio-dia - O cinema de Luiz Lourenço"  
+                textColor={"var(--color-main-txt)"} 
+                fontSize={"1.75rem"}
+                waveColor={SITE_CONTENT.mostras[6].color}
+              />
               <PageDescription text={SITE_CONTENT.mostras[6].longDescription} color={SITE_CONTENT.mostras[6].color} />
-            <div className='p-10 pt-0'>
-            <MovieCard movie={ESPECIAL[0]} color={SITE_CONTENT.mostras[6].color} single />
-            </div>
+              <div className='p-10 pt-0'>
+                <MovieCard 
+                  movie={ESPECIAL[0]} 
+                  color={SITE_CONTENT.mostras[6].color} 
+                  
+                />
+              </div>
+              <div className='p-10 pt-0'>
+                <MovieCard 
+                  movie={ESPECIAL[1]} 
+                  color={SITE_CONTENT.mostras[6].color} 
+                />
+              </div>
           </div>
           <Footer />
         </div>
