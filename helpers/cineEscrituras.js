@@ -222,7 +222,7 @@ export const CINEESCRITURAS = [
             som: Priscila Nascimento;
             trilha sonora original: Edgar;
             empresa produtora: Dona Ledy Produções Artísticas, Vilarejo Filmes;
-            contato: irene@urbangroup.biz
+            contato: lia.leticia@gmail.com, producao@vilarejofilmes.com.br
             `,
         image: "/images/movies/MAR_DE_DENTRO.jpg",
       },
@@ -365,8 +365,8 @@ export const CINEESCRITURAS = [
         image: "/images/movies/QUEIMANDO_POR_DENTRO.jpg",
       },
        {
-        title: "MÃE DE OURO",
-        titleEng: "MÃE DE OURO",
+        title: "MÃE DO OURO",
+        titleEng: "MÃE DO OURO",
         subtitle: "MINAS GERAIS, 2024, 14'",
         description: `Numa noite sem lua, Tiana se vê em um beco sem saída, lutando para entender a morte de sua irmã.`,
         credits: `
