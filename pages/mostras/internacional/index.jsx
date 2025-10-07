@@ -1,21 +1,21 @@
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import PageBanner from "../../../components/PageBanner";
-import PageElement from "../../../components/PageElement";
 import PageDescription from "../../../components/PageDescription";
 import MovieCard from "../../../components/MovieCard";
 import Accordion from "../../../components/Accordion";
 import { SITE_CONTENT } from "../../../helpers/content";
 import { INTERNATIONAL } from "../../../helpers/internacional";
 
-export default function brasileira() {
+export default function internacional() {
   return (
     <div className="h-screen w-full relative overflow-x-hidden bg-white">
       <Header />
-      <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] ">
+      <div className="w-full mt-[46px] desktop:mt-[117px] tablet-[117px] ">
         <PageBanner
           title={SITE_CONTENT.mostras[3].title}
-          color={SITE_CONTENT.mostras[3].color}
+          textColor={"var(--color-main-txt)"}
+          waveColor={SITE_CONTENT.mostras[3].color}
         />
         <PageDescription
           text={SITE_CONTENT.mostras[3].longDescription}
@@ -27,6 +27,7 @@ export default function brasileira() {
               title={session.title}
               color={SITE_CONTENT.mostras[3].color}
               key={session.id}
+              fontSize="1.6rem"
             >
               <div className="flex flex-col gap-4">
                 {session.movies.map((movie) => (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CaretDownIcon, CaretUpIcon } from "@phosphor-icons/react";
 
-export default function Accordion({ title, color, children }) {
+export default function Accordion({ title, color, children, fontSize }) {
   const [isShowing, setIsShowing] = useState(false);
 
   const toggle = () => {
@@ -25,7 +25,7 @@ export default function Accordion({ title, color, children }) {
           className="w-full flex items-center justify-between"
           style={{ color: `${color} !important` }}
         >
-          <h2 style={{ color: `${color} !important` }}>{title}</h2>
+          <h2 style={{ color: `${color} !important`, fontSize: fontSize }}>{title}</h2>
           {isShowing ? (
             <CaretUpIcon size={24} weight="bold" />
           ) : (
