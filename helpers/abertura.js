@@ -1,19 +1,20 @@
 export const ABERTURA = [
   {
-    title: "Lorem ipsum dolor sit amet",
-    titleEng: "Lorem ipsum dolor sit ame",
-    subtitle: "PERNAMBUCO, 2022, 13'",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. `,
+    title: "Cais",
+    titleEng: "",
+    subtitle: "BAHIA, 2025, 69'",
+    description: `Dois meses após o falecimento de sua mãe, Angélica, Safira viaja em busca de encontrá-la em outras paisagens. Num curso fluvial, o filme percorre cidades banhadas pelo rio Paraguaçu, na Bahia, e pelo rio Alegre, no Maranhão, para imergir em novas perspectivas sobre memória, tempo, nascimento, vida e morte.`,
     credits: `
-        direção: Lorem ipsum;
-        roteiro: Lorem ipsum;
-        produção: Lorem ipsum;
-        fotografia: Lorem ipsum;
-        montagem: Lorem ipsum;
-        som: Lorem ipsum;
-        elenco principal:Lorem ipsum;
-        contato: Lorem ipsum
+        direção: Safira Moreira;
+        roteiro: Safira Moreira;
+        produção: Flávia Santana, Safira Moreira;
+        fotografia: Safira Moreira, Bernard Lessa;
+        montagem: Tenille Bezerra;
+        som: Tadeu Mascarenhas, Ubiratan Marques;
+        elenco principal: Safira Moreira, Angélica Moreira, Inaê Moreira, Tinganá Santana, Mateus Aleluia;
+        empresa produtora: Mulungu Realizações Culturais e Omnirá Filmes;
+        contato: safiramoreira1@gmail.com
         `,
-    image: "/images/semana_banner_25_3.png",
+    image: "/images/movies/CAIS.jpg",
   },
 ];

@@ -12,7 +12,7 @@ export default function especial() {
     return (
         <div className="h-screen w-full relative overflow-x-hidden bg-white">
           <Header />
-          <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] ">
+          <div className="w-full mt-[46px] desktop:mt-[117px] tablet-[117px]" >
               <PageBanner title="Sessão Especial: Vampiros à luz do meio-dia - O cinema de Luiz Lourenço"  
                 textColor={"var(--color-main-txt)"} 
                 fontSize={"1.75rem"}

@@ -10,18 +10,21 @@ import { ABERTURA } from '../../../helpers/abertura';
 
 export default function abertura() {
     return (
-        <div className="h-screen w-full relative overflow-x-hidden bg-white">
+       <div className="h-screen w-full relative overflow-x-hidden bg-white">
           <Header />
-          <div className="w-full mt-[46px] desktop:mt-[120px] tablet-[120px] ">
-            <PageElement 
-              element={<img src="/images/elemento_concha2.png" style={{ height: "250px", width: "auto"}}/>} 
-              position={{ right: "-10px", top: "55px", transform: "rotate(-7deg)"}}  
-            />
-            <PageBanner title={SITE_CONTENT.mostras[0].title} color={SITE_CONTENT.mostras[0].color} />
+          <div className="w-full mt-[46px] desktop:mt-[117px] tablet-[117px] ">
+              <PageBanner title="Sessão de Abertura"  
+                textColor={"var(--color-main-txt)"} 
+                fontSize={"1.75rem"}
+                waveColor={SITE_CONTENT.mostras[0].color}
+              />
               <PageDescription text={SITE_CONTENT.mostras[0].longDescription} color={SITE_CONTENT.mostras[0].color} />
-            <div className='p-10 pt-0'>
-            <MovieCard movie={ABERTURA[0]} color={SITE_CONTENT.mostras[0].color} single />
-            </div>
+              <div className='p-10 pt-0'>
+                <MovieCard 
+                  movie={ABERTURA[0]} 
+                  color={SITE_CONTENT.mostras[0].color}          
+                />
+              </div>
           </div>
           <Footer />
         </div>
