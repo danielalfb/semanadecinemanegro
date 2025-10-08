@@ -39,122 +39,111 @@ export const QUILOMBOLA = [
     movies: [
       {
         title: "Vidas do Rosário",
-        titleEng: "Lorem ipsum dolor sit ame",
-        subtitle: "PERNAMBUCO, 2022, 13'",
-        description: ` `,
+        titleEng: "",
+        subtitle: "QUILOMBO DOS ARTUROS, CONTAGEM/MG, 2022, 16'",
+        description: `Registro da memória oral da tradicional comunidade dos Arturos, de origem quilombola, que resiste na região metropolitana de Belo Horizonte.`,
         credits: `
-              direção: Lorem ipsum;
-              roteiro: Lorem ipsum;
-              produção: Lorem ipsum;
-              fotografia: Lorem ipsum;
-              montagem: Lorem ipsum;
-              som: Lorem ipsum;
-              elenco principal:Lorem ipsum;
-              contato: Lorem ipsum
+              direção: Marcelo Lin
               `,
-        image: "/images/semana_banner_25_3.png",
+        image: "/images/movies/VIDAS_DO_ROSARIO.png",
       },
       {
         title: "Flores da macambira",
-        titleEng: "Lorem ipsum dolor sit ame",
-        subtitle: "PERNAMBUCO, 2022, 13'",
-        description: ` `,
+        titleEng: "",
+        subtitle: "COMUNIDADE DE MACAMBIRA, LAGOA NOVA/RN, 2023, 9'",
+        description: `A vida na comunidade é bonita e resistente, como a flor da macambira.`,
         credits: `
-              direção: Lorem ipsum;
-              roteiro: Lorem ipsum;
-              produção: Lorem ipsum;
-              fotografia: Lorem ipsum;
-              montagem: Lorem ipsum;
-              som: Lorem ipsum;
-              elenco principal:Lorem ipsum;
-              contato: Lorem ipsum
+              direção: Crianças e Adolescentes da Comunidade de Macambira
               `,
-        image: "/images/semana_banner_25_3.png",
+        image: "/images/movies/FLORES_DA_MACAMBIRA.png",
       },
       {
         title: "Voa Arturos",
-        titleEng: "Lorem ipsum dolor sit ame",
+        titleEng: "",
         subtitle: "PERNAMBUCO, 2022, 13'",
-        description: ` `,
+        description: `Uma disputa no céu do Quilombo dos Arturos se transforma quando a ancestralidade e a cultura de um povo entram em cena. Gravado em 2022, o curta Voa Arturos é resultado de uma oficina audiovisual, parte do Projeto  Formação de Agentes Culturais - Comunidade Quilombola dos Arturos, e foi idealizado, produzido e estrelado pela própria Comunidade Quilombola dos Arturos.`,
         credits: `
-              direção: Lorem ipsum;
-              roteiro: Lorem ipsum;
-              produção: Lorem ipsum;
-              fotografia: Lorem ipsum;
-              montagem: Lorem ipsum;
-              som: Lorem ipsum;
-              elenco principal:Lorem ipsum;
-              contato: Lorem ipsum
+              direção: Othon de Saboia
               `,
-        image: "/images/semana_banner_25_3.png",
+        image: "/images/movies/VOA_ARTUROS.png",
       },
       {
-        title: "Conceição das Criolas: Contando histórias",
-        titleEng: "Lorem ipsum dolor sit ame",
-        subtitle: "PERNAMBUCO, 2022, 13'",
-        description: ` `,
+        title: "Conceição das Crioulas: Contando histórias",
+        titleEng: "",
+        subtitle: "PERNAMBUCO, 2023, 9'",
+        description: `A iniciativa Videoarte Para Crianças propõe um espaço de experimentação audiovisual para crianças indígenas e quilombolas, tomando por princípio o fazer artístico como prática educacional, na qual o aprender se dá por meio da brincadeira e das histórias encontradas em cada comunidade visitada. Além de ferramentas, aqui as novas tecnologias são também os brinquedos, pensadas a partir de um viés artístico e assentadas num saber tradicional ancestral: a oralidade.`,
         credits: `
-              direção: Lorem ipsum;
-              roteiro: Lorem ipsum;
-              produção: Lorem ipsum;
-              fotografia: Lorem ipsum;
-              montagem: Lorem ipsum;
-              som: Lorem ipsum;
-              elenco principal:Lorem ipsum;
-              contato: Lorem ipsum
+              direção: Lia Letícia;
+              roteiro: Alunos Videoarte Para Crianças;
+              produção: Clarice Hoffman;
+              fotografia: Adalberto Oliveira;
+              montagem: Adalberto Oliveira, Lia Letícia, Lena Oliveira e Alunos Videoarte para Crianças;
+              arte: Alunos Videoarte para Crianças;
+              figurino: Alunos Videoarte para Crianças;
+              som: Adalberto Oliveira;
+              elenco principal: Alunos Videoarte para Crianças;
+              empresa produtora: Dona Ledy Arte e Cultura;
+              contato: lia.leticia@gmail.com
               `,
-        image: "/images/semana_banner_25_3.png",
+        image: "/images/movies/CONCEICAO_DAS_CRIOULAS.png",
       },
       {
-        title: "Negra Mirandiba",
-        titleEng: "Lorem ipsum dolor sit ame",
-        subtitle: "PERNAMBUCO, 2022, 13'",
-        description: ` `,
+        title: "Negra Mirandiba: Contando histórias",
+        titleEng: "",
+        subtitle: "PERNAMBUCO, 2021, 6'",
+        description: `Obra produzida pelas crianças do Quilombo Jardim, em Mirandiba, sertão pernambucano. O filme conta a história de Mirandiba, mulher negra fundadora da cidade de mesmo nome, aqui recriada sob um viés fantástico, mas também pela história oral através de Seu Ângelo, um dos primeiros moradores do Quilombo Jardim.`,
         credits: `
-              direção: Lorem ipsum;
-              roteiro: Lorem ipsum;
-              produção: Lorem ipsum;
-              fotografia: Lorem ipsum;
-              montagem: Lorem ipsum;
-              som: Lorem ipsum;
-              elenco principal:Lorem ipsum;
-              contato: Lorem ipsum
+              direção: Lia Letícia;
+              roteiro: Alunos Videoarte para Crianças - Quilombo Jardim;
+              produção: Rose Lima;
+              fotografia: Adalberto Oliveira;
+              montagem: Adalberto Oliveira, Lia Letícia, Angela Shepp;
+              arte: Alunos Videoarte para Crianças - Quilombo Jardim;
+              figurino: Alunos Videoarte para Crianças - Quilombo Jardim;
+              som: Adalberto Oliveira;
+              elenco principal: Alunos Videoarte para Crianças - Quilombo Jardim;
+              empresa produtora: Dona Ledy Arte e Cultura;
+              contato: lia.leticia@gmail.com
               `,
-        image: "/images/semana_banner_25_3.png",
+        image: "/images/movies/NEGRA_MIRANDIBA.png",
       },
       {
-        title: "Memórias do Quilombo",
-        titleEng: "Lorem ipsum dolor sit ame",
-        subtitle: "PERNAMBUCO, 2022, 13'",
-        description: ` `,
+        title: "Memórias do Quilombo: Contando histórias",
+        titleEng: "",
+        subtitle: "PERNAMBUCO, 2023, 10'",
+        description: `A partir da memória coletiva cultivada pela escuta dos mais velhos, o filme nos conduz aos sons, às lutas e às magias do território quilombola de Águas Claras, no sertão de Pernambuco.`,
         credits: `
-              direção: Lorem ipsum;
-              roteiro: Lorem ipsum;
-              produção: Lorem ipsum;
-              fotografia: Lorem ipsum;
-              montagem: Lorem ipsum;
-              som: Lorem ipsum;
-              elenco principal:Lorem ipsum;
-              contato: Lorem ipsum
+              direção: Lia Letícia;
+              roteiro: Alunos Videoarte para Crianças - Quilombo Águas Claras;
+              produção: Clarice Hoffman;
+              fotografia: Adalberto Oliveira;
+              montagem: Lia Letícia, Adalberto Oliveira, Lena Oliveira, Gildenice Ferreira;
+              arte: Alunos Videoarte para Crianças - Quilombo Águas Claras;
+              figurino: Alunos Videoarte para Crianças - Quilombo Águas Claras;
+              som: Adalberto Oliveira;
+              elenco principal: Alunos Videoarte para Crianças - Quilombo Águas Claras;
+              empresa produtora: Dona Ledy Arte e Cultura;
+              contato: lia.leticia@gmail.com
               `,
-        image: "/images/semana_banner_25_3.png",
+        image: "/images/movies/MEMORIAS_DO_QUILOMBO.png",
       },
       {
         title: "Kutala - Herdeiros ancestrais",
-        titleEng: "Lorem ipsum dolor sit ame",
-        subtitle: "PERNAMBUCO, 2022, 13'",
-        description: ` `,
+        titleEng: "",
+        subtitle: "MINAS GERAIS, 2025, 6'",
+        description: `O documentário Kutala - herdeiros ancestrais foi produzido no Quilombo Manzo a partir de uma oficina do projeto Cinema dos Quilombos, ministrada por Fabio Martins, da comunidade quilombola do Campinho da Independência, Paraty (RJ).`,
         credits: `
-              direção: Lorem ipsum;
-              roteiro: Lorem ipsum;
-              produção: Lorem ipsum;
-              fotografia: Lorem ipsum;
-              montagem: Lorem ipsum;
-              som: Lorem ipsum;
-              elenco principal:Lorem ipsum;
-              contato: Lorem ipsum
+              direção: Fabio Martins;
+              roteiro: Prsicila Dilá;
+              produção: Makota Kidoialê, Cardes Monção Amâncio;
+              fotografia: Fabio Martins;
+              montagem: Fabio Martins ;
+              som: Fabio Martins ;
+              elenco principal: Geovanna Ferreira Esteves, Gustavo Felipe Araújo Freitas, Isac Elias Gonçalves, Juan Pablo Nascimento Martins Silva, Luan Francisco Elias Sales, Pedro Filipe de Paula Silva, Youri Rodrigues Santos, Mãe Efigênia - Mametu Muiandê;
+              empresa produtora: Kamutuê Produções, Cinema dos Quilombos, Kilombo Produções, Edukação de Kilombo;
+              contato: cardes@gmail.com
               `,
-        image: "/images/semana_banner_25_3.png",
+        image: "/images/movies/KUTALA.png",
       },
     ],  
   },
