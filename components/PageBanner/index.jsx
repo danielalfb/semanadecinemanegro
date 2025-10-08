@@ -3,7 +3,7 @@ import Wave from '../Wave'
 
 export default function PageBanner({ title, textColor, fontFamily, color, fontSize, waveColor }) {
   return (
-    <div className="w-full h-24 relative flex items-center justify-start pl-2 pr-10 pb-2" style={{ backgroundColor: color }}>
+    <div className="w-full h-24 relative flex items-center justify-start pt-6 pl-2 pr-10 pb-2" style={{ backgroundColor: color }}>
       <div className="absolute inset-0 w-full h-full z-[1]">
         <Wave color={waveColor ? waveColor : "var(--color-sand)"} />
       </div>

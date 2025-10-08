@@ -3,7 +3,6 @@ import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 import PageBanner from '../../../components/PageBanner';
 import PageDescription from '../../../components/PageDescription';
-import PageElement from '../../../components/PageElement';
 import MovieCard from '../../../components/MovieCard';
 import { SITE_CONTENT } from '../../../helpers/content';
 import { ABERTURA } from '../../../helpers/abertura';
@@ -12,7 +11,7 @@ export default function abertura() {
     return (
        <div className="h-screen w-full relative overflow-x-hidden bg-white">
           <Header />
-          <div className="w-full mt-[46px] desktop:mt-[117px] tablet-[117px] ">
+          <div className="w-full">
               <PageBanner title="Sessão de Abertura"  
                 textColor={"var(--color-main-txt)"} 
                 fontSize={"1.75rem"}

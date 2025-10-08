@@ -15,7 +15,7 @@ export default function Home() {
       <div className="relative min-h-screen w-full">
         <Header />
         {/* Banner com opacidade */}
-        <div className="w-full tablet:pt-28 mob:pt-16">
+        <div className="w-full">
           <div
             className="w-full relative"
             style={{

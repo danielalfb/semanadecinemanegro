@@ -12,7 +12,7 @@ export default function quilombola() {
     return (
         <div className="h-screen w-full relative overflow-x-hidden bg-white">
           <Header />
-          <div className="w-full mt-[46px] desktop:mt-[117px] tablet-[117px] ">
+          <div className="w-full">
               <PageBanner title="A REMEMORAÇÃO NO CINEMA DOS QUILOMBOS"  
                 textColor={"var(--color-main-txt)"} 
                 waveColor={SITE_CONTENT.mostras[4].color}

@@ -11,7 +11,7 @@ export default function internacional() {
   return (
     <div className="h-screen w-full relative overflow-x-hidden bg-white">
       <Header />
-      <div className="w-full mt-[46px] desktop:mt-[117px] tablet-[117px] ">
+      <div className="w-full">
         <PageBanner
           title={SITE_CONTENT.mostras[3].title}
           textColor={"var(--color-main-txt)"}

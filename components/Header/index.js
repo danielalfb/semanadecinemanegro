@@ -16,7 +16,7 @@ const Header = () => {
   const router = useRouter();
 
   return (
-    <div className="fixed w-full top-0 z-[100]">
+    <header className="sticky w-full top-0 z-[100]">
       <div className="bg-black flex flex-col tablet:flex-row justify-end between px-2 w-full h-auto tablet:h-12 items-center">
         <div className="hidden tablet:flex items-center gap-2">
           <Searchbar />
@@ -136,7 +136,7 @@ const Header = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
