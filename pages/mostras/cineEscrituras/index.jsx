@@ -35,6 +35,7 @@ export default function cineEscrituras() {
                     key={movie.title}
                     movie={movie}
                     color={SITE_CONTENT.mostras[2].color}
+                    isCineEscrituras
                   />
                 ))}
               </div>

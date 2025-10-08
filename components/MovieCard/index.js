@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-export default function MovieCard({ movie, color, single }) {
+export default function MovieCard({ movie, color, single, isCineEscrituras = false }) {
   const {
     title,
     titleEng,
@@ -64,12 +64,14 @@ export default function MovieCard({ movie, color, single }) {
           )
         })}
         <span className="mt-4 text-xs">{description}</span>
-        <button
-          className="bg-black text-white px-4 py-2 mt-4 rounded hover:bg-gray-800 transition border border-white"
-          onClick={() => console.log("click")}
-        >
-          Assistir
-        </button>
+        {isCineEscrituras && (
+          <button
+            className="bg-black text-white px-4 py-2 mt-4 rounded hover:bg-gray-800 transition border border-white"
+            onClick={() => console.log("click")}
+          >
+            Assistir
+          </button>
+        )}
       </div>
     </div>
   );
