@@ -92,7 +92,7 @@ export const INTERNATIONAL = [
       {
         title: "A luz (Yeelen)",
         titleEng: "",
-        subtitle: "MALI/BURKINA FASO/ALEMANHA/JAPÃO, 1987, 105'",
+        subtitle: "MALI/BURKINA FASO/ALEMANHA/FRANÇA/JAPÃO, 1987, 105'",
         description: `Dotado de poderes mágicos, um jovem sai à procura do tio para pedir que o ajude em uma luta contra o pai, um feiticeiro.`,
         descriptionEng: ``,
         credits: `

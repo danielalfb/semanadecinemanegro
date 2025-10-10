@@ -1,6 +1,6 @@
 export const QUILOMBOLA = [
   {
-    title: 'Memórias Mulheres Quilombos',
+    title: 'Memórias-Mulheres-Quilombos',
     id: "1",
     movies: [
       {
@@ -40,7 +40,7 @@ export const QUILOMBOLA = [
       {
         title: "Vidas do Rosário",
         titleEng: "",
-        subtitle: "QUILOMBO DOS ARTUROS, CONTAGEM/MG, 2022, 16'",
+        subtitle: "Quilombo dos Arturos, Contagem/MG, 2022, 16'",
         description: `Registro da memória oral da tradicional comunidade dos Arturos, de origem quilombola, que resiste na região metropolitana de Belo Horizonte.`,
         credits: `
               direção: Marcelo Lin
@@ -48,9 +48,9 @@ export const QUILOMBOLA = [
         image: "/images/movies/VIDAS_DO_ROSARIO.png",
       },
       {
-        title: "Flores da macambira",
+        title: "Flores da Macambira",
         titleEng: "",
-        subtitle: "COMUNIDADE DE MACAMBIRA, LAGOA NOVA/RN, 2023, 9'",
+        subtitle: "Comunidade de Macambira, Lagoa Nova/RN, 2023, 9'",
         description: `A vida na comunidade é bonita e resistente, como a flor da macambira.`,
         credits: `
               direção: Crianças e Adolescentes da Comunidade de Macambira
@@ -70,7 +70,7 @@ export const QUILOMBOLA = [
       {
         title: "Conceição das Crioulas: Contando histórias",
         titleEng: "",
-        subtitle: "PERNAMBUCO, 2023, 9'",
+        subtitle: "Pernambuco, 2023, 9'",
         description: `A iniciativa Videoarte Para Crianças propõe um espaço de experimentação audiovisual para crianças indígenas e quilombolas, tomando por princípio o fazer artístico como prática educacional, na qual o aprender se dá por meio da brincadeira e das histórias encontradas em cada comunidade visitada. Além de ferramentas, aqui as novas tecnologias são também os brinquedos, pensadas a partir de um viés artístico e assentadas num saber tradicional ancestral: a oralidade.`,
         credits: `
               direção: Lia Letícia;
@@ -90,7 +90,7 @@ export const QUILOMBOLA = [
       {
         title: "Negra Mirandiba: Contando histórias",
         titleEng: "",
-        subtitle: "PERNAMBUCO, 2021, 6'",
+        subtitle: "Pernambuco, 2021, 6'",
         description: `Obra produzida pelas crianças do Quilombo Jardim, em Mirandiba, sertão pernambucano. O filme conta a história de Mirandiba, mulher negra fundadora da cidade de mesmo nome, aqui recriada sob um viés fantástico, mas também pela história oral através de Seu Ângelo, um dos primeiros moradores do Quilombo Jardim.`,
         credits: `
               direção: Lia Letícia;
@@ -110,14 +110,14 @@ export const QUILOMBOLA = [
       {
         title: "Memórias do Quilombo: Contando histórias",
         titleEng: "",
-        subtitle: "PERNAMBUCO, 2023, 10'",
+        subtitle: "Pernambuco, 2023, 10'",
         description: `A partir da memória coletiva cultivada pela escuta dos mais velhos, o filme nos conduz aos sons, às lutas e às magias do território quilombola de Águas Claras, no sertão de Pernambuco.`,
         credits: `
               direção: Lia Letícia;
               roteiro: Alunos Videoarte para Crianças - Quilombo Águas Claras;
               produção: Clarice Hoffman;
               fotografia: Adalberto Oliveira;
-              montagem: Lia Letícia, Adalberto Oliveira, Lena Oliveira, Gildenice Ferreira;
+              montagem: Lia Letícia, Adalberto Oliveira, Gildenice Ferreira;
               arte: Alunos Videoarte para Crianças - Quilombo Águas Claras;
               figurino: Alunos Videoarte para Crianças - Quilombo Águas Claras;
               som: Adalberto Oliveira;
@@ -130,7 +130,7 @@ export const QUILOMBOLA = [
       {
         title: "Kutala - Herdeiros ancestrais",
         titleEng: "",
-        subtitle: "MINAS GERAIS, 2025, 6'",
+        subtitle: "Minas Gerais, 2025, 6'",
         description: `O documentário Kutala - herdeiros ancestrais foi produzido no Quilombo Manzo a partir de uma oficina do projeto Cinema dos Quilombos, ministrada por Fabio Martins, da comunidade quilombola do Campinho da Independência, Paraty (RJ).`,
         credits: `
               direção: Fabio Martins;
