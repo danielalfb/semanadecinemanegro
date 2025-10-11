@@ -1,19 +1,20 @@
 export const QUILOMBOLA = [
   {
-    title: 'Memórias-Mulheres-Quilombos',
+    title: "Memórias-Mulheres-Quilombos",
     id: "1",
     movies: [
       {
         title: "Tança",
         titleEng: "",
-        subtitle: "Comunidade Quilombola Mato do Tição, Jaboticatubas/MG, 2015, 32'",
+        subtitle:
+          "Comunidade Quilombola Mato do Tição, Jaboticatubas/MG, 2015, 32'",
         description: `Tança, africana escravizada na região da Serra do Cipó, Minas Gerais, que teria vivido cerca de 130 anos e é a matriarca ancestral do Quilombo do Matição. Constantina Augusta dos Santos, a tia Tança, renasce vigorosa na memória de seus descendentes mais velhos: seis irmãos da família Siqueira, que mantêm com impressionante lucidez e riqueza de detalhes a história do quilombo.`,
         credits: `
               direção: Irmandade dos Atores da Pândega e Associação Quilombola Mato do Tição;
               `,
         image: "/images/movies/TANCA.png",
       },
-       {
+      {
         title: "Tita: 100 anos de luta e fé",
         titleEng: "",
         subtitle: "Quilombo do Açude, Serra do Cipó/MG, 2024, 29'",
@@ -30,11 +31,11 @@ export const QUILOMBOLA = [
               contato: danilocandombe@gmail.com
               `,
         image: "/images/movies/TITA_100_ANOS_DE_LUTA_E_FE.jpg",
-      }
-    ],  
+      },
+    ],
   },
   {
-    title: 'A vida da memória',
+    title: "A vida da memória",
     id: "2",
     movies: [
       {
@@ -62,13 +63,13 @@ export const QUILOMBOLA = [
         titleEng: "",
         subtitle: "PERNAMBUCO, 2022, 13'",
         description: `Uma disputa no céu do Quilombo dos Arturos se transforma quando a ancestralidade e a cultura de um povo entram em cena. Gravado em 2022, o curta Voa Arturos é resultado de uma oficina audiovisual, parte do Projeto  Formação de Agentes Culturais - Comunidade Quilombola dos Arturos, e foi idealizado, produzido e estrelado pela própria Comunidade Quilombola dos Arturos.`,
-        credits: `
+        credits: `ß
               direção: Othon de Saboia
               `,
         image: "/images/movies/VOA_ARTUROS.png",
       },
       {
-        title: "Conceição das Crioulas: Contando histórias",
+        title: "Conceição das Crioulas",
         titleEng: "",
         subtitle: "Pernambuco, 2023, 9'",
         description: `A iniciativa Videoarte Para Crianças propõe um espaço de experimentação audiovisual para crianças indígenas e quilombolas, tomando por princípio o fazer artístico como prática educacional, na qual o aprender se dá por meio da brincadeira e das histórias encontradas em cada comunidade visitada. Além de ferramentas, aqui as novas tecnologias são também os brinquedos, pensadas a partir de um viés artístico e assentadas num saber tradicional ancestral: a oralidade.`,
@@ -145,6 +146,6 @@ export const QUILOMBOLA = [
               `,
         image: "/images/movies/KUTALA.png",
       },
-    ],  
+    ],
   },
 ];
