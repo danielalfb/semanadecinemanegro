@@ -16,7 +16,8 @@ export const ESPECIAL = [
             elenco principal: Guisa Melo – Vampiro. Nildo Garbo, Hilda Felipe, Célia Rejane, Iran Barreto, Ceba Cordeiro, Carlos Sá, Deterano Junior, França Deteranno, Geraldo Zeferino, Prego Sá, Wellington Branco, Geraldo Viana, Tereza Cristina, Ziza Torres, Solange Araújo, Wilson Anastácio.
             contato: felipekbazzi@gmail.com
             `,
-    image: "/images/movies/A_PELEJA_BUMBA_MEU_BOI_CONTRA_O_VAMPIRO_DO_MEIO_DIA.jpg",
+    image:
+      "/images/movies/A_PELEJA_BUMBA_MEU_BOI_CONTRA_O_VAMPIRO_DO_MEIO_DIA.jpg",
   },
   {
     title: "O olho na rua, ouvido na cozinha",
@@ -30,5 +31,5 @@ export const ESPECIAL = [
             contato: felipekbazzi@gmail.com
             `,
     image: "/images/movies/O_OLHO_NA_RUA_OUVIDO_NA_COZINHA.jpg",
-},
+  },
 ];
