@@ -25,7 +25,9 @@ export default function Accordion({ title, color, children, fontSize }) {
           className="w-full flex items-center justify-between"
           style={{ color: `${color} !important` }}
         >
-          <h2 style={{ color: `${color} !important`, fontSize: fontSize }}>{title}</h2>
+          <h2 style={{ color: `${color} !important`, fontSize: fontSize }}>
+            {title}
+          </h2>
           {isShowing ? (
             <CaretUpIcon size={24} weight="bold" />
           ) : (

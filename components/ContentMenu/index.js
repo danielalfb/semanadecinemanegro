@@ -27,7 +27,11 @@ const ContentMenu = ({ tipo, isCarousel }) => {
       const rect = scrollRef.current.getBoundingClientRect();
       const inView = rect.top >= 0 && rect.bottom <= window.innerHeight;
       if (inView) {
-        child.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+        child.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        });
       }
     }
   }, [activeIndex]);
@@ -59,7 +63,11 @@ const ContentMenu = ({ tipo, isCarousel }) => {
           >
             <CaretRightIcon size={24} color="#231F20" weight="bold" />
           </button>
-          <CarouselIndicators items={items} activeIndex={activeIndex} onClick={goToSlide} />
+          <CarouselIndicators
+            items={items}
+            activeIndex={activeIndex}
+            onClick={goToSlide}
+          />
         </>
       )}
 
@@ -73,7 +81,10 @@ const ContentMenu = ({ tipo, isCarousel }) => {
           <div
             key={id}
             className="snap-center shrink-0 w-72 flex items-center"
-            style={{ scrollSnapAlign: "center", marginRight: idx !== items.length - 1 ? "1.5rem" : 0 }}
+            style={{
+              scrollSnapAlign: "center",
+              marginRight: idx !== items.length - 1 ? "1.5rem" : 0,
+            }}
           >
             <ItemCard
               name={shortTitle}

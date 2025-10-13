@@ -73,31 +73,12 @@ export const SITE_CONTENT = {
   ],
   atividades: [
     {
-      id: "cursos",
-      type: "cursos",
-      title: "Cursos",
-      shortTitle: "CURSOS",
+      id: "atividades",
+      type: "atividades",
+      title: "Atividades formativas",
       description: `Esta mostra celebra o cinema negro, reunindo filmes que abordam identidade, ancestralidade e resistência. O público é convidado a refletir sobre questões sociais e históricas, com destaque para produções independentes e inovadoras. O evento oferece debates, oficinas e homenagens, ampliando o protagonismo de artistas negros no audiovisual. O objetivo é inspirar novas gerações, fortalecer redes de colaboração e celebrar conquistas, reafirmando o compromisso com a pluralidade e a inclusão.`,
-      url: "/atividades-formativas/oficinas",
-       color: "var(--color-pink)",
-    },
-    // {
-    //   id: "debates",
-    //   type: "debates",
-    //   name: "Debates",
-    //   description:
-    //     "Os debates foram pensados para ampliar o pensamento ao redor dos filmes. Teremos conversas com convidades internacionais, além de debates com realizadoras e realizadores da mostra Cine-Escrituras Pretas. Todos os debates acontecerão de forma presencial no Cine Humberto Mauro / Palácio das Artes e no Cine Santa Tereza.",
-    //   url: "/atividades-formativas/debates",
-    //   color: "var(--clr-yellow-light)",
-    // },
-    {
-      id: "mesas",
-      type: "mesas",
-      title: "Mesas",
-      shortTitle: "MESAS",
-      description: `Esta mostra celebra o cinema negro, reunindo filmes que abordam identidade, ancestralidade e resistência. O público é convidado a refletir sobre questões sociais e históricas, com destaque para produções independentes e inovadoras. O evento oferece debates, oficinas e homenagens, ampliando o protagonismo de artistas negros no audiovisual. O objetivo é inspirar novas gerações, fortalecer redes de colaboração e celebrar conquistas, reafirmando o compromisso com a pluralidade e a inclusão.`,
-      url: "/atividades-formativas/politicas",
-      color: "var(--color-lilac)",
+      url: "/atividades-formativas",
+      color: "var(--color-pink)",
     },
   ],
   socials: [
