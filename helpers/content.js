@@ -78,7 +78,7 @@ export const SITE_CONTENT = {
       title: "Atividades formativas",
       description: `Esta mostra celebra o cinema negro, reunindo filmes que abordam identidade, ancestralidade e resistência. O público é convidado a refletir sobre questões sociais e históricas, com destaque para produções independentes e inovadoras. O evento oferece debates, oficinas e homenagens, ampliando o protagonismo de artistas negros no audiovisual. O objetivo é inspirar novas gerações, fortalecer redes de colaboração e celebrar conquistas, reafirmando o compromisso com a pluralidade e a inclusão.`,
       url: "/atividades-formativas",
-      color: "var(--color-pink)",
+      color: "var(--color-green)",
     },
   ],
   socials: [
