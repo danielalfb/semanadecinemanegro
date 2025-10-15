@@ -1,6 +1,11 @@
 import React, { useMemo } from "react";
 
-export default function MovieCard({ movie, color, single, isCineEscrituras = false }) {
+export default function MovieCard({
+  movie,
+  color,
+  single,
+  isCineEscrituras = false,
+}) {
   const {
     title,
     titleEng,
@@ -20,6 +25,7 @@ export default function MovieCard({ movie, color, single, isCineEscrituras = fal
       style={{
         borderColor: single ? "transparent" : color,
         backgroundColor: single ? "var(--color-cream)" : "#fffdf7",
+        minHeight: "300px",
       }}
     >
       <div className="w-full desktop:w-[50%] laptop:w-[50%]">
@@ -57,11 +63,14 @@ export default function MovieCard({ movie, color, single, isCineEscrituras = fal
         <span className="mb-4 text-xs">{subtitle2}</span>
         {creditsArr.map((str, index) => {
           const [before, after] = str.split(":");
-          return after && (
-            <span className="text-xs" key={index}>
-              <strong>{before}:</strong>{after}
-            </span>
-          )
+          return (
+            after && (
+              <span className="text-xs" key={index}>
+                <strong>{before}:</strong>
+                {after}
+              </span>
+            )
+          );
         })}
         <span className="mt-4 text-xs">{description}</span>
         {isCineEscrituras && (

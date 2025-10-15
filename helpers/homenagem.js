@@ -1,17 +1,44 @@
 export const HOMENAGEM = [
   {
-    title: "NOSSA MÃE ERA ATRIZ",
-    titleEng: "OUR MOTHER WAS AN ACTRESS",
-    subtitle: "MINAS GERAIS, 2023, 26'",
-    description: `Maria José Novais Oliveira, uma senhora negra, moradora da periferia de Contagem, já nos seus 60 anos se tornou atriz de cinema, com uma carreira premiada no Brasil e internacionalmente. Este documentário rememora a imagem de uma mulher ímpar, que marcou o cinema brasileiro dos anos 2010.`,
-    credits: `
-            direção: André Novais Oliveira e Renato Novais;
-            roteiro: André Novais Oliveira e Renato Novais;
-            produção: André Novais Oliveira, Gabriel Martins, Maurilio Martins e Thiago Macêdo Correia;
-            montagem: Higor Gomes e André Novais Oliveira;
-            empresa produtora: Filmes de Plástico;
-            contato: contato@filmesdeplastico.com.br
-            `,
-    image: "/images/movies/default.png",
+    title: "QUANDO MULHERES NEGRAS SE MOVIMENTAM - PRIMEIRO ATO",
+    id: "1",
+    movies: [
+      {
+        title: "MUMBI 7 CENAS PÓS BURKINA",
+        subtitle: "BRASIL, 2010, 7'",
+        description: `Mumbi é uma jovem cineasta que, após ter participado de um dos maiores festivais de cinema do mundo, se vê enclausurada no interior de si mesma, sem saber qual será sua próxima obra. A partir do diálogo entre o próprio pensamento e as lembranças que guarda de produções marcantes do cinema brasileiro, Mumbi consegue se libertar de sua angústia.`,
+        descriptionEng: ``,
+        credits: `
+          direção: Viviane Ferreira;
+        `,
+        image: "/images/movies/MUMBI_7_CENAS_POS_BURKINA.png",
+      },
+      {
+        title: "O DIA DE JERUSA",
+        subtitle: "BRASIL, 2014, 20'",
+        description: `Em Bixiga, coração de São Paulo, Jerusa vive em um sobrado envelhecido pelo tempo. Num dia especial para Jerusa, a pesquisadora de opinião Silvia bate à sua porta com um questionário sobre sabão em pó. A visita que deveria ser breve, então, se estende e o encontro das duas transforma um dia comum em uma tarde inusitada.`,
+        descriptionEng: ``,
+        credits: `
+          direção: Viviane Ferreira;
+        `,
+        image: "/images/movies/O_DIA_DE_JERUSA.jpeg",
+      },
+    ],
+  },
+  {
+    title: "QUANDO MULHERES NEGRAS SE MOVIMENTAM - SEGUNDO ATO",
+    id: "1",
+    movies: [
+      {
+        title: "AFROLATINAS - WORK IN PROGRESS",
+        subtitle: "BRASIL, 2025, 1h30",
+        description: ``,
+        descriptionEng: ``,
+        credits: `
+        direção: Viviane Ferreira;
+      `,
+        image: "/images/movies/AFROLATINAS_WORK_IN_PROGRESS.jpg",
+      },
+    ],
   },
 ];
