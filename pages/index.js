@@ -32,7 +32,7 @@ export default function Home() {
                   Como fazer do mar a casa?
                 </h2>
                 <p className="text-sm tablet:text-md mb-4 text-left text-brown leading-relaxed tablet:leading-loose">
-                  {`A <i>5º Semana de Cinema Negro de Belo Horizonte</i>{" "}
+                  A <i>5º Semana de Cinema Negro de Belo Horizonte</i>{" "}
                   apresenta, de 16 a 24 de outubro de 2025, um conjunto composto
                   por 45 filmes de cinematografias brasileiras e do mundo,
                   distribuídas em: Cine-Escrituras Pretas; Homenagem Maria José
@@ -47,7 +47,7 @@ export default function Home() {
                   exibições presenciais serão realizadas no Cine Humberto
                   Mauro/Palácio das Artes e no Cine Santa Tereza, e toda a
                   programação é gratuita. A mostra Cine-Escrituras Pretas ficará
-                  disponível online durante todo o período do festival na`}{" "}
+                  disponível online durante todo o período do festival na{" "}
                   <Link
                     target="_blank"
                     href="http://ubuplay.com"
@@ -55,24 +55,24 @@ export default function Home() {
                   >
                     ubuplay.com
                   </Link>
-                  . <br />{" "}
-                  {`Nesta edição, além das sessões fílmicas, teremos
+                  . <br /> Nesta edição, além das sessões fílmicas, teremos
                   conversas realizadores e realizadoras, todas as atividades
                   acontecerão presencialmente. Contamos, ainda, com as oficinas:
-                  "Fotolivros Africanos Contemporâneos”, ministrada por Ana
-                  Paula Vitorio e “Introdução à preservação audiovisual digital
-                  - conceitos e práticas”, ministrada por Débora Butruce.
-                  Teremos também a mesa “Práticas para pensar a formação de
-                  público a partir do cinema”, com Danilo Candombe, Layla Braz,
-                  Marcos Donizetti, Elaine do Carmo e Viviane Ferreira, além de
-                  uma conversa com o cineasta Charles Burnett. <br /> As obras
-                  da artista plástica Larissa de Souza compõem toda identidade
-                  visual desta edição do festival. Em suas obras a artista
-                  autodidata apresenta pinturas majoritariamente figurativas,
-                  concentrando-se na imagem da mulher afro diaspórica em seu
-                  universo particular e coletivo. O projeto gráfico é da Joana
-                  Américo e do Marco Chagas. Convidamos a todas, todes e todos a
-                  acompanharem a programação.`}
+                  &quot;Fotolivros Africanos Contemporâneos&quot;, ministrada
+                  por Ana Paula Vitorio e &quot;Introdução à preservação
+                  audiovisual digital - conceitos e práticas&quot;, ministrada
+                  por Débora Butruce. Teremos também a mesa &quot;Práticas para
+                  pensar a formação de público a partir do cinema&quot;, com
+                  Danilo Candombe, Layla Braz, Marcos Donizetti, Elaine do Carmo
+                  e Viviane Ferreira, além de uma conversa com o cineasta
+                  Charles Burnett. <br /> As obras da artista plástica Larissa
+                  de Souza compõem toda identidade visual desta edição do
+                  festival. Em suas obras a artista autodidata apresenta
+                  pinturas majoritariamente figurativas, concentrando-se na
+                  imagem da mulher afro diaspórica em seu universo particular e
+                  coletivo. O projeto gráfico é da Joana Américo e do Marco
+                  Chagas. Convidamos a todas, todes e todos a acompanharem a
+                  programação.
                 </p>
                 <div className="flex flex-col tablet:flex-row gap-2 tablet:gap-4 mb-8">
                   {/*  <button
