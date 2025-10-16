@@ -29,64 +29,73 @@ export default function Home() {
             <div className="relative z-10 flex flex-col items-start px-2 tablet:px-10 py-8 max-w-full tablet:max-w-4xl mx-auto">
               <div className="p-2 tablet:p-6 w-full">
                 <h2 className="text-md tablet:text-xl font-bold mb-2 text-left text-brown">
-                  5º Semana de Cinema Negro de Belo Horizonte
+                  Como fazer do mar a casa?
                 </h2>
                 <p className="text-sm tablet:text-md mb-4 text-left text-brown leading-relaxed tablet:leading-loose">
                   A <i>5º Semana de Cinema Negro de Belo Horizonte</i>{" "}
-                  apresenta, de 16 a 24 de setembro de 2025, um conjunto
-                  composto por 70 filmes de cinematografias africanas, negras
-                  brasileiras e da diáspora distribuídas em:{" "}
-                  <i>
-                    Cinemas Africanos contam suas histórias; 50 Anos de Touki
-                    Bouki, Celebrando o Cinema de Djibril Diop Mambéty;
-                    Cine-Escrituras Pretas; Cinema Negro e Experimental com
-                    Crystal Z Campbell; Sessão Homenagem Maria José Novais
-                    Oliveira; 5 Anos de Ponta de Anzol; e Ibejis (Infantil)
-                  </i>
-                  . O festival acontecerá de forma híbrida, presencialmente e
-                  on-line. As exibições presenciais serão realizadas no Cine
-                  Humberto Mauro/Palácio das Artes e no Cine Santa Tereza, e
-                  toda a programação é gratuita. Os filmes da mostra
-                  Cine-Escrituras Pretas estarão disponíveis nas salas de
-                  exibição e na plataforma Cine Humberto Mauro Mais (
+                  apresenta, de 16 a 24 de outubro de 2025, um conjunto composto
+                  por 45 filmes de cinematografias brasileiras e do mundo,
+                  distribuídas em: Cine-Escrituras Pretas; Homenagem Maria José
+                  Novais Oliveira: Viviane Ferreira, seguir tendo o direito de
+                  experimentar; Cotidiano e Revolucionário - O Cinema de Charles
+                  Burnett; Experiência Vivida do Negro - Franz Fanon 100 anos;
+                  Tributo ao Cinema Luz de Souleymane Cissé; Do Rio ao Mar:
+                  Palestina Livre. E ainda as mostras: A Rememoração no Cinema
+                  dos Quilombos; Vampiros à Luz do Meio-Dia - O Cinema de Luiz
+                  Lourenço e a Ibejis - Sessão Infantil. <br /> O festival
+                  acontecerá de forma híbrida, presencialmente e on-line. As
+                  exibições presenciais serão realizadas no Cine Humberto
+                  Mauro/Palácio das Artes e no Cine Santa Tereza, e toda a
+                  programação é gratuita. A mostra Cine-Escrituras Pretas ficará
+                  disponível online durante todo o período do festival na{" "}
                   <Link
                     target="_blank"
-                    href="https://www.cinehumbertomauromais.com/#semana-cinema-negro-bh/#semana-cinema-negro-bh/#semana-cinema-negro-bh"
+                    href="http://ubuplay.com"
                     className="underline text-blue-700"
                   >
-                    www.cinehumbertomauromais.com
+                    ubuplay.com
                   </Link>
-                  ). Nesta edição, além das sessões fílmicas, teremos conversas
-                  com convidadas e convidados internacionais, bem como debates
-                  com realizadoras e realizadores da mostra dedicada aos filmes
-                  brasileiros – todos os debates acontecerão presencialmente.
-                  Contamos, ainda, com três oficinas: &quot;Sonhando em
-                  Palavras&quot;, Escrevendo o Primeiro Longa, ministrada por
-                  Diego Paulino, realizada em parceria com a Rede de Talentos do
-                  Projeto Paradiso, através do Paradiso Multiplica (presencial);
-                  Elaboração e Produção de Projetos, ministrada por Fernanda
-                  Vidigal (on-line); Processos de Distribuição do Cinema
-                  Independente ministrada por Daniel Queiroz (híbrido).
+                  . <br /> Nesta edição, além das sessões fílmicas, teremos
+                  conversas realizadores e realizadoras, todas as atividades
+                  acontecerão presencialmente. Contamos, ainda, com as oficinas:
+                  "Fotolivros Africanos Contemporâneos”, ministrada por Ana
+                  Paula Vitorio e “Introdução à preservação audiovisual digital
+                  - conceitos e práticas”, ministrada por Débora Butruce.
+                  Teremos também a mesa “Práticas para pensar a formação de
+                  público a partir do cinema”, com Danilo Candombe, Layla Braz,
+                  Marcos Donizetti, Elaine do Carmo e Viviane Ferreira, além de
+                  uma conversa com o cineasta Charles Burnett. <br /> As obras
+                  da artista plástica Larissa de Souza compõem toda identidade
+                  visual desta edição do festival. Em suas obras a artista
+                  autodidata apresenta pinturas majoritariamente figurativas,
+                  concentrando-se na imagem da mulher afro diaspórica em seu
+                  universo particular e coletivo. O projeto gráfico é da Joana
+                  Américo e do Marco Chagas. Convidamos a todas, todes e todos a
+                  acompanharem a programação.
                 </p>
                 <div className="flex flex-col tablet:flex-row gap-2 tablet:gap-4 mb-8">
-                  <button
+                  {/*  <button
                     className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition border border-white"
                     onClick={() => console.log("click")}
                   >
                     Todesplay
-                  </button>
+                  </button> */}
                   <button
                     className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition border border-white"
-                    onClick={() => console.log("click")}
+                    onClick={() =>
+                      window.open(
+                        "https://drive.google.com/file/d/1eL6HC_5u0gksVHEbDxBBG37saSbFxTL-/view?usp=sharing"
+                      )
+                    }
                   >
                     Programação
                   </button>
-                  <button
+                  {/* <button
                     className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition border border-white"
                     onClick={() => console.log("click")}
                   >
                     Catálogo
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

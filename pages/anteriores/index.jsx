@@ -1,12 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { ArrowLeftIcon } from "@phosphor-icons/react";
 import { useRouter } from "next/router";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
-import Wave from "../../components/Wave";
 import Header from "../../components/Header";
+import PageBanner from "../../components/PageBanner";
 
 export default function Anteriores() {
   const router = useRouter();
@@ -24,25 +23,12 @@ export default function Anteriores() {
             color: "var(--color-blue-dark)",
           }}
         >
-          <div className="overflow-x-hidden relative appearance-none h-3/4 pt-40 pb-40 scroll-smooth w-full txtBlock z-10 past-pages">
-            {/* <div className="title-container z-10">
-              <Button onClick={() => router.push("/")}>
-                <div
-                  id="title"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "24px",
-                    margin: "-10px 0 40px 15px",
-                    zIndex: "999",
-                    cursor: "pointer",
-                  }}
-                >
-                  <ArrowLeftIcon size={24} />
-                  <h1>voltar</h1>
-                </div>
-              </Button>
-            </div> */}
+          <div className="overflow-x-hidden relative appearance-none h-3/4 scroll-smooth w-full txtBlock z-10 past-pages">
+             <PageBanner
+        title={"edições anteriores"}
+        waveColor={"var(--color-pink)"}
+        textColor={"var(--color-main-txt)"}
+      />
             <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
               <div className="flex w-full justify-between items-center mb-6">
                 <div className="title-sub">
@@ -68,9 +54,9 @@ export default function Anteriores() {
                 negras brasileiras e da diáspora, distribuído em três mostras,
                 duas homenagens e uma Sessão Especial:{" "}
                 <i>
-                  Especial Pioneiros do Cinemas Africanos;
-                  Cine-Escrituras Pretas;  Sessão Homenagem Maria José Novais
-                  Oliveira e Ibejis (Infantil)
+                  Especial Pioneiros do Cinemas Africanos; Cine-Escrituras
+                  Pretas; Sessão Homenagem Maria José Novais Oliveira e Ibejis
+                  (Infantil)
                 </i>
               </p>
             </div>
@@ -80,6 +66,7 @@ export default function Anteriores() {
                   <h2>SCNBH&apos;23</h2>
                 </div>
                 <Button
+                  classes="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition border border-white"
                   onClick={() =>
                     window.open(
                       "https://drive.google.com/file/d/1cbld8n2xrQfcr73jDnmRV2Bzia4I2S63/view"
@@ -113,7 +100,7 @@ export default function Anteriores() {
                   <h2>SCNBH&apos;22</h2>
                 </div>
                 <Button
-                  clsses={"tempPage_menu_links"}
+                  classes="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition border border-white"
                   onClick={() =>
                     window.open("/catalogo_2_edicao.pdf", "_blank")
                   }
@@ -165,6 +152,7 @@ export default function Anteriores() {
                   <h2>SCNBH&apos;21</h2>
                 </div>
                 <Button
+                  classes="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition border border-white"
                   onClick={() =>
                     window.open(
                       "https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing"
@@ -202,19 +190,16 @@ export default function Anteriores() {
                 </i>
                 . As conversas com convidadas e convidados estão disponíveis no
                 canal do Youtube da Semana de Cinema Negro (acesse no{" "}
-                <Link
-                  href="https://www.youtube.com/@semanadecinemanegro/streams"
-                >                    Youtube
-
+                <Link href="https://www.youtube.com/@semanadecinemanegro/streams">
+                  {" "}
+                  Youtube
                 </Link>
                 .) Durante o festival, o Coletivo Zanza realizou a cobertura
                 crítica. Os integrantes Diego Silva Souza, Gabriel Araújo,
                 Iakima Delamare e Larissa Muniz escreveram acerca de alguns
                 filmes que estavam sendo divulgados ao longo do evento (acesse
                 em{" "}
-                <Link
-                  href="https://www.coletivozanza.com/tag/semana-de-cinema-negro"
-                >
+                <Link href="https://www.coletivozanza.com/tag/semana-de-cinema-negro">
                   Coletivo Zanza
                 </Link>
                 .) Em nosso catálogo, que já está disponível para download, é
@@ -223,7 +208,6 @@ export default function Anteriores() {
               </p>
             </div>
           </div>
-           <Wave color="var(--color-cream)" />
         </div>
       </div>
       <Footer />

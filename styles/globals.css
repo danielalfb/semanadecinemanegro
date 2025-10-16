@@ -39,10 +39,7 @@ button, input {
   font-size: 12px !important;
 }
 
-.past-pages button {
-  color: var(--color-main-txt);
-  border: 1px solid var(--color-main-txt);
-}
+
 
 :root {
   --color-blue-100: #C6D3DE;

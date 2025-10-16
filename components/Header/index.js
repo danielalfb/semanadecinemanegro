@@ -19,7 +19,8 @@ const Header = () => {
     <header className="sticky w-full top-0 z-[100]">
       <div className="bg-black flex flex-col tablet:flex-row justify-end between px-2 w-full h-auto tablet:h-12 items-center">
         <div className="hidden tablet:flex items-center gap-2">
-          <Searchbar />
+          {/*           <Searchbar />
+           */}
           <div className="flex gap-2">
             <div
               id="insta"
@@ -99,9 +100,9 @@ const Header = () => {
             <Popover.Panel
               className={`absolute right-0 z-10 top-19 w-full p-4 bg-brown text-white shadow-md`}
             >
-              <div className="mb-4 w-full">
+              {/*   <div className="mb-4 w-full">
                 <Searchbar isMobile />
-              </div>
+              </div> */}
               <Button onClick={() => router.push("/")}>início</Button>
               <Button onClick={() => router.push("/mostras")}>mostras</Button>
               <Button onClick={() => router.push("/atividades-formativas")}>

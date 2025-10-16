@@ -18,7 +18,7 @@ function Searchbar({ isMobile }) {
 
         return (
           title.toLowerCase().includes(lowerCaseInput) ||
-          credits.toLowerCase().includes(lowerCaseInput)
+          credits?.toLowerCase().includes(lowerCaseInput)
         );
       });
       setTimeout(() => {
