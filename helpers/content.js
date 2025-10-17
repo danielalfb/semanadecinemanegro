@@ -3,7 +3,7 @@ export const SITE_CONTENT = {
     {
       id: "abertura",
       type: "mostra",
-      title: "Sessão de Abertura",
+      title: "SESSÃO DE ABERTURA",
       shortTitle: "ABER-TURA",
       description: `Esta mostra celebra o cinema negro, reunindo filmes que abordam identidade, ancestralidade e resistência. O público é convidado a refletir sobre questões sociais e históricas, com destaque para produções independentes e inovadoras. O evento oferece debates, oficinas e homenagens, ampliando o protagonismo de artistas negros no audiovisual. O objetivo é inspirar novas gerações, fortalecer redes de colaboração e celebrar conquistas, reafirmando o compromisso com a pluralidade e a inclusão.`,
       longDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mauris a urna tincidunt mattis quis eu orci. Nulla facilisi. Maecenas dignissim, est sit amet faucibus aliquam, quam augue congue magna, a aliquam nunc quam dapibus augue. Nam tempus commodo odio, pellentesque rhoncus lacus venenatis eu. Maecenas ultricies massa consequat ex tincidunt, at luctus nisl feugiat. Nunc rutrum luctus enim, a dictum magna tincidunt vitae. Nullam placerat lacinia ex, non rutrum est auctor id. Vestibulum vitae tellus molestie, sodales libero efficitur, porttitor ipsum. Nam eleifend ipsum sed purus dignissim tempus non ac neque. Morbi dolor dolor, aliquet id ligula eu, imperdiet semper turpis. Integer ut.`,
@@ -26,7 +26,7 @@ export const SITE_CONTENT = {
       id: "cineEscrituras",
       type: "mostra",
       title: "CINE ESCRITURAS PRETAS",
-      shortTitle: "CINE-ESCRITURAS PRETAS",
+      shortTitle: "CINE ESCRITURAS-PRETAS",
       description: `A mostra Cine-Escrituras Pretas reúne filmes que, como destacam as curadoras Mariana Souza, Tatiana Carvalho Costa e Larissa Barbosa, “nos convidam a mergulhar em camadas de memória, invenção e desejo”. Cada obra propõe um olhar profundo sobre si e sobre o que está além da imagem, abrindo fissuras no tempo e no espaço onde se cruzam rememoração e criação. Composta por 18 filmes recentes, entre curtas e longas, a mostra se organiza em seis eixos: Oceânica inquietude de ser, Conversas para quando o tempo não existir, De Atenas à Jamaica, Manifestos por uma história da memória negra, Para todas as cartas de amor e Nosso caminho não é linha reta.`,
       longDescription: `A mostra Cine-Escrituras Pretas apresenta uma variedade de filmes que, como escrevem as curadoras Mariana Souza, Tatiana Carvalho Costa e Larissa Barbosa, “nos convidam a mergulhar em camadas de memória, descaminhos, invenção e desejo. Cada filme aqui elencado carrega a proposição de um olhar substancialmente sobre si, e é justamente esse olhar que busca o que está além da imagem. Nas fissuras abertas no tempo/espaço por cada uma das narrativas, é possível pensar movimentos de rememoração, mas também de criação a partir do gesto poético do olhar para dentro — seja de um corpo, de uma comunidade ou de uma história que insiste em sobreviver”. A mostra é composta por 18 filmes da produção recente, entre curtas e longas, e está dividida em seis eixos norteadores: 
       Oceânica inquietude de ser, Conversas para quando o tempo não existir, De Atenas à Jamaica, Manifestos por uma história da memória negra, Para todas as cartas de amor e Nosso caminho não é linha reta. 

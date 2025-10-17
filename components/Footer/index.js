@@ -6,6 +6,7 @@ import {
   FacebookLogoIcon,
   YoutubeLogoIcon,
   TwitterLogoIcon,
+  PhoneCallIcon
 } from "@phosphor-icons/react";
 import { SITE_CONTENT } from "../../helpers/content";
 import Link from "next/link";
@@ -39,7 +40,7 @@ const Footer = () => {
               <a
                 key={idx}
                 href={mostra.url}
-                className="text-xs mb-1 hover:underline"
+                className="text-xs mb-1 hover:underline lowercase"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -62,15 +63,26 @@ const Footer = () => {
               edições anteriores
             </Link>
           </div>
-          <div className="block w-full h-px bg-white/30 my-2" />
+          <div className="block w-full h-px bg-white/30 my-2 leading-none" />
           <div className="flex flex-col items-start pl-0 sm:pl-4">
-            <span className="text-xs mb-1">
-              Semana de Cinema Negro de Belo Horizonte
-            </span>
-            <span className="flex items-center gap-1 text-xs mb-1">
-              <EnvelopeSimpleIcon size={12} color="#fffdf0" weight="light" />
-              scnegrobh@gmail.com
-            </span>
+            <div>
+              <span className="text-xs mb-1">
+                Semana de Cinema Negro de Belo Horizonte
+              </span>
+              <span className="flex items-center gap-1 text-xs mb-1">
+                <EnvelopeSimpleIcon size={12} color="#fffdf0" weight="light" />
+                scnegrobh@gmail.com
+              </span>
+              <span className="text-xs">Para falar com nossa assessoria de imprensa, entre em contato com:</span>
+              <span className="flex items-center gap-1 text-xs mb-1">
+                <PhoneCallIcon size={12} color="#fffdf0" weight="light" />
+                Flora Miguel 11 95323-2999
+              </span>
+              <span className="flex items-center gap-1 text-xs mb-1">
+                <PhoneCallIcon size={12} color="#fffdf0" weight="light" />
+                Izabela Costa 11 97347-1280
+              </span>
+            </div>
           </div>
           <div className="block w-full h-px bg-white/30 my-2" />
           <div className="flex flex-col items-start pl-0 sm:pl-4">
@@ -129,7 +141,7 @@ const Footer = () => {
             <a
               key={idx}
               href={mostra.url}
-              className="text-xs mb-1 hover:underline"
+              className="text-xs mb-1 hover:underline lowercase"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -152,15 +164,26 @@ const Footer = () => {
             edições anteriores
           </Link>
         </div>
-        <div className="absolute left-[60%] top-6 bottom-6 w-px bg-white/30" />
-        <div className="flex flex-col items-start pl-4">
-          <span className="text-xs mb-1">
-            Semana de Cinema Negro de Belo Horizonte
-          </span>
-          <span className="flex items-center gap-1 text-xs mb-1">
-            <EnvelopeSimpleIcon size={12} color="#fffdf0" weight="light" />
-            scnegrobh@gmail.com
-          </span>
+        <div className="absolute left-[60%] top-6 bottom-6 w-px bg-white/30 " />
+        <div className="flex flex-col items-start pl-4 ">
+          <div className="gap-2">
+            <span className="text-xs mb-1">
+              Semana de Cinema Negro de Belo Horizonte
+            </span>
+            <span className="flex items-center gap-1 text-xs mb-1">
+              <EnvelopeSimpleIcon size={12} color="#fffdf0" weight="light" />
+              scnegrobh@gmail.com
+            </span>
+            <span className="text-xs">Para falar com nossa assessoria de imprensa, entre em contato com:</span>
+            <span className="flex items-center gap-1 text-xs mb-1 mt-4">
+              <PhoneCallIcon size={12} color="#fffdf0" weight="light" />
+              Flora Miguel 11 95323-2999
+            </span>
+            <span className="flex items-center gap-1 text-xs mb-1">
+              <PhoneCallIcon size={12} color="#fffdf0" weight="light" />
+              Izabela Costa 11 97347-1280
+            </span>
+          </div>
         </div>
         <div className="absolute left-[80%] top-6 bottom-6 w-px bg-white/30" />
         <div className="flex flex-col items-start pl-4">
