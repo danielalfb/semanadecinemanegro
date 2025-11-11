@@ -31,7 +31,7 @@ export default function ItemCard({ color, name, description, url }) {
               key={silable}
               style={{
                 color: "var(--color-cream)",
-                fontSize: silable === 'CINE ESCRITURAS' || silable === 'PRETAS' ? "1.15rem" : "1.75rem",
+                fontSize: silable === 'CINE ESCRITURAS' || silable === 'PRETAS' ? "1.1rem" : "1.75rem",
               }}
               className="uppercase break-all"
             >
