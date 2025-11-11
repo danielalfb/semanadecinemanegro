@@ -3,8 +3,7 @@ import React, { useMemo } from "react";
 export default function MovieCard({
   movie,
   color,
-  single,
-  isCineEscrituras = false,
+  single
 }) {
   const {
     title,
@@ -73,14 +72,6 @@ export default function MovieCard({
           );
         })}
         <span className="mt-4 text-xs">{description}</span>
-        {isCineEscrituras && (
-          <button
-            className="bg-black text-white px-4 py-2 mt-4 rounded hover:bg-gray-800 transition border border-white"
-            onClick={() => console.log("click")}
-          >
-            Assistir
-          </button>
-        )}
       </div>
     </div>
   );
