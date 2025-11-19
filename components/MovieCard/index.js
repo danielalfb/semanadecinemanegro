@@ -1,6 +1,10 @@
 import React, { useMemo } from "react";
 
-export default function MovieCard({ movie, color }) {
+export default function MovieCard({
+  movie,
+  color,
+  single
+}) {
   const {
     title,
     titleEng,
@@ -16,34 +20,58 @@ export default function MovieCard({ movie, color }) {
 
   return (
     <div
-      className='flex flex-col gap-1 rounded-sm border-8'
-      style={{ borderColor: color }}
+      className="flex flex-col items-stretch gap-1 rounded-md border-4 desktop:flex-row laptop:flex-row"
+      style={{
+        borderColor: single ? "transparent" : color,
+        backgroundColor: single ? "var(--color-cream)" : "#fffdf7",
+        minHeight: "300px",
+      }}
     >
-      <div className={`${image2 ? "flex" : ""}`}>
+      <div className="w-full desktop:w-[50%] laptop:w-[50%]">
         <div
-          className='w-full bg-center bg-cover'
-          style={{ height: "12rem", backgroundImage: `url('${image}')` }}
+          className="w-full h-[300px] bg-center bg-cover desktop:h-full laptop:h-full"
+          style={{
+            backgroundImage: `url('${image}')`,
+            borderRadius: single ? "6px" : null,
+          }}
         />
         {image2 ? (
           <div
-            className='w-full bg-center bg-cover'
-            style={{ height: "12rem", backgroundImage: `url('${image2}')` }}
+            className="w-full h-[300px] bg-center bg-cover desktop:h-full laptop:h-full"
+            style={{
+              backgroundImage: `url('${image2}')`,
+              borderRadius: single ? "6px" : null,
+            }}
           />
         ) : null}
       </div>
-      <div className=' flex flex-col p-4'>
-        <div className='flex flex-col mb-1'>
-          <h3 style={{ color: color }}>{title}</h3>
-          <span className='text-sm'>{titleEng}</span>
+
+      <div
+        className="flex flex-col p-4 flex-1"
+        style={{
+          backgroundColor: single ? color : "inherit",
+          color: single ? "var(--color-cream)" : null,
+          borderRadius: single ? "6px" : null,
+        }}
+      >
+        <div className="flex flex-col mb-1">
+          <h3 style={{ color: single ? "inherit" : color }}>{title}</h3>
+          <span className="text-sm">{titleEng}</span>
         </div>
-        <span className='text-xs'>{subtitle}</span>
-        <span className='mb-4 text-xs'>{subtitle2}</span>
-        {creditsArr.map((str, index) => (
-          <span className='text-xs' key={index}>
-            {str}
-          </span>
-        ))}
-        <span className='mt-4 text-xs'>{description}</span>
+        <span className="text-xs">{subtitle}</span>
+        <span className="mb-4 text-xs">{subtitle2}</span>
+        {creditsArr.map((str, index) => {
+          const [before, after] = str.split(":");
+          return (
+            after && (
+              <span className="text-xs" key={index}>
+                <strong>{before}:</strong>
+                {after}
+              </span>
+            )
+          );
+        })}
+        <span className="mt-4 text-xs">{description}</span>
       </div>
     </div>
   );

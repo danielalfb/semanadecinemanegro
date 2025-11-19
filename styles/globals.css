@@ -33,21 +33,29 @@
   font-display: swap;
 }
 
+button, input {
+  font-family: "RubikMonoOne";
+  color: white;
+  font-size: 12px !important;
+}
+
+
+
 :root {
-  --color-blue-light: #C6D3DE;
-  --color-blue: #6EA7BD;
-  --color-blue-dark: #224296;
+  --color-blue-100: #C6D3DE;
+  --color-blue-200: #6EA7BD;
+  --color-blue-300: #224296;
   --color-lilac: #8F78B0;
   --color-pink: #CEA1A2;
-  --color-orange: #C17153;
+  --color-earth: #C17153;
   --color-olive: #7E8C5E;
   --color-green: #009268;
   --color-yellow: #C5B743;
   --color-lime: #E8ECA8;
   --color-cream: #E9E2CB;
+  --color-sand: #e0d0a1;
   --color-main-txt: #231F20;
-  
-
+  --color-main-txt-light: #fff;
 }
 * {
   /* font-family: "Open Sans"; */
@@ -65,9 +73,15 @@ body {
 h2 {
   font-family: RubikMonoOne, Arial, Helvetica, sans-serif;
   color: var(--color-pink);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
+
+h3 {
+  color: var(--color-main-txt-light);
+}
+
+
 
 .header-links {
   font-family: "PicNic";

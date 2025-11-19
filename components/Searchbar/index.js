@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { ALL_MOVIES } from "../../helpers/allMovies";
 import MovieCard from "../MovieCard";
-import { MagnifyingGlass } from "@phosphor-icons/react";
 import { createPortal } from "react-dom";
 
 function Searchbar({ isMobile }) {
@@ -19,7 +18,7 @@ function Searchbar({ isMobile }) {
 
         return (
           title.toLowerCase().includes(lowerCaseInput) ||
-          credits.toLowerCase().includes(lowerCaseInput)
+          credits?.toLowerCase().includes(lowerCaseInput)
         );
       });
       setTimeout(() => {
@@ -42,32 +41,25 @@ function Searchbar({ isMobile }) {
           input.length >= 3
             ? " z-20 absolute top-9 left-0 m-0 w-full transition-all px-9"
             : isMobile
-            ? " w-full"
-            : " w-28"
+              ? " w-full"
+              : " w-28"
         }`}
       >
-        <div className={`relative inline-flex items-center w-full`}>
+        <div
+          className={`relative inline-flex items-center ${isMobile ? "w-full" : "tablet:right-28"}`}
+        >
           <input
-            type='text'
-            placeholder='Pesquisar'
+            id="search"
+            type="text"
+            placeholder="Pesquisar"
             value={input}
             onChange={handleInputChange}
-            className={`searchbarInput ${
-              isMobile ? "searchbarInputMob" : ""
-            } w-full h-6 p-2 text-sm border-none rounded-full`}
+            className={`searchbarInput rounded-sm ${isMobile ? "searchbarInputMob w-full" : ""} h-6 p-2 text-sm`}
             style={{
-              backgroundColor: "transparent",
-              color: !isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)",
-              border: `1px solid ${
-                !isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)"
-              }`,
+              backgroundColor: "var(--color-main-txt)",
+              color: "var(--color-cream)",
+              borderRadius: "none",
             }}
-          />
-          <MagnifyingGlass
-            className='absolute right-2'
-            size={16}
-            weight='bold'
-            color={!isMobile ? "var(--clr-blue-dark)" : "var(--clr-white)"}
           />
         </div>
       </div>
@@ -79,7 +71,7 @@ function Searchbar({ isMobile }) {
     if (input.length >= 3) {
       return (
         <div
-          className='absolute top-0 left-0 w-full p-9 pt-20'
+          className="absolute top-0 left-0 w-full p-9 pt-20"
           style={{
             backgroundColor: "var(--clr-white)",
             zIndex: 11,
@@ -94,7 +86,7 @@ function Searchbar({ isMobile }) {
               <MovieCard
                 key={movie.title}
                 movie={movie}
-                color='var(--clr-yellow-dark)'
+                color="var(--clr-yellow-dark)"
               />
             ))}
           </div>
