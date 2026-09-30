@@ -122,11 +122,11 @@ export default function Home() {
               <br /> <br />
               Nesta edição, além das sessões fílmicas, teremos conversas
               realizadores e realizadoras, todas as atividades acontecerão
-              presencialmente. Contamos, ainda, com as oficinas: "Fotolivros
-              Africanos Contemporâneos", ministrada por Ana Paula Vitorio e
-              "Introdução à preservação audiovisual digital - conceitos e
-              práticas", ministrada por Débora Butruce. Teremos também a mesa
-              "Práticas para pensar a formação de público a partir do cinema",
+              presencialmente. Contamos, ainda, com as oficinas: &quot;Fotolivros
+              Africanos Contemporâneos&quot;, ministrada por Ana Paula Vitorio e
+              &quot;Introdução à preservação audiovisual digital - conceitos e
+              práticas&quot;, ministrada por Débora Butruce. Teremos também a mesa
+              &quot;Práticas para pensar a formação de público a partir do cinema&quot;,
               com Danilo Candombe, Layla Braz, Marcos Donizetti, Elaine do Carmo
               e Viviane Ferreira, além de uma conversa com o cineasta Charles
               Burnett.
