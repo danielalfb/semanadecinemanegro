@@ -1,194 +1,111 @@
-import React from "react";
-import Footer from "../../components/Footer";
+import Head from "next/head";
 import Link from "next/link";
-import { ArrowLeft } from "@phosphor-icons/react";
-import { useRouter } from "next/router";
-import Button from "../../components/Button";
+
+const editions = [
+  { year: 2025, title: "5ª Edição", subtitle: "Catálogo", color: "bg-amarelo-oxum", size: "col-span-2 row-span-2" },
+  { year: 2024, title: "4ª Edição", subtitle: "Catálogo", color: "bg-terracota", size: "col-span-1 row-span-2" },
+  { year: 2023, title: "3ª Edição", subtitle: "Catálogo", color: "bg-amarelo-ouro", size: "col-span-1 row-span-2" },
+  { year: 2022, title: "2ª Edição", subtitle: "Catálogo", color: "bg-azul-sereno", size: "col-span-2 row-span-1" },
+  { year: 2021, title: "1ª Edição", subtitle: "Catálogo", color: "bg-argila", size: "col-span-1 row-span-1" },
+];
 
 export default function Anteriores() {
-  const router = useRouter();
   return (
-    <div className="w-fit">
-      <div className="bg-logo w-fit bg-blue-800 relative z-1">
-        <div className="title-container">
-          <div
-            id="title"
-            onClick={() => router.push("/")}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "24px",
-              marginLeft: "15px",
-              position: "relative",
-              top: "60px",
-              zIndex: "1",
-              cursor: "pointer",
-            }}
-          >
-            <ArrowLeft size={24} />
-            <h1>voltar</h1>
-          </div>
+    <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col pb-12">
+      <Head>
+        <title>Edições Anteriores | SCNBH</title>
+      </Head>
+
+      {/* Header Minimalista com Logo */}
+      <header className="w-full fixed top-0 left-0 z-50 flex items-center justify-between p-8 bg-cream-100/90 backdrop-blur-sm">
+        <Link href="/">
+          <a className="hover:opacity-80 transition-opacity">
+            <img src="/images/logo-2026.png" alt="Logo SCNBH 2026" className="h-16 md:h-20 object-contain mix-blend-multiply scale-[1.5] origin-left" />
+          </a>
+        </Link>
+        <div className="flex gap-8 uppercase text-xs font-semibold tracking-wider">
+          <Link href="/">
+            <a className="hover:text-amarelo-ouro transition-colors">Início</a>
+          </Link>
+          <Link href="/anteriores">
+            <a className="text-amarelo-ouro transition-colors">Edições Anteriores</a>
+          </Link>
         </div>
-        <div className="overflow-x-hidden relative appearance-none h-3/4 py-20 scroll-smooth w-full txtBlock">
-          <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
-            <div className="flex w-full justify-between items-center mb-6">
-              <div className="title-sub">
-                <span>S</span>
-                <h2>SCNBH&apos;23</h2>
-              </div>
-              <Button
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1cbld8n2xrQfcr73jDnmRV2Bzia4I2S63/view"
-                  )
-                }
-              >
-                Baixar catálogo
-              </Button>
-            </div>
-            <p>
-              A 3ª edição da Semana de Cinema Negro de Belo Horizonte aconteceu
-              presencialmente pela primeira vez e, por esse motivo, a presença
-              do público foi essencial para a construção do festival. Promovemos
-              um encontro marcado pelo afeto e acolhimento. Apresentamos, 09 a
-              17 de setembro de 2023, um conjunto composto por 70 filmes de
-              cinematografias africanas, negras brasileiras e da diáspora,
-              distribuído em três mostras, duas homenagens e uma Sessão
-              Especial:{" "}
-              <i>
-                Cinemas Africanos contam suas histórias; 50 Anos de Touki Bouki,
-                Celebrando o Cinema de Djibril Diop Mambéty; Cine-Escrituras
-                Pretas; Cinema Negro e Experimental com Crystal Z Campbell;
-                Sessão Homenagem Maria José Novais Oliveira; 5 Anos de Ponta de
-                Anzol; e Ibejis (Infantil)
-              </i>
-            </p>
-          </div>
-          <div className="flex flex-col w-full mb-6 p-4 rounded-sm">
-            <div className="flex w-full justify-between items-center mb-6">
-              <div className="title-sub">
-                <span>S</span>
-                <h2>SCNBH&apos;22</h2>
-              </div>
-              <Button onClick={() => document.open("/catalogo_2_edicao.pdf")}>
-                Baixar catálogo
-              </Button>
-              {/* <a
-              target='_blank'
-              href="/catalogo_2_edicao.pdf"
-              rel="noopener noreferrer"
-              download
-              className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
-            >
-              Baixar catálogo
-            </a> */}
-            </div>
-            <p>
-              A 2ª edição da Semana de Cinema Negro de Belo Horizonte aconteceu
-              presencialmente pela primeira vez e, por esse motivo, a presença
-              do público foi essencial para a construção do festival. Promovemos
-              um encontro marcado pelo afeto e acolhimento. Apresentamos, de 8 a
-              15 de setembro de 2022, um conjunto composto por 53 filmes de
-              cinematografias africanas, negras brasileiras e da diáspora,
-              distribuído em três mostras, duas homenagens e uma Sessão
-              Especial:{" "}
-              <i>
-                Por Outros Cinemas Africanos; Med Hondo: cinema e liberadade;
-                Cine-Escrituras Pretas; Sessão Homenagem Maria José Novais
-                Oliveira: Rejane Faria – no palco e nas telas; Semana de Cinema
-                Negro convida o NICHO 54; e Ibejis (Infatil)
-              </i>
-              . As conversas com convidadas e convidados estão disponíveis no
-              canal do Youtube da Semana de Cinema Negro (acesse no{" "}
-              <Link
-                passHref={true}
-                href="https://www.youtube.com/@semanadecinemanegro/streams"
-              >
-                <a target="_blank" className="text-blue-300 flex-wrap">
-                  Youtube
-                </a>
-              </Link>
-              .) Concebemos um catálogo com textos que refletem sobre a mostra{" "}
-              <i>Por Outros Cinemas Africanos</i>. Além disso, trouxemos duas
-              entrevistas: uma com Annabelle Aventurin, publicada na revista{" "}
-              <i>Non Fiction</i>, sobre os processos de restauração dos filmes
-              do cineasta Med Hondo; e outra realizada por Alessandra Brito com
-              Rejane Faria, a nossa homenageada da edição. O catálogo está
-              disponível para download.
-            </p>
-          </div>
-          <div className="flex flex-col mb-6 w-full p-4 rounded-sm">
-            <div className="flex w-full justify-between items-center mb-6">
-              <div className="title-sub">
-                <span>S</span>
-                <h2>SCNBH&apos;21</h2>
-              </div>
-              <Button
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing"
-                  )
-                }
-              >
-                Baixar catálogo
-              </Button>
-              {/* <Link
-              passHref={true}
-              href='https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view?usp=sharing'
-            >
-              <a
-                target='_blank'
-                className='text-blue-500 bg-transparent text-sm p-2 border-2 rounded-lg uppercase font-bold hover:shadow-sm'
-              >
-                Baixar catálogo
-              </a>
-            </Link> */}
-            </div>
-            <p className="font-sans">
-              A 1º edição da Semana de Cinema Negro de Belo Horizonte trouxe um
-              olhar de resgate sobre as nossas memórias. Diante do momento de
-              crise mundial, fez-se necessário visitar lembranças para despertar
-              o desejo de vivê-las novamente. Apresentamos, de 10 a 16 de abril
-              de 2021, um conjunto composto por cinquenta filmes de
-              cinematografias africanas, negras brasileiras, africanas e da
-              diáspora, distribuído em três mostras e duas homenagens: Cinemas
-              Africanos em revista: as origens do FESPACO; Surreal16 Collective,
-              Um Novo Olhar para o Cinema Nigeriano;
-              <i>
-                Cine-Escrituras Pretas; Sessão Maria José Novais Oliveira: Nossa
-                atriz; e Cinema, negritude e poesia: uma homenagem a Sarah
-                Maldoror
-              </i>
-              . As conversas com convidadas e convidados estão disponíveis no
-              canal do Youtube da Semana de Cinema Negro (acesse no{" "}
-              <Link
-                passHref={true}
-                href="https://www.youtube.com/@semanadecinemanegro/streams"
-              >
-                <a target="_blank" className="text-blue-300">
-                  Youtube
-                </a>
-              </Link>
-              .) Durante o festival, o Coletivo Zanza realizou a cobertura
-              crítica. Os integrantes Diego Silva Souza, Gabriel Araújo, Iakima
-              Delamare e Larissa Muniz escreveram acerca de alguns filmes que
-              estavam sendo divulgados ao longo do evento (acesse em{" "}
-              <Link
-                passHref={true}
-                href="https://www.coletivozanza.com/tag/semana-de-cinema-negro"
-              >
-                <a target="_blank" className="text-blue-300">
-                  Coletivo Zanza
-                </a>
-              </Link>
-              .). Em nosso catálogo, que já está disponível para download, é
-              possível conferir toda a programação, as sinopses dos filmes
-              exibidos, assim como os textos publicados sobre essa edição.
-            </p>
-          </div>
+      </header>
+
+      <main className="flex-1 flex w-full pt-40 px-8 pb-8">
+        {/* Texto Vertical Esquerdo */}
+        <div className="w-24 shrink-0 flex items-start mt-40">
+          <p className="whitespace-nowrap text-[10px] tracking-widest uppercase text-barro font-semibold" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+            Acervo Histórico
+          </p>
         </div>
-      </div>
-      <Footer />
+
+        {/* Grid de Colagem Assimétrica (Estilo IMG_0387) */}
+        <div className="flex-1 grid grid-cols-4 grid-rows-3 gap-6 max-w-6xl mx-auto h-[75vh]">
+          
+          {/* Card 2025 (5ª Edição) - Grande à esquerda */}
+          <Link href="#">
+            <a className="col-span-2 row-span-2 bg-amarelo-oxum overflow-hidden relative group rounded-md shadow-lg block hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:0%_0%] opacity-40 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 p-6 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
+                <h3 className="text-4xl font-bold text-white tracking-widest">{editions[0].year}</h3>
+                <h2 className="text-lg text-white/90 uppercase">{editions[0].title}</h2>
+              </div>
+            </a>
+          </Link>
+
+          {/* Texto Decorativo */}
+          <div className="col-span-1 row-span-1 flex items-start justify-end p-2 text-xs opacity-50 font-medium">
+            ( 01 )
+          </div>
+
+          {/* Card 2024 (4ª Edição) - Fino e alto */}
+          <Link href="#">
+            <a className="col-span-1 row-span-2 bg-terracota overflow-hidden relative group rounded-md shadow-lg block hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:40%_10%] opacity-50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 p-4 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
+                <h3 className="text-2xl font-bold text-white tracking-widest">{editions[1].year}</h3>
+                <h2 className="text-sm text-white/90 uppercase">{editions[1].title}</h2>
+              </div>
+            </a>
+          </Link>
+
+          {/* Card 2023 (3ª Edição) - Fino e alto à direita do 2025 */}
+          <Link href="#">
+            <a className="col-span-1 row-span-2 bg-amarelo-ouro overflow-hidden relative group rounded-md shadow-lg block hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:70%_50%] opacity-40 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 p-4 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
+                <h3 className="text-2xl font-bold text-white tracking-widest">{editions[2].year}</h3>
+                <h2 className="text-sm text-white/90 uppercase">{editions[2].title}</h2>
+              </div>
+            </a>
+          </Link>
+
+          {/* Card 2022 (2ª Edição) - Largo na base */}
+          <Link href="#">
+            <a className="col-span-2 row-span-1 bg-azul-sereno overflow-hidden relative group rounded-md shadow-lg block hover:-translate-y-1 transition-all duration-300">
+               <div className="absolute inset-0 bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:20%_90%] opacity-50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" />
+               <div className="absolute inset-0 p-4 flex flex-col justify-center items-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                  <h3 className="text-3xl font-bold text-white tracking-widest">{editions[3].year}</h3>
+                  <h2 className="text-md text-white/90 uppercase">{editions[3].title}</h2>
+               </div>
+            </a>
+          </Link>
+
+          {/* Card 2021 (1ª Edição) - Quadrado pequeno no canto inferior direito */}
+          <Link href="#">
+            <a className="col-span-1 row-span-1 bg-argila overflow-hidden relative group rounded-md shadow-lg block hover:-translate-y-1 transition-all duration-300">
+               <div className="absolute inset-0 bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:90%_90%] opacity-50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" />
+               <div className="absolute inset-0 p-4 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
+                  <h3 className="text-xl font-bold text-white tracking-widest">{editions[4].year}</h3>
+                  <h2 className="text-xs text-white/90 uppercase">{editions[4].title}</h2>
+               </div>
+            </a>
+          </Link>
+
+        </div>
+      </main>
     </div>
   );
 }

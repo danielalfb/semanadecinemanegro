@@ -38,9 +38,17 @@ module.exports = {
       "green-400": "#B3DA8F",
       "green-500": "#46AA30",
       "red-light": "#c95f63",
+      "amarelo-oxum": "#FDD31D",
+      "amarelo-ouro": "#F1A915",
+      "azul-sereno": "#4BA1C8",
+      "argila": "#A65E1F",
+      "barro": "#39261F",
+      "terracota": "#732412",
     },
     fontFamily: {
       sans: ["Broke, sans - serif"],
+      // Adding a standard sans-serif font for the vertical text as it might require a cleaner font
+      inter: ["Inter", "sans-serif"],
     },
     extend: {
       transitionProperty: {
