@@ -1,23 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Button from "../Button";
-import { EnvelopeSimple, InstagramLogo, Phone } from "@phosphor-icons/react";
+import { InstagramLogo } from "@phosphor-icons/react";
 import { SITE_CONTENT } from "../../helpers/content";
 
 const Footer = () => {
   return (
-    <div className='relative bottom-0 laptop:p-0'>
+    <div className="relative bottom-0 laptop:p-0">
       <img
-        alt='logomarcas'
-        src='../images/logomarcas.jpg'
+        alt="logomarcas"
+        src="../images/logomarcas.jpg"
         style={{ width: "100%", backgroundColor: "#f9f9f9" }}
       />
 
       <div
-        className='flex flex-wrap items-center justify-between p-2 mob:flex-nowrap link'
+        className='flex flex-wrap items-center justify-end p-2 mob:flex-nowrap link'
         style={{ color: "#fff", backgroundColor: "var(--clr-black)" }}
       >
-        <div className='flex flex-col ml-4'>
+        {/* <div className='flex flex-col ml-4'>
           <span className='text-xs font-light	'>
             Para falar com nossa assessoria de imprensa, entre em contato com:
           </span>
@@ -36,12 +35,13 @@ const Footer = () => {
               +55 (31) 98782-1287
             </span>
           </div>
-        </div>
-        <div className='flex flex-wrap mob:flex-nowrap link'>
+        </div> */}
+        <div className='flex flex-wrap mob:flex-nowrap link items-center gap-2'>
+          <p>scnegrobh@gmail.com </p>
           {SITE_CONTENT.socials.map((social, index) => (
-            <Button key={index} onClick={() => window.open(social.link)}>
+            <button key={index} onClick={() => window.open(social.link)}>
               {social.title ? <InstagramLogo size={32} /> : ""}
-            </Button>
+            </button>
           ))}
         </div>
       </div>
