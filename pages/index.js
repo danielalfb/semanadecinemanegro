@@ -14,17 +14,11 @@ export default function Home() {
       {/* Header Minimalista com Logo */}
       <header className="w-full fixed top-0 left-0 z-50 flex items-center justify-between p-8 bg-cream-100/90 backdrop-blur-sm">
         <Link href="/">
-          <a className="hover:opacity-80 transition-opacity">
-            <img src="/images/logo-2026.png" alt="Logo SCNBH 2026" className="h-16 md:h-20 object-contain mix-blend-multiply scale-[1.5] origin-left" />
-          </a>
+          <img src="/images/logo-2026.png" alt="Logo SCNBH 2026" className="hover:opacity-80 transition-opacity h-16 md:h-20 object-contain mix-blend-multiply scale-[1.5] origin-left" />
         </Link>
         <div className="flex gap-8 uppercase text-xs font-semibold tracking-wider">
-          <Link href="/">
-            <a className="text-amarelo-ouro transition-colors">Início</a>
-          </Link>
-          <Link href="/anteriores">
-            <a className="hover:text-amarelo-ouro transition-colors">Edições Anteriores</a>
-          </Link>
+          <Link href="/" className="text-amarelo-ouro transition-colors">Início</Link>
+          <Link href="/anteriores" className="hover:text-amarelo-ouro transition-colors">Edições Anteriores</Link>
         </div>
       </header>
 

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   const imagesMap = [
@@ -47,27 +46,27 @@ export default function Home() {
             <h1 className="centeredText text-pink-100">Em breve</h1>
             <h3 className="legendText text-pink-100">em breve</h3>
           </div>
-          <Link
-            passHref={true}
+          <a
             href="https://drive.google.com/file/d/1gVpQU_bMbwDi8KRD0-ugJDAZra2QqUuH/view"
+            target="_blank"
+            rel="noreferrer"
+            className="scheduleBtn bg-red-600 text-pink-100"
           >
-            <a target="_blank" className="scheduleBtn bg-red-600 text-pink-100">
-              acessar programação
-            </a>
-          </Link>
-          <Link
-            passHref={true}
+            acessar programação
+          </a>
+          <a
             href="https://www.instagram.com/semana.cinemanegrobh?igsh=MWN0d2szN2p4Njdjaw=="
+            target="_blank"
+            rel="noreferrer"
+            className="instagramLink"
           >
-            <a target="_blank" className="instagramLink">
-              <Image
-                src="/images/logo_insta.png"
-                width={100}
-                height={100}
-                alt="Instagram"
-              />
-            </a>
-          </Link>
+            <Image
+              src="/images/logo_insta.png"
+              width={100}
+              height={100}
+              alt="Instagram"
+            />
+          </a>
         </div>
       </div>
     </div>
