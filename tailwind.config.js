@@ -49,6 +49,7 @@ module.exports = {
       sans: ["Broke, sans - serif"],
       // Adding a standard sans-serif font for the vertical text as it might require a cleaner font
       inter: ["Inter", "sans-serif"],
+      body: ["Amiamie, sans - serif"],
     },
     extend: {
       transitionProperty: {
