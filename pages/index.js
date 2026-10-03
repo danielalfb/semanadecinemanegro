@@ -1,159 +1,195 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import {
+  FacebookLogo,
+  InstagramLogo,
+  TwitterLogo,
+  YoutubeLogo,
+  EnvelopeSimple,
+  PhoneCall,
+} from "@phosphor-icons/react";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col">
       <Head>
         <title>Semana de Cinema Negro BH | 6ª Edição</title>
       </Head>
 
-      {/* Header Minimalista com Logo */}
-      <header className="w-full fixed top-0 left-0 z-50 flex items-center justify-between p-8 bg-cream-100/90 backdrop-blur-sm">
-        <Link href="/">
-          <img
-            src="/images/logo-2026.png"
-            alt="Logo SCNBH 2026"
-            className="hover:opacity-80 transition-opacity h-16 md:h-20 object-contain mix-blend-multiply scale-[1.5] origin-left"
-          />
-        </Link>
-        <div className="flex gap-8 uppercase text-xs font-semibold tracking-wider">
-          <Link href="/" className="text-amarelo-ouro transition-colors">
-            Início
-          </Link>
-          <Link
-            href="/anteriores"
-            className="hover:text-amarelo-ouro transition-colors"
+      {/* Header com redes sociais e navegação */}
+      <header className="fixed left-0 top-0 z-50 w-full text-barro">
+        <div className="flex h-8 items-center justify-end gap-4 bg-cream-200 px-4 md:h-14 md:gap-6 md:px-8">
+          <a
+            href="https://www.instagram.com/semana.cinemanegrobh"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram da Semana de Cinema Negro BH"
+            className="transition-opacity hover:opacity-70"
           >
-            Edições Anteriores
+            <InstagramLogo size={20} weight="fill" />
+          </a>
+          <span className="text-barro" aria-hidden="true"><FacebookLogo size={20} weight="regular" /></span>
+          <span className="text-barro" aria-hidden="true"><YoutubeLogo size={22} weight="regular" /></span>
+          <span className="text-barro" aria-hidden="true"><TwitterLogo size={20} weight="regular" /></span>
+        </div>
+        <div className="flex min-h-16 flex-wrap items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-3 md:h-20 md:flex-nowrap md:px-8 md:py-0">
+          <Link href="/" className="shrink-0 transition-opacity hover:opacity-80">
+            <img
+              src="/images/logo-2026.png"
+              alt="Logo SCNBH 2026"
+              className="h-auto max-h-10 w-24 object-contain mix-blend-multiply md:max-h-16 md:w-40"
+            />
           </Link>
+          <nav aria-label="Navegação principal" className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] font-bold uppercase tracking-wider sm:gap-x-6 sm:text-xs md:gap-x-8 md:text-sm">
+            <Link href="/" className="transition-colors hover:text-amarelo-ouro">
+              Início
+            </Link>
+            <Link href="/anteriores" className="transition-colors hover:text-amarelo-ouro">
+              Edições Anteriores
+            </Link>
+          </nav>
         </div>
       </header>
 
-      <main className="flex-1 flex w-full pt-40 px-8 pb-8">
-        {/* Texto Vertical */}
-        <div className="w-24 shrink-0 flex items-start mt-40">
-          <p
-            className="whitespace-nowrap text-[10px] tracking-widest uppercase text-barro font-semibold"
-            style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
-          >
-            14 - 18 de Outubro de 2026
-          </p>
-        </div>
+      <main className="flex-1 flex flex-col w-full">
 
-        <div className="flex-1 flex flex-col min-w-0">
+        {/* Seção 1: Grid de Colagem */}
+        <section className="flex w-full px-8 pb-8 pt-28 md:h-screen md:pt-40">
+          {/* Texto Vertical */}
+          <div className="w-24 shrink-0 flex items-start mt-40">
+            <p className="whitespace-nowrap text-[10px] tracking-widest uppercase text-barro font-semibold" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+              14 - 18 de Outubro de 2026
+            </p>
+          </div>
+
           {/* Grid de Imagens estilo Colagem */}
-          <div className="w-full grid grid-cols-4 grid-rows-4 gap-4 max-w-5xl mx-auto h-[80vh]">
-            {/* Slice 1 */}
+          <div className="flex-1 grid grid-cols-4 grid-rows-4 gap-4 max-w-5xl mx-auto h-full">
             <div className="col-span-2 row-span-2 bg-amarelo-oxum overflow-hidden relative group">
-              <div className="absolute w-[200%] h-[200%] bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:0%_0%] transition-transform duration-700 group-hover:scale-105" />
+              <img src="/images/artwork-hre003.jpg" alt="Obra de Hariel Revignet com uma procissão de figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-
-            {/* Text block */}
             <div className="col-span-1 row-span-1 flex items-start justify-end p-2 text-xs opacity-50">
-              ( 01 & 02 )
+              ( 01 &amp; 02 )
             </div>
-
-            {/* Slice 2 */}
             <div className="col-span-1 row-span-2 bg-argila overflow-hidden relative group">
-              <div className="absolute w-[400%] h-[200%] bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:30%_10%] transition-transform duration-700 group-hover:scale-105" />
+              <img src="/images/artwork-hre015.jpg" alt="Obra de Hariel Revignet com duas mulheres sentadas" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-
-            {/* Slice 3 */}
             <div className="col-span-1 row-span-2 bg-amarelo-ouro overflow-hidden relative group">
-              <div className="absolute w-[400%] h-[200%] bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:60%_30%] transition-transform duration-700 group-hover:scale-105" />
+              <img src="/images/artwork-hre019.jpg" alt="Obra de Hariel Revignet com uma procissão de pessoas" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-
-            {/* Slice 4 */}
             <div className="col-span-1 row-span-2 bg-terracota overflow-hidden relative group">
-              <div className="absolute w-[400%] h-[200%] bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:10%_80%] transition-transform duration-700 group-hover:scale-105" />
+               <img src="/images/artwork-hre025.jpg" alt="Obra de Hariel Revignet com uma figura diante da água" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-
-            {/* Slice 5 */}
             <div className="col-span-1 row-span-1 bg-azul-sereno overflow-hidden relative group">
-              <div className="absolute w-[400%] h-[400%] bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:80%_60%] transition-transform duration-700 group-hover:scale-105" />
+               <img src="/images/artwork-hre015-detail.jpg" alt="Detalhe de uma obra de Hariel Revignet" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-
-            {/* Text block */}
             <div className="col-span-1 row-span-1 flex items-start p-2 text-xs opacity-50">
               ( 03, 04, 05 )
             </div>
-
-            {/* Slice 6 */}
             <div className="col-span-1 row-span-2 bg-barro overflow-hidden relative group">
-              <div className="absolute w-[400%] h-[200%] bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:100%_100%] transition-transform duration-700 group-hover:scale-105" />
+              <img src="/images/artwork-hre006.jpg" alt="Obra de Hariel Revignet com mulheres reunidas" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-
-            {/* Text block */}
             <div className="col-span-1 row-span-1 flex items-end justify-center p-2 text-xs opacity-50">
               ( 06, 07, 08 )
             </div>
-
-            {/* Slice 7 */}
             <div className="col-span-1 row-span-1 bg-amarelo-oxum overflow-hidden relative group">
-              <div className="absolute w-[400%] h-[400%] bg-[url('/images/Obras_Hariel_Revignet_sem_fundo.png')] bg-cover bg-no-repeat bg-[position:40%_90%] transition-transform duration-700 group-hover:scale-105" />
+               <img src="/images/artwork-hre003.jpg" alt="Detalhe da obra de Hariel Revignet com figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+          </div>
+        </section>
+
+        <p className="-mt-6 mx-auto w-full max-w-5xl px-8 pb-8 text-right text-[10px] font-semibold uppercase tracking-wider text-barro/60">
+          Créditos: Hariel Revignet
+        </p>
+
+        <section aria-label="Apresentação da 5ª edição" className="w-full bg-cream-200 px-6 py-12 md:px-8 md:py-16">
+          <div className="mx-auto max-w-5xl space-y-5 text-sm leading-relaxed md:text-base">
+            <p>
+              A 5ª Semana de Cinema Negro de Belo Horizonte apresenta, de 16 a 24 de outubro de 2025, um conjunto composto por 45 filmes de cinematografias brasileiras e do mundo, distribuídas em: Cine-Escrituras Pretas; Homenagem Maria José Novais Oliveira: Viviane Ferreira, seguir tendo o direito de experimentar; Cotidiano e Revolucionário - O Cinema de Charles Burnett; Experiência Vivida do Negro - Franz Fanon 100 anos; Tributo ao Cinema Luz de Souleymane Cissé; Do Rio ao Mar: Palestina Livre. E ainda as mostras: A Rememoração no Cinema dos Quilombos; Vampiros à Luz do Meio-Dia - O Cinema de Luiz Lourenço e a Ibejis - Sessão Infantil.
+            </p>
+            <p>
+              O festival acontecerá de forma híbrida, presencialmente e on-line. As exibições presenciais serão realizadas no Cine Humberto Mauro/Palácio das Artes e no Cine Santa Tereza, e toda a programação é gratuita. A mostra Cine-Escrituras Pretas ficará disponível online durante todo o período do festival na ubuplay.com.
+            </p>
+            <p>
+              Nesta edição, além das sessões fílmicas, teremos conversas com realizadores e realizadoras; todas as atividades acontecerão presencialmente. Contamos, ainda, com as oficinas: “Fotolivros Africanos Contemporâneos”, ministrada por Ana Paula Vitorio, e “Introdução à preservação audiovisual digital - conceitos e práticas”, ministrada por Débora Butruce. Teremos também a mesa “Práticas para pensar a formação de público a partir do cinema”, com Danilo Candombe, Layla Braz, Marcos Donizetti, Elaine do Carmo e Viviane Ferreira, além de uma conversa com o cineasta Charles Burnett.
+            </p>
+            <p>
+              As obras da artista plástica Larissa de Souza compõem toda a identidade visual desta edição do festival. Em suas obras, a artista autodidata apresenta pinturas majoritariamente figurativas, concentrando-se na imagem da mulher afro-diaspórica em seu universo particular e coletivo. O projeto gráfico é de Joana Américo e Marco Chagas. Convidamos a todas, todes e todos a acompanharem a programação.
+            </p>
+          </div>
+        </section>
+
+        {/* Seção 2: Vídeo / Vinheta */}
+        <section className="w-full pb-16">
+          <div className="w-full aspect-video overflow-hidden">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/dCtTqV0gUkM?rel=0&modestbranding=1&autoplay=1&mute=1"
+              title="Vinheta 6ª Semana de Cinema Negro BH"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </section>
+
+        {/* Seção 3: Régua de Patrocinadores */}
+        <section className="w-full pb-20">
+          <img src="/images/logomarcas.jpg" alt="Marcas Patrocinadoras" className="w-full mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity" />
+        </section>
+
+      </main>
+
+      <footer className="w-full bg-barro px-6 py-10 text-cream-100 md:px-8 md:py-12">
+        <div className="grid grid-cols-1 gap-8 tablet:grid-cols-2 laptop:grid-cols-[1.2fr_1fr_2fr_auto] laptop:gap-6">
+          <Link href="/" className="flex items-start transition-opacity hover:opacity-80">
+            <img
+              src="/images/logo-2026.png"
+              alt="Logo SCNBH 2026"
+              className="h-auto max-h-20 w-36 object-contain brightness-0 invert"
+            />
+          </Link>
+
+          <nav aria-label="Navegação do rodapé" className="flex flex-col items-start gap-3 text-xs laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+            <Link href="/anteriores" className="transition-opacity hover:opacity-70">edições anteriores</Link>
+          </nav>
+
+          <div className="flex flex-col items-start gap-3 text-xs laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+            <p>Semana de Cinema Negro de Belo Horizonte</p>
+            <p className="flex items-center gap-2">
+              <EnvelopeSimple size={18} />
+              scnegrobh@gmail.com
+            </p>
+            <p className="mt-2">Para falar com nossa assessoria de imprensa, entre em contato com:</p>
+            <div className="mt-2 flex flex-col gap-2">
+              <p className="flex min-w-0 items-center gap-2 text-[#ffffff]">
+                <PhoneCall size={18} className="shrink-0" />
+                Flora Miguel 11 95323-2999
+              </p>
+              <p className="flex min-w-0 items-center gap-2 text-[#ffffff]">
+                <PhoneCall size={18} className="shrink-0" />
+                Izabela Costa 11 97347-1280
+              </p>
             </div>
           </div>
 
-          {/* Apresentação e vídeo */}
-          <section className="w-full max-w-6xl mx-auto mt-16 md:mt-24 flex flex-col md:flex-row items-center gap-8 md:gap-12 pt-8 md:pt-12">
-            <p className="w-full md:flex-1 min-w-0 text-sm md:text-base leading-relaxed tracking-wide">
-              A 5º Semana de Cinema Negro de Belo Horizonte apresenta, de 16 a
-              24 de outubro de 2025, um conjunto composto por 45 filmes de
-              cinematografias brasileiras e do mundo, distribuídas em:
-              Cine-Escrituras Pretas; Homenagem Maria José Novais Oliveira:
-              Viviane Ferreira, seguir tendo o direito de experimentar;
-              Cotidiano e Revolucionário - O Cinema de Charles Burnett;
-              Experiência Vivida do Negro - Franz Fanon 100 anos; Tributo ao
-              Cinema Luz de Souleymane Cissé; Do Rio ao Mar: Palestina Livre. E
-              ainda as mostras: A Rememoração no Cinema dos Quilombos; Vampiros
-              à Luz do Meio-Dia - O Cinema de Luiz Lourenço e a Ibejis - Sessão
-              Infantil.
-              <br /> <br />
-              O festival acontecerá de forma híbrida, presencialmente e on-line.
-              As exibições presenciais serão realizadas no Cine Humberto
-              Mauro/Palácio das Artes e no Cine Santa Tereza, e toda a
-              programação é gratuita. A mostra Cine-Escrituras Pretas ficará
-              disponível online durante todo o período do festival na
-              ubuplay.com.
-              <br /> <br />
-              Nesta edição, além das sessões fílmicas, teremos conversas
-              realizadores e realizadoras, todas as atividades acontecerão
-              presencialmente. Contamos, ainda, com as oficinas: &quot;Fotolivros
-              Africanos Contemporâneos&quot;, ministrada por Ana Paula Vitorio e
-              &quot;Introdução à preservação audiovisual digital - conceitos e
-              práticas&quot;, ministrada por Débora Butruce. Teremos também a mesa
-              &quot;Práticas para pensar a formação de público a partir do cinema&quot;,
-              com Danilo Candombe, Layla Braz, Marcos Donizetti, Elaine do Carmo
-              e Viviane Ferreira, além de uma conversa com o cineasta Charles
-              Burnett.
-              <br /> <br />
-              As obras da artista plástica Larissa de Souza compõem toda
-              identidade visual desta edição do festival. Em suas obras a
-              artista autodidata apresenta pinturas majoritariamente
-              figurativas, concentrando-se na imagem da mulher afro diaspórica
-              em seu universo particular e coletivo. O projeto gráfico é da
-              Joana Américo e do Marco Chagas. Convidamos a todas, todes e todos
-              a acompanharem a programação.
-            </p>
-
-            <div className="w-full md:flex-1 min-w-0 flex justify-end p-8 md:p-16">
-              <div className="w-full max-w-xs aspect-video">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/ysR5NFov00c?autoplay=1&mute=1&controls=0&iv_load_policy=3&rel=0"
-                  title="Vídeo da Semana de Cinema Negro de Belo Horizonte"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </section>
+          <div aria-label="Redes sociais" className="flex items-start gap-5 laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+            <a href="https://www.instagram.com/semana.cinemanegrobh" target="_blank" rel="noreferrer" aria-label="Instagram" className="transition-opacity hover:opacity-70">
+              <InstagramLogo size={20} />
+            </a>
+            <span aria-hidden="true"><FacebookLogo size={20} /></span>
+            <span aria-hidden="true"><YoutubeLogo size={22} /></span>
+            <span aria-hidden="true"><TwitterLogo size={20} /></span>
+          </div>
         </div>
-      </main>
+
+        <p className="mt-8 border-t border-cream-100/20 pt-4 text-[10px] font-semibold uppercase tracking-wider">
+          © 2026 Semana de Cinema Negro BH. Todos os direitos reservados. Site desenvolvido por{" "}
+          <a href="https://www.meji.com.br/" target="_blank" rel="noreferrer" className="text-amarelo-ouro transition-opacity hover:opacity-70">
+            Meji
+          </a>
+          .
+        </p>
+      </footer>
     </div>
   );
 }
