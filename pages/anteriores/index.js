@@ -71,6 +71,8 @@ function EditionCard({
   imagePosition,
   contentClassName = "",
 }) {
+  const [showDetails, setShowDetails] = useState(false);
+
   return (
     <article
       className={`${className} ${edition.color} overflow-hidden relative group rounded-md shadow-lg block hover:-translate-y-1 transition-all duration-300`}
@@ -83,7 +85,7 @@ function EditionCard({
       />
       <div className="absolute inset-0 p-4 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/20 to-transparent">
         <div
-          className={`${contentClassName} transition-opacity duration-300 group-hover:opacity-0`}
+          className={`${contentClassName} transition-opacity duration-300 ${showDetails ? "opacity-0" : "opacity-100 group-hover:opacity-0"}`}
         >
           <h3 className="font-karrik text-2xl font-bold text-white tracking-widest md:group-hover:opacity-0">
             {edition.year}
@@ -91,8 +93,23 @@ function EditionCard({
           <h2 className="font-karrik text-sm text-white/90 uppercase md:group-hover:opacity-0">{edition.title}</h2>
         </div>
       </div>
-      <div className="absolute inset-0 z-10 flex flex-col justify-between gap-4 bg-black/80 p-5 text-white opacity-100 transition-opacity duration-300 md:pointer-events-none md:opacity-0 md:group-hover:pointer-events-auto md:group-hover:opacity-100">
+      {!showDetails && (
+        <button
+          type="button"
+          className="absolute inset-0 z-10 md:hidden"
+          aria-label={`Ver detalhes de ${edition.title} (${edition.year})`}
+          onClick={() => setShowDetails(true)}
+        />
+      )}
+      <div className={`absolute inset-0 z-10 flex flex-col justify-between gap-4 bg-black/80 p-5 text-white transition-opacity duration-300 ${showDetails ? "z-20 opacity-100" : "pointer-events-none opacity-0"} md:pointer-events-none md:opacity-0 md:group-hover:pointer-events-auto md:group-hover:opacity-100`}>
         <div>
+          <button
+            type="button"
+            className="mb-4 text-xs font-bold uppercase tracking-wide underline underline-offset-4 md:hidden"
+            onClick={() => setShowDetails(false)}
+          >
+            Fechar detalhes
+          </button>
           <p className="mb-2 font-karrik text-xs font-semibold uppercase tracking-widest">
             {edition.year} · {edition.title}
           </p>
@@ -153,11 +170,14 @@ export default function Anteriores() {
         </div>
         <div className="relative flex min-h-16 items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-2 md:h-20 md:flex-row md:gap-3 md:px-8 md:py-0">
           <Link href="/" className="w-fit shrink-0 transition-opacity hover:opacity-80">
-            <img
-              src="/images/logo-2026.png"
-              alt="Logo SCNBH 2026"
-              className="h-auto max-h-8 w-20 object-contain mix-blend-multiply md:max-h-16 md:w-40"
-            />
+            <picture className="block">
+              <source srcSet="/images/logo-2026-mobile.png" />
+              <img
+                src="/images/logo-2026.png"
+                alt="Logo SCNBH 2026"
+                className="h-auto max-h-12 w-32 object-contain object-left mix-blend-multiply md:max-h-16 md:w-40 md:object-center"
+              />
+            </picture>
           </Link>
           <button
             type="button"
@@ -253,21 +273,24 @@ export default function Anteriores() {
         </div>
       </main>
 
-      <footer className="w-full bg-barro px-6 py-10 text-cream-100 md:px-8 md:py-12">
-        <div className="grid grid-cols-1 gap-8 tablet:grid-cols-2 laptop:grid-cols-[1.2fr_1fr_2fr_auto] laptop:gap-6">
-          <Link href="/" className="flex items-start transition-opacity hover:opacity-80">
-            <img
-              src="/images/logo-2026.png"
-              alt="Logo SCNBH 2026"
-              className="h-auto max-h-20 w-36 object-contain brightness-0 invert"
-            />
+      <footer className="w-full bg-barro px-2 py-10 text-cream-100 md:px-8 md:py-12">
+        <div className="grid grid-cols-1 gap-0 laptop:grid-cols-[1.2fr_1fr_2fr_auto] laptop:gap-6">
+          <Link href="/" className="flex items-start border-b border-cream-100/20 py-6 transition-opacity hover:opacity-80 laptop:border-0 laptop:py-0">
+            <picture className="block">
+              <source srcSet="/images/logo-2026-mobile.png" />
+              <img
+                src="/images/logo-2026.png"
+                alt="Logo SCNBH 2026"
+                className="h-auto max-h-36 w-40 max-w-none object-contain object-left brightness-0 invert laptop:max-h-20 laptop:w-36 laptop:object-center"
+              />
+            </picture>
           </Link>
 
-          <nav aria-label="Navegação do rodapé" className="flex flex-col items-start gap-3 text-xs laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+          <nav aria-label="Navegação do rodapé" className="flex flex-col items-start gap-3 border-b border-cream-100/20 py-6 text-xs laptop:border-0 laptop:py-0">
             <Link href="/anteriores" className="transition-opacity hover:opacity-70">edições anteriores</Link>
           </nav>
 
-          <div className="flex flex-col items-start gap-3 text-xs laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+          <div className="flex flex-col items-start gap-3 border-b border-cream-100/20 py-6 text-xs laptop:border-b-0 laptop:border-l laptop:border-cream-100/20 laptop:py-0 laptop:pl-6">
             <p>Semana de Cinema Negro de Belo Horizonte</p>
             <p className="flex items-center gap-2">
               <EnvelopeSimple size={18} />
@@ -286,7 +309,7 @@ export default function Anteriores() {
             </div>
           </div>
 
-          <div aria-label="Redes sociais" className="flex items-start gap-5 laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+          <div aria-label="Redes sociais" className="flex items-start gap-5 py-6 laptop:border-l laptop:border-cream-100/20 laptop:py-0 laptop:pl-6">
             <a href="https://www.instagram.com/semana.cinemanegrobh" target="_blank" rel="noreferrer" aria-label="Instagram" className="transition-opacity hover:opacity-70">
               <InstagramLogo size={20} />
             </a>
