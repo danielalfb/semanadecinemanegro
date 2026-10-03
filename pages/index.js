@@ -20,6 +20,7 @@ export default function Home() {
     <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col">
       <Head>
         <title>Semana de Cinema Negro BH | 6ª Edição</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
       {/* Header com redes sociais e navegação */}
@@ -87,7 +88,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col w-full">
 
         {/* Seção 1: Grid de Colagem */}
-        <section className="flex w-full flex-col gap-3 px-4 pb-6 pt-32 md:h-screen md:flex-row md:px-8 md:pb-8 md:pt-40">
+        <section className="flex w-full flex-col gap-3 px-4 pb-6 pt-32 md:h-[calc(100vh-20px)] md:flex-row md:px-8 md:pb-8 md:pt-[149px]">
           {/* Texto Vertical */}
           <div className="flex justify-end md:mt-40 md:w-24 md:shrink-0 md:items-start md:justify-start">
             <p className="text-[10px] font-semibold uppercase tracking-widest md:hidden">
@@ -99,36 +100,36 @@ export default function Home() {
           </div>
 
           {/* Grid de Imagens estilo Colagem */}
-          <div className="grid w-full flex-1 grid-cols-2 auto-rows-[31vw] gap-3 md:mx-auto md:h-full md:max-w-5xl md:grid-cols-4 md:grid-rows-4 md:gap-4">
-            <div className="col-span-2 row-span-2 bg-amarelo-oxum overflow-hidden relative group">
-              <img src="/images/artwork-hre003.jpg" alt="Obra de Hariel Revignet com uma procissão de figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div className="grid w-full flex-1 grid-cols-2 auto-rows-[31vw] gap-3 md:mx-auto md:h-full md:max-w-[67rem] md:grid-cols-4 md:grid-rows-4 md:gap-4">
+            <div className="col-span-2 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-1 md:row-start-1">
+              <img src="/images/artwork-hre003.jpg" alt="Obra de Hariel Revignet com uma procissão de figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover" />
             </div>
-            <div className="hidden col-span-1 row-span-1 items-start justify-end p-2 text-xs opacity-50 md:flex">
+            <div className="hidden col-span-1 row-span-1 items-start justify-end p-2 text-xs opacity-50 md:flex md:col-start-3 md:row-start-1">
               ( 01 &amp; 02 )
             </div>
-            <div className="col-span-1 row-span-2 bg-argila overflow-hidden relative group">
-              <img src="/images/artwork-hre015.jpg" alt="Obra de Hariel Revignet com duas mulheres sentadas" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="col-span-1 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-4 md:row-start-1">
+              <img src="/images/artwork-hre015.jpg" alt="Obra de Hariel Revignet com duas mulheres sentadas" className="absolute inset-0 h-full w-full object-cover" />
             </div>
-            <div className="col-span-1 row-span-2 bg-amarelo-ouro overflow-hidden relative group">
-              <img src="/images/artwork-hre019.jpg" alt="Obra de Hariel Revignet com uma procissão de pessoas" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="col-span-1 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-3 md:row-start-2">
+              <img src="/images/artwork-hre019.jpg" alt="Obra de Hariel Revignet com uma procissão de pessoas" className="absolute inset-0 h-full w-full object-cover" />
             </div>
-            <div className="col-span-1 row-span-2 bg-terracota overflow-hidden relative group">
-               <img src="/images/artwork-hre025.jpg" alt="Obra de Hariel Revignet com uma figura diante da água" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="col-span-1 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-1 md:row-start-3">
+               <img src="/images/artwork-hre025.jpg" alt="Obra de Hariel Revignet com uma figura diante da água" className="absolute inset-0 h-full w-full object-cover" />
             </div>
-            <div className="col-span-1 row-span-1 bg-azul-sereno overflow-hidden relative group">
-               <img src="/images/artwork-hre015-detail.jpg" alt="Detalhe de uma obra de Hariel Revignet" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="col-span-1 row-span-1 bg-cream-100 overflow-hidden relative group md:col-start-2 md:row-start-3">
+               <img src="/images/artwork-hre015-detail.jpg" alt="Detalhe de uma obra de Hariel Revignet" className="absolute inset-0 h-full w-full object-cover" />
             </div>
-            <div className="hidden col-span-1 row-span-1 items-start p-2 text-xs opacity-50 md:flex">
+            <div className="hidden col-span-1 row-span-1 items-start p-2 text-xs opacity-50 md:flex md:col-start-4 md:row-start-3">
               ( 03, 04, 05 )
             </div>
-            <div className="col-span-1 row-span-2 bg-barro overflow-hidden relative group">
-              <img src="/images/artwork-hre006.jpg" alt="Obra de Hariel Revignet com mulheres reunidas" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="col-span-1 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-2 md:row-start-4 md:row-span-1">
+              <img src="/images/artwork-hre006.jpg" alt="Obra de Hariel Revignet com mulheres reunidas" className="absolute inset-0 h-full w-full object-cover" />
             </div>
-            <div className="hidden col-span-1 row-span-1 items-end justify-center p-2 text-xs opacity-50 md:flex">
+            <div className="hidden col-span-1 row-span-1 items-end justify-center p-2 text-xs opacity-50 md:flex md:col-start-3 md:row-start-4">
               ( 06, 07, 08 )
             </div>
-            <div className="col-span-1 row-span-1 bg-amarelo-oxum overflow-hidden relative group">
-               <img src="/images/artwork-hre003.jpg" alt="Detalhe da obra de Hariel Revignet com figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="col-span-1 row-span-1 bg-cream-100 overflow-hidden relative group md:col-start-4 md:row-start-4">
+               <img src="/images/artwork-hre003.jpg" alt="Detalhe da obra de Hariel Revignet com figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover" />
             </div>
           </div>
         </section>

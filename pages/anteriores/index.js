@@ -129,6 +129,7 @@ export default function Anteriores() {
     <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col">
       <Head>
         <title>Edições Anteriores | SCNBH</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
       {/* Header com redes sociais e navegação */}
