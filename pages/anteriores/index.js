@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 import {
   FacebookLogo,
   InstagramLogo,
@@ -7,6 +8,9 @@ import {
   YoutubeLogo,
   EnvelopeSimple,
   PhoneCall,
+  DownloadSimple,
+  List,
+  X,
 } from "@phosphor-icons/react";
 import ReactMarkdown from "react-markdown";
 
@@ -81,13 +85,13 @@ function EditionCard({
         <div
           className={`${contentClassName} transition-opacity duration-300 group-hover:opacity-0`}
         >
-          <h3 className="font-karrik text-2xl font-bold text-white tracking-widest">
+          <h3 className="font-karrik text-2xl font-bold text-white tracking-widest md:group-hover:opacity-0">
             {edition.year}
           </h3>
-          <h2 className="font-karrik text-sm text-white/90 uppercase">{edition.title}</h2>
+          <h2 className="font-karrik text-sm text-white/90 uppercase md:group-hover:opacity-0">{edition.title}</h2>
         </div>
       </div>
-      <div className="absolute inset-0 z-10 flex flex-col justify-between gap-4 bg-black/80 p-5 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      <div className="absolute inset-0 z-10 flex flex-col justify-between gap-4 bg-black/80 p-5 text-white opacity-100 transition-opacity duration-300 md:pointer-events-none md:opacity-0 md:group-hover:pointer-events-auto md:group-hover:opacity-100">
         <div>
           <p className="mb-2 font-karrik text-xs font-semibold uppercase tracking-widest">
             {edition.year} · {edition.title}
@@ -119,6 +123,8 @@ function EditionCard({
 }
 
 export default function Anteriores() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col">
       <Head>
@@ -126,7 +132,10 @@ export default function Anteriores() {
       </Head>
 
       {/* Header com redes sociais e navegação */}
-      <header className="fixed left-0 top-0 z-50 w-full text-barro">
+      <header
+        className="fixed left-0 top-0 z-50 w-full text-barro"
+        onKeyDown={(event) => event.key === "Escape" && setMenuOpen(false)}
+      >
         <div className="flex h-8 items-center justify-end gap-4 bg-cream-200 px-4 md:h-14 md:gap-6 md:px-8">
           <a
             href="https://www.instagram.com/semana.cinemanegrobh"
@@ -141,30 +150,57 @@ export default function Anteriores() {
           <span className="text-barro" aria-hidden="true"><YoutubeLogo size={22} weight="regular" /></span>
           <span className="text-barro" aria-hidden="true"><TwitterLogo size={20} weight="regular" /></span>
         </div>
-        <div className="flex min-h-16 flex-wrap items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-3 md:h-20 md:flex-nowrap md:px-8 md:py-0">
-          <Link href="/" className="shrink-0 transition-opacity hover:opacity-80">
+        <div className="relative flex min-h-16 items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-2 md:h-20 md:flex-row md:gap-3 md:px-8 md:py-0">
+          <Link href="/" className="w-fit shrink-0 transition-opacity hover:opacity-80">
             <img
               src="/images/logo-2026.png"
               alt="Logo SCNBH 2026"
-              className="h-auto max-h-10 w-24 object-contain mix-blend-multiply md:max-h-16 md:w-40"
+              className="h-auto max-h-8 w-20 object-contain mix-blend-multiply md:max-h-16 md:w-40"
             />
           </Link>
-          <nav aria-label="Navegação principal" className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] font-bold uppercase tracking-wider sm:gap-x-6 sm:text-xs md:gap-x-8 md:text-sm">
-            <Link href="/" className="transition-colors hover:text-amarelo-ouro">
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-sm border border-barro/20 md:hidden"
+            aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={menuOpen}
+            aria-controls="menu-principal"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <X size={22} /> : <List size={22} />}
+          </button>
+          <nav
+            id="menu-principal"
+            aria-label="Navegação principal"
+            className={`${menuOpen ? "flex" : "hidden"} absolute left-0 right-0 top-full z-50 flex-col border-b border-barro/10 bg-cream-100 px-4 pb-3 pt-2 shadow-lg md:static md:z-auto md:flex md:w-auto md:flex-row md:items-center md:justify-end md:gap-x-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
+          >
+            <Link href="/" onClick={() => setMenuOpen(false)} className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm">
               Início
             </Link>
-            <Link href="/anteriores" className="text-amarelo-ouro transition-colors">
+            <Link href="/anteriores" onClick={() => setMenuOpen(false)} className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider text-amarelo-ouro transition-colors md:w-auto md:border-0 md:py-0 md:text-sm">
               Edições Anteriores
             </Link>
+            <a
+              href="https://drive.google.com/file/d/1gVpQU_bMbwDi8KRD0-ugJDAZra2QqUuH/view"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="mt-3 inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-amarelo-ouro px-3 py-2 text-xs font-bold uppercase tracking-wider text-barro transition-colors hover:bg-amarelo-ouro md:mt-0 md:w-auto md:text-xs"
+            >
+              <DownloadSimple size={16} />
+              Baixar programação
+            </a>
           </nav>
         </div>
       </header>
 
-      <main className="flex-1 flex w-full pt-28 px-8 pb-8 md:pt-40">
+      <main className="flex w-full flex-1 flex-col gap-3 px-4 pb-8 pt-32 md:flex-row md:px-8 md:pt-40">
         {/* Texto Vertical Esquerdo */}
-        <div className="w-24 shrink-0 flex items-start mt-40">
+        <div className="flex justify-end md:mt-40 md:w-24 md:shrink-0 md:items-start md:justify-start">
+          <p className="text-[10px] font-semibold uppercase tracking-widest md:hidden">
+            Acervo Histórico
+          </p>
           <p
-            className="whitespace-nowrap text-[10px] tracking-widest uppercase text-barro font-semibold"
+            className="hidden whitespace-nowrap text-[10px] font-semibold uppercase tracking-widest text-barro md:block"
             style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
           >
             Acervo Histórico
@@ -172,45 +208,45 @@ export default function Anteriores() {
         </div>
 
         {/* Grid de Colagem Assimétrica (Estilo IMG_0387) */}
-        <div className="flex-1 grid grid-cols-4 grid-rows-4 gap-6 max-w-6xl mx-auto h-[120vh] min-h-[930px]">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 auto-rows-[260px] gap-4 md:flex-1 md:grid-cols-4 md:grid-rows-4 md:gap-6 md:h-[120vh] md:min-h-[930px]">
           {/* Card 2025 (5ª Edição) - Grande à esquerda */}
           <EditionCard
             edition={editions[0]}
-            className="col-span-2 row-span-2"
+            className="col-span-1 row-span-1 md:col-span-2 md:row-span-2"
             imagePosition="bg-[position:0%_0%]"
             contentClassName="p-2"
           />
 
           {/* Texto Decorativo */}
-          <div className="col-span-1 row-span-1 flex items-start justify-end p-2 text-xs opacity-50 font-medium">
+          <div className="hidden col-span-1 row-span-1 items-start justify-end p-2 text-xs font-medium opacity-50 md:flex">
             ( 01 )
           </div>
 
           {/* Card 2024 (4ª Edição) - Fino e alto */}
           <EditionCard
             edition={editions[1]}
-            className="col-span-1 row-span-2"
+            className="col-span-1 row-span-1 md:col-span-1 md:row-span-2"
             imagePosition="bg-[position:40%_10%]"
           />
 
           {/* Card 2023 (3ª Edição) - Fino e alto à direita do 2025 */}
           <EditionCard
             edition={editions[3]}
-            className="col-span-1 row-span-2"
+            className="col-span-1 row-span-1 md:col-span-1 md:row-span-2"
             imagePosition="bg-[position:70%_50%]"
           />
 
           {/* Card 2022 (2ª Edição) - Largo na base */}
           <EditionCard
             edition={editions[2]}
-            className="col-span-2 row-span-1"
+            className="col-span-1 row-span-1 md:col-span-2 md:row-span-1"
             imagePosition="bg-[position:20%_90%]"
           />
 
           {/* Card 2021 (1ª Edição) - Quadrado pequeno no canto inferior direito */}
           <EditionCard
             edition={editions[4]}
-            className="col-span-1 row-span-2"
+            className="col-span-1 row-span-1 md:col-span-1 md:row-span-2"
             imagePosition="bg-[position:90%_90%]"
           />
         </div>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 import {
   FacebookLogo,
   InstagramLogo,
@@ -7,9 +8,14 @@ import {
   YoutubeLogo,
   EnvelopeSimple,
   PhoneCall,
+  DownloadSimple,
+  List,
+  X,
 } from "@phosphor-icons/react";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col">
       <Head>
@@ -17,7 +23,10 @@ export default function Home() {
       </Head>
 
       {/* Header com redes sociais e navegação */}
-      <header className="fixed left-0 top-0 z-50 w-full text-barro">
+      <header
+        className="fixed left-0 top-0 z-50 w-full text-barro"
+        onKeyDown={(event) => event.key === "Escape" && setMenuOpen(false)}
+      >
         <div className="flex h-8 items-center justify-end gap-4 bg-cream-200 px-4 md:h-14 md:gap-6 md:px-8">
           <a
             href="https://www.instagram.com/semana.cinemanegrobh"
@@ -32,21 +41,45 @@ export default function Home() {
           <span className="text-barro" aria-hidden="true"><YoutubeLogo size={22} weight="regular" /></span>
           <span className="text-barro" aria-hidden="true"><TwitterLogo size={20} weight="regular" /></span>
         </div>
-        <div className="flex min-h-16 flex-wrap items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-3 md:h-20 md:flex-nowrap md:px-8 md:py-0">
-          <Link href="/" className="shrink-0 transition-opacity hover:opacity-80">
+        <div className="relative flex min-h-16 items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-2 md:h-20 md:flex-row md:gap-3 md:px-8 md:py-0">
+          <Link href="/" className="w-fit shrink-0 transition-opacity hover:opacity-80">
             <img
               src="/images/logo-2026.png"
               alt="Logo SCNBH 2026"
-              className="h-auto max-h-10 w-24 object-contain mix-blend-multiply md:max-h-16 md:w-40"
+              className="h-auto max-h-8 w-20 object-contain mix-blend-multiply md:max-h-16 md:w-40"
             />
           </Link>
-          <nav aria-label="Navegação principal" className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] font-bold uppercase tracking-wider sm:gap-x-6 sm:text-xs md:gap-x-8 md:text-sm">
-            <Link href="/" className="transition-colors hover:text-amarelo-ouro">
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-sm border border-barro/20 md:hidden"
+            aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={menuOpen}
+            aria-controls="menu-principal"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <X size={22} /> : <List size={22} />}
+          </button>
+          <nav
+            id="menu-principal"
+            aria-label="Navegação principal"
+            className={`${menuOpen ? "flex" : "hidden"} absolute left-0 right-0 top-full z-50 flex-col border-b border-barro/10 bg-cream-100 px-4 pb-3 pt-2 shadow-lg md:static md:z-auto md:flex md:w-auto md:flex-row md:items-center md:justify-end md:gap-x-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
+          >
+            <Link href="/" onClick={() => setMenuOpen(false)} className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm">
               Início
             </Link>
-            <Link href="/anteriores" className="transition-colors hover:text-amarelo-ouro">
+            <Link href="/anteriores" onClick={() => setMenuOpen(false)} className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm">
               Edições Anteriores
             </Link>
+            <a
+              href="https://drive.google.com/file/d/1gVpQU_bMbwDi8KRD0-ugJDAZra2QqUuH/view"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="mt-3 inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-amarelo-ouro px-3 py-2 text-xs font-bold uppercase tracking-wider text-barro transition-colors hover:bg-amarelo-ouro md:mt-0 md:w-auto md:text-xs"
+            >
+              <DownloadSimple size={16} />
+              Baixar programação
+            </a>
           </nav>
         </div>
       </header>
@@ -54,20 +87,23 @@ export default function Home() {
       <main className="flex-1 flex flex-col w-full">
 
         {/* Seção 1: Grid de Colagem */}
-        <section className="flex w-full px-8 pb-8 pt-28 md:h-screen md:pt-40">
+        <section className="flex w-full flex-col gap-3 px-4 pb-6 pt-32 md:h-screen md:flex-row md:px-8 md:pb-8 md:pt-40">
           {/* Texto Vertical */}
-          <div className="w-24 shrink-0 flex items-start mt-40">
-            <p className="whitespace-nowrap text-[10px] tracking-widest uppercase text-barro font-semibold" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+          <div className="flex justify-end md:mt-40 md:w-24 md:shrink-0 md:items-start md:justify-start">
+            <p className="text-[10px] font-semibold uppercase tracking-widest md:hidden">
+              14 - 18 de Outubro de 2026
+            </p>
+            <p className="hidden whitespace-nowrap text-[10px] font-semibold uppercase tracking-widest text-barro md:block" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
               14 - 18 de Outubro de 2026
             </p>
           </div>
 
           {/* Grid de Imagens estilo Colagem */}
-          <div className="flex-1 grid grid-cols-4 grid-rows-4 gap-4 max-w-5xl mx-auto h-full">
+          <div className="grid w-full flex-1 grid-cols-2 auto-rows-[31vw] gap-3 md:mx-auto md:h-full md:max-w-5xl md:grid-cols-4 md:grid-rows-4 md:gap-4">
             <div className="col-span-2 row-span-2 bg-amarelo-oxum overflow-hidden relative group">
               <img src="/images/artwork-hre003.jpg" alt="Obra de Hariel Revignet com uma procissão de figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-            <div className="col-span-1 row-span-1 flex items-start justify-end p-2 text-xs opacity-50">
+            <div className="hidden col-span-1 row-span-1 items-start justify-end p-2 text-xs opacity-50 md:flex">
               ( 01 &amp; 02 )
             </div>
             <div className="col-span-1 row-span-2 bg-argila overflow-hidden relative group">
@@ -82,13 +118,13 @@ export default function Home() {
             <div className="col-span-1 row-span-1 bg-azul-sereno overflow-hidden relative group">
                <img src="/images/artwork-hre015-detail.jpg" alt="Detalhe de uma obra de Hariel Revignet" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-            <div className="col-span-1 row-span-1 flex items-start p-2 text-xs opacity-50">
+            <div className="hidden col-span-1 row-span-1 items-start p-2 text-xs opacity-50 md:flex">
               ( 03, 04, 05 )
             </div>
             <div className="col-span-1 row-span-2 bg-barro overflow-hidden relative group">
               <img src="/images/artwork-hre006.jpg" alt="Obra de Hariel Revignet com mulheres reunidas" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-            <div className="col-span-1 row-span-1 flex items-end justify-center p-2 text-xs opacity-50">
+            <div className="hidden col-span-1 row-span-1 items-end justify-center p-2 text-xs opacity-50 md:flex">
               ( 06, 07, 08 )
             </div>
             <div className="col-span-1 row-span-1 bg-amarelo-oxum overflow-hidden relative group">
@@ -97,7 +133,7 @@ export default function Home() {
           </div>
         </section>
 
-        <p className="-mt-6 mx-auto w-full max-w-5xl px-8 pb-8 text-right text-[10px] font-semibold uppercase tracking-wider text-barro/60">
+        <p className="mx-auto mt-2 w-full max-w-5xl px-4 pb-6 text-right text-[10px] font-semibold uppercase tracking-wider text-barro/60 md:-mt-6 md:px-8 md:pb-8">
           Créditos: Hariel Revignet
         </p>
 
