@@ -1,5 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
+import {
+  FacebookLogo,
+  InstagramLogo,
+  TwitterLogo,
+  YoutubeLogo,
+  EnvelopeSimple,
+  PhoneCall,
+} from "@phosphor-icons/react";
 import ReactMarkdown from "react-markdown";
 
 const editions = [
@@ -73,15 +81,15 @@ function EditionCard({
         <div
           className={`${contentClassName} transition-opacity duration-300 group-hover:opacity-0`}
         >
-          <h3 className="text-2xl font-bold text-white tracking-widest">
+          <h3 className="font-karrik text-2xl font-bold text-white tracking-widest">
             {edition.year}
           </h3>
-          <h2 className="text-sm text-white/90 uppercase">{edition.title}</h2>
+          <h2 className="font-karrik text-sm text-white/90 uppercase">{edition.title}</h2>
         </div>
       </div>
-      <div className="absolute inset-0 z-10 flex flex-col justify-between gap-4 overflow-y-auto bg-black/80 p-5 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      <div className="absolute inset-0 z-10 flex flex-col justify-between gap-4 bg-black/80 p-5 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest">
+          <p className="mb-2 font-karrik text-xs font-semibold uppercase tracking-widest">
             {edition.year} · {edition.title}
           </p>
           <ReactMarkdown
@@ -112,34 +120,47 @@ function EditionCard({
 
 export default function Anteriores() {
   return (
-    <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col pb-12">
+    <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col">
       <Head>
         <title>Edições Anteriores | SCNBH</title>
       </Head>
 
-      {/* Header Minimalista com Logo */}
-      <header className="w-full fixed top-0 left-0 z-50 flex items-center justify-between p-8 bg-cream-100/90 backdrop-blur-sm">
-        <Link href="/">
-          <img
-            src="/images/logo-2026.png"
-            alt="Logo SCNBH 2026"
-            className="hover:opacity-80 transition-opacity h-16 md:h-20 object-contain mix-blend-multiply scale-[1.5] origin-left"
-          />
-        </Link>
-        <div className="flex gap-8 uppercase text-xs font-semibold tracking-wider">
-          <Link href="/" className="hover:text-amarelo-ouro transition-colors">
-            Início
-          </Link>
-          <Link
-            href="/anteriores"
-            className="text-amarelo-ouro transition-colors"
+      {/* Header com redes sociais e navegação */}
+      <header className="fixed left-0 top-0 z-50 w-full text-barro">
+        <div className="flex h-8 items-center justify-end gap-4 bg-cream-200 px-4 md:h-14 md:gap-6 md:px-8">
+          <a
+            href="https://www.instagram.com/semana.cinemanegrobh"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram da Semana de Cinema Negro BH"
+            className="transition-opacity hover:opacity-70"
           >
-            Edições Anteriores
+            <InstagramLogo size={20} weight="fill" />
+          </a>
+          <span className="text-barro" aria-hidden="true"><FacebookLogo size={20} weight="regular" /></span>
+          <span className="text-barro" aria-hidden="true"><YoutubeLogo size={22} weight="regular" /></span>
+          <span className="text-barro" aria-hidden="true"><TwitterLogo size={20} weight="regular" /></span>
+        </div>
+        <div className="flex min-h-16 flex-wrap items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-3 md:h-20 md:flex-nowrap md:px-8 md:py-0">
+          <Link href="/" className="shrink-0 transition-opacity hover:opacity-80">
+            <img
+              src="/images/logo-2026.png"
+              alt="Logo SCNBH 2026"
+              className="h-auto max-h-10 w-24 object-contain mix-blend-multiply md:max-h-16 md:w-40"
+            />
           </Link>
+          <nav aria-label="Navegação principal" className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] font-bold uppercase tracking-wider sm:gap-x-6 sm:text-xs md:gap-x-8 md:text-sm">
+            <Link href="/" className="transition-colors hover:text-amarelo-ouro">
+              Início
+            </Link>
+            <Link href="/anteriores" className="text-amarelo-ouro transition-colors">
+              Edições Anteriores
+            </Link>
+          </nav>
         </div>
       </header>
 
-      <main className="flex-1 flex w-full pt-40 px-8 pb-8">
+      <main className="flex-1 flex w-full pt-28 px-8 pb-8 md:pt-40">
         {/* Texto Vertical Esquerdo */}
         <div className="w-24 shrink-0 flex items-start mt-40">
           <p
@@ -151,7 +172,7 @@ export default function Anteriores() {
         </div>
 
         {/* Grid de Colagem Assimétrica (Estilo IMG_0387) */}
-        <div className="flex-1 grid grid-cols-4 grid-rows-3 gap-6 max-w-6xl mx-auto h-[75vh]">
+        <div className="flex-1 grid grid-cols-4 grid-rows-4 gap-6 max-w-6xl mx-auto h-[120vh] min-h-[930px]">
           {/* Card 2025 (5ª Edição) - Grande à esquerda */}
           <EditionCard
             edition={editions[0]}
@@ -189,11 +210,63 @@ export default function Anteriores() {
           {/* Card 2021 (1ª Edição) - Quadrado pequeno no canto inferior direito */}
           <EditionCard
             edition={editions[4]}
-            className="col-span-1 row-span-1 min-h-[260px]"
+            className="col-span-1 row-span-2"
             imagePosition="bg-[position:90%_90%]"
           />
         </div>
       </main>
+
+      <footer className="w-full bg-barro px-6 py-10 text-cream-100 md:px-8 md:py-12">
+        <div className="grid grid-cols-1 gap-8 tablet:grid-cols-2 laptop:grid-cols-[1.2fr_1fr_2fr_auto] laptop:gap-6">
+          <Link href="/" className="flex items-start transition-opacity hover:opacity-80">
+            <img
+              src="/images/logo-2026.png"
+              alt="Logo SCNBH 2026"
+              className="h-auto max-h-20 w-36 object-contain brightness-0 invert"
+            />
+          </Link>
+
+          <nav aria-label="Navegação do rodapé" className="flex flex-col items-start gap-3 text-xs laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+            <Link href="/anteriores" className="transition-opacity hover:opacity-70">edições anteriores</Link>
+          </nav>
+
+          <div className="flex flex-col items-start gap-3 text-xs laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+            <p>Semana de Cinema Negro de Belo Horizonte</p>
+            <p className="flex items-center gap-2">
+              <EnvelopeSimple size={18} />
+              scnegrobh@gmail.com
+            </p>
+            <p className="mt-2">Para falar com nossa assessoria de imprensa, entre em contato com:</p>
+            <div className="mt-2 flex flex-col gap-2">
+              <p className="flex min-w-0 items-center gap-2 text-[#ffffff]">
+                <PhoneCall size={18} className="shrink-0" />
+                Flora Miguel 11 95323-2999
+              </p>
+              <p className="flex min-w-0 items-center gap-2 text-[#ffffff]">
+                <PhoneCall size={18} className="shrink-0" />
+                Izabela Costa 11 97347-1280
+              </p>
+            </div>
+          </div>
+
+          <div aria-label="Redes sociais" className="flex items-start gap-5 laptop:border-l laptop:border-cream-100/20 laptop:pl-6">
+            <a href="https://www.instagram.com/semana.cinemanegrobh" target="_blank" rel="noreferrer" aria-label="Instagram" className="transition-opacity hover:opacity-70">
+              <InstagramLogo size={20} />
+            </a>
+            <span aria-hidden="true"><FacebookLogo size={20} /></span>
+            <span aria-hidden="true"><YoutubeLogo size={22} /></span>
+            <span aria-hidden="true"><TwitterLogo size={20} /></span>
+          </div>
+        </div>
+
+        <p className="mt-8 border-t border-cream-100/20 pt-4 text-[10px] font-semibold uppercase tracking-wider">
+          © 2026 Semana de Cinema Negro BH. Todos os direitos reservados. Site desenvolvido por{" "}
+          <a href="https://www.meji.com.br/" target="_blank" rel="noreferrer" className="text-amarelo-ouro transition-opacity hover:opacity-70">
+            Meji
+          </a>
+          .
+        </p>
+      </footer>
     </div>
   );
 }

@@ -51,6 +51,7 @@ module.exports = {
       // Adding a standard sans-serif font for the vertical text as it might require a cleaner font
       inter: ["Inter", "sans-serif"],
       body: ["Amiamie, sans - serif"],
+      karrik: ["Karrik", "sans-serif"],
     },
     extend: {
       transitionProperty: {
