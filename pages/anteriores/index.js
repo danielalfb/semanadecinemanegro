@@ -12,15 +12,13 @@ import {
   List,
   X,
 } from "@phosphor-icons/react";
-import ReactMarkdown from "react-markdown";
-
 const editions = [
   {
     year: 2025,
     title: "5ª Edição",
     color: "bg-amarelo-oxum",
     catalogUrl: null,
-    bgImage: "./images/anteriores_5.png",
+    bgImage: "/images/optimized/anteriores_5.jpg",
     description:
       "Conheça a programação, os filmes e os textos da 5ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -29,7 +27,7 @@ const editions = [
     title: "4ª Edição",
     color: "bg-terracota",
     catalogUrl: null,
-    bgImage: "./images/anteriores_4.png",
+    bgImage: "/images/optimized/anteriores_4.jpg",
     description:
       "Conheça a programação, os filmes e os textos da 4ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -39,7 +37,7 @@ const editions = [
     color: "bg-azul-sereno",
     catalogUrl:
       "https://drive.google.com/file/d/1cbld8n2xrQfcr73jDnmRV2Bzia4I2S63/view",
-    bgImage: "./images/anteriores_3.png",
+    bgImage: "/images/optimized/anteriores_3.jpg",
     description:
       "Conheça a programação, os filmes e os textos da 3ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -49,7 +47,7 @@ const editions = [
     color: "bg-amarelo-ouro",
     catalogUrl:
       "https://semanadecinemanegro-gev133052-danielalfbs-projects.vercel.app/catalogo_2_edicao.pdf",
-    bgImage: "./images/anteriores_2.jpg",
+    bgImage: "/images/optimized/anteriores_2.jpg",
     description:
       "Conheça a programação, os filmes e os textos da 2ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -59,7 +57,7 @@ const editions = [
     color: "bg-argila",
     catalogUrl:
       "https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view",
-    bgImage: "./images/anteriores_1.jpg",
+    bgImage: "/images/optimized/anteriores01.jpg",
     description:
       "Conheça a programação, os filmes e os textos da 1ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -69,76 +67,26 @@ function EditionCard({
   edition,
   className,
   imagePosition,
-  contentClassName = "",
 }) {
-  const [showDetails, setShowDetails] = useState(false);
-
   return (
     <article
-      className={`${className} ${edition.color} overflow-hidden relative group rounded-md shadow-lg block hover:-translate-y-1 transition-all duration-300`}
+      className={`${className} group relative block overflow-hidden bg-cream-100`}
     >
-      <div
-        className={`absolute inset-0 bg-cover bg-no-repeat ${imagePosition} opacity-40 mix-blend-multiply group-hover:scale-105 transition-transform duration-700`}
-        style={{
-          backgroundImage: `url(${edition.bgImage || "/images/Obras_Hariel_Revignet_sem_fundo.png"})`,
-        }}
+      <img
+        src={edition.bgImage}
+        alt={`${edition.title} (${edition.year})`}
+        className={`absolute inset-0 h-full w-full object-contain object-center transition-transform duration-700 group-hover:scale-[1.02] ${imagePosition}`}
       />
-      <div className="absolute inset-0 p-4 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/20 to-transparent">
-        <div
-          className={`${contentClassName} transition-opacity duration-300 ${showDetails ? "opacity-0" : "opacity-100 group-hover:opacity-0"}`}
+      {edition.catalogUrl && (
+        <a
+          href={edition.catalogUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="absolute bottom-4 left-4 z-20 inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-wide text-barro opacity-100 shadow-sm transition-opacity hover:bg-amarelo-ouro focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100"
         >
-          <h3 className="font-karrik text-2xl font-bold text-white tracking-widest md:group-hover:opacity-0">
-            {edition.year}
-          </h3>
-          <h2 className="font-karrik text-sm text-white/90 uppercase md:group-hover:opacity-0">
-            {edition.title}
-          </h2>
-        </div>
-      </div>
-      {!showDetails && (
-        <button
-          type="button"
-          className="absolute inset-0 z-10 md:hidden"
-          aria-label={`Ver detalhes de ${edition.title} (${edition.year})`}
-          onClick={() => setShowDetails(true)}
-        />
+          Baixar catálogo
+        </a>
       )}
-      <div
-        className={`absolute inset-0 z-10 flex flex-col justify-between gap-4 bg-black/80 p-5 text-white transition-opacity duration-300 ${showDetails ? "z-20 opacity-100" : "pointer-events-none opacity-0"} md:pointer-events-none md:opacity-0 md:group-hover:pointer-events-auto md:group-hover:opacity-100`}
-      >
-        <div>
-          <button
-            type="button"
-            className="mb-4 text-xs font-bold uppercase tracking-wide underline underline-offset-4 md:hidden"
-            onClick={() => setShowDetails(false)}
-          >
-            Fechar detalhes
-          </button>
-          <p className="mb-2 font-karrik text-xs font-semibold uppercase tracking-widest">
-            {edition.year} · {edition.title}
-          </p>
-          <ReactMarkdown
-            className="text-sm leading-relaxed [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-amarelo-ouro"
-            components={{
-              a: ({ node, ...props }) => (
-                <a {...props} target="_blank" rel="noreferrer" />
-              ),
-            }}
-          >
-            {edition.description}
-          </ReactMarkdown>
-        </div>
-        {edition.catalogUrl && (
-          <a
-            href={edition.catalogUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-wide text-barro transition-colors hover:bg-amarelo-ouro"
-          >
-            Baixar catalogo
-          </a>
-        )}
-      </div>
     </article>
   );
 }
@@ -249,48 +197,40 @@ export default function Anteriores() {
           </p>
         </div>
 
-        {/* Grid de Colagem Assimétrica (Estilo IMG_0387) */}
-        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 auto-rows-[260px] gap-4 md:flex-1 md:grid-cols-4 md:grid-rows-4 md:gap-6 md:h-[120vh] md:min-h-[930px]">
-          {/* Card 2025 (5ª Edição) - Grande à esquerda */}
-          <EditionCard
-            edition={editions[0]}
-            className="col-span-1 row-span-1 md:col-span-2 md:row-span-2"
-            imagePosition="bg-[position:0%_0%]"
-            contentClassName="p-2"
-          />
-
-          {/* Texto Decorativo */}
-          <div className="hidden col-span-1 row-span-1 items-start justify-end p-2 text-xs font-medium opacity-50 md:flex">
-            ( 01 )
+        {/* Mosaic compacto: cada coluna respeita a proporção das capas */}
+        <div className="grid w-full grid-cols-1 gap-4 md:mx-auto md:max-w-[67rem] md:grid-cols-3 md:items-start">
+          <div className="flex flex-col gap-4">
+            <EditionCard
+              edition={editions[0]}
+              className="aspect-[4/5]"
+              imagePosition="object-[50%_20%]"
+            />
+            <EditionCard
+              edition={editions[3]}
+              className="aspect-[7/10]"
+              imagePosition="object-[50%_65%]"
+            />
           </div>
 
-          {/* Card 2024 (4ª Edição) - Fino e alto */}
-          <EditionCard
-            edition={editions[1]}
-            className="col-span-1 row-span-1 md:col-span-1 md:row-span-2"
-            imagePosition="bg-[position:40%_10%]"
-          />
-
-          {/* Card 2023 (3ª Edição) - Fino e alto à direita do 2025 */}
-          <EditionCard
-            edition={editions[3]}
-            className="col-span-1 row-span-1 md:col-span-1 md:row-span-2"
-            imagePosition="bg-[position:70%_50%]"
-          />
-
-          {/* Card 2022 (2ª Edição) - Largo na base */}
-          <EditionCard
-            edition={editions[2]}
-            className="col-span-1 row-span-1 md:col-span-2 md:row-span-1"
-            imagePosition="bg-[position:20%_90%]"
-          />
-
-          {/* Card 2021 (1ª Edição) - Quadrado pequeno no canto inferior direito */}
-          <EditionCard
-            edition={editions[4]}
-            className="col-span-1 row-span-1 md:col-span-1 md:row-span-2"
-            imagePosition="bg-[position:90%_90%]"
-          />
+          <div className="flex flex-col gap-4 md:col-span-2">
+            <div className="grid grid-cols-2 items-end gap-4">
+              <EditionCard
+                edition={editions[1]}
+                className="aspect-[7/10]"
+                imagePosition="object-[50%_50%]"
+              />
+              <EditionCard
+                edition={editions[2]}
+                className="aspect-[9/16]"
+                imagePosition="object-[50%_50%]"
+              />
+            </div>
+            <EditionCard
+              edition={editions[4]}
+              className="aspect-[16/9] w-full"
+              imagePosition="object-[50%_50%]"
+            />
+          </div>
         </div>
       </main>
 
