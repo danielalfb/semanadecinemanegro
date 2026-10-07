@@ -20,7 +20,7 @@ const editions = [
     title: "5ª Edição",
     color: "bg-amarelo-oxum",
     catalogUrl: null,
-    bgImage: null,
+    bgImage: "./images/anteriores_5.png",
     description:
       "Conheça a programação, os filmes e os textos da 5ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -29,7 +29,7 @@ const editions = [
     title: "4ª Edição",
     color: "bg-terracota",
     catalogUrl: null,
-    bgImage: null,
+    bgImage: "./images/anteriores_4.png",
     description:
       "Conheça a programação, os filmes e os textos da 4ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -39,7 +39,7 @@ const editions = [
     color: "bg-azul-sereno",
     catalogUrl:
       "https://drive.google.com/file/d/1cbld8n2xrQfcr73jDnmRV2Bzia4I2S63/view",
-    bgImage: "./images/catalogo3.jpeg",
+    bgImage: "./images/anteriores_3.png",
     description:
       "Conheça a programação, os filmes e os textos da 3ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -49,7 +49,7 @@ const editions = [
     color: "bg-amarelo-ouro",
     catalogUrl:
       "https://semanadecinemanegro-gev133052-danielalfbs-projects.vercel.app/catalogo_2_edicao.pdf",
-    bgImage: "./images/catalogo2.jpeg",
+    bgImage: "./images/anteriores_2.jpg",
     description:
       "Conheça a programação, os filmes e os textos da 2ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -59,7 +59,7 @@ const editions = [
     color: "bg-argila",
     catalogUrl:
       "https://drive.google.com/file/d/1ZjocdoU0kz1izObQVfFqIxYlOgdMZQ4e/view",
-    bgImage: "./images/catalogo1.jpeg",
+    bgImage: "./images/anteriores_1.jpg",
     description:
       "Conheça a programação, os filmes e os textos da 1ª edição da Semana de Cinema Negro de Belo Horizonte.",
   },
@@ -90,7 +90,9 @@ function EditionCard({
           <h3 className="font-karrik text-2xl font-bold text-white tracking-widest md:group-hover:opacity-0">
             {edition.year}
           </h3>
-          <h2 className="font-karrik text-sm text-white/90 uppercase md:group-hover:opacity-0">{edition.title}</h2>
+          <h2 className="font-karrik text-sm text-white/90 uppercase md:group-hover:opacity-0">
+            {edition.title}
+          </h2>
         </div>
       </div>
       {!showDetails && (
@@ -101,7 +103,9 @@ function EditionCard({
           onClick={() => setShowDetails(true)}
         />
       )}
-      <div className={`absolute inset-0 z-10 flex flex-col justify-between gap-4 bg-black/80 p-5 text-white transition-opacity duration-300 ${showDetails ? "z-20 opacity-100" : "pointer-events-none opacity-0"} md:pointer-events-none md:opacity-0 md:group-hover:pointer-events-auto md:group-hover:opacity-100`}>
+      <div
+        className={`absolute inset-0 z-10 flex flex-col justify-between gap-4 bg-black/80 p-5 text-white transition-opacity duration-300 ${showDetails ? "z-20 opacity-100" : "pointer-events-none opacity-0"} md:pointer-events-none md:opacity-0 md:group-hover:pointer-events-auto md:group-hover:opacity-100`}
+      >
         <div>
           <button
             type="button"
@@ -164,12 +168,21 @@ export default function Anteriores() {
           >
             <InstagramLogo size={20} weight="fill" />
           </a>
-          <span className="text-barro" aria-hidden="true"><FacebookLogo size={20} weight="regular" /></span>
-          <span className="text-barro" aria-hidden="true"><YoutubeLogo size={22} weight="regular" /></span>
-          <span className="text-barro" aria-hidden="true"><TwitterLogo size={20} weight="regular" /></span>
+          <span className="text-barro" aria-hidden="true">
+            <FacebookLogo size={20} weight="regular" />
+          </span>
+          <span className="text-barro" aria-hidden="true">
+            <YoutubeLogo size={22} weight="regular" />
+          </span>
+          <span className="text-barro" aria-hidden="true">
+            <TwitterLogo size={20} weight="regular" />
+          </span>
         </div>
         <div className="relative flex min-h-16 items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-2 md:h-20 md:flex-row md:gap-3 md:px-8 md:py-0">
-          <Link href="/" className="w-fit shrink-0 transition-opacity hover:opacity-80">
+          <Link
+            href="/"
+            className="w-fit shrink-0 transition-opacity hover:opacity-80"
+          >
             <picture className="block">
               <source srcSet="/images/logo-2026-mobile.png" />
               <img
@@ -194,10 +207,18 @@ export default function Anteriores() {
             aria-label="Navegação principal"
             className={`${menuOpen ? "flex" : "hidden"} absolute left-0 right-0 top-full z-50 flex-col border-b border-barro/10 bg-cream-100 px-4 pb-3 pt-2 shadow-lg md:static md:z-auto md:flex md:w-auto md:flex-row md:items-center md:justify-end md:gap-x-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
           >
-            <Link href="/" onClick={() => setMenuOpen(false)} className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm">
+            <Link
+              href="/"
+              onClick={() => setMenuOpen(false)}
+              className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm"
+            >
               Início
             </Link>
-            <Link href="/anteriores" onClick={() => setMenuOpen(false)} className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider text-amarelo-ouro transition-colors md:w-auto md:border-0 md:py-0 md:text-sm">
+            <Link
+              href="/anteriores"
+              onClick={() => setMenuOpen(false)}
+              className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider text-amarelo-ouro transition-colors md:w-auto md:border-0 md:py-0 md:text-sm"
+            >
               Edições Anteriores
             </Link>
             <a
@@ -275,7 +296,10 @@ export default function Anteriores() {
 
       <footer className="w-full bg-barro px-2 py-10 text-cream-100 md:px-8 md:py-12">
         <div className="grid grid-cols-1 gap-0 laptop:grid-cols-[1.2fr_1fr_2fr_auto] laptop:gap-6">
-          <Link href="/" className="flex items-start border-b border-cream-100/20 py-6 transition-opacity hover:opacity-80 laptop:border-0 laptop:py-0">
+          <Link
+            href="/"
+            className="flex items-start border-b border-cream-100/20 py-6 transition-opacity hover:opacity-80 laptop:border-0 laptop:py-0"
+          >
             <picture className="block">
               <source srcSet="/images/logo-2026-mobile.png" />
               <img
@@ -286,8 +310,16 @@ export default function Anteriores() {
             </picture>
           </Link>
 
-          <nav aria-label="Navegação do rodapé" className="flex flex-col items-start gap-3 border-b border-cream-100/20 py-6 text-xs laptop:border-0 laptop:py-0">
-            <Link href="/anteriores" className="transition-opacity hover:opacity-70">edições anteriores</Link>
+          <nav
+            aria-label="Navegação do rodapé"
+            className="flex flex-col items-start gap-3 border-b border-cream-100/20 py-6 text-xs laptop:border-0 laptop:py-0"
+          >
+            <Link
+              href="/anteriores"
+              className="transition-opacity hover:opacity-70"
+            >
+              edições anteriores
+            </Link>
           </nav>
 
           <div className="flex flex-col items-start gap-3 border-b border-cream-100/20 py-6 text-xs laptop:border-b-0 laptop:border-l laptop:border-cream-100/20 laptop:py-0 laptop:pl-6">
@@ -296,7 +328,9 @@ export default function Anteriores() {
               <EnvelopeSimple size={18} />
               scnegrobh@gmail.com
             </p>
-            <p className="mt-2">Para falar com nossa assessoria de imprensa, entre em contato com:</p>
+            <p className="mt-2">
+              Para falar com nossa assessoria de imprensa, entre em contato com:
+            </p>
             <div className="mt-2 flex flex-col gap-2">
               <p className="flex min-w-0 items-center gap-2 text-[#ffffff]">
                 <PhoneCall size={18} className="shrink-0" />
@@ -309,19 +343,40 @@ export default function Anteriores() {
             </div>
           </div>
 
-          <div aria-label="Redes sociais" className="flex items-start gap-5 py-6 laptop:border-l laptop:border-cream-100/20 laptop:py-0 laptop:pl-6">
-            <a href="https://www.instagram.com/semana.cinemanegrobh" target="_blank" rel="noreferrer" aria-label="Instagram" className="transition-opacity hover:opacity-70">
+          <div
+            aria-label="Redes sociais"
+            className="flex items-start gap-5 py-6 laptop:border-l laptop:border-cream-100/20 laptop:py-0 laptop:pl-6"
+          >
+            <a
+              href="https://www.instagram.com/semana.cinemanegrobh"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="transition-opacity hover:opacity-70"
+            >
               <InstagramLogo size={20} />
             </a>
-            <span aria-hidden="true"><FacebookLogo size={20} /></span>
-            <span aria-hidden="true"><YoutubeLogo size={22} /></span>
-            <span aria-hidden="true"><TwitterLogo size={20} /></span>
+            <span aria-hidden="true">
+              <FacebookLogo size={20} />
+            </span>
+            <span aria-hidden="true">
+              <YoutubeLogo size={22} />
+            </span>
+            <span aria-hidden="true">
+              <TwitterLogo size={20} />
+            </span>
           </div>
         </div>
 
         <p className="mt-8 border-t border-cream-100/20 pt-4 text-[10px] font-semibold uppercase tracking-wider">
-          © 2026 Semana de Cinema Negro BH. Todos os direitos reservados. Site desenvolvido por{" "}
-          <a href="https://www.meji.com.br/" target="_blank" rel="noreferrer" className="text-amarelo-ouro transition-opacity hover:opacity-70">
+          © 2026 Semana de Cinema Negro BH. Todos os direitos reservados. Site
+          desenvolvido por{" "}
+          <a
+            href="https://www.meji.com.br/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-amarelo-ouro transition-opacity hover:opacity-70"
+          >
             Meji
           </a>
           .

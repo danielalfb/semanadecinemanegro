@@ -13,6 +13,34 @@ import {
   X,
 } from "@phosphor-icons/react";
 
+function ArtworkTile({ src, alt, title, details, className = "" }) {
+  return (
+    <div
+      tabIndex={title ? 0 : undefined}
+      aria-label={title ? `${title}. ${details.join(". ")}` : undefined}
+      className={`group relative overflow-hidden bg-cream-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amarelo-ouro ${className}`}
+    >
+      <img
+        src={src}
+        alt={alt}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] group-focus:scale-[1.03]"
+      />
+      {title && (
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-barro/90 px-3 py-3 text-cream-100 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus:translate-y-0 group-focus:opacity-100 md:px-4 md:py-4">
+          <p className="font-inter text-[11px] font-bold leading-tight md:text-xs">
+            {title}
+          </p>
+          <div className="mt-1 space-y-0.5 font-inter text-[10px] leading-tight text-cream-100/85 md:text-[11px]">
+            {details.map((detail) => (
+              <p key={detail}>{detail}</p>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -38,12 +66,21 @@ export default function Home() {
           >
             <InstagramLogo size={20} weight="fill" />
           </a>
-          <span className="text-barro" aria-hidden="true"><FacebookLogo size={20} weight="regular" /></span>
-          <span className="text-barro" aria-hidden="true"><YoutubeLogo size={22} weight="regular" /></span>
-          <span className="text-barro" aria-hidden="true"><TwitterLogo size={20} weight="regular" /></span>
+          <span className="text-barro" aria-hidden="true">
+            <FacebookLogo size={20} weight="regular" />
+          </span>
+          <span className="text-barro" aria-hidden="true">
+            <YoutubeLogo size={22} weight="regular" />
+          </span>
+          <span className="text-barro" aria-hidden="true">
+            <TwitterLogo size={20} weight="regular" />
+          </span>
         </div>
         <div className="relative flex min-h-16 items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-2 md:h-20 md:flex-row md:gap-3 md:px-8 md:py-0">
-          <Link href="/" className="w-fit shrink-0 transition-opacity hover:opacity-80">
+          <Link
+            href="/"
+            className="w-fit shrink-0 transition-opacity hover:opacity-80"
+          >
             <picture className="block">
               <source srcSet="/images/logo-2026-mobile.png" />
               <img
@@ -68,10 +105,18 @@ export default function Home() {
             aria-label="Navegação principal"
             className={`${menuOpen ? "flex" : "hidden"} absolute left-0 right-0 top-full z-50 flex-col border-b border-barro/10 bg-cream-100 px-4 pb-3 pt-2 shadow-lg md:static md:z-auto md:flex md:w-auto md:flex-row md:items-center md:justify-end md:gap-x-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
           >
-            <Link href="/" onClick={() => setMenuOpen(false)} className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm">
+            <Link
+              href="/"
+              onClick={() => setMenuOpen(false)}
+              className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm"
+            >
               Início
             </Link>
-            <Link href="/anteriores" onClick={() => setMenuOpen(false)} className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm">
+            <Link
+              href="/anteriores"
+              onClick={() => setMenuOpen(false)}
+              className="w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors hover:text-amarelo-ouro md:w-auto md:border-0 md:py-0 md:text-sm"
+            >
               Edições Anteriores
             </Link>
             <a
@@ -89,7 +134,6 @@ export default function Home() {
       </header>
 
       <main className="flex-1 flex flex-col w-full">
-
         {/* Seção 1: Grid de Colagem */}
         <section className="flex w-full flex-col gap-3 px-4 pb-6 pt-32 md:h-[calc(100vh-20px)] md:flex-row md:px-8 md:pb-8 md:pt-[149px]">
           {/* Texto Vertical */}
@@ -97,43 +141,81 @@ export default function Home() {
             <p className="text-[10px] font-semibold uppercase tracking-widest md:hidden">
               14 - 18 de Outubro de 2026
             </p>
-            <p className="hidden whitespace-nowrap text-[10px] font-semibold uppercase tracking-widest text-barro md:block" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+            <p
+              className="hidden whitespace-nowrap text-[10px] font-semibold uppercase tracking-widest text-barro md:block"
+              style={{
+                writingMode: "vertical-rl",
+                transform: "rotate(180deg)",
+              }}
+            >
               14 - 18 de Outubro de 2026
             </p>
           </div>
 
           {/* Grid de Imagens estilo Colagem */}
           <div className="grid w-full flex-1 grid-cols-2 auto-rows-[31vw] gap-3 md:mx-auto md:h-full md:max-w-[67rem] md:grid-cols-4 md:grid-rows-4 md:gap-4">
-            <div className="col-span-2 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-1 md:row-start-1">
-              <img src="/images/artwork-hre003.jpg" alt="Obra de Hariel Revignet com uma procissão de figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover" />
-            </div>
-            <div className="hidden col-span-1 row-span-1 items-start justify-end p-2 text-xs opacity-50 md:flex md:col-start-3 md:row-start-1">
-              ( 01 &amp; 02 )
-            </div>
-            <div className="col-span-1 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-4 md:row-start-1">
-              <img src="/images/artwork-hre015.jpg" alt="Obra de Hariel Revignet com duas mulheres sentadas" className="absolute inset-0 h-full w-full object-cover" />
-            </div>
-            <div className="col-span-1 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-3 md:row-start-2">
-              <img src="/images/artwork-hre019.jpg" alt="Obra de Hariel Revignet com uma procissão de pessoas" className="absolute inset-0 h-full w-full object-cover" />
-            </div>
-            <div className="col-span-1 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-1 md:row-start-3">
-               <img src="/images/artwork-hre025.jpg" alt="Obra de Hariel Revignet com uma figura diante da água" className="absolute inset-0 h-full w-full object-cover" />
-            </div>
-            <div className="col-span-1 row-span-1 bg-cream-100 overflow-hidden relative group md:col-start-2 md:row-start-3">
-               <img src="/images/artwork-hre015-detail.jpg" alt="Detalhe de uma obra de Hariel Revignet" className="absolute inset-0 h-full w-full object-cover" />
-            </div>
-            <div className="hidden col-span-1 row-span-1 items-start p-2 text-xs opacity-50 md:flex md:col-start-4 md:row-start-3">
-              ( 03, 04, 05 )
-            </div>
-            <div className="col-span-1 row-span-2 bg-cream-100 overflow-hidden relative group md:col-start-2 md:row-start-4 md:row-span-1">
-              <img src="/images/artwork-hre006.jpg" alt="Obra de Hariel Revignet com mulheres reunidas" className="absolute inset-0 h-full w-full object-cover" />
-            </div>
-            <div className="hidden col-span-1 row-span-1 items-end justify-center p-2 text-xs opacity-50 md:flex md:col-start-3 md:row-start-4">
-              ( 06, 07, 08 )
-            </div>
-            <div className="col-span-1 row-span-1 bg-cream-100 overflow-hidden relative group md:col-start-4 md:row-start-4">
-               <img src="/images/artwork-hre003.jpg" alt="Detalhe da obra de Hariel Revignet com figuras carregando cestos" className="absolute inset-0 h-full w-full object-cover" />
-            </div>
+            <ArtworkTile
+              src="/images/artwork-hre003.jpg"
+              alt="Obra de Hariel Revignet com uma procissão de figuras carregando cestos"
+              title="Nascentes, águas do fundo da terra que descem do céu., 2023"
+              details={["Acrílica sobre tela", "154 x 184 cm"]}
+              className="col-span-2 row-span-2 md:col-start-1 md:row-start-1"
+            />
+            <div className="hidden col-span-1 row-span-1 items-start justify-end p-2 text-xs opacity-50 md:flex md:col-start-3 md:row-start-1"></div>
+            <ArtworkTile
+              src="/images/artwork-hre015.jpg"
+              alt="Obra de Hariel Revignet com duas mulheres sentadas"
+              title="A casa Nago, 2023"
+              details={[
+                "Acrílica e bordado s/ tela",
+                "184 x 155 cm · 72 1/2 x 61 in",
+                "Direito Autoral do Artista",
+                "Foto: Leonardo Mitre e Estúdio em Obra",
+              ]}
+              className="col-span-1 row-span-2 md:col-start-4 md:row-start-1"
+            />
+            <ArtworkTile
+              src="/images/artwork-hre019.jpg"
+              alt="Obra de Hariel Revignet com uma procissão de pessoas"
+              title="Ziguidás, 2024"
+              details={["Acrílica com costura de miçangas", "30 x 150 cm"]}
+              className="col-span-1 row-span-2 md:col-start-3 md:row-start-2"
+            />
+            <ArtworkTile
+              src="/images/artwork-hre025.jpg"
+              alt="Obra de Hariel Revignet com uma figura diante da água"
+              title="Odo Niera Fie Kwan, 2024"
+              details={["60 x 60 cm", "Acrílica com costura de miçangas"]}
+              className="col-span-1 row-span-2 md:col-start-1 md:row-start-3"
+            />
+            <ArtworkTile
+              src="/images/artwork-hre015-detail.jpg"
+              alt="Detalhe de uma obra de Hariel Revignet"
+              title="A casa Nago, 2023"
+              details={[
+                "Acrílica e bordado s/ tela",
+                "184 x 155 cm · 72 1/2 x 61 in",
+                "Direito Autoral do Artista",
+                "Foto: Leonardo Mitre e Estúdio em Obra",
+              ]}
+              className="col-span-1 row-span-1 md:col-start-2 md:row-start-3"
+            />
+            <div className="hidden col-span-1 row-span-1 items-start p-2 text-xs opacity-50 md:flex md:col-start-4 md:row-start-3"></div>
+            <ArtworkTile
+              src="/images/artwork-hre006.jpg"
+              alt="Obra de Hariel Revignet com mulheres reunidas"
+              title="Nascentes, Omi Tutu Onã, 2023"
+              details={["Acrílica sobre tela", "60 x 60 cm"]}
+              className="col-span-1 row-span-2 md:col-start-2 md:row-start-4 md:row-span-1"
+            />
+            <div className="hidden col-span-1 row-span-1 items-end justify-center p-2 text-xs opacity-50 md:flex md:col-start-3 md:row-start-4"></div>
+            <ArtworkTile
+              src="/images/artwork-hre003.jpg"
+              alt="Detalhe da obra de Hariel Revignet com figuras carregando cestos"
+              title="Nascentes, águas do fundo da terra que descem do céu., 2023"
+              details={["Acrílica sobre tela", "154 x 184 cm"]}
+              className="col-span-1 row-span-1 md:col-start-4 md:row-start-4"
+            />
           </div>
         </section>
 
@@ -141,25 +223,58 @@ export default function Home() {
           Créditos: Hariel Revignet
         </p>
 
-        <section aria-label="Apresentação da 5ª edição" className="w-full bg-cream-200 px-6 py-12 md:px-8 md:py-16">
+        <section
+          aria-label="Apresentação da 5ª edição"
+          className="w-full bg-cream-200 px-6 py-12 md:px-8 md:py-16"
+        >
           <div className="mx-auto max-w-5xl space-y-5 text-sm leading-relaxed md:text-base">
             <p>
-              A 5ª Semana de Cinema Negro de Belo Horizonte apresenta, de 16 a 24 de outubro de 2025, um conjunto composto por 45 filmes de cinematografias brasileiras e do mundo, distribuídas em: Cine-Escrituras Pretas; Homenagem Maria José Novais Oliveira: Viviane Ferreira, seguir tendo o direito de experimentar; Cotidiano e Revolucionário - O Cinema de Charles Burnett; Experiência Vivida do Negro - Franz Fanon 100 anos; Tributo ao Cinema Luz de Souleymane Cissé; Do Rio ao Mar: Palestina Livre. E ainda as mostras: A Rememoração no Cinema dos Quilombos; Vampiros à Luz do Meio-Dia - O Cinema de Luiz Lourenço e a Ibejis - Sessão Infantil.
+              A 5ª Semana de Cinema Negro de Belo Horizonte apresenta, de 16 a
+              24 de outubro de 2025, um conjunto composto por 45 filmes de
+              cinematografias brasileiras e do mundo, distribuídas em:
+              Cine-Escrituras Pretas; Homenagem Maria José Novais Oliveira:
+              Viviane Ferreira, seguir tendo o direito de experimentar;
+              Cotidiano e Revolucionário - O Cinema de Charles Burnett;
+              Experiência Vivida do Negro - Franz Fanon 100 anos; Tributo ao
+              Cinema Luz de Souleymane Cissé; Do Rio ao Mar: Palestina Livre. E
+              ainda as mostras: A Rememoração no Cinema dos Quilombos; Vampiros
+              à Luz do Meio-Dia - O Cinema de Luiz Lourenço e a Ibejis - Sessão
+              Infantil.
             </p>
             <p>
-              O festival acontecerá de forma híbrida, presencialmente e on-line. As exibições presenciais serão realizadas no Cine Humberto Mauro/Palácio das Artes e no Cine Santa Tereza, e toda a programação é gratuita. A mostra Cine-Escrituras Pretas ficará disponível online durante todo o período do festival na ubuplay.com.
+              O festival acontecerá de forma híbrida, presencialmente e on-line.
+              As exibições presenciais serão realizadas no Cine Humberto
+              Mauro/Palácio das Artes e no Cine Santa Tereza, e toda a
+              programação é gratuita. A mostra Cine-Escrituras Pretas ficará
+              disponível online durante todo o período do festival na
+              ubuplay.com.
             </p>
             <p>
-              Nesta edição, além das sessões fílmicas, teremos conversas com realizadores e realizadoras; todas as atividades acontecerão presencialmente. Contamos, ainda, com as oficinas: “Fotolivros Africanos Contemporâneos”, ministrada por Ana Paula Vitorio, e “Introdução à preservação audiovisual digital - conceitos e práticas”, ministrada por Débora Butruce. Teremos também a mesa “Práticas para pensar a formação de público a partir do cinema”, com Danilo Candombe, Layla Braz, Marcos Donizetti, Elaine do Carmo e Viviane Ferreira, além de uma conversa com o cineasta Charles Burnett.
+              Nesta edição, além das sessões fílmicas, teremos conversas com
+              realizadores e realizadoras; todas as atividades acontecerão
+              presencialmente. Contamos, ainda, com as oficinas: “Fotolivros
+              Africanos Contemporâneos”, ministrada por Ana Paula Vitorio, e
+              “Introdução à preservação audiovisual digital - conceitos e
+              práticas”, ministrada por Débora Butruce. Teremos também a mesa
+              “Práticas para pensar a formação de público a partir do cinema”,
+              com Danilo Candombe, Layla Braz, Marcos Donizetti, Elaine do Carmo
+              e Viviane Ferreira, além de uma conversa com o cineasta Charles
+              Burnett.
             </p>
             <p>
-              As obras da artista plástica Larissa de Souza compõem toda a identidade visual desta edição do festival. Em suas obras, a artista autodidata apresenta pinturas majoritariamente figurativas, concentrando-se na imagem da mulher afro-diaspórica em seu universo particular e coletivo. O projeto gráfico é de Joana Américo e Marco Chagas. Convidamos a todas, todes e todos a acompanharem a programação.
+              As obras da artista plástica Larissa de Souza compõem toda a
+              identidade visual desta edição do festival. Em suas obras, a
+              artista autodidata apresenta pinturas majoritariamente
+              figurativas, concentrando-se na imagem da mulher afro-diaspórica
+              em seu universo particular e coletivo. O projeto gráfico é de
+              Joana Américo e Marco Chagas. Convidamos a todas, todes e todos a
+              acompanharem a programação.
             </p>
           </div>
         </section>
 
         {/* Seção 2: Vídeo / Vinheta */}
-        <section className="w-full pb-16">
+        <section className="w-full">
           <div className="w-full aspect-video overflow-hidden">
             <iframe
               className="w-full h-full"
@@ -173,15 +288,21 @@ export default function Home() {
         </section>
 
         {/* Seção 3: Régua de Patrocinadores */}
-        <section className="w-full pb-20">
-          <img src="/images/logomarcas.jpg" alt="Marcas Patrocinadoras" className="w-full mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity" />
+        <section className="w-full">
+          <img
+            src="/images/logomarcas.png"
+            alt="Marcas Patrocinadoras"
+            className="w-full mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity"
+          />
         </section>
-
       </main>
 
       <footer className="w-full bg-barro px-2 py-10 text-cream-100 md:px-8 md:py-12">
         <div className="grid grid-cols-1 gap-0 laptop:grid-cols-[1.2fr_1fr_2fr_auto] laptop:gap-6">
-          <Link href="/" className="flex items-start border-b border-cream-100/20 py-6 transition-opacity hover:opacity-80 laptop:border-0 laptop:py-0">
+          <Link
+            href="/"
+            className="flex items-start border-b border-cream-100/20 py-6 transition-opacity hover:opacity-80 laptop:border-0 laptop:py-0"
+          >
             <picture className="block">
               <source srcSet="/images/logo-2026-mobile.png" />
               <img
@@ -192,8 +313,16 @@ export default function Home() {
             </picture>
           </Link>
 
-          <nav aria-label="Navegação do rodapé" className="flex flex-col items-start gap-3 border-b border-cream-100/20 py-6 text-xs laptop:border-0 laptop:py-0">
-            <Link href="/anteriores" className="transition-opacity hover:opacity-70">edições anteriores</Link>
+          <nav
+            aria-label="Navegação do rodapé"
+            className="flex flex-col items-start gap-3 border-b border-cream-100/20 py-6 text-xs laptop:border-0 laptop:py-0"
+          >
+            <Link
+              href="/anteriores"
+              className="transition-opacity hover:opacity-70"
+            >
+              edições anteriores
+            </Link>
           </nav>
 
           <div className="flex flex-col items-start gap-3 border-b border-cream-100/20 py-6 text-xs laptop:border-b-0 laptop:border-l laptop:border-cream-100/20 laptop:py-0 laptop:pl-6">
@@ -202,32 +331,51 @@ export default function Home() {
               <EnvelopeSimple size={18} />
               scnegrobh@gmail.com
             </p>
-            <p className="mt-2">Para falar com nossa assessoria de imprensa, entre em contato com:</p>
+            <p className="mt-2">
+              Para falar com nossa assessoria de imprensa, entre em contato com:
+            </p>
             <div className="mt-2 flex flex-col gap-2">
               <p className="flex min-w-0 items-center gap-2 text-[#ffffff]">
                 <PhoneCall size={18} className="shrink-0" />
-                Flora Miguel 11 95323-2999
-              </p>
-              <p className="flex min-w-0 items-center gap-2 text-[#ffffff]">
-                <PhoneCall size={18} className="shrink-0" />
-                Izabela Costa 11 97347-1280
+                Mariana Cordeiro 31 98782-1287
               </p>
             </div>
           </div>
 
-          <div aria-label="Redes sociais" className="flex items-start gap-5 py-6 laptop:border-l laptop:border-cream-100/20 laptop:py-0 laptop:pl-6">
-            <a href="https://www.instagram.com/semana.cinemanegrobh" target="_blank" rel="noreferrer" aria-label="Instagram" className="transition-opacity hover:opacity-70">
+          <div
+            aria-label="Redes sociais"
+            className="flex items-start gap-5 py-6 laptop:border-l laptop:border-cream-100/20 laptop:py-0 laptop:pl-6"
+          >
+            <a
+              href="https://www.instagram.com/semana.cinemanegrobh"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="transition-opacity hover:opacity-70"
+            >
               <InstagramLogo size={20} />
             </a>
-            <span aria-hidden="true"><FacebookLogo size={20} /></span>
-            <span aria-hidden="true"><YoutubeLogo size={22} /></span>
-            <span aria-hidden="true"><TwitterLogo size={20} /></span>
+            <span aria-hidden="true">
+              <FacebookLogo size={20} />
+            </span>
+            <span aria-hidden="true">
+              <YoutubeLogo size={22} />
+            </span>
+            <span aria-hidden="true">
+              <TwitterLogo size={20} />
+            </span>
           </div>
         </div>
 
         <p className="mt-8 border-t border-cream-100/20 pt-4 text-[10px] font-semibold uppercase tracking-wider">
-          © 2026 Semana de Cinema Negro BH. Todos os direitos reservados. Site desenvolvido por{" "}
-          <a href="https://www.meji.com.br/" target="_blank" rel="noreferrer" className="text-amarelo-ouro transition-opacity hover:opacity-70">
+          © 2026 Semana de Cinema Negro BH. Todos os direitos reservados. Site
+          desenvolvido por{" "}
+          <a
+            href="https://www.meji.com.br/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-amarelo-ouro transition-opacity hover:opacity-70"
+          >
             Meji
           </a>
           .
