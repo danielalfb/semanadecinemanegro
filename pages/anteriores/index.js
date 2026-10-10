@@ -9,6 +9,7 @@ import {
   EnvelopeSimple,
   PhoneCall,
   DownloadSimple,
+  ArrowSquareOut,
   List,
   X,
 } from "@phosphor-icons/react";
@@ -169,16 +170,28 @@ export default function Anteriores() {
             >
               Edições Anteriores
             </Link>
-            <a
-              href="https://drive.google.com/file/d/1gVpQU_bMbwDi8KRD0-ugJDAZra2QqUuH/view"
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="mt-3 inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-amarelo-ouro px-3 py-2 text-xs font-bold uppercase tracking-wider text-barro transition-colors hover:bg-amarelo-ouro md:mt-0 md:w-auto md:text-xs"
-            >
-              <DownloadSimple size={16} />
-              Baixar programação
-            </a>
+            <div className="mt-3 flex w-full flex-col gap-2 md:mt-0 md:w-auto md:flex-row">
+              <a
+                href="/images/programacao-web.png"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-amarelo-ouro px-3 py-2 text-xs font-bold uppercase tracking-wider text-barro transition-colors hover:bg-amarelo-ouro md:w-auto md:text-xs"
+              >
+                <DownloadSimple size={16} />
+                Baixar programação
+              </a>
+              <a
+                href="https://www.ubuplay.com/"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-amarelo-ouro px-3 py-2 text-xs font-bold uppercase tracking-wider text-barro transition-colors hover:bg-amarelo-ouro md:w-auto md:text-xs"
+              >
+                Acessar Ubuplay
+                <ArrowSquareOut size={16} />
+              </a>
+            </div>
           </nav>
         </div>
       </header>

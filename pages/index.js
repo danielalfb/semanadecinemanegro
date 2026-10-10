@@ -9,6 +9,7 @@ import {
   EnvelopeSimple,
   PhoneCall,
   DownloadSimple,
+  ArrowSquareOut,
   List,
   X,
 } from "@phosphor-icons/react";
@@ -119,16 +120,28 @@ export default function Home() {
             >
               Edições Anteriores
             </Link>
-            <a
-              href="https://drive.google.com/file/d/1gVpQU_bMbwDi8KRD0-ugJDAZra2QqUuH/view"
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="mt-3 inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-amarelo-ouro px-3 py-2 text-xs font-bold uppercase tracking-wider text-barro transition-colors hover:bg-amarelo-ouro md:mt-0 md:w-auto md:text-xs"
-            >
-              <DownloadSimple size={16} />
-              Baixar programação
-            </a>
+            <div className="mt-3 flex w-full flex-col gap-2 md:mt-0 md:w-auto md:flex-row">
+              <a
+                href="/images/programacao-web.png"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-amarelo-ouro px-3 py-2 text-xs font-bold uppercase tracking-wider text-barro transition-colors hover:bg-amarelo-ouro md:w-auto md:text-xs"
+              >
+                <DownloadSimple size={16} />
+                Baixar programação
+              </a>
+              <a
+                href="https://www.ubuplay.com/"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-amarelo-ouro px-3 py-2 text-xs font-bold uppercase tracking-wider text-barro transition-colors hover:bg-amarelo-ouro md:w-auto md:text-xs"
+              >
+                Acessar Ubuplay
+                <ArrowSquareOut size={16} />
+              </a>
+            </div>
           </nav>
         </div>
       </header>
@@ -138,11 +151,11 @@ export default function Home() {
         <section className="flex w-full flex-col gap-3 px-4 pb-6 pt-32 md:h-[calc(100vh-20px)] md:flex-row md:px-8 md:pb-8 md:pt-[149px]">
           {/* Texto Vertical */}
           <div className="flex justify-end md:mt-40 md:w-24 md:shrink-0 md:items-start md:justify-start">
-            <p className="text-[10px] font-semibold uppercase tracking-widest md:hidden">
+            <p className="text-[18px] font-semibold uppercase tracking-widest md:hidden">
               14 - 18 de Outubro de 2026
             </p>
             <p
-              className="hidden whitespace-nowrap text-[10px] font-semibold uppercase tracking-widest text-barro md:block"
+              className="hidden whitespace-nowrap text-[18px] font-semibold uppercase tracking-widest text-barro md:block"
               style={{
                 writingMode: "vertical-rl",
                 transform: "rotate(180deg)",
