@@ -14,7 +14,14 @@ import {
   X,
 } from "@phosphor-icons/react";
 
-function ArtworkTile({ src, alt, title, details, className = "" }) {
+function ArtworkTile({
+  src,
+  alt,
+  title,
+  details,
+  className = "",
+  imageFit = "object-cover",
+}) {
   return (
     <div
       tabIndex={title ? 0 : undefined}
@@ -24,7 +31,7 @@ function ArtworkTile({ src, alt, title, details, className = "" }) {
       <img
         src={src}
         alt={alt}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] group-focus:scale-[1.03]"
+        className={`absolute inset-0 h-full w-full ${imageFit} transition-transform duration-500 ease-out group-hover:scale-[1.03] group-focus:scale-[1.03]`}
       />
       {title && (
         <div className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-barro/90 px-3 py-3 text-cream-100 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus:translate-y-0 group-focus:opacity-100 md:px-4 md:py-4">
@@ -211,6 +218,7 @@ export default function Home() {
                 "Direito Autoral do Artista",
                 "Foto: Leonardo Mitre e Estúdio em Obra",
               ]}
+              imageFit="object-contain"
               className="col-span-1 row-span-1 md:col-start-2 md:row-start-3"
             />
             <div className="hidden col-span-1 row-span-1 items-start p-2 text-xs opacity-50 md:flex md:col-start-4 md:row-start-3"></div>
