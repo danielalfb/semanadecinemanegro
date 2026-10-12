@@ -245,57 +245,80 @@ export default function Home() {
         </p>
 
         <section
-          aria-label="Apresentação da 5ª edição"
+          aria-label="Apresentação da 6ª edição"
           className="w-full bg-cream-200 px-6 py-12 md:px-8 md:py-16"
         >
-          <div className="mx-auto max-w-5xl space-y-5 text-sm leading-relaxed md:text-base">
+          <div className="apresentacao-texto mx-auto max-w-5xl space-y-5 text-sm leading-relaxed md:text-base">
+            <h2 className="font-inter text-lg font-bold tracking-widest text-barro md:text-xl">
+              <em>Há coisas que só conseguimos enxergar quando uma luz se acende.</em>
+            </h2>
             <p>
-              A 5ª Semana de Cinema Negro de Belo Horizonte apresenta, de 16 a
-              24 de outubro de 2025, um conjunto composto por 45 filmes de
-              cinematografias brasileiras e do mundo, distribuídas em:
-              Cine-Escrituras Pretas; Homenagem Maria José Novais Oliveira:
-              Viviane Ferreira, seguir tendo o direito de experimentar;
-              Cotidiano e Revolucionário - O Cinema de Charles Burnett;
-              Experiência Vivida do Negro - Franz Fanon 100 anos; Tributo ao
-              Cinema Luz de Souleymane Cissé; Do Rio ao Mar: Palestina Livre. E
-              ainda as mostras: A Rememoração no Cinema dos Quilombos; Vampiros
-              à Luz do Meio-Dia - O Cinema de Luiz Lourenço e a Ibejis - Sessão
-              Infantil.
+              De 14 a 18 de outubro de 2026, a <strong>Semana de Cinema Negro</strong>{' '}
+              realiza sua 6ª edição. Depois de chegar a ser cancelada por falta de
+              recursos, a Semana renasce a partir do encontro, da confiança e da
+              construção coletiva. Nesta edição, o <strong>Minas Tênis Clube</strong>{' '}
+              é correalizador do festival.
             </p>
             <p>
-              O festival acontecerá de forma híbrida, presencialmente e on-line.
-              As exibições presenciais serão realizadas no Cine Humberto
-              Mauro/Palácio das Artes e no Cine Santa Tereza, e toda a
-              programação é gratuita. A mostra Cine-Escrituras Pretas ficará
-              disponível online durante todo o período do festival na
-              ubuplay.com.
+              Com programação gratuita, a Semana reúne 27 filmes brasileiros e
+              internacionais, além de oficinas, estudos de caso e debates com
+              realizadoras e realizadores. Entre os destaques estão o filme de
+              abertura <em>Ana, en passant</em>, o primeiro longa de animação de uma
+              diretora negra a entrar no circuito comercial de exibição, a mostra
+              <em> (RE) EXISTIMOS! Cinemas negros, para onde queremos ir?</em>,
+              dedicada a longas-metragens brasileiros contemporâneos; a celebração
+              dos 30 anos de <em>The Watermelon Woman</em>, de Cheryl Dunye, e dos
+              70 anos do cineasta Marlon Riggs; e a <em>Homenagem Maria José
+              Novais Oliveira: Grace Passô - Linguagens em Expansão</em>. A
+              programação inclui ainda a mostra <strong>Cine-Escrituras Pretas</strong>,
+              sessões para o público infantil na Mostra Ibejis e atividades
+              formativas voltadas à formação e à ampliação do conhecimento no
+              campo audiovisual.
             </p>
             <p>
-              Nesta edição, além das sessões fílmicas, teremos conversas com
-              realizadores e realizadoras; todas as atividades acontecerão
-              presencialmente. Contamos, ainda, com as oficinas: “Fotolivros
-              Africanos Contemporâneos”, ministrada por Ana Paula Vitorio, e
-              “Introdução à preservação audiovisual digital - conceitos e
-              práticas”, ministrada por Débora Butruce. Teremos também a mesa
-              “Práticas para pensar a formação de público a partir do cinema”,
-              com Danilo Candombe, Layla Braz, Marcos Donizetti, Elaine do Carmo
-              e Viviane Ferreira, além de uma conversa com o cineasta Charles
-              Burnett.
+              O festival será realizado em formato híbrido, com atividades
+              presenciais e online. As exibições presenciais acontecerão no
+              Centro Cultural UNIMED-MINAS. A mostra Cine-Escrituras Pretas ficará
+              disponível na plataforma{' '}
+              <a
+                href="https://www.ubuplay.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold underline underline-offset-2 transition-opacity hover:opacity-80"
+              >
+                UBUPLAY
+              </a>{' '}
+              durante todo o período do festival.
             </p>
             <p>
-              As obras da artista plástica Larissa de Souza compõem toda a
-              identidade visual desta edição do festival. Em suas obras, a
-              artista autodidata apresenta pinturas majoritariamente
-              figurativas, concentrando-se na imagem da mulher afro-diaspórica
-              em seu universo particular e coletivo. O projeto gráfico é de
-              Joana Américo e Marco Chagas. Convidamos a todas, todes e todos a
-              acompanharem a programação.
+              Em paralelo, de 12 a 18 de outubro a 3ª edição da{' '}
+              <strong>SemanaLab - Residência em Distribuição</strong>, o eixo
+              formativo da Semana de Cinema Negro, ocorrerá com apoio do{' '}
+              <strong>Instituto Cervantes</strong> e <strong>Projeto Paradiso</strong>.
+              Esta edição é focada em distribuição de filmes e traz quatro jovens
+              (sendo um de Belém, uma de Natal e outras duas de Belo Horizonte)
+              que buscam na distribuição uma carreira no cinema.
+            </p>
+            <p>
+              A identidade visual desta edição é composta por obras de{' '}
+              <strong>Hariel Revignet</strong>. Em suas criações, vemos a luz que
+              atravessa o festival e que também carrega um gesto de abertura de
+              caminhos e de encontro entre comunidades. É assim que entendemos os
+              cinemas negros: como práticas que se afirmam no presente, elaboram
+              memórias, inventam linguagens e movimentam os mundos que habitamos.
+            </p>
+            <p>
+              A Semana acontece porque muitas pessoas aceitaram o convite para
+              fazer acontecer. A cada uma delas, nosso agradecimento por
+              reacender essa luz conosco. Seguimos, porque existir também é
+              construir caminhos para que outras existências possam ver as
+              estrelas brilharem.
             </p>
           </div>
         </section>
 
         {/* Seção 2: Vídeo / Vinheta */}
-        <section className="w-full">
+        {/* <section className="w-full">
           <div className="w-full aspect-video overflow-hidden">
             <iframe
               className="w-full h-full"
@@ -306,7 +329,7 @@ export default function Home() {
               allowFullScreen
             />
           </div>
-        </section>
+        </section> */}
 
         {/* Seção 3: Régua de Patrocinadores */}
         <section className="w-full">
