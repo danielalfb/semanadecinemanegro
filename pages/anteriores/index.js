@@ -199,11 +199,11 @@ export default function Anteriores() {
       <main className="flex w-full flex-1 flex-col gap-3 px-4 pb-8 pt-32 md:flex-row md:px-8 md:pt-40">
         {/* Texto Vertical Esquerdo */}
         <div className="flex justify-end md:mt-40 md:w-24 md:shrink-0 md:items-start md:justify-start">
-          <p className="text-[10px] font-semibold uppercase tracking-widest md:hidden">
+          <p className="text-base font-semibold uppercase tracking-widest md:hidden">
             Acervo Histórico
           </p>
           <p
-            className="hidden whitespace-nowrap text-[10px] font-semibold uppercase tracking-widest text-barro md:block"
+            className="hidden whitespace-nowrap text-lg font-semibold uppercase tracking-widest text-barro lg:text-xl md:block"
             style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
           >
             Acervo Histórico
@@ -246,6 +246,14 @@ export default function Anteriores() {
           </div>
         </div>
       </main>
+
+      <section className="w-full">
+        <img
+          src="/images/logomarcas.png"
+          alt="Marcas patrocinadoras"
+          className="w-full mix-blend-multiply opacity-90 transition-opacity hover:opacity-100"
+        />
+      </section>
 
       <footer className="w-full bg-barro px-2 py-10 text-cream-100 md:px-8 md:py-12">
         <div className="grid grid-cols-1 gap-0 laptop:grid-cols-[1.2fr_1fr_2fr_auto] laptop:gap-6">
