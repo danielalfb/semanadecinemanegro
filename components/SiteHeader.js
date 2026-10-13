@@ -16,9 +16,7 @@ export default function SiteHeader({ activePage }) {
 
   const linkClass = (page) =>
     `w-full border-b border-barro/10 py-3 text-xs font-bold uppercase tracking-wider transition-colors md:w-auto md:border-0 md:py-0 md:text-sm ${
-      activePage === page
-        ? "text-amarelo-ouro"
-        : "hover:text-amarelo-ouro"
+      activePage === page ? "text-amarelo-ouro" : "hover:text-amarelo-ouro"
     }`;
 
   const closeMenu = () => setMenuOpen(false);
@@ -38,15 +36,21 @@ export default function SiteHeader({ activePage }) {
         >
           <InstagramLogo size={20} weight="fill" />
         </a>
-        <span className="text-barro" aria-hidden="true">
+        <a
+          href="https://www.instagram.com/semana.cinemanegrobh"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Youtube da Semana de Cinema Negro BH"
+          className="transition-opacity hover:opacity-70"
+        >
+          <YoutubeLogo size={22} weight="regular" />
+        </a>
+        {/* <span className="text-barro" aria-hidden="true">
           <FacebookLogo size={20} weight="regular" />
         </span>
         <span className="text-barro" aria-hidden="true">
-          <YoutubeLogo size={22} weight="regular" />
-        </span>
-        <span className="text-barro" aria-hidden="true">
           <TwitterLogo size={20} weight="regular" />
-        </span>
+        </span> */}
       </div>
       <div className="relative flex min-h-16 items-center justify-between gap-3 border-y border-barro/10 bg-cream-100 px-4 py-2 md:h-20 md:flex-row md:gap-3 md:px-8 md:py-0">
         <Link
