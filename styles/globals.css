@@ -5,6 +5,14 @@
 @import "./markdown.css";
 
 @font-face {
+  font-family: "Karrik";
+  src: url("/fonts/Karrik-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Broke";
   src:
     url("/fonts/BrokeFat-Black.otf") format("opentype");
@@ -99,7 +107,7 @@ html {
 h1,
 h2,
 h3 {
-  font-family: "Amiamie";
+  font-family: "Broke";
 }
 .title-container {
   width: 960px;
@@ -150,8 +158,39 @@ h3 {
     color: var(--clr-pink-light);
   }
 }
-p {
-  font-family: "Amiamie";
+.apresentacao-texto {
+  font-family: "Amiamie", sans-serif;
+  color: rgba(24, 25, 26, 0.9);
+}
+
+.apresentacao-texto p {
+  font-family: "Amiamie", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+.apresentacao-texto p em,
+.apresentacao-texto em {
+  font-style: italic;
+}
+
+.apresentacao-texto p strong,
+.apresentacao-texto strong {
+  font-weight: 700;
+}
+
+.apresentacao-texto a {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.apresentacao-texto p:first-of-type {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
 }
 
 h2 {

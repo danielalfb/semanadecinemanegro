@@ -8,12 +8,12 @@ const Footer = () => {
     <div className="relative bottom-0 laptop:p-0">
       <img
         alt="logomarcas"
-        src="../images/logomarcas.jpg"
+        src="../images/logomarcas.png"
         style={{ width: "100%", backgroundColor: "#f9f9f9" }}
       />
 
       <div
-        className='flex flex-wrap items-center justify-end p-2 mob:flex-nowrap link'
+        className="flex flex-wrap items-center justify-end p-2 mob:flex-nowrap link"
         style={{ color: "#fff", backgroundColor: "var(--clr-black)" }}
       >
         {/* <div className='flex flex-col ml-4'>
@@ -36,7 +36,7 @@ const Footer = () => {
             </span>
           </div>
         </div> */}
-        <div className='flex flex-wrap mob:flex-nowrap link items-center gap-2'>
+        <div className="flex flex-wrap mob:flex-nowrap link items-center gap-2">
           <p>scnegrobh@gmail.com </p>
           {SITE_CONTENT.socials.map((social, index) => (
             <button key={index} onClick={() => window.open(social.link)}>
