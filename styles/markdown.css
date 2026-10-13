@@ -66,13 +66,12 @@
 /* BlockQuote */
 
 .markdown-class blockquote {
-  @apply p-5 border-l-8 rounded-lg shadow-lg  text-sm bg-slate-200 text-black;
+  @apply p-5 border-l-8 rounded-lg shadow-lg  text-sm  text-black;
 }
 
 .markdown-class blockquote p {
   @apply text-black text-sm;
 }
-
 
 
 /* Image */
