@@ -85,6 +85,30 @@ export default function Anteriores() {
     <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col">
       <Head>
         <title>Edições Anteriores | SCNBH</title>
+        <meta
+          name="description"
+          content="Acesse o acervo histórico da Semana de Cinema Negro de Belo Horizonte, com informações, programação e catálogos das edições anteriores."
+        />
+        <meta
+          property="og:title"
+          content="Edições Anteriores | Semana de Cinema Negro BH"
+        />
+        <meta
+          property="og:description"
+          content="Acesse o acervo histórico da Semana de Cinema Negro de Belo Horizonte, com informações, programação e catálogos das edições anteriores."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Semana de Cinema Negro BH" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:title"
+          content="Edições Anteriores | Semana de Cinema Negro BH"
+        />
+        <meta
+          name="twitter:description"
+          content="Acesse o acervo histórico da Semana de Cinema Negro de Belo Horizonte, com informações, programação e catálogos das edições anteriores."
+        />
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 

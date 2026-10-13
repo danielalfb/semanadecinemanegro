@@ -42,6 +42,34 @@ export default function Home() {
     <div className="min-h-screen bg-cream-100 text-barro font-inter flex flex-col">
       <Head>
         <title>Semana de Cinema Negro BH | 6ª Edição</title>
+        <meta
+          name="description"
+          content="De 14 a 18 de outubro de 2026, a 6ª Semana de Cinema Negro de Belo Horizonte apresenta 27 filmes, oficinas, estudos de caso e debates, com programação gratuita."
+        />
+        <meta
+          name="keywords"
+          content="Semana de Cinema Negro, cinema negro, Belo Horizonte, SCNBH, filmes, festival de cinema, 2026"
+        />
+        <meta
+          property="og:title"
+          content="Semana de Cinema Negro BH | 6ª Edição"
+        />
+        <meta
+          property="og:description"
+          content="De 14 a 18 de outubro de 2026, a 6ª Semana de Cinema Negro de Belo Horizonte apresenta 27 filmes, oficinas, estudos de caso e debates, com programação gratuita."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Semana de Cinema Negro BH" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:title"
+          content="Semana de Cinema Negro BH | 6ª Edição"
+        />
+        <meta
+          name="twitter:description"
+          content="De 14 a 18 de outubro de 2026, a 6ª Semana de Cinema Negro de Belo Horizonte apresenta 27 filmes, oficinas, estudos de caso e debates, com programação gratuita."
+        />
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
