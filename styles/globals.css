@@ -186,7 +186,8 @@ h3 {
 
 .apresentacao-texto p em,
 .apresentacao-texto em {
-  font-style: italic;
+  font-style: normal;
+  font-weight: inherit;
 }
 
 .apresentacao-texto p strong,
@@ -202,9 +203,9 @@ h3 {
 
 .apresentacao-texto p:first-of-type {
   margin-bottom: 0.75rem;
-  font-size: 1.15rem;
-  font-style: italic;
-  letter-spacing: 0.02em;
+  font-size: 1rem;
+  font-style: normal;
+  letter-spacing: 0.01em;
 }
 
 h2 {
