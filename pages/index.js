@@ -217,7 +217,7 @@ export default function Home() {
               >
                 UBUPLAY
               </a>{" "}
-              durante todo o período do festival.
+              em novembro.
             </p>
             <p>
               Em paralelo, de 12 a 18 de outubro a 3ª edição da{" "}
